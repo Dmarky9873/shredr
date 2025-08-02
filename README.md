@@ -100,7 +100,3 @@ For detailed testing information, see [TESTING.md](TESTING.md).
 3. Add tests for new functionality
 4. Ensure all tests pass: `python run_tests.py`
 5. Submit a pull request
-
-## License
-
-[Add your license information here]
