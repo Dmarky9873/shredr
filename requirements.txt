@@ -1,2 +1,8 @@
+numpy>=1.26
 pytest>=7.4.0
 pytest-cov>=4.1.0
+camelot-py[cv]
+pandas
+requests
+pdfplumber
+PyPDF2
