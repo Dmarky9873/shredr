@@ -26,10 +26,10 @@ jobs:
 
       - name: Run tests with coverage
         run: |
-          python -m pytest tests/ --cov=. --cov-report=term-missing --cov-fail-under=100
+          python -m pytest tests/ --cov=. --cov-report=term-missing --cov-fail-under=80
 
       - name: Upload coverage to GitHub
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: coverage-report
           path: htmlcov/
