@@ -32,7 +32,6 @@ def main():
     """Main function to run all linting tools."""
     print("🚀 Running linting and formatting tools...")
 
-    # List of commands to run
     commands = [
         ("black .", "Formatting code with Black"),
         ("isort .", "Sorting imports with isort"),

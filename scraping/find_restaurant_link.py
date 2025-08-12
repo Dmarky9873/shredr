@@ -37,7 +37,6 @@ def find_restaurant_link(restaurant_name: str) -> Optional[str]:
         search_results = search(search_query, num_results=5)
         for result in search_results:
             if result:
-                # Ensure result is a string
                 result_str = str(result)
                 if result_str.startswith("/"):
                     result_str = f"https://www.google.com{result_str}"

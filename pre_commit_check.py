@@ -20,7 +20,6 @@ def main():
     """Main function to run pre-commit checks."""
     print("🚀 Running pre-commit checks...")
 
-    # Format code
     print("📝 Formatting code...")
     if not run_command("black ."):
         print("❌ Black formatting failed")
@@ -30,13 +29,11 @@ def main():
         print("❌ Import sorting failed")
         return 1
 
-    # Check code quality
     print("🔍 Checking code quality...")
     if not run_command("flake8 ."):
         print("❌ Flake8 checks failed")
         return 1
 
-    # Run tests
     print("🧪 Running tests...")
     if not run_command("python run_tests.py --quick"):
         print("❌ Tests failed")
