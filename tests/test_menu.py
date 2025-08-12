@@ -1,4 +1,5 @@
 import pytest
+
 from models.menu import Menu
 from models.menu_item import MenuItem
 
@@ -119,13 +120,12 @@ class TestMenu:
 
         ratios = menu.calculate_sorted_carb_calorie_ratios()
 
-        # Should be sorted in descending order by ratio
         assert len(ratios) == 3
-        assert ratios[0][0] == "Pasta"  # Highest ratio
+        assert ratios[0][0] == "Pasta"
         assert ratios[0][1] == 0.2
-        assert ratios[1][0] == "Sandwich"  # Middle ratio
+        assert ratios[1][0] == "Sandwich"
         assert abs(ratios[1][1] - (40.0 / 350)) < 1e-10
-        assert ratios[2][0] == "Steak"  # Lowest ratio
+        assert ratios[2][0] == "Steak"
         assert abs(ratios[2][1] - (5.0 / 300)) < 1e-10
 
     def test_menu_with_zero_calorie_items(self):
@@ -139,7 +139,6 @@ class TestMenu:
         fat_ratios = menu.calculate_sorted_fat_calorie_ratios()
         carb_ratios = menu.calculate_sorted_carb_calorie_ratios()
 
-        # Zero calorie item should have ratio of 0 and be sorted last
         assert len(protein_ratios) == 2
         assert protein_ratios[0][0] == "Apple"
         assert protein_ratios[1][0] == "Water"
@@ -160,11 +159,8 @@ class TestMenu:
         item1 = MenuItem("Burger", 10.0, "Beef burger", 500, 25.0, 30.0, 20.0)
         item2 = MenuItem("Burger", 10.0, "Beef burger", 500, 25.0, 30.0, 20.0)
 
-        # Even though we create two identical items, set should contain both
-        # (since they are different objects in memory)
         menu = Menu("Test Restaurant", {item1, item2})
 
-        # Both items should be in the set since they are different objects
         assert len(menu.items) == 2
 
     def test_menu_items_modification(self):
@@ -174,7 +170,6 @@ class TestMenu:
         item1 = MenuItem("Pizza", 12.0, "Cheese pizza", 350, 15.0, 40.0, 12.0)
         item2 = MenuItem("Salad", 8.0, "Caesar salad", 200, 8.0, 10.0, 15.0)
 
-        # Add items to the menu
         menu.items.add(item1)
         menu.items.add(item2)
 
@@ -199,10 +194,8 @@ class TestMenu:
         fat_ratios = sample_menu.calculate_sorted_fat_calorie_ratios()
         carb_ratios = sample_menu.calculate_sorted_carb_calorie_ratios()
 
-        # All should return the same number of items
         assert len(protein_ratios) == len(fat_ratios) == len(carb_ratios) == 3
 
-        # All items should be present in each result
         protein_names = {item[0] for item in protein_ratios}
         fat_names = {item[0] for item in fat_ratios}
         carb_names = {item[0] for item in carb_ratios}

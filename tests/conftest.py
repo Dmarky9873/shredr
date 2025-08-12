@@ -3,8 +3,9 @@ Shared pytest fixtures and configuration for the test suite.
 """
 
 import pytest
-from models.menu_item import MenuItem
+
 from models.menu import Menu
+from models.menu_item import MenuItem
 
 
 @pytest.fixture
