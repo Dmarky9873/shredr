@@ -180,7 +180,5 @@ class TestMenuItem:
             fat=35.0,
         )
 
-        # This test ensures the object can be converted to string without errors
-        # Useful for debugging and logging
         str_repr = str(item)
         assert "MenuItem" in str_repr or "Burger" in str(item.__dict__)

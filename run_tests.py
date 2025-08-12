@@ -41,7 +41,6 @@ def main():
 
     args = parser.parse_args()
 
-    # Base command
     base_cmd = "python -m pytest"
 
     if args.quick:
