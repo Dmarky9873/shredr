@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Test runner script for the shredr project.
 This script provides different ways to run the tests.
@@ -22,6 +21,7 @@ def run_command(command, description):
 
 
 def main():
+    """Main entry point for the test runner."""
     parser = argparse.ArgumentParser(description="Run tests for the shredr project")
     parser.add_argument(
         "--coverage", action="store_true", help="Run tests with coverage report"
@@ -44,7 +44,6 @@ def main():
     # Base command
     base_cmd = "python -m pytest"
 
-    # Build command based on arguments
     if args.quick:
         cmd = f"{base_cmd} tests/"
         if args.verbose:
@@ -60,7 +59,6 @@ def main():
         run_command(cmd, f"Running specific test: {args.specific}")
 
     else:
-        # Default: run all tests with coverage
         cmd = f"{base_cmd} tests/ --cov=models --cov=analysis --cov=scraping --cov-report=term-missing"
         if args.verbose:
             cmd += " -v"

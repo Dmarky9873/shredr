@@ -12,7 +12,6 @@ class TestMenuIntegration:
 
     def test_complete_menu_workflow(self):
         """Test a complete workflow of creating a menu and analyzing it."""
-        # Create various menu items
         burger = MenuItem(
             "Burger", 14.99, "Beef burger with fries", 750, 30.0, 45.0, 40.0
         )
@@ -26,34 +25,28 @@ class TestMenuIntegration:
             "Margherita Pizza", 13.99, "Classic pizza", 600, 25.0, 70.0, 22.0
         )
 
-        # Create menu
         menu = Menu("Healthy Eats", {burger, salad, protein_shake, pizza})
 
-        # Test protein analysis
         protein_ratios = menu.calculate_sorted_protein_calorie_ratios()
         assert len(protein_ratios) == 4
-        assert protein_ratios[0][0] == "Protein Shake"  # Highest protein ratio
+        assert protein_ratios[0][0] == "Protein Shake"
 
-        # Test fat analysis
         fat_ratios = menu.calculate_sorted_fat_calorie_ratios()
         assert len(fat_ratios) == 4
 
-        # Test carb analysis
         carb_ratios = menu.calculate_sorted_carb_calorie_ratios()
         assert len(carb_ratios) == 4
-        assert carb_ratios[0][0] == "Margherita Pizza"  # Likely highest carb ratio
+        assert carb_ratios[0][0] == "Margherita Pizza"
 
     def test_menu_item_ratio_consistency(self):
         """Test that individual MenuItem ratios match Menu calculation results."""
         item = MenuItem("Test Item", 10.0, "Test", 200, 20.0, 30.0, 10.0)
         menu = Menu("Test Menu", {item})
 
-        # Get ratios from menu
         protein_ratios = menu.calculate_sorted_protein_calorie_ratios()
         fat_ratios = menu.calculate_sorted_fat_calorie_ratios()
         carb_ratios = menu.calculate_sorted_carb_calorie_ratios()
 
-        # Compare with individual item calculations
         assert protein_ratios[0][1] == item.protein_calorie_ratio()
         assert fat_ratios[0][1] == item.fat_calorie_ratio()
         assert carb_ratios[0][1] == item.carb_calorie_ratio()
@@ -61,12 +54,10 @@ class TestMenuIntegration:
     def test_real_world_restaurant_scenario(self):
         """Test with realistic restaurant menu items."""
         menu_items = {
-            # Breakfast items
             MenuItem(
                 "Pancakes", 8.99, "Fluffy pancakes with syrup", 520, 8.0, 85.0, 12.0
             ),
             MenuItem("Omelette", 12.99, "Three-egg omelette", 380, 28.0, 4.0, 26.0),
-            # Lunch items
             MenuItem(
                 "Club Sandwich", 11.99, "Triple-decker sandwich", 680, 32.0, 48.0, 38.0
             ),
@@ -79,7 +70,6 @@ class TestMenuIntegration:
                 35.0,
                 8.0,
             ),
-            # Dinner items
             MenuItem(
                 "Ribeye Steak",
                 28.99,
@@ -98,7 +88,6 @@ class TestMenuIntegration:
                 6.0,
                 18.0,
             ),
-            # Desserts
             MenuItem(
                 "Cheesecake", 6.99, "New York style cheesecake", 410, 8.0, 32.0, 28.0
             ),
@@ -106,19 +95,15 @@ class TestMenuIntegration:
 
         restaurant = Menu("Grandma's Kitchen", menu_items)
 
-        # Analyze protein content (should favor meat dishes)
         protein_analysis = restaurant.calculate_sorted_protein_calorie_ratios()
         top_protein_items = [item[0] for item in protein_analysis[:3]]
 
-        # High-protein items should be at the top
         assert "Grilled Chicken" in top_protein_items
         assert "Ribeye Steak" in top_protein_items
 
-        # Analyze carb content (should favor pancakes, desserts)
         carb_analysis = restaurant.calculate_sorted_carb_calorie_ratios()
-        assert carb_analysis[0][0] == "Pancakes"  # Highest carb ratio
+        assert carb_analysis[0][0] == "Pancakes"
 
-        # Verify all items are accounted for
         assert len(protein_analysis) == len(menu_items)
         assert len(carb_analysis) == len(menu_items)
 
@@ -136,25 +121,19 @@ class TestMenuIntegration:
 
         menu = Menu("Edge Case Cafe", edge_case_items)
 
-        # Test protein ratios
         protein_ratios = menu.calculate_sorted_protein_calorie_ratios()
-        assert (
-            protein_ratios[0][0] == "Pure Protein"
-        )  # Should have highest protein ratio
+        assert protein_ratios[0][0] == "Pure Protein"
 
-        # Items with 0 protein ratio should be at the end (order not guaranteed among them)
         zero_protein_items = [item[0] for item in protein_ratios if item[1] == 0]
         assert "Zero Cal Water" in zero_protein_items
         assert "Pure Fat" in zero_protein_items
         assert "Pure Carbs" in zero_protein_items
 
-        # Test fat ratios
         fat_ratios = menu.calculate_sorted_fat_calorie_ratios()
-        assert fat_ratios[0][0] == "Pure Fat"  # Should have highest fat ratio
+        assert fat_ratios[0][0] == "Pure Fat"
 
-        # Test carb ratios
         carb_ratios = menu.calculate_sorted_carb_calorie_ratios()
-        assert carb_ratios[0][0] == "Pure Carbs"  # Should have highest carb ratio
+        assert carb_ratios[0][0] == "Pure Carbs"
 
     def test_menu_modification_effects(self):
         """Test how menu modifications affect analysis results."""
@@ -163,29 +142,22 @@ class TestMenuIntegration:
         )
         menu = Menu("Dynamic Menu", {initial_item})
 
-        # Initial state
         initial_protein_ratios = menu.calculate_sorted_protein_calorie_ratios()
         assert len(initial_protein_ratios) == 1
         assert initial_protein_ratios[0][0] == "Initial Item"
 
-        # Add a high-protein item
         high_protein_item = MenuItem(
             "Protein Bomb", 20.0, "High protein", 200, 40.0, 5.0, 3.0
         )
         menu.items.add(high_protein_item)
 
-        # Check updated analysis
         updated_protein_ratios = menu.calculate_sorted_protein_calorie_ratios()
         assert len(updated_protein_ratios) == 2
-        assert (
-            updated_protein_ratios[0][0] == "Protein Bomb"
-        )  # Should be first due to higher ratio
+        assert updated_protein_ratios[0][0] == "Protein Bomb"
         assert updated_protein_ratios[1][0] == "Initial Item"
 
-        # Remove the initial item
         menu.items.remove(initial_item)
 
-        # Final check
         final_protein_ratios = menu.calculate_sorted_protein_calorie_ratios()
         assert len(final_protein_ratios) == 1
         assert final_protein_ratios[0][0] == "Protein Bomb"
@@ -201,9 +173,7 @@ class TestMenuIntegration:
     )
     def test_different_restaurant_types(self, restaurant_name, expected_behavior):
         """Test menu behavior with different types of restaurants."""
-        # This is more of a documentation test showing the flexibility
-        # expected_behavior is used for documentation purposes in the parametrize decorator
-        _ = expected_behavior  # Acknowledge the parameter
+        _ = expected_behavior
 
         typical_item = MenuItem(
             "Typical Item", 12.99, "Standard item", 350, 20.0, 25.0, 15.0
@@ -213,7 +183,6 @@ class TestMenuIntegration:
         assert menu.restaurant_name == restaurant_name
         assert len(menu.items) == 1
 
-        # All calculation methods should work regardless of restaurant name
         protein_ratios = menu.calculate_sorted_protein_calorie_ratios()
         fat_ratios = menu.calculate_sorted_fat_calorie_ratios()
         carb_ratios = menu.calculate_sorted_carb_calorie_ratios()
