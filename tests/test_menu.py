@@ -1,4 +1,5 @@
 import pytest
+
 from models.menu import Menu
 from models.menu_item import MenuItem
 

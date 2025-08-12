@@ -1,7 +1,8 @@
 """Unit tests for the find_restaurant_link function."""
 
 from unittest.mock import patch
-from scraping.find_restaurant_link import find_restaurant_link, clean_restaurant_name
+
+from scraping.find_restaurant_link import clean_restaurant_name, find_restaurant_link
 
 
 class TestFindRestaurantLink:
@@ -11,7 +12,7 @@ class TestFindRestaurantLink:
 
     @patch("scraping.find_restaurant_link.search")
     def test_successful_search(self, mock_search):
-        """Test that function returns the first search result when search is successful."""
+        """Test that function returns the first search result when successful."""
         mock_search.return_value = iter(["https://example.com/mcdonalds-nutrition.pdf"])
         restaurant_name = "McDonald's"
 
@@ -24,7 +25,7 @@ class TestFindRestaurantLink:
 
     @patch("scraping.find_restaurant_link.search")
     def test_multiple_results_returns_first(self, mock_search):
-        """Test that function returns only the first result when multiple results are found."""
+        """Test that function returns only the first result when multiple found."""
         mock_search.return_value = iter(
             [
                 "https://example.com/mcdonalds-nutrition.pdf",

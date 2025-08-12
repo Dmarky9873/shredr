@@ -3,13 +3,15 @@ Module for finding restaurant nutrition information links.
 """
 
 import string
+from typing import Optional
+
 from googlesearch import search
 
 
 def clean_restaurant_name(restaurant_name: str) -> str:
     """
-    Takes the restaurant name, turns it all to lowercase, removes extra whitespace, and removes all
-    punctuation.
+    Takes the restaurant name, turns it all to lowercase, removes extra
+    whitespace, and removes all punctuation.
     """
 
     restaurant_name = restaurant_name.strip().lower()
@@ -19,7 +21,7 @@ def clean_restaurant_name(restaurant_name: str) -> str:
     return restaurant_name
 
 
-def find_restaurant_link(restaurant_name: str) -> str | None:
+def find_restaurant_link(restaurant_name: str) -> Optional[str]:
     """Finds the link to the nutrition information PDF for a given restaurant.
 
     Args:
@@ -35,13 +37,15 @@ def find_restaurant_link(restaurant_name: str) -> str | None:
         search_results = search(search_query, num_results=5)
         for result in search_results:
             if result:
-                if result.startswith("/"):
-                    result = f"https://www.google.com{result}"
+                # Ensure result is a string
+                result_str = str(result)
+                if result_str.startswith("/"):
+                    result_str = f"https://www.google.com{result_str}"
                 if (
-                    result.startswith(("http://", "https://"))
-                    and "pdf" in result.lower()
+                    result_str.startswith(("http://", "https://"))
+                    and "pdf" in result_str.lower()
                 ):
-                    return result
+                    return result_str
 
         print(f"No valid PDF URL found for {restaurant_name}")
         return None

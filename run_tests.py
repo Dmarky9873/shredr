@@ -3,8 +3,8 @@ Test runner script for the shredr project.
 This script provides different ways to run the tests.
 """
 
-import subprocess
 import argparse
+import subprocess
 from pathlib import Path
 
 
@@ -59,7 +59,10 @@ def main():
         run_command(cmd, f"Running specific test: {args.specific}")
 
     else:
-        cmd = f"{base_cmd} tests/ --cov=models --cov=analysis --cov=scraping --cov-report=term-missing"
+        cmd = (
+            f"{base_cmd} tests/ --cov=models --cov=analysis --cov=scraping "
+            "--cov-report=term-missing"
+        )
         if args.verbose:
             cmd += " -v"
         if args.html:

@@ -3,6 +3,7 @@ Integration tests that test the interaction between Menu and MenuItem classes.
 """
 
 import pytest
+
 from models.menu import Menu
 from models.menu_item import MenuItem
 
