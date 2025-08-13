@@ -78,9 +78,13 @@ def pdf_to_json(url: str, out_json: str):
                             sat_keyword in cell_value
                             for sat_keyword in ["saturated", "sat"]
                         )
+                        has_cals = any(
+                            cal_keyword in cell_value
+                            for cal_keyword in ["calories", "kcal", "cal"]
+                        )
                         has_trans = "trans" in cell_value
 
-                        if not has_saturated and not has_trans:
+                        if not has_saturated and not has_trans and not has_cals:
                             fat_col_idx = col_idx
 
         for row_idx in range(len(df)):
