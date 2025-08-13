@@ -199,8 +199,7 @@ addopts = [
     "--strict-markers",
     "--strict-config",
     "--cov=models",
-    # TODO: Increase test coverage
-    "--cov-fail-under=30"
+    "--cov-fail-under=80"
 ]
 ```
 
