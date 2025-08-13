@@ -31,8 +31,8 @@ def find_restaurant_link(restaurant_name: str) -> Optional[str]:
         `None`: If no link is found.\n
         `str`: The link to the nutrition information PDF if found.
     """
-    restaurant_name = clean_restaurant_name(restaurant_name)
-    search_query = f"{restaurant_name} Nutrition filetype:pdf"
+    cleaned_name = clean_restaurant_name(restaurant_name)
+    search_query = f"{cleaned_name} Nutrition filetype:pdf"
     try:
         search_results = search(search_query, num_results=5)
         for result in search_results:
@@ -46,11 +46,11 @@ def find_restaurant_link(restaurant_name: str) -> Optional[str]:
                 ):
                     return result_str
 
-        print(f"No valid PDF URL found for {restaurant_name}")
+        print(f"No valid PDF URL found for {cleaned_name}")
         return None
 
     except Exception as e:  # pylint: disable=broad-exception-caught
-        print(f"Error searching for {restaurant_name}: {e}")
+        print(f"Error searching for {cleaned_name}: {e}")
         return None
 
 
