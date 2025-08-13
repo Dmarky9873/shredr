@@ -155,6 +155,9 @@ def _is_valid_dish_name(dish_name: str) -> bool:
         "lipid",
         "fats",
         "nutrition",
+        "serving",
+        "size",
+        "portion",
     ]
 
     return not any(keyword in dish_name_lower for keyword in nutrition_keywords)
