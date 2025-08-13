@@ -14,3 +14,4 @@ pandas
 requests
 pdfplumber
 PyPDF2
+tqdm
