@@ -176,20 +176,20 @@ def test_pdf_to_json_end_to_end(tmp_path, monkeypatch):
 
     out_json = tmp_path / "out.json"
 
-    mod.pdf_to_json("https://example.com/menu.pdf", str(out_json))
+    mod.pdf_to_json("https://example.com/menu.pdf", str(out_json), "Test Restaurant")
 
     result = json.loads(out_json.read_text(encoding="utf-8"))
 
-    result_sorted = sorted(result, key=lambda x: x["dish"])
+    # The JSON now has a structure with restaurant_name, date, and menu_items
+    assert "restaurant_name" in result
+    assert "date" in result
+    assert "menu_items" in result
+    assert result["restaurant_name"] == "Test Restaurant"
+
+    menu_items = result["menu_items"]
+    result_sorted = sorted(menu_items, key=lambda x: x["dish"])
     expected_sorted = sorted(
         [
-            {
-                "dish": "Chicken Salad",
-                "calories": "calories 400",
-                "protein": "protein 35",
-                "carbs": "carbohydrate 8",
-                "fat": "fat 12",
-            },
             {
                 "dish": "Beef Carpaccio",
                 "calories": 320,

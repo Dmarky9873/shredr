@@ -4,12 +4,12 @@ class MenuItem:
     def __init__(
         self,
         name: str,
-        price: float,
-        description: str,
         calories: int,
         protein: float,
         carbs: float,
         fat: float,
+        price: float = None,
+        description: str = "",
     ):
         self.name = name
         self.price = price

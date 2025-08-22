@@ -14,16 +14,16 @@ class TestMenuIntegration:
     def test_complete_menu_workflow(self):
         """Test a complete workflow of creating a menu and analyzing it."""
         burger = MenuItem(
-            "Burger", 14.99, "Beef burger with fries", 750, 30.0, 45.0, 40.0
+            "Burger", 750, 30.0, 45.0, 40.0, 14.99, "Beef burger with fries"
         )
         salad = MenuItem(
-            "Greek Salad", 11.99, "Fresh Greek salad", 350, 12.0, 25.0, 20.0
+            "Greek Salad", 350, 12.0, 25.0, 20.0, 11.99, "Fresh Greek salad"
         )
         protein_shake = MenuItem(
-            "Protein Shake", 7.99, "Whey protein shake", 180, 35.0, 8.0, 3.0
+            "Protein Shake", 180, 35.0, 8.0, 3.0, 7.99, "Whey protein shake"
         )
         pizza = MenuItem(
-            "Margherita Pizza", 13.99, "Classic pizza", 600, 25.0, 70.0, 22.0
+            "Margherita Pizza", 600, 25.0, 70.0, 22.0, 13.99, "Classic pizza"
         )
 
         menu = Menu("Healthy Eats", {burger, salad, protein_shake, pizza})
@@ -41,7 +41,7 @@ class TestMenuIntegration:
 
     def test_menu_item_ratio_consistency(self):
         """Test that individual MenuItem ratios match Menu calculation results."""
-        item = MenuItem("Test Item", 10.0, "Test", 200, 20.0, 30.0, 10.0)
+        item = MenuItem("Test Item", 200, 20.0, 30.0, 10.0, 10.0, "Test")
         menu = Menu("Test Menu", {item})
 
         protein_ratios = menu.calculate_sorted_protein_calorie_ratios()
@@ -56,41 +56,41 @@ class TestMenuIntegration:
         """Test with realistic restaurant menu items."""
         menu_items = {
             MenuItem(
-                "Pancakes", 8.99, "Fluffy pancakes with syrup", 520, 8.0, 85.0, 12.0
+                "Pancakes", 520, 8.0, 85.0, 12.0, 8.99, "Fluffy pancakes with syrup"
             ),
-            MenuItem("Omelette", 12.99, "Three-egg omelette", 380, 28.0, 4.0, 26.0),
+            MenuItem("Omelette", 380, 28.0, 4.0, 26.0, 12.99, "Three-egg omelette"),
             MenuItem(
-                "Club Sandwich", 11.99, "Triple-decker sandwich", 680, 32.0, 48.0, 38.0
+                "Club Sandwich", 680, 32.0, 48.0, 38.0, 11.99, "Triple-decker sandwich"
             ),
             MenuItem(
                 "Soup & Salad",
-                9.99,
-                "Tomato soup with side salad",
                 290,
                 12.0,
                 35.0,
                 8.0,
+                9.99,
+                "Tomato soup with side salad",
             ),
             MenuItem(
                 "Ribeye Steak",
-                28.99,
-                "12oz ribeye with vegetables",
                 580,
                 52.0,
                 8.0,
                 38.0,
+                28.99,
+                "12oz ribeye with vegetables",
             ),
             MenuItem(
                 "Grilled Chicken",
-                18.99,
-                "Herb-crusted chicken breast",
                 420,
                 48.0,
                 6.0,
                 18.0,
+                18.99,
+                "Herb-crusted chicken breast",
             ),
             MenuItem(
-                "Cheesecake", 6.99, "New York style cheesecake", 410, 8.0, 32.0, 28.0
+                "Cheesecake", 410, 8.0, 32.0, 28.0, 6.99, "New York style cheesecake"
             ),
         }
 
@@ -111,12 +111,12 @@ class TestMenuIntegration:
     def test_menu_with_edge_case_items(self):
         """Test menu behavior with edge case menu items."""
         edge_case_items = {
-            MenuItem("Zero Cal Water", 2.99, "Flavored water", 0, 0.0, 0.0, 0.0),
-            MenuItem("Pure Protein", 15.99, "Protein powder", 120, 30.0, 0.0, 0.0),
-            MenuItem("Pure Fat", 12.99, "Avocado oil", 250, 0.0, 0.0, 28.0),
-            MenuItem("Pure Carbs", 8.99, "Sugar cube collection", 200, 0.0, 50.0, 0.0),
+            MenuItem("Zero Cal Water", 0, 0.0, 0.0, 0.0, 2.99, "Flavored water"),
+            MenuItem("Pure Protein", 120, 30.0, 0.0, 0.0, 15.99, "Protein powder"),
+            MenuItem("Pure Fat", 250, 0.0, 0.0, 28.0, 12.99, "Avocado oil"),
+            MenuItem("Pure Carbs", 200, 0.0, 50.0, 0.0, 8.99, "Sugar cube collection"),
             MenuItem(
-                "Balanced Item", 14.99, "Perfectly balanced", 300, 25.0, 25.0, 17.0
+                "Balanced Item", 300, 25.0, 25.0, 17.0, 14.99, "Perfectly balanced"
             ),
         }
 
@@ -139,7 +139,7 @@ class TestMenuIntegration:
     def test_menu_modification_effects(self):
         """Test how menu modifications affect analysis results."""
         initial_item = MenuItem(
-            "Initial Item", 10.0, "First item", 300, 15.0, 30.0, 12.0
+            "Initial Item", 300, 15.0, 30.0, 12.0, 10.0, "First item"
         )
         menu = Menu("Dynamic Menu", {initial_item})
 
@@ -148,7 +148,7 @@ class TestMenuIntegration:
         assert initial_protein_ratios[0][0] == "Initial Item"
 
         high_protein_item = MenuItem(
-            "Protein Bomb", 20.0, "High protein", 200, 40.0, 5.0, 3.0
+            "Protein Bomb", 200, 40.0, 5.0, 3.0, 20.0, "High protein"
         )
         menu.items.add(high_protein_item)
 
@@ -177,7 +177,7 @@ class TestMenuIntegration:
         _ = expected_behavior
 
         typical_item = MenuItem(
-            "Typical Item", 12.99, "Standard item", 350, 20.0, 25.0, 15.0
+            "Typical Item", 350, 20.0, 25.0, 15.0, 12.99, "Standard item"
         )
         menu = Menu(restaurant_name, {typical_item})
 

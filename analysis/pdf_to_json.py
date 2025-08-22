@@ -4,13 +4,16 @@ Extract tables from PDF file.
 
 import json
 import os
+import time
 from pathlib import Path
-from typing import Dict, List, Optional, Set, Tuple
+from typing import Any, Dict, List, Optional, Set, Tuple
 
 import camelot
 import pdfplumber
 import requests
 from tqdm import tqdm
+
+from utils.string_parsing import is_number
 
 
 def _download_pdf(url: str, tmp_path: Path) -> None:
@@ -198,7 +201,8 @@ def _has_complete_nutrition_data(
     ]
 
     return all(
-        value is not None and str(value).strip() != "" for value in nutrition_values
+        value is not None and str(value).strip() != "" and is_number(value)
+        for value in nutrition_values
     )
 
 
@@ -298,18 +302,19 @@ def _process_table_data(tables: Set) -> List[Dict]:
     return json_data
 
 
-def _save_json_data(json_data: List[Dict], out_json_path: Path) -> None:
+def _save_json_data(json_data: Dict[str, Any], out_json_path: Path) -> None:
     """Save extracted data to JSON file.
 
     Args:
-        json_data (List[Dict]): List of dictionaries containing dish and nutrition data.
+        json_data (Dict[str, Any]): Dictionary containing restaurant data
+            including menu items.
         out_json_path (Path): Path to output JSON file.
     """
     with open(out_json_path, "w", encoding="utf-8") as f:
         json.dump(json_data, f)
 
 
-def pdf_to_json(url: str, out_json: str):
+def pdf_to_json(url: str, out_json: str, restaurant_name: str):
     """Convert a PDF file to a JSON file.
 
     Args:
@@ -324,7 +329,11 @@ def pdf_to_json(url: str, out_json: str):
 
         cleaned_pdf_pages = _extract_tables_from_pdf(tmp_path)
 
-        json_data = _process_table_data(cleaned_pdf_pages)
+        json_data = {
+            "restaurant_name": restaurant_name,
+            "date": time.strftime("%Y-%m-%d %H:%M:%S"),
+            "menu_items": _process_table_data(cleaned_pdf_pages),
+        }
 
         _save_json_data(json_data, out_json_path)
 

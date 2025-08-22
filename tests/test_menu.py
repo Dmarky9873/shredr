@@ -17,8 +17,8 @@ class TestMenu:
 
     def test_menu_initialization_with_items(self):
         """Test that Menu initializes correctly with provided items."""
-        item1 = MenuItem("Burger", 10.0, "Beef burger", 500, 25.0, 30.0, 20.0)
-        item2 = MenuItem("Salad", 8.0, "Green salad", 150, 5.0, 15.0, 8.0)
+        item1 = MenuItem("Burger", 500, 25.0, 30.0, 20.0, 10.0, "Beef burger")
+        item2 = MenuItem("Salad", 150, 5.0, 15.0, 8.0, 8.0, "Green salad")
         items = {item1, item2}
 
         menu = Menu("Test Restaurant", items)
@@ -39,13 +39,13 @@ class TestMenu:
         """Test protein calorie ratios calculation and sorting."""
         # Create items with different protein-to-calorie ratios
         high_protein = MenuItem(
-            "Protein Shake", 12.0, "High protein", 200, 40.0, 5.0, 2.0
+            "Protein Shake", 200, 40.0, 5.0, 2.0, 12.0, "High protein"
         )  # ratio: 0.2
         medium_protein = MenuItem(
-            "Chicken", 15.0, "Grilled chicken", 300, 35.0, 0.0, 12.0
+            "Chicken", 300, 35.0, 0.0, 12.0, 15.0, "Grilled chicken"
         )  # ratio: ~0.117
         low_protein = MenuItem(
-            "Pasta", 14.0, "Pasta dish", 400, 15.0, 60.0, 8.0
+            "Pasta", 400, 15.0, 60.0, 8.0, 14.0, "Pasta dish"
         )  # ratio: 0.0375
 
         menu = Menu("Test Restaurant", {high_protein, medium_protein, low_protein})
@@ -73,13 +73,13 @@ class TestMenu:
         """Test fat calorie ratios calculation and sorting."""
         # Create items with different fat-to-calorie ratios
         high_fat = MenuItem(
-            "Avocado Toast", 12.0, "Creamy avocado", 300, 8.0, 20.0, 25.0
+            "Avocado Toast", 300, 8.0, 20.0, 25.0, 12.0, "Creamy avocado"
         )  # ratio: ~0.083
         medium_fat = MenuItem(
-            "Salmon", 18.0, "Grilled salmon", 250, 30.0, 0.0, 15.0
+            "Salmon", 250, 30.0, 0.0, 15.0, 18.0, "Grilled salmon"
         )  # ratio: 0.06
         low_fat = MenuItem(
-            "Rice", 6.0, "Steamed rice", 200, 4.0, 45.0, 2.0
+            "Rice", 200, 4.0, 45.0, 2.0, 6.0, "Steamed rice"
         )  # ratio: 0.01
 
         menu = Menu("Test Restaurant", {high_fat, medium_fat, low_fat})
@@ -107,13 +107,13 @@ class TestMenu:
         """Test carb calorie ratios calculation and sorting."""
         # Create items with different carb-to-calorie ratios
         high_carb = MenuItem(
-            "Pasta", 14.0, "Pasta dish", 400, 15.0, 80.0, 8.0
+            "Pasta", 400, 15.0, 80.0, 8.0, 14.0, "Pasta dish"
         )  # ratio: 0.2
         medium_carb = MenuItem(
-            "Sandwich", 10.0, "Deli sandwich", 350, 20.0, 40.0, 12.0
+            "Sandwich", 350, 20.0, 40.0, 12.0, 10.0, "Deli sandwich"
         )  # ratio: ~0.114
         low_carb = MenuItem(
-            "Steak", 25.0, "Grilled steak", 300, 40.0, 5.0, 15.0
+            "Steak", 300, 40.0, 5.0, 15.0, 25.0, "Grilled steak"
         )  # ratio: ~0.017
 
         menu = Menu("Test Restaurant", {high_carb, medium_carb, low_carb})
@@ -130,8 +130,8 @@ class TestMenu:
 
     def test_menu_with_zero_calorie_items(self):
         """Test menu calculations with items that have zero calories."""
-        zero_cal = MenuItem("Water", 0.0, "Plain water", 0, 0.0, 0.0, 0.0)
-        normal_item = MenuItem("Apple", 1.0, "Fresh apple", 80, 0.5, 20.0, 0.3)
+        zero_cal = MenuItem("Water", 0, 0.0, 0.0, 0.0, 0.0, "Plain water")
+        normal_item = MenuItem("Apple", 80, 0.5, 20.0, 0.3, 1.0, "Fresh apple")
 
         menu = Menu("Test Restaurant", {zero_cal, normal_item})
 
@@ -156,8 +156,8 @@ class TestMenu:
 
     def test_menu_with_duplicate_items(self):
         """Test that menu handles set behavior correctly (no duplicates)."""
-        item1 = MenuItem("Burger", 10.0, "Beef burger", 500, 25.0, 30.0, 20.0)
-        item2 = MenuItem("Burger", 10.0, "Beef burger", 500, 25.0, 30.0, 20.0)
+        item1 = MenuItem("Burger", 500, 25.0, 30.0, 20.0, 10.0, "Beef burger")
+        item2 = MenuItem("Burger", 500, 25.0, 30.0, 20.0, 10.0, "Beef burger")
 
         menu = Menu("Test Restaurant", {item1, item2})
 
@@ -167,8 +167,8 @@ class TestMenu:
         """Test that we can modify the menu items after creation."""
         menu = Menu("Test Restaurant")
 
-        item1 = MenuItem("Pizza", 12.0, "Cheese pizza", 350, 15.0, 40.0, 12.0)
-        item2 = MenuItem("Salad", 8.0, "Caesar salad", 200, 8.0, 10.0, 15.0)
+        item1 = MenuItem("Pizza", 350, 15.0, 40.0, 12.0, 12.0, "Cheese pizza")
+        item2 = MenuItem("Salad", 200, 8.0, 10.0, 15.0, 8.0, "Caesar salad")
 
         menu.items.add(item1)
         menu.items.add(item2)
@@ -182,9 +182,9 @@ class TestMenu:
     def sample_menu(self):
         """Fixture providing a sample menu for testing."""
         items = {
-            MenuItem("High Protein", 15.0, "Protein rich", 200, 40.0, 5.0, 5.0),
-            MenuItem("High Fat", 20.0, "Fat rich", 300, 10.0, 10.0, 25.0),
-            MenuItem("High Carb", 12.0, "Carb rich", 400, 8.0, 80.0, 5.0),
+            MenuItem("High Protein", 200, 40.0, 5.0, 5.0, 15.0, "Protein rich"),
+            MenuItem("High Fat", 300, 10.0, 10.0, 25.0, 20.0, "Fat rich"),
+            MenuItem("High Carb", 400, 8.0, 80.0, 5.0, 12.0, "Carb rich"),
         }
         return Menu("Sample Restaurant", items)
 
