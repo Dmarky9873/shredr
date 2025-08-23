@@ -6,7 +6,7 @@ from typing import Optional
 
 from googlesearch import search
 
-from utils.string_parsing import clean_restaurant_name
+from app.utils.string_parsing import clean_restaurant_name
 
 
 def find_restaurant_link(restaurant_name: str) -> Optional[str]:

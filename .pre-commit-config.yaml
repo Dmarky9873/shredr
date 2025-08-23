@@ -44,7 +44,7 @@ repos:
     hooks:
       - id: run-tests
         name: Run project tests
-        entry: python run_tests.py --quick
+        entry: bash -c "cd backend && python scripts/run_tests.py --quick"
         language: system
         pass_filenames: false
         stages: [pre-commit]

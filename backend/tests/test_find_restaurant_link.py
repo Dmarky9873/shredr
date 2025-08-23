@@ -2,7 +2,10 @@
 
 from unittest.mock import patch
 
-from scraping.find_restaurant_link import clean_restaurant_name, find_restaurant_link
+from app.scraping.find_restaurant_link import (
+    clean_restaurant_name,
+    find_restaurant_link,
+)
 
 
 class TestFindRestaurantLink:
@@ -10,7 +13,7 @@ class TestFindRestaurantLink:
     Tests for the find_restaurant_link function.
     """
 
-    @patch("scraping.find_restaurant_link.search")
+    @patch("app.scraping.find_restaurant_link.search")
     def test_successful_search(self, mock_search):
         """Test that function returns the first search result when successful."""
         mock_search.return_value = iter(["https://example.com/mcdonalds-nutrition.pdf"])
@@ -23,7 +26,7 @@ class TestFindRestaurantLink:
             "mcdonalds Nutrition filetype:pdf", num_results=5
         )
 
-    @patch("scraping.find_restaurant_link.search")
+    @patch("app.scraping.find_restaurant_link.search")
     def test_multiple_results_returns_first(self, mock_search):
         """Test that function returns only the first result when multiple found."""
         mock_search.return_value = iter(
@@ -38,7 +41,7 @@ class TestFindRestaurantLink:
 
         assert result == "https://example.com/mcdonalds-nutrition.pdf"
 
-    @patch("scraping.find_restaurant_link.search")
+    @patch("app.scraping.find_restaurant_link.search")
     def test_no_search_results(self, mock_search):
         """Test that function returns None when no search results are found."""
         mock_search.return_value = iter([])
@@ -48,7 +51,7 @@ class TestFindRestaurantLink:
 
         assert result is None
 
-    @patch("scraping.find_restaurant_link.search")
+    @patch("app.scraping.find_restaurant_link.search")
     def test_search_exception_handling(self, mock_search):
         """Test that function handles search exceptions gracefully."""
         mock_search.side_effect = Exception("Google search API error")
@@ -58,7 +61,7 @@ class TestFindRestaurantLink:
 
         assert result is None
 
-    @patch("scraping.find_restaurant_link.search")
+    @patch("app.scraping.find_restaurant_link.search")
     @patch("builtins.print")
     def test_exception_error_message_printed(self, mock_print, mock_search):
         """Test that error message is printed when an exception occurs."""
@@ -73,7 +76,7 @@ class TestFindRestaurantLink:
             f"Error searching for {cleaned_name}: {error_message}"
         )
 
-    @patch("scraping.find_restaurant_link.search")
+    @patch("app.scraping.find_restaurant_link.search")
     def test_search_query_formatting(self, mock_search):
         """Test that the search query is properly formatted with the restaurant name."""
 
@@ -87,7 +90,7 @@ class TestFindRestaurantLink:
 
         mock_search.assert_called_once_with(expected_query, num_results=5)
 
-    @patch("scraping.find_restaurant_link.search")
+    @patch("app.scraping.find_restaurant_link.search")
     def test_empty_restaurant_name(self, mock_search):
         """Test function behavior with empty restaurant name."""
         mock_search.return_value = iter(["https://example.com/result.pdf"])
@@ -99,7 +102,7 @@ class TestFindRestaurantLink:
         assert result == "https://example.com/result.pdf"
         mock_search.assert_called_once_with(expected_query, num_results=5)
 
-    @patch("scraping.find_restaurant_link.search")
+    @patch("app.scraping.find_restaurant_link.search")
     def test_restaurant_name_with_special_characters(self, mock_search):
         """Test function with restaurant names containing special characters."""
 
@@ -114,7 +117,7 @@ class TestFindRestaurantLink:
         assert result == "https://example.com/result.pdf"
         mock_search.assert_called_once_with(expected_query, num_results=5)
 
-    @patch("scraping.find_restaurant_link.search")
+    @patch("app.scraping.find_restaurant_link.search")
     def test_restaurant_name_with_spaces(self, mock_search):
         """Test function with restaurant names containing spaces."""
 
@@ -129,7 +132,7 @@ class TestFindRestaurantLink:
         assert result == "https://example.com/result.pdf"
         mock_search.assert_called_once_with(expected_query, num_results=5)
 
-    @patch("scraping.find_restaurant_link.search")
+    @patch("app.scraping.find_restaurant_link.search")
     def test_return_type_is_string_or_none(self, mock_search):
         """Test that function returns either a string URL or None."""
         mock_search.return_value = iter(["https://example.com/result.pdf"])
@@ -140,7 +143,7 @@ class TestFindRestaurantLink:
         result = find_restaurant_link("Test Restaurant")
         assert result is None
 
-    @patch("scraping.find_restaurant_link.search")
+    @patch("app.scraping.find_restaurant_link.search")
     def test_function_calls_search_exactly_once(self, mock_search):
         """Test that the search function is called exactly once per function call."""
         mock_search.return_value = iter(["https://example.com/result.pdf"])
@@ -149,7 +152,7 @@ class TestFindRestaurantLink:
 
         assert mock_search.call_count == 1
 
-    @patch("scraping.find_restaurant_link.search")
+    @patch("app.scraping.find_restaurant_link.search")
     def test_relative_url_handling(self, mock_search):
         """Test that function handles relative URLs by converting them to full URLs."""
         mock_search.return_value = iter(
@@ -161,7 +164,7 @@ class TestFindRestaurantLink:
 
         assert result == "https://example.com/result.pdf"
 
-    @patch("scraping.find_restaurant_link.search")
+    @patch("app.scraping.find_restaurant_link.search")
     def test_non_pdf_url_skipped(self, mock_search):
         """Test that function skips URLs that don't contain 'pdf'."""
         mock_search.return_value = iter(
@@ -173,7 +176,7 @@ class TestFindRestaurantLink:
 
         assert result == "https://example.com/nutrition.pdf"
 
-    @patch("scraping.find_restaurant_link.search")
+    @patch("app.scraping.find_restaurant_link.search")
     @patch("builtins.print")
     def test_no_valid_pdf_urls_found(self, mock_print, mock_search):
         """Test that function returns None when no valid PDF URLs are found."""

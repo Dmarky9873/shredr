@@ -13,7 +13,9 @@ def run_command(command, description):
     print(f"\n{description}")
     print("-" * len(description))
     try:
-        subprocess.run(command, shell=True, check=True, cwd=Path(__file__).parent)
+        subprocess.run(
+            command, shell=True, check=True, cwd=Path(__file__).parent.parent
+        )
         return True
     except subprocess.CalledProcessError as e:
         print(f"Error running command: {e}")
@@ -54,12 +56,12 @@ def main():
         if args.verbose:
             cmd += " -v"
         if args.coverage:
-            cmd += " --cov=models --cov=analysis --cov=scraping"
+            cmd += " --cov=app.models --cov=app.analysis --cov=app.scraping"
         run_command(cmd, f"Running specific test: {args.specific}")
 
     else:
         cmd = (
-            f"{base_cmd} tests/ --cov=models --cov=analysis --cov=scraping "
+            f"{base_cmd} tests/ --cov=app.models --cov=app.analysis --cov=app.scraping "
             "--cov-report=term-missing"
         )
         if args.verbose:

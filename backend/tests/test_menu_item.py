@@ -1,6 +1,6 @@
 import pytest
 
-from models.menu_item import MenuItem
+from app.models.menu_item import MenuItem
 
 
 class TestMenuItem:

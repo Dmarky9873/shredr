@@ -8,7 +8,7 @@ import os
 import pandas as pd
 import pytest
 
-import analysis.pdf_to_json as mod
+import app.analysis.pdf_to_json as mod
 
 
 def test_find_column_indices_from_headers():

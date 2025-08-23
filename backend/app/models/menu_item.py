@@ -1,3 +1,6 @@
+from typing import Optional
+
+
 class MenuItem:
     """Represents a menu item in a restaurant."""
 
@@ -8,7 +11,7 @@ class MenuItem:
         protein: float,
         carbs: float,
         fat: float,
-        price: float = None,
+        price: Optional[float] = None,
         description: str = "",
     ):
         self.name = name
