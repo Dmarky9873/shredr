@@ -1,11 +1,8 @@
 import os
 
-from app.analysis.json_to_menu import json_to_menu
-from app.analysis.pdf_to_json import pdf_to_json
-from app.scraping.find_restaurant_link import (
-    clean_restaurant_name,
-    find_restaurant_link,
-)
+from .analysis.json_to_menu import json_to_menu
+from .analysis.pdf_to_json import pdf_to_json
+from .scraping.find_restaurant_link import clean_restaurant_name, find_restaurant_link
 
 
 def create_restaurant_pdf(restaurant_name):

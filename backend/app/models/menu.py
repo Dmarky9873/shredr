@@ -1,6 +1,6 @@
 from typing import Optional, Set
 
-from app.models.menu_item import MenuItem
+from .menu_item import MenuItem
 
 
 class Menu:

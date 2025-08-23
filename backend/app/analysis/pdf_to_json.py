@@ -15,7 +15,7 @@ import pdfplumber
 import requests
 from tqdm import tqdm
 
-from app.utils.string_parsing import is_number
+from ..utils.string_parsing import is_number
 
 warnings.filterwarnings(
     "ignore",

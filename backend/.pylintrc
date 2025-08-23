@@ -1,0 +1,139 @@
+[MASTER]
+# Add the backend directory to the Python path so pylint can find modules
+init-hook='import sys; sys.path.append(".")'
+
+# Files or directories to be skipped
+ignore=CVS,__pycache__,.git,.pytest_cache,.mypy_cache
+
+# Use multiple processes to speed up Pylint
+jobs=1
+
+# Pickle collected data for later comparisons
+persistent=yes
+
+# List of plugins (as comma separated values of python modules names) to load
+load-plugins=
+
+# Use a conservative approach for import detection
+unsafe-load-any-extension=no
+
+[MESSAGES CONTROL]
+# Disable specific pylint warnings that are handled by other tools
+disable=C0114,  # missing-module-docstring
+        C0115,  # missing-class-docstring
+        C0116,  # missing-function-docstring
+        R0903,  # too-few-public-methods
+        R0913,  # too-many-arguments
+        W0511,  # fixme
+        C0103,  # invalid-name
+
+[REPORTS]
+# Set the output format
+output-format=text
+
+# Include message's id in output
+include-ids=no
+
+# Template used to display messages
+msg-template={path}:{line}: [{msg_id}({symbol}), {obj}] {msg}
+
+# Set the cache size for astng objects
+cache-size=500
+
+[REFACTORING]
+# Maximum number of nested blocks for function / method body
+max-nested-blocks=5
+
+[BASIC]
+# Good variable names which should always be accepted
+good-names=i,j,k,ex,Run,_,df,f,e
+
+# Bad variable names which should always be refused
+bad-names=foo,bar,baz,toto,tutu,tata
+
+# Colon-delimited sets of names that determine each other's naming style
+name-group=
+
+# Include a hint for the correct naming format with invalid-name
+include-naming-hint=no
+
+[FORMAT]
+# Maximum number of characters on a single line
+max-line-length=88
+
+# Regexp for a line that is allowed to be longer than the limit
+ignore-long-lines=^\s*(# )?<?https?://\S+>?$
+
+# Allow the body of an if to be on the same line as the test if there is no else
+single-line-if-stmt=no
+
+[VARIABLES]
+# List of additional names supposed to be defined in builtins
+additional-builtins=
+
+# List of strings which can identify a callback function by name
+callbacks=cb_,_cb
+
+[CLASSES]
+# List of method names used to declare (i.e. assign) instance attributes
+defining-attr-methods=__init__,__new__,setUp
+
+[DESIGN]
+# Maximum number of arguments for function / method
+max-args=5
+
+# Maximum number of attributes for a class
+max-attributes=7
+
+# Maximum number of boolean expressions in an if statement
+max-bool-expr=5
+
+# Maximum number of branch for function / method body
+max-branches=12
+
+# Maximum number of locals for function / method body
+max-locals=15
+
+# Maximum number of parents for a class
+max-parents=7
+
+# Maximum number of public methods for a class
+max-public-methods=20
+
+# Maximum number of return / yield for function / method body
+max-returns=6
+
+# Maximum number of statements in function / method body
+max-statements=50
+
+# Minimum number of public methods for a class
+min-public-methods=2
+
+[IMPORTS]
+# Allow wildcard imports from modules that define __all__
+allow-wildcard-with-all=no
+
+# Analyse import fallback blocks
+analyse-fallback-blocks=no
+
+# Deprecated modules which should not be used
+deprecated-modules=regsub,TERMIOS,Bastion,rexec
+
+# Create a graph of external dependencies in the given file
+ext-import-graph=
+
+# Create a graph of external dependencies (ie. packages and modules that are not in the project)
+ext-import-graph-file=
+
+# Create a graph of internal dependencies in the given file
+int-import-graph=
+
+# Force import order to recognize a module as part of the standard compatibility libraries
+known-standard-library=
+
+# Force import order to recognize a module as part of a third party library
+known-third-party=enchant
+
+[EXCEPTIONS]
+# Exceptions that will emit a warning when being caught
+overgeneral-exceptions=Exception

@@ -2,8 +2,8 @@
 
 import json
 
-from app.models.menu import Menu
-from app.models.menu_item import MenuItem
+from ..models.menu import Menu
+from ..models.menu_item import MenuItem
 
 
 def json_to_menu(json_file_location: str) -> Menu:

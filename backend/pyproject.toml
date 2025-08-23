@@ -70,3 +70,25 @@ ignore_missing_imports = true
 module = "tests.*"
 disallow_untyped_defs = false
 check_untyped_defs = false
+
+[tool.pylint.MASTER]
+# Add the current directory to the Python path so pylint can find modules
+init-hook = 'import sys; sys.path.append(".")'
+ignore = "CVS,__pycache__,.git,.pytest_cache,.mypy_cache"
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = [
+    "C0114",  # missing-module-docstring
+    "C0115",  # missing-class-docstring
+    "C0116",  # missing-function-docstring
+    "R0903",  # too-few-public-methods
+    "R0913",  # too-many-arguments
+    "W0511",  # fixme
+    "C0103",  # invalid-name
+]
+
+[tool.pylint.FORMAT]
+max-line-length = 88
+
+[tool.pylint.BASIC]
+good-names = ["i", "j", "k", "ex", "Run", "_", "df", "f", "e"]
