@@ -2,8 +2,6 @@
 
 import { useEffect, useState } from "react";
 import TitleAndTagline from "./components/TitleAndTagline";
-import RestaurantInput from "./components/RestaurantInput";
-import HomePageInput from "./components/HomePageRestaurantInput";
 import HomePageRestaurantInput from "./components/HomePageRestaurantInput";
 
 export default function Home() {
