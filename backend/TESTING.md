@@ -46,19 +46,19 @@ The project includes a convenient test runner script:
 
 ```bash
 # Run all tests with coverage (default)
-python run_tests.py
+python scripts/run_tests.py
 
 # Run tests with verbose output
-python run_tests.py --verbose
+python scripts/run_tests.py --verbose
 
 # Generate HTML coverage report
-python run_tests.py --html
+python scripts/run_tests.py --html
 
 # Run quick tests without coverage
-python run_tests.py --quick
+python scripts/run_tests.py --quick
 
 # Run specific test
-python run_tests.py --specific tests/test_menu_item.py
+python scripts/run_tests.py --specific tests/test_menu_item.py
 ```
 
 ## Test Categories
