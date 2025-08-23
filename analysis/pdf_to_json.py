@@ -5,15 +5,28 @@ Extract tables from PDF file.
 import json
 import os
 import time
+import warnings
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple
 
 import camelot
+import pandas as pd
 import pdfplumber
 import requests
 from tqdm import tqdm
 
 from utils.string_parsing import is_number
+
+warnings.filterwarnings(
+    "ignore",
+    message="Downcasting behavior in `replace` is deprecated.*",
+    category=FutureWarning,
+)
+
+try:
+    pd.set_option("future.no_silent_downcasting", True)
+except pd.errors.OptionError:
+    pass
 
 
 def _download_pdf(url: str, tmp_path: Path) -> None:
