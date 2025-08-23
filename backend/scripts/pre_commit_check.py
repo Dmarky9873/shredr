@@ -35,7 +35,7 @@ def main():
         return 1
 
     print("🧪 Running tests...")
-    if not run_command("cd backend && python scripts/run_tests.py --quick"):
+    if not run_command("cd backend && python scripts/run_tests.py"):
         print("❌ Tests failed")
         return 1
 

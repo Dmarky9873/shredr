@@ -56,13 +56,17 @@ def main():
         if args.verbose:
             cmd += " -v"
         if args.coverage:
-            cmd += " --cov=app.models --cov=app.analysis --cov=app.scraping"
+            cmd += (
+                " --cov=app.models --cov=app.analysis "
+                "--cov=app.scraping --cov=app.utils"
+            )
         run_command(cmd, f"Running specific test: {args.specific}")
 
     else:
         cmd = (
-            f"{base_cmd} tests/ --cov=app.models --cov=app.analysis --cov=app.scraping "
-            "--cov-report=term-missing"
+            f"{base_cmd} tests/ --cov=app.models --cov=app.analysis "
+            "--cov=app.scraping --cov=app.utils "
+            "--cov-report=term-missing --cov-fail-under=70"
         )
         if args.verbose:
             cmd += " -v"
