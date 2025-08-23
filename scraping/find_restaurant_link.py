@@ -2,23 +2,11 @@
 Module for finding restaurant nutrition information links.
 """
 
-import string
 from typing import Optional
 
 from googlesearch import search
 
-
-def clean_restaurant_name(restaurant_name: str) -> str:
-    """
-    Takes the restaurant name, turns it all to lowercase, removes extra
-    whitespace, and removes all punctuation.
-    """
-
-    restaurant_name = restaurant_name.strip().lower()
-    restaurant_name = restaurant_name.translate(
-        str.maketrans("", "", string.punctuation)
-    )
-    return restaurant_name
+from utils.string_parsing import clean_restaurant_name
 
 
 def find_restaurant_link(restaurant_name: str) -> Optional[str]:

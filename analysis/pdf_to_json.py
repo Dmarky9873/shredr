@@ -4,13 +4,29 @@ Extract tables from PDF file.
 
 import json
 import os
+import time
+import warnings
 from pathlib import Path
-from typing import Dict, List, Optional, Set, Tuple
+from typing import Any, Dict, List, Optional, Set, Tuple
 
 import camelot
+import pandas as pd
 import pdfplumber
 import requests
 from tqdm import tqdm
+
+from utils.string_parsing import is_number
+
+warnings.filterwarnings(
+    "ignore",
+    message="Downcasting behavior in `replace` is deprecated.*",
+    category=FutureWarning,
+)
+
+try:
+    pd.set_option("future.no_silent_downcasting", True)
+except pd.errors.OptionError:
+    pass
 
 
 def _download_pdf(url: str, tmp_path: Path) -> None:
@@ -198,7 +214,8 @@ def _has_complete_nutrition_data(
     ]
 
     return all(
-        value is not None and str(value).strip() != "" for value in nutrition_values
+        value is not None and str(value).strip() != "" and is_number(value)
+        for value in nutrition_values
     )
 
 
@@ -246,6 +263,44 @@ def _extract_dish_data(
             else None
         ),
     }
+
+
+def clean_dish_data(dish_data: Dict[str, Any]) -> Dict[str, Any]:
+    """Clean dish data by removing repeated dishes.
+
+    Args:
+        dish_data (Dict[str, Any]): The dish data to clean.
+
+    Returns:
+        Dict[str, Any]: The cleaned dish data.
+    """
+    cleaned_data = dish_data.copy()
+
+    if "menu_items" not in cleaned_data:
+        return cleaned_data
+
+    menu_items = cleaned_data["menu_items"]
+
+    seen_dishes = set()
+    unique_menu_items = []
+
+    for item in menu_items:
+        if "dish" not in item:
+            continue
+
+        dish_name = str(item["dish"]).strip().replace("\n", " ")
+
+        normalized_dish_name = " ".join(dish_name.split()).lower()
+
+        if normalized_dish_name not in seen_dishes:
+            seen_dishes.add(normalized_dish_name)
+            item_copy = item.copy()
+            item_copy["dish"] = dish_name
+            unique_menu_items.append(item_copy)
+
+    cleaned_data["menu_items"] = unique_menu_items
+
+    return cleaned_data
 
 
 def _process_table_data(tables: Set) -> List[Dict]:
@@ -298,18 +353,19 @@ def _process_table_data(tables: Set) -> List[Dict]:
     return json_data
 
 
-def _save_json_data(json_data: List[Dict], out_json_path: Path) -> None:
+def _save_json_data(json_data: Dict[str, Any], out_json_path: Path) -> None:
     """Save extracted data to JSON file.
 
     Args:
-        json_data (List[Dict]): List of dictionaries containing dish and nutrition data.
+        json_data (Dict[str, Any]): Dictionary containing restaurant data
+            including menu items.
         out_json_path (Path): Path to output JSON file.
     """
     with open(out_json_path, "w", encoding="utf-8") as f:
         json.dump(json_data, f)
 
 
-def pdf_to_json(url: str, out_json: str):
+def pdf_to_json(url: str, out_json: str, restaurant_name: str):
     """Convert a PDF file to a JSON file.
 
     Args:
@@ -324,7 +380,14 @@ def pdf_to_json(url: str, out_json: str):
 
         cleaned_pdf_pages = _extract_tables_from_pdf(tmp_path)
 
-        json_data = _process_table_data(cleaned_pdf_pages)
+        json_data = {
+            "restaurant_name": restaurant_name,
+            "date": time.strftime("%Y-%m-%d %H:%M:%S"),
+            "menu_items": _process_table_data(cleaned_pdf_pages),
+        }
+
+        # Clean the dish data to remove duplicates
+        json_data = clean_dish_data(json_data)
 
         _save_json_data(json_data, out_json_path)
 
