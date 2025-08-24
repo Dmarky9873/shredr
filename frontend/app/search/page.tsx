@@ -19,9 +19,10 @@ function SearchContent() {
 
   const { searchRestaurantName, loading: restaurantNamesLoading } =
     useFindRestaurantName();
-  const { sortedItems, loading, hasData } = useFindSortedMenuItems({
-    restaurantName: internalRestaurantName,
-  });
+  const { sortedItems, loading, hasData, restaurantMetadata } =
+    useFindSortedMenuItems({
+      restaurantName: internalRestaurantName,
+    });
 
   const currentQuery = searchParams.get("query");
 
@@ -68,6 +69,37 @@ function SearchContent() {
         <h1 className="text-3xl font-bold text-foreground font-coustard mb-8 text-center">
           {query}
         </h1>
+
+        {/* PDF Source Link */}
+        {restaurantMetadata?.url && (
+          <div className="mb-6 text-center">
+            <a
+              href={restaurantMetadata.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-foreground/70 hover:text-foreground transition-colors duration-200 underline decoration-dotted underline-offset-4"
+            >
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+              View Original Nutrition PDF
+            </a>
+            <p className="text-xs text-foreground/50 mt-1">
+              Data extracted on{" "}
+              {new Date(restaurantMetadata.date).toLocaleDateString()}
+            </p>
+          </div>
+        )}
         <RestaurantInput title="Search another restaurant?" />
 
         {hasData ? (

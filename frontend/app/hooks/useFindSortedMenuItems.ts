@@ -6,6 +6,12 @@ interface UseFindMenuItemsProps {
   restaurantName: string;
 }
 
+interface RestaurantMetadata {
+  restaurant_name: string;
+  url: string;
+  date: string;
+}
+
 export default function useFindSortedMenuItems({
   restaurantName,
 }: UseFindMenuItemsProps) {
@@ -19,6 +25,8 @@ export default function useFindSortedMenuItems({
     string[]
   >([]);
   const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
+  const [restaurantMetadata, setRestaurantMetadata] =
+    useState<RestaurantMetadata | null>(null);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -29,6 +37,7 @@ export default function useFindSortedMenuItems({
         setFatCalorieRatioOrder([]);
         setCarbsCalorieRatioOrder([]);
         setMenuItems([]);
+        setRestaurantMetadata(null);
         setLoading(false);
         return;
       }
@@ -40,6 +49,7 @@ export default function useFindSortedMenuItems({
         setFatCalorieRatioOrder([]);
         setCarbsCalorieRatioOrder([]);
         setMenuItems([]);
+        setRestaurantMetadata(null);
 
         const [
           proteinCalorieJSON,
@@ -75,6 +85,11 @@ export default function useFindSortedMenuItems({
         setFatCalorieRatioOrder(fatCalorieData.menu);
         setCarbsCalorieRatioOrder(carbsCalorieData.menu);
         setMenuItems(menuItemsData.menu_items);
+        setRestaurantMetadata({
+          restaurant_name: menuItemsData.restaurant_name,
+          url: menuItemsData.url,
+          date: menuItemsData.date,
+        });
       } catch (error) {
         console.error("Error loading menu items:", error);
       } finally {
@@ -111,5 +126,6 @@ export default function useFindSortedMenuItems({
     sortedItems,
     loading,
     hasData: menuItems.length > 0,
+    restaurantMetadata,
   };
 }
