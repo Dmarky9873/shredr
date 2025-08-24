@@ -1,0 +1,854 @@
+{
+  "restaurant_name": "mcdonalds",
+  "url": "https://fcs.osu.edu/sites/fcs/files/imce/PDFs/mcdonalds-nutrition-facts.pdf",
+  "date": "2025-08-24 13:49:06",
+  "menu_items": [
+    {
+      "dish": "McWrap Chicken",
+      "calories": "610",
+      "protein": "27",
+      "carbs": "56",
+      "fat": "31"
+    },
+    {
+      "dish": "Ranch Salad with",
+      "calories": "450",
+      "protein": "30",
+      "carbs": "23",
+      "fat": "26"
+    },
+    {
+      "dish": "Biscuit (Regular",
+      "calories": "540",
+      "protein": "25",
+      "carbs": "38",
+      "fat": "32"
+    },
+    {
+      "dish": "McMuffin\u00ae with",
+      "calories": "450",
+      "protein": "21",
+      "carbs": "30",
+      "fat": "28"
+    },
+    {
+      "dish": "Sausage Burrito",
+      "calories": "300",
+      "protein": "12",
+      "carbs": "26",
+      "fat": "16"
+    },
+    {
+      "dish": "Egg McMuffin\u00ae",
+      "calories": "300",
+      "protein": "17",
+      "carbs": "31",
+      "fat": "13"
+    },
+    {
+      "dish": "Cheese",
+      "calories": "460",
+      "protein": "19",
+      "carbs": "48",
+      "fat": "21"
+    },
+    {
+      "dish": "Chocolate",
+      "calories": "440",
+      "protein": "14",
+      "carbs": "61",
+      "fat": "16"
+    },
+    {
+      "dish": "Chocolate Mocha",
+      "calories": "480",
+      "protein": "17",
+      "carbs": "70",
+      "fat": "16"
+    },
+    {
+      "dish": "Vanilla Latte",
+      "calories": "190",
+      "protein": "10",
+      "carbs": "39",
+      "fat": "0"
+    },
+    {
+      "dish": "French Vanilla",
+      "calories": "170",
+      "protein": "12",
+      "carbs": "30",
+      "fat": "0"
+    },
+    {
+      "dish": "OREO\u00ae Cookies",
+      "calories": "520",
+      "protein": "12",
+      "carbs": "80",
+      "fat": "17"
+    },
+    {
+      "dish": "McCaf\u00e9 Shake",
+      "calories": "560",
+      "protein": "12",
+      "carbs": "91",
+      "fat": "16"
+    },
+    {
+      "dish": "McCafe\u00ae Shake",
+      "calories": "530",
+      "protein": "11",
+      "carbs": "86",
+      "fat": "15"
+    },
+    {
+      "dish": "M&M'S\u00ae",
+      "calories": "430",
+      "protein": "9",
+      "carbs": "64",
+      "fat": "15"
+    },
+    {
+      "dish": "McFlurry\u00ae with",
+      "calories": "340",
+      "protein": "8",
+      "carbs": "53",
+      "fat": "11"
+    },
+    {
+      "dish": "Fried Cherry Pie",
+      "calories": "230",
+      "protein": "2",
+      "carbs": "33",
+      "fat": "10"
+    },
+    {
+      "dish": "Grape Jam",
+      "calories": "35",
+      "protein": "0",
+      "carbs": "9",
+      "fat": "0"
+    },
+    {
+      "dish": "Salad with Grilled",
+      "calories": "270",
+      "protein": "32",
+      "carbs": "18",
+      "fat": "9"
+    },
+    {
+      "dish": "McChicken \u00ae",
+      "calories": "370",
+      "protein": "14",
+      "carbs": "40",
+      "fat": "17"
+    },
+    {
+      "dish": "Ranch",
+      "calories": "440",
+      "protein": "20",
+      "carbs": "41",
+      "fat": "21"
+    },
+    {
+      "dish": "Filet-O-Fish",
+      "calories": "390",
+      "protein": "15",
+      "carbs": "39",
+      "fat": "19"
+    },
+    {
+      "dish": "& Bacon",
+      "calories": "690",
+      "protein": "36",
+      "carbs": "58",
+      "fat": "34"
+    },
+    {
+      "dish": "& Ranch",
+      "calories": "660",
+      "protein": "31",
+      "carbs": "59",
+      "fat": "34"
+    },
+    {
+      "dish": "Sweet Chili",
+      "calories": "590",
+      "protein": "27",
+      "carbs": "64",
+      "fat": "25"
+    },
+    {
+      "dish": "McNuggets\u00ae (10",
+      "calories": "470",
+      "protein": "22",
+      "carbs": "30",
+      "fat": "30"
+    },
+    {
+      "dish": "Caramel Mocha",
+      "calories": "270",
+      "protein": "8",
+      "carbs": "37",
+      "fat": "11"
+    },
+    {
+      "dish": "Caramel (Large)",
+      "calories": "260",
+      "protein": "2",
+      "carbs": "43",
+      "fat": "9"
+    },
+    {
+      "dish": "Caramel",
+      "calories": "180",
+      "protein": "1",
+      "carbs": "29",
+      "fat": "7"
+    },
+    {
+      "dish": "Caramel (Small)",
+      "calories": "130",
+      "protein": "1",
+      "carbs": "22",
+      "fat": "4.5"
+    },
+    {
+      "dish": "Hazelnut (Large)",
+      "calories": "250",
+      "protein": "2",
+      "carbs": "43",
+      "fat": "9"
+    },
+    {
+      "dish": "Hazelnut",
+      "calories": "180",
+      "protein": "1",
+      "carbs": "29",
+      "fat": "7"
+    },
+    {
+      "dish": "Hazelnut (Small)",
+      "calories": "130",
+      "protein": "1",
+      "carbs": "21",
+      "fat": "4.5"
+    },
+    {
+      "dish": "Regular",
+      "calories": "190",
+      "protein": "1",
+      "carbs": "31",
+      "fat": "7"
+    },
+    {
+      "dish": "Iced Coffee",
+      "calories": "270",
+      "protein": "2",
+      "carbs": "47",
+      "fat": "9"
+    },
+    {
+      "dish": "Chocolate Milk",
+      "calories": "130",
+      "protein": "9",
+      "carbs": "23",
+      "fat": "0"
+    },
+    {
+      "dish": "Orange Juice",
+      "calories": "150",
+      "protein": "2",
+      "carbs": "34",
+      "fat": "0"
+    },
+    {
+      "dish": "Dasani\u00ae Water",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Sprite\u00ae (Small) \u00a7",
+      "calories": "140",
+      "protein": "0",
+      "carbs": "37",
+      "fat": "0"
+    },
+    {
+      "dish": "Lavaburst (Small)",
+      "calories": "160",
+      "protein": "0",
+      "carbs": "43",
+      "fat": "0"
+    },
+    {
+      "dish": "Mountain Blast",
+      "calories": "80",
+      "protein": "0",
+      "carbs": "21",
+      "fat": "0"
+    },
+    {
+      "dish": "Classic (Extra",
+      "calories": "100",
+      "protein": "0",
+      "carbs": "28",
+      "fat": "0"
+    },
+    {
+      "dish": "Mocha (Medium)",
+      "calories": "330",
+      "protein": "9",
+      "carbs": "46",
+      "fat": "12"
+    },
+    {
+      "dish": "Banana",
+      "calories": "330",
+      "protein": "5",
+      "carbs": "74",
+      "fat": "1"
+    },
+    {
+      "dish": "Big Mac",
+      "calories": "540",
+      "protein": "25",
+      "carbs": "47",
+      "fat": "28"
+    },
+    {
+      "dish": "Pounder\u00ae with",
+      "calories": "540",
+      "protein": "31",
+      "carbs": "42",
+      "fat": "28"
+    },
+    {
+      "dish": "Pounder with",
+      "calories": "780",
+      "protein": "50",
+      "carbs": "43",
+      "fat": "45"
+    },
+    {
+      "dish": "Hamburger",
+      "calories": "250",
+      "protein": "12",
+      "carbs": "32",
+      "fat": "8"
+    },
+    {
+      "dish": "Cheeseburger",
+      "calories": "300",
+      "protein": "15",
+      "carbs": "33",
+      "fat": "12"
+    },
+    {
+      "dish": "McDouble",
+      "calories": "390",
+      "protein": "22",
+      "carbs": "34",
+      "fat": "18"
+    },
+    {
+      "dish": "Bacon McDouble",
+      "calories": "460",
+      "protein": "28",
+      "carbs": "34",
+      "fat": "23"
+    },
+    {
+      "dish": "Daily Double \u2020",
+      "calories": "440",
+      "protein": "22",
+      "carbs": "34",
+      "fat": "24"
+    },
+    {
+      "dish": "Jalape\u00f1o Double",
+      "calories": "440",
+      "protein": "23",
+      "carbs": "35",
+      "fat": "24"
+    },
+    {
+      "dish": "Chicken Deluxe",
+      "calories": "530",
+      "protein": "25",
+      "carbs": "59",
+      "fat": "22"
+    },
+    {
+      "dish": "Chicken",
+      "calories": "360",
+      "protein": "33",
+      "carbs": "43",
+      "fat": "6"
+    },
+    {
+      "dish": "Grilled Chicken",
+      "calories": "610",
+      "protein": "45",
+      "carbs": "50",
+      "fat": "26"
+    },
+    {
+      "dish": "Pomegranate",
+      "calories": "340",
+      "protein": "4",
+      "carbs": "79",
+      "fat": "1"
+    },
+    {
+      "dish": "Chocolate Chip",
+      "calories": "750",
+      "protein": "12",
+      "carbs": "110",
+      "fat": "31"
+    },
+    {
+      "dish": "Smoothie (Large)",
+      "calories": "340",
+      "protein": "4",
+      "carbs": "78",
+      "fat": "1"
+    },
+    {
+      "dish": "Smoothie",
+      "calories": "260",
+      "protein": "3",
+      "carbs": "61",
+      "fat": "1"
+    },
+    {
+      "dish": "Coffee Cream",
+      "calories": "20",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "2"
+    },
+    {
+      "dish": "Sugar Packet",
+      "calories": "15",
+      "protein": "0",
+      "carbs": "4",
+      "fat": "0"
+    },
+    {
+      "dish": "Ketchup Packet",
+      "calories": "10",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "Salt Packet",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Honey",
+      "calories": "50",
+      "protein": "0",
+      "carbs": "12",
+      "fat": "0"
+    },
+    {
+      "dish": "Hotcake Syrup",
+      "calories": "180",
+      "protein": "0",
+      "carbs": "45",
+      "fat": "0"
+    },
+    {
+      "dish": "Hot Chocolate",
+      "calories": "350",
+      "protein": "12",
+      "carbs": "48",
+      "fat": "13"
+    },
+    {
+      "dish": "Lemonade",
+      "calories": "100",
+      "protein": "0",
+      "carbs": "25",
+      "fat": "0"
+    },
+    {
+      "dish": "Kiddie Cone",
+      "calories": "45",
+      "protein": "1",
+      "carbs": "7",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Premium Asian Salad with Grilled Chicken",
+      "calories": "270",
+      "protein": "32",
+      "carbs": "18",
+      "fat": "9"
+    },
+    {
+      "dish": "Premium Bacon Ranch Salad (without chicken)",
+      "calories": "190",
+      "protein": "14",
+      "carbs": "8",
+      "fat": "12"
+    },
+    {
+      "dish": "Premium Southwest Salad (without chicken)",
+      "calories": "160",
+      "protein": "8",
+      "carbs": "18",
+      "fat": "7"
+    },
+    {
+      "dish": "Premium Bacon Ranch Salad with Buttermilk Crispy Chicken",
+      "calories": "490",
+      "protein": "34",
+      "carbs": "26",
+      "fat": "29"
+    },
+    {
+      "dish": "Premium Bacon Ranch Salad with Grilled Chicken",
+      "calories": "310",
+      "protein": "38",
+      "carbs": "9",
+      "fat": "14"
+    },
+    {
+      "dish": "Premium Southwest Salad with Buttermilk Crispy Chicken",
+      "calories": "510",
+      "protein": "28",
+      "carbs": "43",
+      "fat": "26"
+    },
+    {
+      "dish": "Premium Southwest Salad with Grilled Chicken",
+      "calories": "330",
+      "protein": "33",
+      "carbs": "26",
+      "fat": "11"
+    },
+    {
+      "dish": "Fruit 'n Yogurt Parfait",
+      "calories": "150",
+      "protein": "4",
+      "carbs": "30",
+      "fat": "2"
+    },
+    {
+      "dish": "Small French Fries",
+      "calories": "230",
+      "protein": "2",
+      "carbs": "30",
+      "fat": "11"
+    },
+    {
+      "dish": "Apple Slices \u2020",
+      "calories": "15",
+      "protein": "0",
+      "carbs": "4",
+      "fat": "0"
+    },
+    {
+      "dish": "Side Salad",
+      "calories": "15",
+      "protein": "1",
+      "carbs": "3",
+      "fat": "0"
+    },
+    {
+      "dish": "Large French Fries",
+      "calories": "510",
+      "protein": "6",
+      "carbs": "67",
+      "fat": "24"
+    },
+    {
+      "dish": "Medium French Fries",
+      "calories": "340",
+      "protein": "4",
+      "carbs": "44",
+      "fat": "16"
+    },
+    {
+      "dish": "Kids Fries",
+      "calories": "110",
+      "protein": "1",
+      "carbs": "15",
+      "fat": "5"
+    },
+    {
+      "dish": "Ranch Snack Wrap\u00ae (Buttermilk Crispy)",
+      "calories": "380",
+      "protein": "16",
+      "carbs": "33",
+      "fat": "21"
+    },
+    {
+      "dish": "Ranch Snack Wrap\u00ae (Grilled)",
+      "calories": "290",
+      "protein": "19",
+      "carbs": "25",
+      "fat": "13"
+    },
+    {
+      "dish": "Mac Snack Wrap \u2020",
+      "calories": "330",
+      "protein": "14",
+      "carbs": "26",
+      "fat": "19"
+    },
+    {
+      "dish": "Cuties",
+      "calories": "40",
+      "protein": "1",
+      "carbs": "10",
+      "fat": "0"
+    },
+    {
+      "dish": "Mozzarella Sticks",
+      "calories": "200",
+      "protein": "9",
+      "carbs": "18",
+      "fat": "10"
+    },
+    {
+      "dish": "Coffee (Small) \u00a7",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Coffee (Large) \u00a7",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Smoothie (Small)",
+      "calories": "210",
+      "protein": "2",
+      "carbs": "50",
+      "fat": "0.5"
+    },
+    {
+      "dish": "100%  Apple",
+      "calories": "80",
+      "protein": "0",
+      "carbs": "21",
+      "fat": "0"
+    },
+    {
+      "dish": "Lemonade (Extra",
+      "calories": "390",
+      "protein": "1",
+      "carbs": "100",
+      "fat": "0"
+    },
+    {
+      "dish": "Iced Lemonade",
+      "calories": "140",
+      "protein": "0",
+      "carbs": "37",
+      "fat": "0"
+    },
+    {
+      "dish": "Cheese Bagel",
+      "calories": "530",
+      "protein": "27",
+      "carbs": "55",
+      "fat": "23"
+    },
+    {
+      "dish": "Cinnamon Melts",
+      "calories": "460",
+      "protein": "6",
+      "carbs": "66",
+      "fat": "19"
+    },
+    {
+      "dish": "Hotcakes",
+      "calories": "350",
+      "protein": "8",
+      "carbs": "60",
+      "fat": "9"
+    },
+    {
+      "dish": "HASH BROWNS",
+      "calories": "150",
+      "protein": "1",
+      "carbs": "15",
+      "fat": "9"
+    },
+    {
+      "dish": "with Egg (Large",
+      "calories": "570",
+      "protein": "18",
+      "carbs": "42",
+      "fat": "37"
+    },
+    {
+      "dish": "McMuffin with",
+      "calories": "400",
+      "protein": "21",
+      "carbs": "30",
+      "fat": "23"
+    },
+    {
+      "dish": "Oatmeal without",
+      "calories": "260",
+      "protein": "5",
+      "carbs": "49",
+      "fat": "4"
+    },
+    {
+      "dish": "Salad (without",
+      "calories": "140",
+      "protein": "7",
+      "carbs": "13",
+      "fat": "7"
+    },
+    {
+      "dish": "Classic (Medium)",
+      "calories": "200",
+      "protein": "0",
+      "carbs": "55",
+      "fat": "0"
+    },
+    {
+      "dish": "Lavaburst (Extra",
+      "calories": "110",
+      "protein": "0",
+      "carbs": "31",
+      "fat": "0"
+    },
+    {
+      "dish": "Lavaburst (Large)",
+      "calories": "310",
+      "protein": "0",
+      "carbs": "84",
+      "fat": "0"
+    },
+    {
+      "dish": "Lavaburst",
+      "calories": "230",
+      "protein": "0",
+      "carbs": "61",
+      "fat": "0"
+    },
+    {
+      "dish": "Strawberry",
+      "calories": "260",
+      "protein": "0",
+      "carbs": "68",
+      "fat": "0"
+    },
+    {
+      "dish": "McRib \u00ae \u2020",
+      "calories": "500",
+      "protein": "22",
+      "carbs": "44",
+      "fat": "26"
+    },
+    {
+      "dish": "Mocha (Small) \u00a7",
+      "calories": "340",
+      "protein": "10",
+      "carbs": "49",
+      "fat": "11"
+    },
+    {
+      "dish": "Mocha (Large) \u00a7",
+      "calories": "500",
+      "protein": "16",
+      "carbs": "72",
+      "fat": "17"
+    },
+    {
+      "dish": "Latte (Small)  \u00a7",
+      "calories": "170",
+      "protein": "9",
+      "carbs": "15",
+      "fat": "9"
+    },
+    {
+      "dish": "Tartar Sauce Cup",
+      "calories": "140",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "15"
+    },
+    {
+      "dish": "McNuggets\u00ae (20",
+      "calories": "940",
+      "protein": "44",
+      "carbs": "59",
+      "fat": "59"
+    },
+    {
+      "dish": "McNuggets\u00ae (6",
+      "calories": "280",
+      "protein": "13",
+      "carbs": "18",
+      "fat": "18"
+    },
+    {
+      "dish": "McNuggets\u00ae (40",
+      "calories": "1880",
+      "protein": "87",
+      "carbs": "118",
+      "fat": "118"
+    },
+    {
+      "dish": "McNuggets\u00ae (4",
+      "calories": "190",
+      "protein": "9",
+      "carbs": "12",
+      "fat": "12"
+    },
+    {
+      "dish": "Salad with Crispy",
+      "calories": "410",
+      "protein": "23",
+      "carbs": "32",
+      "fat": "22"
+    },
+    {
+      "dish": "Crispy Chicken",
+      "calories": "750",
+      "protein": "36",
+      "carbs": "65",
+      "fat": "38"
+    },
+    {
+      "dish": "Sprite\u00ae (Large) \u00a7",
+      "calories": "280",
+      "protein": "0",
+      "carbs": "74",
+      "fat": "0"
+    },
+    {
+      "dish": "Latte (Medium) \u00a7",
+      "calories": "210",
+      "protein": "11",
+      "carbs": "18",
+      "fat": "10"
+    },
+    {
+      "dish": "Latte (Large) \u00a7",
+      "calories": "280",
+      "protein": "15",
+      "carbs": "24",
+      "fat": "14"
+    }
+  ]
+}
