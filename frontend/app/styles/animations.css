@@ -1,0 +1,186 @@
+/* ===================================
+   SHREDR ANIMATIONS
+   Custom animations for the Shredr app
+   =================================== */
+
+/* Fade Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Bounce Animations */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Rotation Animations */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-in-out forwards;
+}
+
+.fade-out-delayed {
+  animation: fadeOut 2s ease-in-out 1s forwards;
+}
+
+.fade-in-slow {
+  animation: fadeIn 1.2s ease-in-out forwards;
+}
+
+.fade-in-fast {
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+.slide-down {
+  animation: slideDown 0.6s ease-out forwards;
+}
+
+.slide-up-fade-out {
+  animation: slideUpFadeOut 3s ease-in-out forwards;
+}
+
+.slide-up-delayed {
+  animation: slideUp 0.6s ease-out 0.3s both;
+}
+
+/* Scale Classes */
+.scale-in {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+.pulse-gentle {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Bounce Classes */
+.bounce-in {
+  animation: bounceIn 0.8s ease-out forwards;
+}
+
+.bounce-in-delayed {
+  animation: bounceIn 0.8s ease-out 0.5s both;
+}
+
+/* Loading/Spinner Classes */
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+.spin-slow {
+  animation: spin 2s linear infinite;
+}
+
+/* Stagger Delays for Sequential Animations */
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+.delay-1000 {
+  animation-delay: 1s;
+}
+
+/* Hover Animations */
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-fade:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
+}
