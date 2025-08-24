@@ -2,10 +2,8 @@
 
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState, Suspense } from "react";
-import { getQueryFromSearchParams } from "../utils/url";
-import Button from "../components/Button";
 import RestaurantInput from "../components/RestaurantInput";
-import MacronutrientTable, { MenuItem } from "../components/MacronutrientTable";
+import MacronutrientTable from "../components/MacronutrientTable";
 import useFindRestaurantName from "../hooks/useFindRestaurantName";
 import useFindSortedMenuItems from "../hooks/useFindSortedMenuItems";
 
@@ -37,7 +35,7 @@ function SearchContent() {
       setQuery("");
       setInternalRestaurantName("");
     }
-  }, [currentQuery, searchRestaurantName, restaurantNamesLoading]);
+  }, [currentQuery, searchRestaurantName, restaurantNamesLoading, query]);
   if (!query) {
     return (
       <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
@@ -190,8 +188,8 @@ function SearchContent() {
               Restaurant Not Found
             </h3>
             <p className="text-yellow-700 dark:text-yellow-300">
-              We couldn't find nutrition data for "{query}". Please try
-              searching for a different restaurant.
+              We couldn&apos;t find nutrition data for &quot;{query}&quot;.
+              Please try searching for a different restaurant.
             </p>
           </div>
         )}

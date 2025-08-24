@@ -19,7 +19,7 @@ export default function useFindRestaurantName() {
         const data = await response.json();
         setRestaurantNames(data);
         setIsError(false);
-      } catch (err) {
+      } catch {
         setIsError(true);
       } finally {
         setLoading(false);
