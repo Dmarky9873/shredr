@@ -19,14 +19,19 @@ function SearchContent() {
     restaurantName: internalRestaurantName,
   });
 
+  // Get the current query parameter value
+  const currentQuery = searchParams.get("query");
+
   useEffect(() => {
-    const queryParam = getQueryFromSearchParams(searchParams);
-    if (queryParam) {
-      setQuery(queryParam);
-      const foundRestaurant = searchRestaurantName(queryParam);
+    if (currentQuery && currentQuery !== query) {
+      setQuery(currentQuery);
+      const foundRestaurant = searchRestaurantName(currentQuery);
       setInternalRestaurantName(foundRestaurant || "");
+    } else if (!currentQuery) {
+      setQuery("");
+      setInternalRestaurantName("");
     }
-  }, [searchParams, searchRestaurantName]);
+  }, [currentQuery, searchRestaurantName, query]);
   if (!query) {
     return (
       <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
@@ -54,28 +59,28 @@ function SearchContent() {
 
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-foreground font-coustard mb-8 text-center">
           {query}
         </h1>
         <RestaurantInput title="Search another restaurant?" />
 
         {hasData ? (
-          <div className="mt-8 space-y-8">
+          <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
             <MacronutrientTable
               data={sortedItems.proteinCalorieRatioSorted}
               macronutrient="protein"
-              title="Protein-Calorie Ratio (Highest to Lowest)"
+              title="Protein-Calorie Ratio"
             />
             <MacronutrientTable
               data={sortedItems.fatCalorieRatioSorted}
               macronutrient="fat"
-              title="Fat-Calorie Ratio (Highest to Lowest)"
+              title="Fat-Calorie Ratio"
             />
             <MacronutrientTable
               data={sortedItems.carbsCalorieRatioSorted}
               macronutrient="carbs"
-              title="Carbs-Calorie Ratio (Highest to Lowest)"
+              title="Carbs-Calorie Ratio"
             />
           </div>
         ) : (

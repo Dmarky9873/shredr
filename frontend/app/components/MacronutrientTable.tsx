@@ -18,28 +18,40 @@ export default function MacronutrientTable({
   macronutrient,
 }: MacroNutrientTableProps) {
   return (
-    <div>
-      <h3>{title}</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Calories</th>
-            <th>
-              {macronutrient.charAt(0).toUpperCase() + macronutrient.slice(1)}
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((item) => (
-            <tr key={item.dish}>
-              <td>{item.dish}</td>
-              <td>{item.calories}</td>
-              <td>{item[macronutrient]}</td>
+    <div className="w-full">
+      <h3 className="text-lg font-semibold mb-2">{title}</h3>
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-0 border border-gray-300">
+          <thead>
+            <tr>
+              <th className="px-3 py-3 border-b text-left text-sm font-medium">
+                Name
+              </th>
+              <th className="px-3 py-3 border-b text-left text-sm font-medium whitespace-nowrap">
+                Calories
+              </th>
+              <th className="px-3 py-3 border-b text-left text-sm font-medium whitespace-nowrap">
+                {macronutrient.charAt(0).toUpperCase() + macronutrient.slice(1)}
+              </th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {data.map((item) => (
+              <tr key={item.dish}>
+                <td className="px-3 py-2 border-b text-sm break-words">
+                  {item.dish}
+                </td>
+                <td className="px-3 py-2 border-b text-sm whitespace-nowrap">
+                  {item.calories}
+                </td>
+                <td className="px-3 py-2 border-b text-sm whitespace-nowrap">
+                  {item[macronutrient]}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
