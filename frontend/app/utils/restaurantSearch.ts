@@ -1,3 +1,5 @@
+import Fuse from "fuse.js";
+
 export interface Restaurant {
   category: string;
   address: string;
@@ -113,19 +115,6 @@ function parseCSVLine(line: string): string[] {
   });
 }
 
-function normalizeText(text: string): string {
-  return (
-    text
-      .toLowerCase()
-      .trim()
-      // Normalize different types of apostrophes to standard apostrophe
-      .replace(/['']/g, "'")
-      // Remove diacritics and special characters for better matching
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-  );
-}
-
 export function searchRestaurants(
   restaurants: Restaurant[],
   query: string,
@@ -135,59 +124,38 @@ export function searchRestaurants(
     return [];
   }
 
-  const searchTerm = normalizeText(query);
+  // Configure Fuse.js for fuzzy searching
+  const fuseOptions = {
+    // Include score in results
+    includeScore: true,
+    // Threshold for fuzzy matching (0.0 = exact match, 1.0 = match anything)
+    threshold: 0.4,
+    // How much a single character edit affects the overall score
+    distance: 100,
+    // Minimum number of characters that must be matched
+    minMatchCharLength: 2,
+    // Keys to search in
+    keys: [
+      {
+        name: "name",
+        weight: 0.8, // Restaurant name is most important
+      },
+      {
+        name: "category",
+        weight: 0.1,
+      },
+      {
+        name: "address",
+        weight: 0.1,
+      },
+    ],
+  };
 
-  // Score restaurants based on relevance
-  const scored = restaurants
-    .map((restaurant) => {
-      let score = 0;
-      const name = normalizeText(restaurant.name);
-      const category = normalizeText(restaurant.category);
-      const address = normalizeText(restaurant.address);
+  const fuse = new Fuse(restaurants, fuseOptions);
+  const results = fuse.search(query, { limit });
 
-      // Exact name match gets highest score
-      if (name === searchTerm) {
-        score += 100;
-      }
-      // Name starts with search term
-      else if (name.startsWith(searchTerm)) {
-        score += 80;
-      }
-      // Name contains search term
-      else if (name.includes(searchTerm)) {
-        score += 60;
-      }
-
-      // Category matches
-      if (category.includes(searchTerm)) {
-        score += 30;
-      }
-
-      // Address matches (for location-based searches)
-      if (address.includes(searchTerm)) {
-        score += 20;
-      }
-
-      // Partial word matches in name
-      const nameWords = name.split(" ");
-      const searchWords = searchTerm.split(" ");
-
-      for (const searchWord of searchWords) {
-        for (const nameWord of nameWords) {
-          if (nameWord.startsWith(searchWord) && searchWord.length > 2) {
-            score += 10;
-          }
-        }
-      }
-
-      return { restaurant, score };
-    })
-    .filter((item) => item.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, limit)
-    .map((item) => item.restaurant);
-
-  return scored;
+  // Extract restaurants from Fuse results
+  return results.map((result) => result.item);
 }
 
 export function formatRestaurantForDisplay(restaurant: Restaurant) {
