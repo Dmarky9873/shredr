@@ -1,3 +1,4 @@
+import json
 import os
 
 from .analysis.json_to_menu import json_to_macro_caches
@@ -26,6 +27,13 @@ def main():
     create_restaurant_json(restaurant_name)
 
     json_to_macro_caches(f"app/restaurant_caches/{restaurant_name}_output.json")
+    with open(
+        "app/restaurant_caches/list_of_cached_restaurants.json", "r+", encoding="utf-8"
+    ) as f:
+        data = json.load(f)
+        data.append(restaurant_name)
+        f.seek(0)
+        json.dump(data, f, ensure_ascii=False, indent=4)
 
 
 if __name__ == "__main__":

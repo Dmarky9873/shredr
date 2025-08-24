@@ -57,8 +57,12 @@ def json_to_macro_caches(json_file_location: str) -> None:
         "menu": [item[0] for item in menu.calculate_sorted_protein_calorie_ratios()],
     }
 
+    protein_cache_path = (
+        f"app/restaurant_caches/highest_lowest_protein/"
+        f"{menu.restaurant_name}_protein_cache.json"
+    )
     with open(
-        f"app/restaurant_caches/{menu.restaurant_name}_protein_cache.json",
+        protein_cache_path,
         "w",
         encoding="utf-8",
     ) as f:
@@ -68,8 +72,12 @@ def json_to_macro_caches(json_file_location: str) -> None:
             ensure_ascii=False,
             indent=4,
         )
+    carbs_cache_path = (
+        f"app/restaurant_caches/highest_lowest_carbs/"
+        f"{menu.restaurant_name}_carbs_cache.json"
+    )
     with open(
-        f"app/restaurant_caches/{menu.restaurant_name}_carbs_cache.json",
+        carbs_cache_path,
         "w",
         encoding="utf-8",
     ) as f:
@@ -79,8 +87,12 @@ def json_to_macro_caches(json_file_location: str) -> None:
             ensure_ascii=False,
             indent=4,
         )
+    fat_cache_path = (
+        f"app/restaurant_caches/highest_lowest_fat/"
+        f"{menu.restaurant_name}_fat_cache.json"
+    )
     with open(
-        f"app/restaurant_caches/{menu.restaurant_name}_fat_cache.json",
+        fat_cache_path,
         "w",
         encoding="utf-8",
     ) as f:
