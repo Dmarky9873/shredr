@@ -21,16 +21,16 @@ export default function MacronutrientTable({
     <div className="w-full">
       <h3 className="text-lg font-semibold mb-2">{title}</h3>
       <div className="overflow-x-auto">
-        <table className="w-full min-w-0 border border-gray-300">
+        <table className="w-full min-w-0 border border-foreground/20">
           <thead>
             <tr>
-              <th className="px-3 py-3 border-b text-left text-sm font-medium">
+              <th className="px-3 py-3 border-b border-foreground/20 text-left text-sm font-medium">
                 Name
               </th>
-              <th className="px-3 py-3 border-b text-left text-sm font-medium whitespace-nowrap">
+              <th className="px-3 py-3 border-b border-foreground/20 text-left text-sm font-medium whitespace-nowrap">
                 Calories
               </th>
-              <th className="px-3 py-3 border-b text-left text-sm font-medium whitespace-nowrap">
+              <th className="px-3 py-3 border-b border-foreground/20 text-left text-sm font-medium whitespace-nowrap">
                 {macronutrient.charAt(0).toUpperCase() + macronutrient.slice(1)}
               </th>
             </tr>
@@ -38,13 +38,13 @@ export default function MacronutrientTable({
           <tbody>
             {data.map((item) => (
               <tr key={item.dish}>
-                <td className="px-3 py-2 border-b text-sm break-words">
+                <td className="px-3 py-2 border-b border-foreground/20 text-sm break-words">
                   {item.dish}
                 </td>
-                <td className="px-3 py-2 border-b text-sm whitespace-nowrap">
+                <td className="px-3 py-2 border-b border-foreground/20 text-sm whitespace-nowrap">
                   {item.calories}
                 </td>
-                <td className="px-3 py-2 border-b text-sm whitespace-nowrap">
+                <td className="px-3 py-2 border-b border-foreground/20 text-sm whitespace-nowrap">
                   {item[macronutrient]}
                 </td>
               </tr>

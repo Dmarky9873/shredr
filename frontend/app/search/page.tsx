@@ -14,7 +14,8 @@ function SearchContent() {
   const [query, setQuery] = useState<string>("");
   const [internalRestaurantName, setInternalRestaurantName] = useState("");
 
-  const { searchRestaurantName } = useFindRestaurantName();
+  const { searchRestaurantName, loading: restaurantNamesLoading } =
+    useFindRestaurantName();
   const { sortedItems, loading, hasData } = useFindSortedMenuItems({
     restaurantName: internalRestaurantName,
   });
@@ -23,15 +24,17 @@ function SearchContent() {
   const currentQuery = searchParams.get("query");
 
   useEffect(() => {
-    if (currentQuery && currentQuery !== query) {
-      setQuery(currentQuery);
+    if (currentQuery && !restaurantNamesLoading) {
+      if (currentQuery !== query) {
+        setQuery(currentQuery);
+      }
       const foundRestaurant = searchRestaurantName(currentQuery);
       setInternalRestaurantName(foundRestaurant || "");
     } else if (!currentQuery) {
       setQuery("");
       setInternalRestaurantName("");
     }
-  }, [currentQuery, searchRestaurantName, query]);
+  }, [currentQuery, searchRestaurantName, restaurantNamesLoading]);
   if (!query) {
     return (
       <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
