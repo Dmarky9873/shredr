@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export interface MenuItem {
   dish: string;
   protein: string;
@@ -17,9 +19,27 @@ export default function MacronutrientTable({
   title,
   macronutrient,
 }: MacroNutrientTableProps) {
+  const [isReversed, setIsReversed] = useState(false);
+
+  const displayData = isReversed ? [...data].reverse() : data;
+
+  const toggleOrder = () => {
+    setIsReversed(!isReversed);
+  };
+
   return (
     <div className="w-full">
-      <h3 className="text-lg font-semibold mb-2">{title}</h3>
+      <div className="flex items-center justify-between mb-2">
+        <h3 className="text-lg font-semibold">{title}</h3>
+        <button
+          onClick={toggleOrder}
+          className="px-3 py-1 text-sm bg-foreground/10 hover:bg-foreground/20 rounded transition-colors duration-200 flex items-center gap-1"
+          title={`Sort ${isReversed ? "ascending" : "descending"}`}
+        >
+          <span className="text-xs">{isReversed ? "↑" : "↓"}</span>
+          <span>{isReversed ? "Low to High" : "High to Low"}</span>
+        </button>
+      </div>
       <div className="overflow-x-auto">
         <table className="w-full min-w-0 border border-foreground/20">
           <thead>
@@ -36,7 +56,7 @@ export default function MacronutrientTable({
             </tr>
           </thead>
           <tbody>
-            {data.map((item) => (
+            {displayData.map((item) => (
               <tr key={item.dish}>
                 <td className="px-3 py-2 border-b border-foreground/20 text-sm break-words">
                   {item.dish}

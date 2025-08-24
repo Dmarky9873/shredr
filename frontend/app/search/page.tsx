@@ -13,6 +13,9 @@ function SearchContent() {
   const searchParams = useSearchParams();
   const [query, setQuery] = useState<string>("");
   const [internalRestaurantName, setInternalRestaurantName] = useState("");
+  const [selectedMobileTable, setSelectedMobileTable] = useState<
+    "protein" | "fat" | "carbs"
+  >("protein");
 
   const { searchRestaurantName, loading: restaurantNamesLoading } =
     useFindRestaurantName();
@@ -20,7 +23,6 @@ function SearchContent() {
     restaurantName: internalRestaurantName,
   });
 
-  // Get the current query parameter value
   const currentQuery = searchParams.get("query");
 
   useEffect(() => {
@@ -69,22 +71,86 @@ function SearchContent() {
         <RestaurantInput title="Search another restaurant?" />
 
         {hasData ? (
-          <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <MacronutrientTable
-              data={sortedItems.proteinCalorieRatioSorted}
-              macronutrient="protein"
-              title="Protein-Calorie Ratio"
-            />
-            <MacronutrientTable
-              data={sortedItems.fatCalorieRatioSorted}
-              macronutrient="fat"
-              title="Fat-Calorie Ratio"
-            />
-            <MacronutrientTable
-              data={sortedItems.carbsCalorieRatioSorted}
-              macronutrient="carbs"
-              title="Carbs-Calorie Ratio"
-            />
+          <div className="mt-8">
+            {/* Mobile Table Selector */}
+            <div className="lg:hidden mb-6">
+              <div className="flex rounded-lg border border-foreground/20 overflow-hidden">
+                <button
+                  onClick={() => setSelectedMobileTable("protein")}
+                  className={`flex-1 py-3 px-4 text-sm font-medium transition-colors ${
+                    selectedMobileTable === "protein"
+                      ? "bg-foreground text-background"
+                      : "bg-background text-foreground hover:bg-foreground/10"
+                  }`}
+                >
+                  Protein
+                </button>
+                <button
+                  onClick={() => setSelectedMobileTable("fat")}
+                  className={`flex-1 py-3 px-4 text-sm font-medium transition-colors border-l border-r border-foreground/20 ${
+                    selectedMobileTable === "fat"
+                      ? "bg-foreground text-background"
+                      : "bg-background text-foreground hover:bg-foreground/10"
+                  }`}
+                >
+                  Fat
+                </button>
+                <button
+                  onClick={() => setSelectedMobileTable("carbs")}
+                  className={`flex-1 py-3 px-4 text-sm font-medium transition-colors ${
+                    selectedMobileTable === "carbs"
+                      ? "bg-foreground text-background"
+                      : "bg-background text-foreground hover:bg-foreground/10"
+                  }`}
+                >
+                  Carbs
+                </button>
+              </div>
+            </div>
+
+            {/* Mobile Single Table View */}
+            <div className="lg:hidden">
+              {selectedMobileTable === "protein" && (
+                <MacronutrientTable
+                  data={sortedItems.proteinCalorieRatioSorted}
+                  macronutrient="protein"
+                  title="Protein-Calorie Ratio"
+                />
+              )}
+              {selectedMobileTable === "fat" && (
+                <MacronutrientTable
+                  data={sortedItems.fatCalorieRatioSorted}
+                  macronutrient="fat"
+                  title="Fat-Calorie Ratio"
+                />
+              )}
+              {selectedMobileTable === "carbs" && (
+                <MacronutrientTable
+                  data={sortedItems.carbsCalorieRatioSorted}
+                  macronutrient="carbs"
+                  title="Carbs-Calorie Ratio"
+                />
+              )}
+            </div>
+
+            {/* Desktop Three Column View */}
+            <div className="hidden lg:grid lg:grid-cols-3 gap-6">
+              <MacronutrientTable
+                data={sortedItems.proteinCalorieRatioSorted}
+                macronutrient="protein"
+                title="Protein-Calorie Ratio"
+              />
+              <MacronutrientTable
+                data={sortedItems.fatCalorieRatioSorted}
+                macronutrient="fat"
+                title="Fat-Calorie Ratio"
+              />
+              <MacronutrientTable
+                data={sortedItems.carbsCalorieRatioSorted}
+                macronutrient="carbs"
+                title="Carbs-Calorie Ratio"
+              />
+            </div>
           </div>
         ) : (
           <div className="mt-8 p-8 text-center bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
