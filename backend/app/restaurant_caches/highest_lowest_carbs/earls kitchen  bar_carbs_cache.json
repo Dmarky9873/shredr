@@ -1,5 +1,5 @@
 {
-    "name": "earls",
+    "name": "earls kitchen  bar",
     "menu": [
         "Substitute Gluten Aware Bun",
         "Waffles",
@@ -50,8 +50,8 @@
         "Peppercorn Sauce",
         "American Breakfast (3 Eggs)",
         "Yucatan Chicken Tacos (2)",
-        "Sprite",
         "Coke",
+        "Sprite",
         "Ginger Ale",
         "Tomahawk Maple-Glazed Pork Chop",
         "Pan Seared Branzino",
@@ -68,8 +68,8 @@
         "Jumbo Lump Crab Cake (Add-On)",
         "BBQ Back Ribs (Full)",
         "BBQ Back Ribs (Half)",
-        "BBQ Back Ribs + Cajun Chicken  (Half)",
         "BBQ Back Ribs + Cajun Chicken  (Full)",
+        "BBQ Back Ribs + Cajun Chicken  (Half)",
         "Sauteed Cajun Shrimp",
         "Coleslaw",
         "Oven Roasted Salmon - Cajun Blackened",
@@ -80,17 +80,17 @@
         "Sauteed Shrimp",
         "Lobster Tail",
         "Oven Roasted Salmon - Feta Caper Dill Aioli",
-        "Sauteed Baby Mushrooms",
+        "Oven Roasted Salmon - Plain",
         "Horseradish 0.5 oz",
-        "Diet Coke",
+        "Sauteed Baby Mushrooms",
+        "Filet - 7 oz",
+        "Add Jalapeno Jack Cheese",
         "Sirloin - 4 oz",
         "Sirloin - 8 oz",
-        "Add Jalapeno Jack Cheese",
-        "Filet - 7 oz",
         "Striploin - 12 oz",
-        "Oven Roasted Salmon - Plain",
+        "Diet Coke",
         "Ribeye - 14 oz",
-        "Truffle Butter (1 tbsp)",
-        "Soy Sauce (1 tbsp)"
+        "Soy Sauce (1 tbsp)",
+        "Truffle Butter (1 tbsp)"
     ]
 }

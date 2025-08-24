@@ -41,7 +41,6 @@ def remove_restaurant_files(restaurant_name: str, cache_dir: Path) -> dict:
         "list_updated": False,
     }
 
-    # Define file paths
     main_file = cache_dir / f"{restaurant_name}_output.json"
     protein_file = (
         cache_dir / "highest_lowest_protein" / f"{restaurant_name}_protein_cache.json"
@@ -52,7 +51,6 @@ def remove_restaurant_files(restaurant_name: str, cache_dir: Path) -> dict:
     )
     list_file = cache_dir / "list_of_cached_restaurants.json"
 
-    # Remove main output file
     if main_file.exists():
         try:
             main_file.unlink()
@@ -63,7 +61,6 @@ def remove_restaurant_files(restaurant_name: str, cache_dir: Path) -> dict:
     else:
         print(f"! Main file not found: {main_file}")
 
-    # Remove protein cache file
     if protein_file.exists():
         try:
             protein_file.unlink()
@@ -74,7 +71,6 @@ def remove_restaurant_files(restaurant_name: str, cache_dir: Path) -> dict:
     else:
         print(f"! Protein cache not found: {protein_file}")
 
-    # Remove fat cache file
     if fat_file.exists():
         try:
             fat_file.unlink()
@@ -85,7 +81,6 @@ def remove_restaurant_files(restaurant_name: str, cache_dir: Path) -> dict:
     else:
         print(f"! Fat cache not found: {fat_file}")
 
-    # Remove carbs cache file
     if carbs_file.exists():
         try:
             carbs_file.unlink()
@@ -96,7 +91,6 @@ def remove_restaurant_files(restaurant_name: str, cache_dir: Path) -> dict:
     else:
         print(f"! Carbs cache not found: {carbs_file}")
 
-    # Update list of cached restaurants
     if list_file.exists():
         try:
             with open(list_file, "r", encoding="utf-8") as f:
@@ -143,7 +137,6 @@ def main():
 
     args = parser.parse_args()
 
-    # Validate cache directory
     if not args.cache_dir.exists():
         print(f"Error: Cache directory does not exist: {args.cache_dir}")
         sys.exit(1)
@@ -162,7 +155,6 @@ def main():
         print("DRY RUN - No files will actually be removed")
         print("-" * 50)
 
-        # Show what would be removed
         main_file = args.cache_dir / f"{restaurant_name}_output.json"
         protein_file = (
             args.cache_dir
@@ -191,7 +183,6 @@ def main():
             else:
                 print(f"Not found {file_type}: {file_path}")
 
-        # Check if in restaurant list
         list_file = args.cache_dir / "list_of_cached_restaurants.json"
         if list_file.exists():
             try:
@@ -206,13 +197,11 @@ def main():
 
         return
 
-    # Perform actual removal
     results = remove_restaurant_files(restaurant_name, args.cache_dir)
 
     print("-" * 50)
     print("Summary:")
 
-    # Count successful operations
     successful_ops = sum(results.values())
     total_ops = len(results)
 
@@ -226,13 +215,11 @@ def main():
     else:
         print(f"✗ Failed to remove '{restaurant_name}' (no operations successful)")
 
-    # Also copy the updated files to frontend if they exist
     frontend_cache_dir = (
         Path(__file__).parent.parent / "frontend" / "public" / "restaurant_caches"
     )
     if frontend_cache_dir.exists():
         try:
-            # Copy updated restaurant list to frontend
             source_list = args.cache_dir / "list_of_cached_restaurants.json"
             target_list = frontend_cache_dir / "list_of_cached_restaurants.json"
 
