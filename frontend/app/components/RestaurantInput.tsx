@@ -1,16 +1,19 @@
 import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 import TextInput from "./TextInput";
 import { useRestaurantSearch } from "../hooks/useRestaurantSearch";
 import { useDebounce } from "../hooks/useDebounce";
 import { SearchPreviewItem } from "./SearchPreview";
+import { createSearchUrl } from "../utils/url";
 
-export default function HomePageRestaurantInput() {
+export default function RestaurantInput() {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState<SearchPreviewItem[]>([]);
   const [showPreview, setShowPreview] = useState(false);
   const [isFocused, setIsFocused] = useState(false);
   const [isSearching, setIsSearching] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+  const router = useRouter();
   const { searchForRestaurants, isLoading, error } = useRestaurantSearch();
   const debouncedSearchQuery = useDebounce(searchQuery, 300);
 
@@ -45,6 +48,16 @@ export default function HomePageRestaurantInput() {
       setShowPreview(false);
       setIsFocused(false);
       inputRef.current?.blur();
+
+      // Navigate to search page with the selected restaurant
+      router.push(createSearchUrl(selectedRestaurant.title));
+    }
+  };
+
+  const handleSubmit = () => {
+    if (searchQuery.trim()) {
+      // Navigate to search page with query parameter using utility function
+      router.push(createSearchUrl(searchQuery));
     }
   };
 
@@ -99,12 +112,11 @@ export default function HomePageRestaurantInput() {
           ref={inputRef}
           type="search"
           placeholder={
-            isLoading
-              ? "Loading restaurants..."
-              : "Search Toronto restaurants..."
+            isLoading ? "Loading restaurants..." : "Search restaurants..."
           }
           value={searchQuery}
           onChange={handleInputChange}
+          onSubmit={handleSubmit}
           onFocus={handleFocus}
           onBlur={handleBlur}
           disabled={isLoading}

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import TitleAndTagline from "./components/TitleAndTagline";
-import HomePageRestaurantInput from "./components/HomePageRestaurantInput";
+import RestaurantInput from "./components/RestaurantInput";
 
 export default function Home() {
   const [shouldRenderTitleTagline, setShouldRenderTitleTagline] =
@@ -38,7 +38,7 @@ export default function Home() {
         id="restaurant-input"
         className="zero-opacity absolute inset-0 flex items-center justify-center"
       >
-        <HomePageRestaurantInput />
+        <RestaurantInput />
       </div>
     </div>
   );

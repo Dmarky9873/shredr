@@ -32,3 +32,61 @@ def json_to_menu(json_file_location: str) -> Menu:
     menu = Menu(data["restaurant_name"], menu_items)
 
     return menu
+
+
+def json_to_macro_caches(json_file_location: str) -> None:
+    """Takes a json file and creates the carbs, fat, and protein sorted caches.
+
+    Args:
+        json_file_location (str): The location of the restaurnat json file cache it will
+        use
+    """
+
+    menu = json_to_menu(json_file_location)
+
+    highest_lowest_carbs = {
+        "name": menu.restaurant_name,
+        "menu": [item[0] for item in menu.calculate_sorted_carb_calorie_ratios()],
+    }
+    highest_lowest_fat = {
+        "name": menu.restaurant_name,
+        "menu": [item[0] for item in menu.calculate_sorted_fat_calorie_ratios()],
+    }
+    highest_lowest_protein = {
+        "name": menu.restaurant_name,
+        "menu": [item[0] for item in menu.calculate_sorted_protein_calorie_ratios()],
+    }
+
+    with open(
+        f"../restaurant_caches/{menu.restaurant_name}_protein_cache.json",
+        "w",
+        encoding="utf-8",
+    ) as f:
+        json.dump(
+            highest_lowest_protein,
+            f,
+            ensure_ascii=False,
+            indent=4,
+        )
+    with open(
+        f"../restaurant_caches/{menu.restaurant_name}_carbs_cache.json",
+        "w",
+        encoding="utf-8",
+    ) as f:
+        json.dump(
+            highest_lowest_carbs,
+            f,
+            ensure_ascii=False,
+            indent=4,
+        )
+    with open(
+        f"../restaurant_caches/{menu.restaurant_name}_fat_cache.json",
+        "w",
+        encoding="utf-8",
+    ) as f:
+        json.dump(
+            highest_lowest_fat,
+            f,
+            ensure_ascii=False,
+            indent=4,
+        )
