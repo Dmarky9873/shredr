@@ -152,15 +152,27 @@ export function searchRestaurants(
   };
 
   const fuse = new Fuse(restaurants, fuseOptions);
-  const results = fuse.search(query, { limit });
+  const results = fuse.search(query, { limit: limit * 2 });
 
-  // Extract restaurants from Fuse results
-  return results.map((result) => result.item);
+  const seen = new Set<string>();
+  const uniqueResults: Restaurant[] = [];
+
+  for (const result of results) {
+    const key = `${result.item.name}-${result.item.address}-${result.item.phone}`;
+    if (!seen.has(key) && uniqueResults.length < limit) {
+      seen.add(key);
+      uniqueResults.push(result.item);
+    }
+  }
+
+  return uniqueResults;
 }
 
 export function formatRestaurantForDisplay(restaurant: Restaurant) {
+  const uniqueId = `${restaurant.name}-${restaurant.address}-${restaurant.phone}-${restaurant.latitude}-${restaurant.longitude}`;
+
   return {
-    id: `${restaurant.name}-${restaurant.address}`,
+    id: uniqueId,
     title: restaurant.name,
     subtitle: restaurant.address,
   };
