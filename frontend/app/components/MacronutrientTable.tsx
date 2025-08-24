@@ -1,5 +1,5 @@
-interface MenuItem {
-  name: string;
+export interface MenuItem {
+  dish: string;
   protein: string;
   carbs: string;
   fat: string;
@@ -23,14 +23,15 @@ export default function MacronutrientTable({
       <table>
         <thead>
           <tr>
-            <th>Name</th>
+            <th>name</th>
+            <th>calories</th>
             <th>{macronutrient}</th>
           </tr>
         </thead>
         <tbody>
           {data.map((item) => (
-            <tr key={item.name}>
-              <td>{item.name}</td>
+            <tr key={item.dish}>
+              <td>{item.dish}</td>
               <td>{item[macronutrient]}</td>
             </tr>
           ))}
