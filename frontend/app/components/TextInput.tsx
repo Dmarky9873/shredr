@@ -8,6 +8,7 @@ interface TextInputProps {
   onSubmit?: () => void;
   onFocus?: () => void;
   onBlur?: () => void;
+  onClear?: () => void;
   className?: string;
   disabled?: boolean;
   type?: "text" | "email" | "password" | "search";
@@ -19,6 +20,7 @@ interface TextInputProps {
   maxSearchResults?: number;
   selectedSearchIndex?: number;
   onSearchNavigation?: (direction: "up" | "down" | "select") => void;
+  showClearButton?: boolean;
 }
 
 const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
@@ -30,6 +32,7 @@ const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
       onSubmit,
       onFocus,
       onBlur,
+      onClear,
       className = "",
       disabled = false,
       type = "text",
@@ -41,9 +44,15 @@ const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
       maxSearchResults = 5,
       selectedSearchIndex = -1,
       onSearchNavigation,
+      showClearButton = true,
     },
     ref
   ) => {
+    const handleClear = () => {
+      onChange?.("");
+      onClear?.();
+    };
+
     const handleKeyPress = (e: React.KeyboardEvent) => {
       if (showSearchPreview && onSearchNavigation) {
         if (e.key === "ArrowDown") {
@@ -119,8 +128,36 @@ const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
                   ? "border-red-500 focus:border-red-500 focus:ring-red-100"
                   : ""
               }
+              ${
+                type === "search"
+                  ? "[&::-webkit-search-cancel-button]:appearance-none [&::-webkit-search-decoration]:appearance-none"
+                  : ""
+              }
             `}
           />
+          {showClearButton && value && value.length > 0 && !disabled && (
+            <button
+              type="button"
+              onClick={handleClear}
+              className="absolute inset-y-0 right-0 flex items-center pr-3 text-foreground/40 hover:text-foreground/70 transition-colors duration-150 focus:outline-none"
+              aria-label="Clear input"
+            >
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          )}
           <SearchPreview
             items={searchResults}
             isVisible={showSearchPreview}
