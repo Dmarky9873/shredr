@@ -120,7 +120,7 @@ export default function HomePageRestaurantInput() {
           showPreview && (
             <div className="absolute top-full left-0 right-0 z-50 mt-1 bg-background border-2 border-foreground/20 rounded-lg shadow-lg p-4">
               <p className="text-foreground/70 font-coustard text-sm text-center">
-                No restaurants found matching "{searchQuery}"
+                No restaurants found matching &ldquo;{searchQuery}&rdquo;
               </p>
             </div>
           )}
