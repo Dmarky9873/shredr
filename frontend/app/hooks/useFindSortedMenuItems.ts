@@ -23,10 +23,23 @@ export default function useFindSortedMenuItems({
 
   useEffect(() => {
     async function loadMenuItems() {
-      if (!restaurantName) return;
+      if (!restaurantName) {
+        // Clear data when no restaurant is selected
+        setProteinCalorieRatioOrder([]);
+        setFatCalorieRatioOrder([]);
+        setCarbsCalorieRatioOrder([]);
+        setMenuItems([]);
+        setLoading(false);
+        return;
+      }
 
       try {
         setLoading(true);
+        // Clear previous data immediately when starting to load new restaurant
+        setProteinCalorieRatioOrder([]);
+        setFatCalorieRatioOrder([]);
+        setCarbsCalorieRatioOrder([]);
+        setMenuItems([]);
 
         const [
           proteinCalorieJSON,
