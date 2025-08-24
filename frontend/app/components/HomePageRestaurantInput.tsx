@@ -50,8 +50,17 @@ export default function HomePageRestaurantInput() {
 
   const handleInputChange = (value: string) => {
     setSearchQuery(value);
-    if (value.trim().length <= 1) {
+
+    // Clear old results immediately when user starts typing something new
+    if (value !== searchQuery) {
+      setSearchResults([]);
       setShowPreview(false);
+    }
+
+    if (value.trim().length <= 1) {
+      setSearchResults([]);
+      setShowPreview(false);
+      setIsSearching(false);
     }
   };
 
@@ -101,7 +110,7 @@ export default function HomePageRestaurantInput() {
           disabled={isLoading}
           className="mt-2"
           searchResults={enrichedSearchResults}
-          showSearchPreview={showPreview && isFocused}
+          showSearchPreview={showPreview && isFocused && !isSearching}
           maxSearchResults={5}
         />
         {searchQuery.trim().length > 0 &&
