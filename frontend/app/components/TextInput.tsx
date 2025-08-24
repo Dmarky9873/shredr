@@ -1,16 +1,24 @@
 import { forwardRef } from "react";
+import SearchPreview, { SearchPreviewItem } from "./SearchPreview";
 
 interface TextInputProps {
   placeholder?: string;
   value?: string;
   onChange?: (value: string) => void;
   onSubmit?: () => void;
+  onFocus?: () => void;
+  onBlur?: () => void;
   className?: string;
   disabled?: boolean;
   type?: "text" | "email" | "password" | "search";
   label?: string;
   error?: string;
   size?: "sm" | "md" | "lg";
+  searchResults?: SearchPreviewItem[];
+  showSearchPreview?: boolean;
+  maxSearchResults?: number;
+  selectedSearchIndex?: number;
+  onSearchNavigation?: (direction: "up" | "down" | "select") => void;
 }
 
 const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
@@ -20,16 +28,43 @@ const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
       value,
       onChange,
       onSubmit,
+      onFocus,
+      onBlur,
       className = "",
       disabled = false,
       type = "text",
       label,
       error,
       size = "md",
+      searchResults = [],
+      showSearchPreview = false,
+      maxSearchResults = 5,
+      selectedSearchIndex = -1,
+      onSearchNavigation,
     },
     ref
   ) => {
     const handleKeyPress = (e: React.KeyboardEvent) => {
+      if (showSearchPreview && onSearchNavigation) {
+        if (e.key === "ArrowDown") {
+          e.preventDefault();
+          onSearchNavigation("down");
+          return;
+        }
+        if (e.key === "ArrowUp") {
+          e.preventDefault();
+          onSearchNavigation("up");
+          return;
+        }
+        if (e.key === "Enter") {
+          if (selectedSearchIndex >= 0) {
+            e.preventDefault();
+            onSearchNavigation("select");
+            return;
+          }
+        }
+      }
+
       if (e.key === "Enter" && onSubmit) {
         onSubmit();
       }
@@ -54,7 +89,9 @@ const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
             type={type}
             value={value}
             onChange={(e) => onChange?.(e.target.value)}
-            onKeyPress={handleKeyPress}
+            onKeyDown={handleKeyPress}
+            onFocus={onFocus}
+            onBlur={onBlur}
             placeholder={placeholder}
             disabled={disabled}
             className={`
@@ -84,23 +121,12 @@ const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
               }
             `}
           />
-          {type === "search" && (
-            <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-              <svg
-                className="w-5 h-5 text-foreground/40"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </div>
-          )}
+          <SearchPreview
+            items={searchResults}
+            isVisible={showSearchPreview}
+            maxItems={maxSearchResults}
+            selectedIndex={selectedSearchIndex}
+          />
         </div>
         {error && (
           <p className="mt-1 text-sm text-red-600 font-coustard">{error}</p>
