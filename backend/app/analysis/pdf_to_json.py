@@ -382,11 +382,11 @@ def pdf_to_json(url: str, out_json: str, restaurant_name: str):
 
         json_data = {
             "restaurant_name": restaurant_name,
+            "url": url,
             "date": time.strftime("%Y-%m-%d %H:%M:%S"),
             "menu_items": _process_table_data(cleaned_pdf_pages),
         }
 
-        # Clean the dish data to remove duplicates
         json_data = clean_dish_data(json_data)
 
         _save_json_data(json_data, out_json_path)
