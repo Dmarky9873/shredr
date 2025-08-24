@@ -124,17 +124,11 @@ export function searchRestaurants(
     return [];
   }
 
-  // Configure Fuse.js for fuzzy searching
   const fuseOptions = {
-    // Include score in results
     includeScore: true,
-    // Threshold for fuzzy matching (0.0 = exact match, 1.0 = match anything)
     threshold: 0.4,
-    // How much a single character edit affects the overall score
     distance: 100,
-    // Minimum number of characters that must be matched
     minMatchCharLength: 2,
-    // Keys to search in
     keys: [
       {
         name: "name",

@@ -6,7 +6,13 @@ import { useDebounce } from "../hooks/useDebounce";
 import { SearchPreviewItem } from "./SearchPreview";
 import { createSearchUrl } from "../utils/url";
 
-export default function RestaurantInput() {
+interface RestaurantInputProps {
+  title?: string;
+}
+
+export default function RestaurantInput({
+  title = "Where are you eating today?",
+}: RestaurantInputProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState<SearchPreviewItem[]>([]);
   const [showPreview, setShowPreview] = useState(false);
@@ -99,9 +105,7 @@ export default function RestaurantInput() {
 
   return (
     <div className="flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-      <h3 className="text-foreground font-coustard mb-4 text-lg">
-        Where are you eating today?
-      </h3>
+      <h3 className="text-foreground font-coustard mb-4 text-lg">{title}</h3>
       {error && (
         <div className="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded font-coustard">
           Error loading restaurants: {error}
