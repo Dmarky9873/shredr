@@ -37,8 +37,8 @@ function SearchContent() {
         </h1>
         <div className="mb-8">
           <p className="text-lg text-foreground/70 font-coustard text-center">
-            Despite our best efforts, webscraping isn't perfect, and results
-            should always be verified with the original source.
+            Despite our best efforts, webscraping isn&apos;t perfect, and
+            results should always be verified with the original source.
           </p>
         </div>
         <div className="bg-background border-2 border-foreground/20 rounded-lg p-8 text-center">

@@ -58,7 +58,7 @@ def json_to_macro_caches(json_file_location: str) -> None:
     }
 
     with open(
-        f"../restaurant_caches/{menu.restaurant_name}_protein_cache.json",
+        f"app/restaurant_caches/{menu.restaurant_name}_protein_cache.json",
         "w",
         encoding="utf-8",
     ) as f:
@@ -69,7 +69,7 @@ def json_to_macro_caches(json_file_location: str) -> None:
             indent=4,
         )
     with open(
-        f"../restaurant_caches/{menu.restaurant_name}_carbs_cache.json",
+        f"app/restaurant_caches/{menu.restaurant_name}_carbs_cache.json",
         "w",
         encoding="utf-8",
     ) as f:
@@ -80,7 +80,7 @@ def json_to_macro_caches(json_file_location: str) -> None:
             indent=4,
         )
     with open(
-        f"../restaurant_caches/{menu.restaurant_name}_fat_cache.json",
+        f"app/restaurant_caches/{menu.restaurant_name}_fat_cache.json",
         "w",
         encoding="utf-8",
     ) as f:

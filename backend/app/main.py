@@ -7,7 +7,7 @@ from .scraping.find_restaurant_link import clean_restaurant_name, find_restauran
 
 def create_restaurant_json(restaurant_name):
     restaurant_name = clean_restaurant_name(restaurant_name)
-    if os.path.exists(f"./backend/app/restaurant_caches/{restaurant_name}_output.json"):
+    if os.path.exists(f"app/restaurant_caches/{restaurant_name}_output.json"):
         print(f"Found cached data for {restaurant_name}.")
         return
     url = find_restaurant_link(restaurant_name)
@@ -15,7 +15,7 @@ def create_restaurant_json(restaurant_name):
         print(f"No PDF URL found for {restaurant_name}")
         return
     pdf_to_json(
-        url, f"./restaurant_caches/{restaurant_name}_output.json", restaurant_name
+        url, f"app/restaurant_caches/{restaurant_name}_output.json", restaurant_name
     )
     print(f"Extracted tables from {url} into {restaurant_name}_output.json")
 
@@ -25,9 +25,7 @@ def main():
     restaurant_name = clean_restaurant_name(restaurant_name)
     create_restaurant_json(restaurant_name)
 
-    json_to_macro_caches(
-        f"./backend/app/restaurant_caches/{restaurant_name}_output.json"
-    )
+    json_to_macro_caches(f"app/restaurant_caches/{restaurant_name}_output.json")
 
 
 if __name__ == "__main__":
