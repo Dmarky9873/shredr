@@ -8,6 +8,7 @@ import json
 import os
 import shutil
 from pathlib import Path
+
 from tqdm import tqdm
 
 
@@ -33,7 +34,6 @@ def copy_restaurant_caches():
     with open(list_file, "r", encoding="utf-8") as f:
         restaurants = json.load(f)
 
-    # Copy each restaurant's output file with progress bar
     print("Copying restaurant cache files...")
     for restaurant in tqdm(restaurants, desc="Restaurant files", unit="file"):
         restaurant_file = backend_cache_dir / f"{restaurant}_output.json"
@@ -56,9 +56,10 @@ def copy_restaurant_caches():
         if source_nutrition_dir.exists():
             dest_nutrition_dir.mkdir(exist_ok=True)
 
-            # Copy all JSON files in the nutrition directory
             json_files = list(source_nutrition_dir.glob("*.json"))
-            for json_file in tqdm(json_files, desc=f"  {nutrition_dir}", unit="file", leave=False):
+            for json_file in tqdm(
+                json_files, desc=f"  {nutrition_dir}", unit="file", leave=False
+            ):
                 shutil.copy2(json_file, dest_nutrition_dir)
         else:
             tqdm.write(f"Warning: {source_nutrition_dir} not found")
