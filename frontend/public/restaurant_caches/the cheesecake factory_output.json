@@ -1,0 +1,1267 @@
+{
+  "restaurant_name": "the cheesecake factory",
+  "url": "https://www.thecheesecakefactoryme.com/uploads/pdfs/TCF-NutriInfoBooklet.pdf",
+  "date": "2025-08-25 00:24:54",
+  "menu_items": [
+    {
+      "dish": "CAPPUCCINO",
+      "calories": "100",
+      "protein": "8",
+      "carbs": "13",
+      "fat": "2"
+    },
+    {
+      "dish": "DOUBLE ESPRESSO",
+      "calories": "5",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "AMERICANO",
+      "calories": "5",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "FACTORY HOUSEMADE",
+      "calories": "400",
+      "protein": "0",
+      "carbs": "107",
+      "fat": "0"
+    },
+    {
+      "dish": "ARNOLD PALMER",
+      "calories": "250",
+      "protein": "1",
+      "carbs": "61",
+      "fat": "0"
+    },
+    {
+      "dish": "CRANBERRY JUICE",
+      "calories": "160",
+      "protein": "0",
+      "carbs": "42",
+      "fat": "0"
+    },
+    {
+      "dish": "FRESH ORANGE JUICE",
+      "calories": "340",
+      "protein": "7",
+      "carbs": "86",
+      "fat": "1"
+    },
+    {
+      "dish": "FRESH PINEAPPLE JUICE",
+      "calories": "130",
+      "protein": "1",
+      "carbs": "33",
+      "fat": "0"
+    },
+    {
+      "dish": "FRESH MANGO JUICE",
+      "calories": "180",
+      "protein": "0",
+      "carbs": "44",
+      "fat": "0"
+    },
+    {
+      "dish": "FIJI ARTESIAN WATER",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "SOFT DRINKS",
+      "calories": "120",
+      "protein": "0",
+      "carbs": "30",
+      "fat": "0"
+    },
+    {
+      "dish": "SOFT DRINKS - Diet",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "LITTLE HOUSE SALAD",
+      "calories": "270",
+      "protein": "2",
+      "carbs": "9",
+      "fat": "26"
+    },
+    {
+      "dish": "EDAMAME",
+      "calories": "250",
+      "protein": "25",
+      "carbs": "23",
+      "fat": "12"
+    },
+    {
+      "dish": "GREEK SALAD",
+      "calories": "360",
+      "protein": "6",
+      "carbs": "11",
+      "fat": "33"
+    },
+    {
+      "dish": "CHICKEN SAMOSAS",
+      "calories": "260",
+      "protein": "13",
+      "carbs": "10",
+      "fat": "13"
+    },
+    {
+      "dish": "CRISPY CRAB BITES",
+      "calories": "180",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "19"
+    },
+    {
+      "dish": "FACTORY BURGER",
+      "calories": "660",
+      "protein": "15",
+      "carbs": "12",
+      "fat": "62"
+    },
+    {
+      "dish": "CLASSIC BURGER",
+      "calories": "930",
+      "protein": "4",
+      "carbs": "58",
+      "fat": "75"
+    },
+    {
+      "dish": "\u201cBUFFALO\u201d BURGER",
+      "calories": "940",
+      "protein": "6",
+      "carbs": "73",
+      "fat": "67"
+    },
+    {
+      "dish": "MUSHROOM BURGER",
+      "calories": "1080",
+      "protein": "18",
+      "carbs": "53",
+      "fat": "83"
+    },
+    {
+      "dish": "VEGGIE BURGER",
+      "calories": "1170",
+      "protein": "18",
+      "carbs": "116",
+      "fat": "72"
+    },
+    {
+      "dish": "CHICKEN KATSU",
+      "calories": "4430",
+      "protein": "184",
+      "carbs": "713",
+      "fat": "109"
+    },
+    {
+      "dish": "WHITE CHICKEN CHILI",
+      "calories": "760",
+      "protein": "46",
+      "carbs": "76",
+      "fat": "35"
+    },
+    {
+      "dish": "CHICKEN ENCHILADAS",
+      "calories": "1410",
+      "protein": "55",
+      "carbs": "165",
+      "fat": "76"
+    },
+    {
+      "dish": "SHEPHERD\u2019S PIE",
+      "calories": "670",
+      "protein": "11",
+      "carbs": "36",
+      "fat": "46"
+    },
+    {
+      "dish": "BAJA CHICKEN TACOS",
+      "calories": "2180",
+      "protein": "93",
+      "carbs": "215",
+      "fat": "120"
+    },
+    {
+      "dish": "FISH TACOS",
+      "calories": "1340",
+      "protein": "44",
+      "carbs": "155",
+      "fat": "76"
+    },
+    {
+      "dish": "GRILLED STEAK TACOS",
+      "calories": "1430",
+      "protein": "73",
+      "carbs": "197",
+      "fat": "48"
+    },
+    {
+      "dish": "CHICKEN MADEIRA",
+      "calories": "1120",
+      "protein": "67",
+      "carbs": "62",
+      "fat": "65"
+    },
+    {
+      "dish": "CHICKEN BELLAGIO",
+      "calories": "4020",
+      "protein": "157",
+      "carbs": "573",
+      "fat": "118"
+    },
+    {
+      "dish": "CHICKEN & BISCUITS",
+      "calories": "960",
+      "protein": "56",
+      "carbs": "35",
+      "fat": "61"
+    },
+    {
+      "dish": "Small Caesar Salad",
+      "calories": "740",
+      "protein": "17",
+      "carbs": "16",
+      "fat": "71"
+    },
+    {
+      "dish": "THE CLUB",
+      "calories": "1310",
+      "protein": "75",
+      "carbs": "123",
+      "fat": "60"
+    },
+    {
+      "dish": "CUBAN SANDWICH",
+      "calories": "1770",
+      "protein": "59",
+      "carbs": "143",
+      "fat": "111"
+    },
+    {
+      "dish": "EGGS ANY STYLE",
+      "calories": "200",
+      "protein": "11",
+      "carbs": "0",
+      "fat": "17"
+    },
+    {
+      "dish": "Beef Bacon or Grilled",
+      "calories": "1050",
+      "protein": "42",
+      "carbs": "131",
+      "fat": "56"
+    },
+    {
+      "dish": "BACON AND CHEESE",
+      "calories": "1190",
+      "protein": "55",
+      "carbs": "192",
+      "fat": "55"
+    },
+    {
+      "dish": "BREAKFAST BURRITO",
+      "calories": "1500",
+      "protein": "87",
+      "carbs": "140",
+      "fat": "79"
+    },
+    {
+      "dish": "PANCAKES with",
+      "calories": "1260",
+      "protein": "19",
+      "carbs": "257",
+      "fat": "44"
+    },
+    {
+      "dish": "BREAKFAST COMBO",
+      "calories": "1390",
+      "protein": "46",
+      "carbs": "154",
+      "fat": "81"
+    },
+    {
+      "dish": "TOAST with Beef Bacon",
+      "calories": "1180",
+      "protein": "51",
+      "carbs": "70",
+      "fat": "90"
+    },
+    {
+      "dish": "EGGS BENEDICT",
+      "calories": "1210",
+      "protein": "54",
+      "carbs": "93",
+      "fat": "72"
+    },
+    {
+      "dish": "THAI LETTUCE WRAPS",
+      "calories": "1140",
+      "protein": "48",
+      "carbs": "204",
+      "fat": "56"
+    },
+    {
+      "dish": "RUSTIC LENTIL SOUP",
+      "calories": "810",
+      "protein": "47",
+      "carbs": "105",
+      "fat": "36"
+    },
+    {
+      "dish": "BAKED POTATO SOUP",
+      "calories": "800",
+      "protein": "21",
+      "carbs": "52",
+      "fat": "57"
+    },
+    {
+      "dish": "CLAM CHOWDER SOUP",
+      "calories": "500",
+      "protein": "18",
+      "carbs": "39",
+      "fat": "30"
+    },
+    {
+      "dish": "SPICY TORTILLA SOUP",
+      "calories": "760",
+      "protein": "17",
+      "carbs": "151",
+      "fat": "17"
+    },
+    {
+      "dish": "FACTORY NACHOS",
+      "calories": "1780",
+      "protein": "80",
+      "carbs": "30",
+      "fat": "122"
+    },
+    {
+      "dish": "BUFFALO WINGS",
+      "calories": "1360",
+      "protein": "69",
+      "carbs": "74",
+      "fat": "96"
+    },
+    {
+      "dish": "FIRECRACKER SALMON",
+      "calories": "500",
+      "protein": "21",
+      "carbs": "33",
+      "fat": "30"
+    },
+    {
+      "dish": "POPCORN SHRIMP",
+      "calories": "650",
+      "protein": "35",
+      "carbs": "59",
+      "fat": "31"
+    },
+    {
+      "dish": "TOSSED GREEN SALAD",
+      "calories": "500",
+      "protein": "7",
+      "carbs": "19",
+      "fat": "46"
+    },
+    {
+      "dish": "CAESAR SALAD",
+      "calories": "740",
+      "protein": "17",
+      "carbs": "16",
+      "fat": "71"
+    },
+    {
+      "dish": "AVOCADO TOAST",
+      "calories": "1030",
+      "protein": "24",
+      "carbs": "136",
+      "fat": "48"
+    },
+    {
+      "dish": "WELLNESS SALAD",
+      "calories": "680",
+      "protein": "32",
+      "carbs": "39",
+      "fat": "58"
+    },
+    {
+      "dish": "FALAFEL SALAD",
+      "calories": "1460",
+      "protein": "65",
+      "carbs": "237",
+      "fat": "67"
+    },
+    {
+      "dish": "ITALIAN ORANGE SODA",
+      "calories": "90",
+      "protein": "0",
+      "carbs": "24",
+      "fat": "0"
+    },
+    {
+      "dish": "COCONUT LIMEADE",
+      "calories": "150",
+      "protein": "1",
+      "carbs": "28",
+      "fat": "4.5"
+    },
+    {
+      "dish": "LEMON MINT COOLER",
+      "calories": "290",
+      "protein": "0",
+      "carbs": "77",
+      "fat": "0"
+    },
+    {
+      "dish": "BERRY SPRITZER",
+      "calories": "130",
+      "protein": "1",
+      "carbs": "33",
+      "fat": "0"
+    },
+    {
+      "dish": "CITRUS SPLASH",
+      "calories": "170",
+      "protein": "2",
+      "carbs": "44",
+      "fat": "0"
+    },
+    {
+      "dish": "ISLAND COOLER",
+      "calories": "220",
+      "protein": "1",
+      "carbs": "57",
+      "fat": "0.5"
+    },
+    {
+      "dish": "STRAWBERRY DAIQUIRI",
+      "calories": "190",
+      "protein": "4",
+      "carbs": "50",
+      "fat": "0"
+    },
+    {
+      "dish": "PIN\u0303A COLADA",
+      "calories": "330",
+      "protein": "2",
+      "carbs": "63",
+      "fat": "9"
+    },
+    {
+      "dish": "FROZEN ICED MANGO",
+      "calories": "390",
+      "protein": "3",
+      "carbs": "82",
+      "fat": "6"
+    },
+    {
+      "dish": "PEACH SMOOTHIE",
+      "calories": "330",
+      "protein": "0",
+      "carbs": "80",
+      "fat": "0"
+    },
+    {
+      "dish": "MOJITO",
+      "calories": "130",
+      "protein": "0",
+      "carbs": "33",
+      "fat": "0"
+    },
+    {
+      "dish": "PINEAPPLE MOJITO",
+      "calories": "150",
+      "protein": "1",
+      "carbs": "39",
+      "fat": "0"
+    },
+    {
+      "dish": "STRAWBERRY MOJITO",
+      "calories": "140",
+      "protein": "2",
+      "carbs": "37",
+      "fat": "0"
+    },
+    {
+      "dish": "PASSION FRUIT MOJITO",
+      "calories": "310",
+      "protein": "0",
+      "carbs": "82",
+      "fat": "0"
+    },
+    {
+      "dish": "CUCUMBER MOJITO",
+      "calories": "145",
+      "protein": "1",
+      "carbs": "36",
+      "fat": "0"
+    },
+    {
+      "dish": "STUFFED MUSHROOMS",
+      "calories": "1000",
+      "protein": "31",
+      "carbs": "111",
+      "fat": "37"
+    },
+    {
+      "dish": "CHICKEN TAQUITOS",
+      "calories": "1120",
+      "protein": "36",
+      "carbs": "76",
+      "fat": "78"
+    },
+    {
+      "dish": "ORANGE CHICKEN",
+      "calories": "2240",
+      "protein": "71",
+      "carbs": "254",
+      "fat": "69"
+    },
+    {
+      "dish": "ORANGE SHRIMP",
+      "calories": "1510",
+      "protein": "56",
+      "carbs": "200",
+      "fat": "16"
+    },
+    {
+      "dish": "ORANGE COMBO",
+      "calories": "2610",
+      "protein": "89",
+      "carbs": "291",
+      "fat": "70"
+    },
+    {
+      "dish": "CHICKEN PICCATA",
+      "calories": "1970",
+      "protein": "71",
+      "carbs": "115",
+      "fat": "121"
+    },
+    {
+      "dish": "TERIYAKI CHICKEN",
+      "calories": "1560",
+      "protein": "73",
+      "carbs": "182",
+      "fat": "50"
+    },
+    {
+      "dish": "BANG-BANG CHICKEN",
+      "calories": "1650",
+      "protein": "70",
+      "carbs": "108",
+      "fat": "96"
+    },
+    {
+      "dish": "BANG-BANG SHRIMP",
+      "calories": "950",
+      "protein": "39",
+      "carbs": "50",
+      "fat": "57"
+    },
+    {
+      "dish": "PASTA NAPOLETANA",
+      "calories": "2760",
+      "protein": "75",
+      "carbs": "272",
+      "fat": "129"
+    },
+    {
+      "dish": "TOMATO BASIL PASTA",
+      "calories": "2030",
+      "protein": "75",
+      "carbs": "199",
+      "fat": "108"
+    },
+    {
+      "dish": "FETTUCCINI ALFREDO",
+      "calories": "2050",
+      "protein": "48",
+      "carbs": "177",
+      "fat": "17"
+    },
+    {
+      "dish": "FOUR CHEESE PASTA",
+      "calories": "1640",
+      "protein": "57",
+      "carbs": "177",
+      "fat": "77"
+    },
+    {
+      "dish": "PASTA DA VINCI",
+      "calories": "2470",
+      "protein": "64",
+      "carbs": "211",
+      "fat": "100"
+    },
+    {
+      "dish": "CHICKEN AND",
+      "calories": "2470",
+      "protein": "99",
+      "carbs": "239",
+      "fat": "78"
+    },
+    {
+      "dish": "GARLIC PASTA",
+      "calories": "2130",
+      "protein": "52",
+      "carbs": "241",
+      "fat": "111"
+    },
+    {
+      "dish": "VEGAN COBB SALAD",
+      "calories": "940",
+      "protein": "34",
+      "carbs": "50",
+      "fat": "84"
+    },
+    {
+      "dish": "Avocado",
+      "calories": "120",
+      "protein": "1",
+      "carbs": "6",
+      "fat": "11"
+    },
+    {
+      "dish": "Grilled Chicken",
+      "calories": "190",
+      "protein": "38",
+      "carbs": "0",
+      "fat": "3"
+    },
+    {
+      "dish": "Grilled Shrimp",
+      "calories": "60",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "7"
+    },
+    {
+      "dish": "Grilled Salmon",
+      "calories": "370",
+      "protein": "40",
+      "carbs": "0",
+      "fat": "23"
+    },
+    {
+      "dish": "Chargrilled Steak",
+      "calories": "190",
+      "protein": "37",
+      "carbs": "1",
+      "fat": "0.5"
+    },
+    {
+      "dish": "CHEESE PIZZA",
+      "calories": "1280",
+      "protein": "50",
+      "carbs": "146",
+      "fat": "55"
+    },
+    {
+      "dish": "PEPPERONI PIZZA",
+      "calories": "1460",
+      "protein": "59",
+      "carbs": "169",
+      "fat": "61"
+    },
+    {
+      "dish": "MARGHERITA PIZZA",
+      "calories": "1290",
+      "protein": "52",
+      "carbs": "147",
+      "fat": "55"
+    },
+    {
+      "dish": "B.B.Q. CHICKEN PIZZA",
+      "calories": "690",
+      "protein": "48",
+      "carbs": "27",
+      "fat": "43"
+    },
+    {
+      "dish": "Chicken-Almond Salad",
+      "calories": "1100",
+      "protein": "38",
+      "carbs": "70",
+      "fat": "82"
+    },
+    {
+      "dish": "COBB SALAD",
+      "calories": "910",
+      "protein": "37",
+      "carbs": "19",
+      "fat": "80"
+    },
+    {
+      "dish": "LUAU SALAD",
+      "calories": "600",
+      "protein": "28",
+      "carbs": "51",
+      "fat": "32"
+    },
+    {
+      "dish": "SANTA FE SALAD",
+      "calories": "940",
+      "protein": "36",
+      "carbs": "61",
+      "fat": "68"
+    },
+    {
+      "dish": "FISH & CHIPS",
+      "calories": "1380",
+      "protein": "39",
+      "carbs": "116",
+      "fat": "86"
+    },
+    {
+      "dish": "BISTRO SHRIMP PASTA",
+      "calories": "2720",
+      "protein": "75",
+      "carbs": "217",
+      "fat": "126"
+    },
+    {
+      "dish": "FRIED SHRIMP PLATTER",
+      "calories": "2370",
+      "protein": "53",
+      "carbs": "370",
+      "fat": "78"
+    },
+    {
+      "dish": "SHRIMP GUMBO",
+      "calories": "1080",
+      "protein": "44",
+      "carbs": "43",
+      "fat": "79"
+    },
+    {
+      "dish": "CHICKEN GUMBO",
+      "calories": "2190",
+      "protein": "76",
+      "carbs": "189",
+      "fat": "119"
+    },
+    {
+      "dish": "SHRIMP SCAMPI",
+      "calories": "1870",
+      "protein": "31",
+      "carbs": "140",
+      "fat": "109"
+    },
+    {
+      "dish": "PEPPER SHRIMP with",
+      "calories": "1570",
+      "protein": "59",
+      "carbs": "223",
+      "fat": "67"
+    },
+    {
+      "dish": "MISO SALMON",
+      "calories": "1480",
+      "protein": "46",
+      "carbs": "158",
+      "fat": "81"
+    },
+    {
+      "dish": "HERB CRUSTED",
+      "calories": "1400",
+      "protein": "70",
+      "carbs": "12",
+      "fat": "107"
+    },
+    {
+      "dish": "CARNE ASADA STEAK",
+      "calories": "1300",
+      "protein": "58",
+      "carbs": "129",
+      "fat": "62"
+    },
+    {
+      "dish": "STEAK DIANE",
+      "calories": "1330",
+      "protein": "84",
+      "carbs": "52",
+      "fat": "70"
+    },
+    {
+      "dish": "FRIED ZUCCHINI",
+      "calories": "2640",
+      "protein": "82",
+      "carbs": "471",
+      "fat": "54"
+    },
+    {
+      "dish": "CRISPY FRIED CHEESE",
+      "calories": "1230",
+      "protein": "53",
+      "carbs": "116",
+      "fat": "62"
+    },
+    {
+      "dish": "ROADSIDE SLIDERS",
+      "calories": "560",
+      "protein": "13",
+      "carbs": "18",
+      "fat": "12"
+    },
+    {
+      "dish": "AVOCADO EGGROLLS",
+      "calories": "930",
+      "protein": "14",
+      "carbs": "111",
+      "fat": "48"
+    },
+    {
+      "dish": "QUESADILLA",
+      "calories": "740",
+      "protein": "32",
+      "carbs": "16",
+      "fat": "62"
+    },
+    {
+      "dish": "BEEF BELLY SLIDERS",
+      "calories": "2060",
+      "protein": "58",
+      "carbs": "120",
+      "fat": "150"
+    },
+    {
+      "dish": "CHICKEN SLIDERS",
+      "calories": "1650",
+      "protein": "51",
+      "carbs": "70",
+      "fat": "94"
+    },
+    {
+      "dish": "TEX MEX EGGROLLS",
+      "calories": "1140",
+      "protein": "52",
+      "carbs": "85",
+      "fat": "61"
+    },
+    {
+      "dish": "BUFFALO BLASTS",
+      "calories": "1440",
+      "protein": "54",
+      "carbs": "140",
+      "fat": "75"
+    },
+    {
+      "dish": "EGGROLL SAMPLER",
+      "calories": "900",
+      "protein": "35",
+      "carbs": "124",
+      "fat": "48"
+    },
+    {
+      "dish": "with French Fries",
+      "calories": "350",
+      "protein": "4",
+      "carbs": "54",
+      "fat": "15"
+    },
+    {
+      "dish": "with Green Salad",
+      "calories": "430",
+      "protein": "3",
+      "carbs": "10",
+      "fat": "44"
+    },
+    {
+      "dish": "with Sweet Potato Fries",
+      "calories": "500",
+      "protein": "21",
+      "carbs": "83",
+      "fat": "22"
+    },
+    {
+      "dish": "HIBACHI STEAK",
+      "calories": "950",
+      "protein": "40",
+      "carbs": "52",
+      "fat": "60"
+    },
+    {
+      "dish": "FILET MIGNON",
+      "calories": "860",
+      "protein": "73",
+      "carbs": "54",
+      "fat": "39"
+    },
+    {
+      "dish": "French Fries",
+      "calories": "350",
+      "protein": "4",
+      "carbs": "54",
+      "fat": "15"
+    },
+    {
+      "dish": "Cheese Fries",
+      "calories": "2260",
+      "protein": "90",
+      "carbs": "136",
+      "fat": "146"
+    },
+    {
+      "dish": "Fresh Green Beans",
+      "calories": "260",
+      "protein": "26",
+      "carbs": "75",
+      "fat": "3"
+    },
+    {
+      "dish": "Fresh Corn Succotash",
+      "calories": "150",
+      "protein": "3",
+      "carbs": "10",
+      "fat": "12"
+    },
+    {
+      "dish": "Sweet Potato Fries",
+      "calories": "1080",
+      "protein": "37",
+      "carbs": "148",
+      "fat": "60"
+    },
+    {
+      "dish": "Fresh Sauteed Spinach",
+      "calories": "170",
+      "protein": "9",
+      "carbs": "10",
+      "fat": "13"
+    },
+    {
+      "dish": "Oven Roasted Broccoli",
+      "calories": "150",
+      "protein": "4",
+      "carbs": "13",
+      "fat": "10"
+    },
+    {
+      "dish": "Grilled Asparagus",
+      "calories": "130",
+      "protein": "7",
+      "carbs": "12",
+      "fat": "8"
+    },
+    {
+      "dish": "Macaroni & Cheese",
+      "calories": "1820",
+      "protein": "64",
+      "carbs": "149",
+      "fat": "60"
+    },
+    {
+      "dish": "Mashed Potatoes",
+      "calories": "90",
+      "protein": "1",
+      "carbs": "0",
+      "fat": "10"
+    },
+    {
+      "dish": "WITH SPICY CHICKEN",
+      "calories": "1970",
+      "protein": "74",
+      "carbs": "54",
+      "fat": "166"
+    },
+    {
+      "dish": "KIDS\u2019 BREAKFAST",
+      "calories": "710",
+      "protein": "27",
+      "carbs": "44",
+      "fat": "54"
+    },
+    {
+      "dish": "ORIGINAL",
+      "calories": "830",
+      "protein": "12",
+      "carbs": "64",
+      "fat": "58"
+    },
+    {
+      "dish": "FRESH STRAWBERRY",
+      "calories": "990",
+      "protein": "12",
+      "carbs": "82",
+      "fat": "68"
+    },
+    {
+      "dish": "CHOCOLATE",
+      "calories": "1150",
+      "protein": "11",
+      "carbs": "97",
+      "fat": "82"
+    },
+    {
+      "dish": "CINNAMON SWIRL",
+      "calories": "1330",
+      "protein": "11",
+      "carbs": "141",
+      "fat": "82"
+    },
+    {
+      "dish": "HAZELNUT CRUNCH",
+      "calories": "1380",
+      "protein": "15",
+      "carbs": "119",
+      "fat": "96"
+    },
+    {
+      "dish": "BUTTER CHOCOLATE",
+      "calories": "1520",
+      "protein": "23",
+      "carbs": "157",
+      "fat": "94"
+    },
+    {
+      "dish": "CHOCOLATE CAKE",
+      "calories": "1300",
+      "protein": "16",
+      "carbs": "127",
+      "fat": "85"
+    },
+    {
+      "dish": "BUTTER CUP FUDGE",
+      "calories": "1270",
+      "protein": "19",
+      "carbs": "121",
+      "fat": "82"
+    },
+    {
+      "dish": "CARAMEL MACADAMIA",
+      "calories": "1510",
+      "protein": "13",
+      "carbs": "131",
+      "fat": "106"
+    },
+    {
+      "dish": "CAESAR SALAD with",
+      "calories": "720",
+      "protein": "46",
+      "carbs": "21",
+      "fat": "53"
+    },
+    {
+      "dish": "VEGETABLE SALAD with",
+      "calories": "550",
+      "protein": "43",
+      "carbs": "48",
+      "fat": "23"
+    },
+    {
+      "dish": "FACTORY CHOPPED",
+      "calories": "460",
+      "protein": "30",
+      "carbs": "31",
+      "fat": "26"
+    },
+    {
+      "dish": "GRILLED TURKEY",
+      "calories": "610",
+      "protein": "32",
+      "carbs": "62",
+      "fat": "23"
+    },
+    {
+      "dish": "CHICKEN SALAD",
+      "calories": "450",
+      "protein": "33",
+      "carbs": "36",
+      "fat": "24"
+    },
+    {
+      "dish": "TURKEY & AVOCADO",
+      "calories": "490",
+      "protein": "18",
+      "carbs": "35",
+      "fat": "32"
+    },
+    {
+      "dish": "TUSCAN CHICKEN",
+      "calories": "630",
+      "protein": "88",
+      "carbs": "21",
+      "fat": "21"
+    },
+    {
+      "dish": "with Fries",
+      "calories": "290",
+      "protein": "3",
+      "carbs": "47",
+      "fat": "12"
+    },
+    {
+      "dish": "with Fresh Fruit",
+      "calories": "45",
+      "protein": "1",
+      "carbs": "11",
+      "fat": "0"
+    },
+    {
+      "dish": "Lemonade",
+      "calories": "240",
+      "protein": "0",
+      "carbs": "65",
+      "fat": "0"
+    },
+    {
+      "dish": "Apple Juice",
+      "calories": "160",
+      "protein": "0",
+      "carbs": "42",
+      "fat": "0"
+    },
+    {
+      "dish": "Milk",
+      "calories": "180",
+      "protein": "15",
+      "carbs": "22",
+      "fat": "3.5"
+    },
+    {
+      "dish": "Soda",
+      "calories": "60",
+      "protein": "0",
+      "carbs": "16",
+      "fat": "0"
+    },
+    {
+      "dish": "AND PARMESAN with",
+      "calories": "1190",
+      "protein": "41",
+      "carbs": "150",
+      "fat": "49"
+    },
+    {
+      "dish": "KIDS\u2019 PIZZA Cheese",
+      "calories": "780",
+      "protein": "30",
+      "carbs": "88",
+      "fat": "34"
+    },
+    {
+      "dish": "KIDS\u2019 PIZZA Pepperoni",
+      "calories": "940",
+      "protein": "38",
+      "carbs": "105",
+      "fat": "40"
+    },
+    {
+      "dish": "KIDS\u2019 QUESADILLA",
+      "calories": "580",
+      "protein": "30",
+      "carbs": "7",
+      "fat": "48"
+    },
+    {
+      "dish": "KIDS\u2019 GRILLED SALMON",
+      "calories": "280",
+      "protein": "26",
+      "carbs": "8",
+      "fat": "15"
+    },
+    {
+      "dish": "KIDS\u2019 STRAWBERRIES",
+      "calories": "180",
+      "protein": "1",
+      "carbs": "13",
+      "fat": "13"
+    },
+    {
+      "dish": "CHOCOLATE BAR",
+      "calories": "1370",
+      "protein": "15",
+      "carbs": "140",
+      "fat": "88"
+    },
+    {
+      "dish": "COOKIE-DOUGH",
+      "calories": "1410",
+      "protein": "16",
+      "carbs": "117",
+      "fat": "100"
+    },
+    {
+      "dish": "KEY LIME CHEESECAKE",
+      "calories": "1150",
+      "protein": "13",
+      "carbs": "92",
+      "fat": "85"
+    },
+    {
+      "dish": "CHEESECAKE WITH",
+      "calories": "620",
+      "protein": "13",
+      "carbs": "45",
+      "fat": "55"
+    },
+    {
+      "dish": "CARROT CAKE",
+      "calories": "1150",
+      "protein": "13",
+      "carbs": "112",
+      "fat": "75"
+    },
+    {
+      "dish": "LINDA\u2019S FUDGE CAKE",
+      "calories": "1450",
+      "protein": "13",
+      "carbs": "233",
+      "fat": "66"
+    },
+    {
+      "dish": "BLACK-OUT CAKE",
+      "calories": "1550",
+      "protein": "21",
+      "carbs": "195",
+      "fat": "85"
+    },
+    {
+      "dish": "HOT FUDGE SUNDAE",
+      "calories": "1310",
+      "protein": "20",
+      "carbs": "116",
+      "fat": "86"
+    },
+    {
+      "dish": "VANILLA MILKSHAKE",
+      "calories": "1310",
+      "protein": "23",
+      "carbs": "138",
+      "fat": "75"
+    },
+    {
+      "dish": "OREO MILKSHAKE",
+      "calories": "1680",
+      "protein": "27",
+      "carbs": "183",
+      "fat": "94"
+    },
+    {
+      "dish": "CAFE LATTE",
+      "calories": "150",
+      "protein": "12",
+      "carbs": "19",
+      "fat": "3"
+    },
+    {
+      "dish": "CAFE MOCHA",
+      "calories": "650",
+      "protein": "12",
+      "carbs": "50",
+      "fat": "44"
+    }
+  ]
+}

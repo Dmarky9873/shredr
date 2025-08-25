@@ -1,0 +1,1540 @@
+{
+  "restaurant_name": "red lobster",
+  "url": "https://img-ecomm-rl-prod-fye5gqbxdtbghqer.a03.azurefd.net/brandsite/documents/CN_Nutrition_6-23-25.pdf",
+  "date": "2025-08-25 00:30:04",
+  "menu_items": [
+    {
+      "dish": "Monday: Cajun Chicken Linguini Alfredo",
+      "calories": "630",
+      "protein": "67",
+      "carbs": "11",
+      "fat": "71"
+    },
+    {
+      "dish": "Monday: Shrimp Linguini Alfredo",
+      "calories": "570",
+      "protein": "39",
+      "carbs": "110",
+      "fat": "64"
+    },
+    {
+      "dish": "Tuesday: Snow Crab with crispy potatoes (simply steamed)",
+      "calories": "530",
+      "protein": "42",
+      "carbs": "56",
+      "fat": "59"
+    },
+    {
+      "dish": "Wednesday: Fish & Chips with fries and coleslaw",
+      "calories": "880",
+      "protein": "50",
+      "carbs": "110",
+      "fat": "99"
+    },
+    {
+      "dish": "Friday: Steak & Walt's Favourite Shrimp",
+      "calories": "230",
+      "protein": "55",
+      "carbs": "30",
+      "fat": "25"
+    },
+    {
+      "dish": "Garlic Shrimp",
+      "calories": "360",
+      "protein": "20",
+      "carbs": "3",
+      "fat": "40"
+    },
+    {
+      "dish": "Grilled Chicken and Shrimp",
+      "calories": "90",
+      "protein": "30",
+      "carbs": "3",
+      "fat": "10"
+    },
+    {
+      "dish": "Grilled Tilapia",
+      "calories": "110",
+      "protein": "41",
+      "carbs": "1",
+      "fat": "12"
+    },
+    {
+      "dish": "Island Coconut Shrimp",
+      "calories": "310",
+      "protein": "16",
+      "carbs": "48",
+      "fat": "35"
+    },
+    {
+      "dish": "Popcorn Shrimp",
+      "calories": "180",
+      "protein": "15",
+      "carbs": "47",
+      "fat": "20"
+    },
+    {
+      "dish": "Sesame-Soy Salmon Bowl",
+      "calories": "570",
+      "protein": "65",
+      "carbs": "98",
+      "fat": "63"
+    },
+    {
+      "dish": "Southwest Shrimp Bowl",
+      "calories": "460",
+      "protein": "24",
+      "carbs": "55",
+      "fat": "51"
+    },
+    {
+      "dish": "Walt's Favourite Shrimp",
+      "calories": "150",
+      "protein": "15",
+      "carbs": "41",
+      "fat": "16"
+    },
+    {
+      "dish": "Brownie OverboardTM",
+      "calories": "470",
+      "protein": "12",
+      "carbs": "121",
+      "fat": "53"
+    },
+    {
+      "dish": "Chocolate Wave",
+      "calories": "520",
+      "protein": "10",
+      "carbs": "134",
+      "fat": "58"
+    },
+    {
+      "dish": "Key Lime Pie",
+      "calories": "240",
+      "protein": "10",
+      "carbs": "76",
+      "fat": "27"
+    },
+    {
+      "dish": "Strawberry Cheesecake Bliss",
+      "calories": "620",
+      "protein": "14",
+      "carbs": "102",
+      "fat": "69"
+    },
+    {
+      "dish": "Warm Apple Crostada",
+      "calories": "230",
+      "protein": "6",
+      "carbs": "74",
+      "fat": "26"
+    },
+    {
+      "dish": "100% Pure Melted Butter",
+      "calories": "300",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "33"
+    },
+    {
+      "dish": "Blue Cheese Dressing",
+      "calories": "220",
+      "protein": "2",
+      "carbs": "2",
+      "fat": "24"
+    },
+    {
+      "dish": "Butter",
+      "calories": "60",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "7"
+    },
+    {
+      "dish": "Caesar Dressing",
+      "calories": "290",
+      "protein": "2",
+      "carbs": "1",
+      "fat": "32"
+    },
+    {
+      "dish": "Champagne Vinaigrette Dressing",
+      "calories": "40",
+      "protein": "0",
+      "carbs": "9",
+      "fat": "4"
+    },
+    {
+      "dish": "Cocktail Sauce",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "9",
+      "fat": "0"
+    },
+    {
+      "dish": "Ketchup",
+      "calories": "0",
+      "protein": "1",
+      "carbs": "15",
+      "fat": "0"
+    },
+    {
+      "dish": "Marinara Sauce",
+      "calories": "20",
+      "protein": "1",
+      "carbs": "4",
+      "fat": "2"
+    },
+    {
+      "dish": "Pico de Gallo",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "Pi\u00f1a Colada Sauce",
+      "calories": "40",
+      "protein": "1",
+      "carbs": "14",
+      "fat": "5"
+    },
+    {
+      "dish": "Plum Sauce",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "15",
+      "fat": "0"
+    },
+    {
+      "dish": "Ranch Dressing",
+      "calories": "130",
+      "protein": "1",
+      "carbs": "2",
+      "fat": "15"
+    },
+    {
+      "dish": "Sour Cream",
+      "calories": "10",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "2"
+    },
+    {
+      "dish": "Tartar Sauce",
+      "calories": "210",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "23"
+    },
+    {
+      "dish": "Tartar Sauce, Family 8 oz.",
+      "calories": "1090",
+      "protein": "0",
+      "carbs": "8",
+      "fat": "120"
+    },
+    {
+      "dish": "Thousand Island Dressing",
+      "calories": "160",
+      "protein": "0",
+      "carbs": "6",
+      "fat": "18"
+    },
+    {
+      "dish": "Garlic Shrimp Flatbread",
+      "calories": "410",
+      "protein": "47",
+      "carbs": "85",
+      "fat": "45"
+    },
+    {
+      "dish": "Lobster Bisque, Cup",
+      "calories": "140",
+      "protein": "8",
+      "carbs": "21",
+      "fat": "16"
+    },
+    {
+      "dish": "Lobster Bisque, Bowl",
+      "calories": "280",
+      "protein": "15",
+      "carbs": "35",
+      "fat": "31"
+    },
+    {
+      "dish": "Mozzarella Cheesesticks",
+      "calories": "300",
+      "protein": "54",
+      "carbs": "60",
+      "fat": "33"
+    },
+    {
+      "dish": "New England Clam Chowder, Cup",
+      "calories": "120",
+      "protein": "7",
+      "carbs": "25",
+      "fat": "13"
+    },
+    {
+      "dish": "New England Clam Chowder, Bowl",
+      "calories": "230",
+      "protein": "13",
+      "carbs": "41",
+      "fat": "26"
+    },
+    {
+      "dish": "Popcorn Shrimp - Starter",
+      "calories": "350",
+      "protein": "30",
+      "carbs": "85",
+      "fat": "39"
+    },
+    {
+      "dish": "Seafood-Stuffed Mushrooms",
+      "calories": "330",
+      "protein": "26",
+      "carbs": "23",
+      "fat": "37"
+    },
+    {
+      "dish": "Sweet Chili Shrimp",
+      "calories": "550",
+      "protein": "21",
+      "carbs": "60",
+      "fat": "61"
+    },
+    {
+      "dish": "White Wine & Garlic Mussels",
+      "calories": "480",
+      "protein": "28",
+      "carbs": "44",
+      "fat": "54"
+    },
+    {
+      "dish": "Lobster Punch",
+      "calories": "0",
+      "protein": "1",
+      "carbs": "78",
+      "fat": "0"
+    },
+    {
+      "dish": "Main Deck Margarita Flight (Rocks)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "57",
+      "fat": "0"
+    },
+    {
+      "dish": "Shrimp Caesar\u00ae",
+      "calories": "0",
+      "protein": "4",
+      "carbs": "12",
+      "fat": "0"
+    },
+    {
+      "dish": "Sunset Passion Colada",
+      "calories": "30",
+      "protein": "1",
+      "carbs": "67",
+      "fat": "3"
+    },
+    {
+      "dish": "Admiral's Feast with fries",
+      "calories": "1090",
+      "protein": "78",
+      "carbs": "210",
+      "fat": "122"
+    },
+    {
+      "dish": "Atlantic Salmon, Blackened",
+      "calories": "250",
+      "protein": "47",
+      "carbs": "5",
+      "fat": "28"
+    },
+    {
+      "dish": "Atlantic Salmon, Broiled",
+      "calories": "250",
+      "protein": "47",
+      "carbs": "2",
+      "fat": "28"
+    },
+    {
+      "dish": "Atlantic Salmon, Grilled",
+      "calories": "310",
+      "protein": "47",
+      "carbs": "1",
+      "fat": "34"
+    },
+    {
+      "dish": "Bacon Cheeseburger",
+      "calories": "630",
+      "protein": "63",
+      "carbs": "60",
+      "fat": "71"
+    },
+    {
+      "dish": "Cajun Chicken Linguini Alfredo",
+      "calories": "630",
+      "protein": "67",
+      "carbs": "11",
+      "fat": "71"
+    },
+    {
+      "dish": "Bairdi Crab, Cajun Butter, crispy potatoes",
+      "calories": "860",
+      "protein": "52",
+      "carbs": "64",
+      "fat": "96"
+    },
+    {
+      "dish": "Bairdi Crab, OLD BAY\u00ae & Parmesan, crispy potatoes",
+      "calories": "570",
+      "protein": "53",
+      "carbs": "67",
+      "fat": "64"
+    },
+    {
+      "dish": "Bairdi Crab, Roasted Garlic Butter, crispy potatoes",
+      "calories": "1030",
+      "protein": "53",
+      "carbs": "63",
+      "fat": "115"
+    },
+    {
+      "dish": "Bairdi Crab, Simply Steamed, crispy potatoes",
+      "calories": "540",
+      "protein": "50",
+      "carbs": "56",
+      "fat": "60"
+    },
+    {
+      "dish": "Snow Crab, Cajun Butter, crispy potatoes",
+      "calories": "850",
+      "protein": "44",
+      "carbs": "64",
+      "fat": "95"
+    },
+    {
+      "dish": "Snow Crab, OLD BAY\u00ae & Parmesan, crispy potatoes",
+      "calories": "560",
+      "protein": "45",
+      "carbs": "67",
+      "fat": "63"
+    },
+    {
+      "dish": "Snow Crab, Roasted Garlic Butter, crispy potatoes",
+      "calories": "1020",
+      "protein": "45",
+      "carbs": "73",
+      "fat": "114"
+    },
+    {
+      "dish": "Snow Crab Simply Steamed, crispy potatoes",
+      "calories": "530",
+      "protein": "42",
+      "carbs": "56",
+      "fat": "59"
+    },
+    {
+      "dish": "Fish and Chips with fries and coleslaw",
+      "calories": "880",
+      "protein": "50",
+      "carbs": "110",
+      "fat": "99"
+    },
+    {
+      "dish": "Garlic Shrimp Linguini",
+      "calories": "570",
+      "protein": "40",
+      "carbs": "110",
+      "fat": "64"
+    },
+    {
+      "dish": "Grilled Lobster, Shrimp and Salmon with rice",
+      "calories": "710",
+      "protein": "74",
+      "carbs": "51",
+      "fat": "79"
+    },
+    {
+      "dish": "Grilled Shrimp with rice",
+      "calories": "132",
+      "protein": "34",
+      "carbs": "55",
+      "fat": "15"
+    },
+    {
+      "dish": "Lemon Basil Mahi",
+      "calories": "230",
+      "protein": "43",
+      "carbs": "14",
+      "fat": "26"
+    },
+    {
+      "dish": "Live Maritime Lobster",
+      "calories": "310",
+      "protein": "33",
+      "carbs": "1",
+      "fat": "34"
+    },
+    {
+      "dish": "Lobster Lover's Duo",
+      "calories": "430",
+      "protein": "40",
+      "carbs": "2",
+      "fat": "48"
+    },
+    {
+      "dish": "Lobster Pappardelle Pasta",
+      "calories": "670",
+      "protein": "36",
+      "carbs": "59",
+      "fat": "74"
+    },
+    {
+      "dish": "Lobster & Shrimp Linguini Alfredo",
+      "calories": "650",
+      "protein": "58",
+      "carbs": "84",
+      "fat": "73"
+    },
+    {
+      "dish": "Mahi, Blackened",
+      "calories": "67",
+      "protein": "41",
+      "carbs": "5",
+      "fat": "8"
+    },
+    {
+      "dish": "Mahi, Broiled",
+      "calories": "70",
+      "protein": "41",
+      "carbs": "2",
+      "fat": "7"
+    },
+    {
+      "dish": "Mahi, Grilled",
+      "calories": "120",
+      "protein": "40",
+      "carbs": "1",
+      "fat": "14"
+    },
+    {
+      "dish": "Parmesan Crusted Chicken",
+      "calories": "310",
+      "protein": "38",
+      "carbs": "35",
+      "fat": "35"
+    },
+    {
+      "dish": "Salmon New Orleans",
+      "calories": "690",
+      "protein": "103",
+      "carbs": "13",
+      "fat": "77"
+    },
+    {
+      "dish": "Seaside Shrimp Trio",
+      "calories": "770",
+      "protein": "70",
+      "carbs": "136",
+      "fat": "87"
+    },
+    {
+      "dish": "Shrimp Linguini Alfredo",
+      "calories": "570",
+      "protein": "40",
+      "carbs": "110",
+      "fat": "64"
+    },
+    {
+      "dish": "Steaks: 7 oz. Sirloin",
+      "calories": "140",
+      "protein": "46",
+      "carbs": "1",
+      "fat": "15"
+    },
+    {
+      "dish": "Steaks: 10 oz. New York Strip",
+      "calories": "230",
+      "protein": "62",
+      "carbs": "1",
+      "fat": "25"
+    },
+    {
+      "dish": "Surf & Turf - Maritime Lobster Tail & NY Strip with baked potato",
+      "calories": "620",
+      "protein": "82",
+      "carbs": "57",
+      "fat": "69"
+    },
+    {
+      "dish": "Surf & Turf - Maritime Lobster Tail & Sirloin with baked potato",
+      "calories": "530",
+      "protein": "66",
+      "carbs": "56",
+      "fat": "59"
+    },
+    {
+      "dish": "Ultimate Feast with rice",
+      "calories": "670",
+      "protein": "52",
+      "carbs": "76",
+      "fat": "75"
+    },
+    {
+      "dish": "Caesar Salad with Chicken",
+      "calories": "450",
+      "protein": "28",
+      "carbs": "21",
+      "fat": "50"
+    },
+    {
+      "dish": "Tacos, Crispy Shrimp",
+      "calories": "400",
+      "protein": "20",
+      "carbs": "74",
+      "fat": "44"
+    },
+    {
+      "dish": "Tacos, Grilled Shrimp",
+      "calories": "270",
+      "protein": "34",
+      "carbs": "59",
+      "fat": "30"
+    },
+    {
+      "dish": "Tacos, Grilled Tilapia",
+      "calories": "280",
+      "protein": "50",
+      "carbs": "54",
+      "fat": "31"
+    },
+    {
+      "dish": "Grilled Shrimp",
+      "calories": "70",
+      "protein": "12",
+      "carbs": "1",
+      "fat": "8"
+    },
+    {
+      "dish": "Maritime Lobster Tail",
+      "calories": "360",
+      "protein": "13",
+      "carbs": "1",
+      "fat": "41"
+    },
+    {
+      "dish": "Rock Lobster Tail",
+      "calories": "370",
+      "protein": "27",
+      "carbs": "2",
+      "fat": "41"
+    },
+    {
+      "dish": "Snow Crab Legs, 1/2 lb.",
+      "calories": "400",
+      "protein": "18",
+      "carbs": "1",
+      "fat": "34"
+    },
+    {
+      "dish": "Asparagus",
+      "calories": "50",
+      "protein": "3",
+      "carbs": "5",
+      "fat": "6"
+    },
+    {
+      "dish": "Bacon Mac & Cheese",
+      "calories": "340",
+      "protein": "27",
+      "carbs": "48",
+      "fat": "38"
+    },
+    {
+      "dish": "Baked Potato",
+      "calories": "30",
+      "protein": "7",
+      "carbs": "55",
+      "fat": "3"
+    },
+    {
+      "dish": "Caesar Salad - Side",
+      "calories": "240",
+      "protein": "6",
+      "carbs": "11",
+      "fat": "27"
+    },
+    {
+      "dish": "Cheddar Bay Biscuits\u00ae (each)",
+      "calories": "80",
+      "protein": "3",
+      "carbs": "17",
+      "fat": "9"
+    },
+    {
+      "dish": "Chesapeake Fries",
+      "calories": "180",
+      "protein": "7",
+      "carbs": "74",
+      "fat": "20"
+    },
+    {
+      "dish": "Coleslaw",
+      "calories": "110",
+      "protein": "2",
+      "carbs": "10",
+      "fat": "12"
+    },
+    {
+      "dish": "Crispy Brussels Sprouts",
+      "calories": "210",
+      "protein": "13",
+      "carbs": "55",
+      "fat": "24"
+    },
+    {
+      "dish": "Green Beans",
+      "calories": "40",
+      "protein": "3",
+      "carbs": "11",
+      "fat": "5"
+    },
+    {
+      "dish": "Mashed Potatoes",
+      "calories": "70",
+      "protein": "3",
+      "carbs": "22",
+      "fat": "8"
+    },
+    {
+      "dish": "Rice",
+      "calories": "30",
+      "protein": "4",
+      "carbs": "45",
+      "fat": "4"
+    },
+    {
+      "dish": "Top Your Potato - Lobster Topping",
+      "calories": "120",
+      "protein": "7",
+      "carbs": "3",
+      "fat": "14"
+    },
+    {
+      "dish": "Fruit Smoothie (Strawberry)",
+      "calories": "50",
+      "protein": "7",
+      "carbs": "95",
+      "fat": "6"
+    },
+    {
+      "dish": "Handcrafted Lemonade (Classic)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "37",
+      "fat": "0"
+    },
+    {
+      "dish": "Handcrafted Lemonade (Peach)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "56",
+      "fat": "0"
+    },
+    {
+      "dish": "Handcrafted Lemonade (Strawberry)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "55",
+      "fat": "0"
+    },
+    {
+      "dish": "Hot Tea",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "IBC\u2122 Root Beer",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "43",
+      "fat": "0"
+    },
+    {
+      "dish": "Sweet Iced Tea",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "34",
+      "fat": "0"
+    },
+    {
+      "dish": "Sprite\u00ae",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "51",
+      "fat": "0"
+    },
+    {
+      "dish": "Zero-Proof Mocktail Coastal Colada",
+      "calories": "20",
+      "protein": "1",
+      "carbs": "73",
+      "fat": "2"
+    },
+    {
+      "dish": "Zero-Proof Mocktail Strawberry Breeze",
+      "calories": "0",
+      "protein": "1",
+      "carbs": "50",
+      "fat": "0"
+    },
+    {
+      "dish": "Admiral's Family Feast",
+      "calories": "3790",
+      "protein": "275",
+      "carbs": "720",
+      "fat": "423"
+    },
+    {
+      "dish": "Chicken Breast Strips",
+      "calories": "2010",
+      "protein": "343",
+      "carbs": "251",
+      "fat": "228"
+    },
+    {
+      "dish": "Create Your Own Family Feast - Grilled Chicken",
+      "calories": "120",
+      "protein": "73",
+      "carbs": "4",
+      "fat": "13"
+    },
+    {
+      "dish": "Create Your Own Family Feast - Grilled Shrimp",
+      "calories": "280",
+      "protein": "48",
+      "carbs": "4",
+      "fat": "32"
+    },
+    {
+      "dish": "Create Your Own Family Feast \u2013 Island Coconut Shrimp",
+      "calories": "600",
+      "protein": "28",
+      "carbs": "110",
+      "fat": "67"
+    },
+    {
+      "dish": "Create Your Own Family Feast \u2013 Savoury Garlic Shrimp",
+      "calories": "720",
+      "protein": "40",
+      "carbs": "7",
+      "fat": "81"
+    },
+    {
+      "dish": "Create Your Own Family Feast \u2013 Walt's Favourite Shrimp",
+      "calories": "190",
+      "protein": "20",
+      "carbs": "86",
+      "fat": "21"
+    },
+    {
+      "dish": "Snow Crab, Simply Steamed, crispy potatoes",
+      "calories": "1590",
+      "protein": "126",
+      "carbs": "168",
+      "fat": "177"
+    },
+    {
+      "dish": "Fish Fry Family Meal",
+      "calories": "2620",
+      "protein": "175",
+      "carbs": "505",
+      "fat": "291"
+    },
+    {
+      "dish": "Garlic Shrimp Family Meal",
+      "calories": "1430",
+      "protein": "81",
+      "carbs": "14",
+      "fat": "162"
+    },
+    {
+      "dish": "Mariner's Seafood Boil Family Meal, Cajun Style",
+      "calories": "3780",
+      "protein": "192",
+      "carbs": "294",
+      "fat": "423"
+    },
+    {
+      "dish": "Mariner's Seafood Boil Family Meal, Roasted Garlic & Herb Sauce",
+      "calories": "4800",
+      "protein": "201",
+      "carbs": "351",
+      "fat": "537"
+    },
+    {
+      "dish": "Sailor's Seafood Boil Family Meal, Cajun Style",
+      "calories": "5370",
+      "protein": "294",
+      "carbs": "333",
+      "fat": "597"
+    },
+    {
+      "dish": "Sailor's Seafood Boil Family Meal, Roasted Garlic & Herb Sauce",
+      "calories": "6390",
+      "protein": "303",
+      "carbs": "387",
+      "fat": "711"
+    },
+    {
+      "dish": "Taco Family Meal with Crispy Shrimp",
+      "calories": "980",
+      "protein": "51",
+      "carbs": "286",
+      "fat": "109"
+    },
+    {
+      "dish": "Taco Family Meal with Grilled Chicken",
+      "calories": "860",
+      "protein": "68",
+      "carbs": "219",
+      "fat": "96"
+    },
+    {
+      "dish": "Taco Family Meal with Grilled Shrimp",
+      "calories": "1030",
+      "protein": "73",
+      "carbs": "220",
+      "fat": "115"
+    },
+    {
+      "dish": "Taco Family Meal with Grilled Tilapia",
+      "calories": "1020",
+      "protein": "114",
+      "carbs": "218",
+      "fat": "113"
+    },
+    {
+      "dish": "Ultimate Family Feast",
+      "calories": "2870",
+      "protein": "205",
+      "carbs": "266",
+      "fat": "321"
+    },
+    {
+      "dish": "Cheddar Bay Biscuits\u00ae (Half Dozen)",
+      "calories": "500",
+      "protein": "14",
+      "carbs": "100",
+      "fat": "56"
+    },
+    {
+      "dish": "Cheddar Bay Biscuits\u00ae (One Dozen)",
+      "calories": "940",
+      "protein": "28",
+      "carbs": "200",
+      "fat": "104"
+    },
+    {
+      "dish": "Family Bacon Mac & Cheese",
+      "calories": "1360",
+      "protein": "108",
+      "carbs": "192",
+      "fat": "152"
+    },
+    {
+      "dish": "Family Baked Potatoes",
+      "calories": "120",
+      "protein": "28",
+      "carbs": "220",
+      "fat": "12"
+    },
+    {
+      "dish": "Family Caesar Salad",
+      "calories": "960",
+      "protein": "24",
+      "carbs": "44",
+      "fat": "108"
+    },
+    {
+      "dish": "Bahama Mama",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "63",
+      "fat": "0"
+    },
+    {
+      "dish": "Baileys and Coffee",
+      "calories": "90",
+      "protein": "2",
+      "carbs": "15",
+      "fat": "10"
+    },
+    {
+      "dish": "Berry Mango Daiquiri",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "55",
+      "fat": "0"
+    },
+    {
+      "dish": "Blackberry Smash",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "21",
+      "fat": "0"
+    },
+    {
+      "dish": "Espresso Martini",
+      "calories": "0",
+      "protein": "2",
+      "carbs": "20",
+      "fat": "0"
+    },
+    {
+      "dish": "Lobster Caesar\u00ae",
+      "calories": "0",
+      "protein": "5",
+      "carbs": "12",
+      "fat": "0"
+    },
+    {
+      "dish": "Long Island Iced Tea",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "14",
+      "fat": "0"
+    },
+    {
+      "dish": "Mango Mai Tai",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "35",
+      "fat": "0"
+    },
+    {
+      "dish": "Mango Martini",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "17",
+      "fat": "0"
+    },
+    {
+      "dish": "Passion Star Spritz",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "16",
+      "fat": "0"
+    },
+    {
+      "dish": "Pi\u00f1a Colada",
+      "calories": "40",
+      "protein": "0",
+      "carbs": "67",
+      "fat": "4"
+    },
+    {
+      "dish": "Ruby Mule",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "25",
+      "fat": "0"
+    },
+    {
+      "dish": "Spiked Strawberry Lemonade",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "26",
+      "fat": "0"
+    },
+    {
+      "dish": "Starry Eyed Surprise",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "35",
+      "fat": "0"
+    },
+    {
+      "dish": "Triple Berry Sangria",
+      "calories": "0",
+      "protein": "1",
+      "carbs": "36",
+      "fat": "0"
+    },
+    {
+      "dish": "Under the Purple Sea",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "20",
+      "fat": "0"
+    },
+    {
+      "dish": "Wine (6 oz.)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "5",
+      "fat": "0"
+    },
+    {
+      "dish": "Wine (9 oz.)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "7",
+      "fat": "0"
+    },
+    {
+      "dish": "Wine (Bottle)",
+      "calories": "0",
+      "protein": "1",
+      "carbs": "19",
+      "fat": "0"
+    },
+    {
+      "dish": "Wine (Litre)",
+      "calories": "0",
+      "protein": "1",
+      "carbs": "26",
+      "fat": "0"
+    },
+    {
+      "dish": "Light Beer (12 oz.)",
+      "calories": "0",
+      "protein": "1",
+      "carbs": "6",
+      "fat": "0"
+    },
+    {
+      "dish": "Regular Beer (12 oz.)",
+      "calories": "0",
+      "protein": "2",
+      "carbs": "13",
+      "fat": "0"
+    },
+    {
+      "dish": "Light Draft Beer (12 oz.)",
+      "calories": "0",
+      "protein": "1",
+      "carbs": "6",
+      "fat": "0"
+    },
+    {
+      "dish": "Regular Draft Beer (12 oz.)",
+      "calories": "0",
+      "protein": "2",
+      "carbs": "13",
+      "fat": "0"
+    },
+    {
+      "dish": "Light Draft Beer (20 oz.)",
+      "calories": "0",
+      "protein": "1",
+      "carbs": "10",
+      "fat": "0"
+    },
+    {
+      "dish": "Regular Draft Beer (20 oz.)",
+      "calories": "0",
+      "protein": "3",
+      "carbs": "21",
+      "fat": "0"
+    },
+    {
+      "dish": "Boston Iced Tea (Cranberry)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "22",
+      "fat": "0"
+    },
+    {
+      "dish": "Boston Iced Tea (Mango)",
+      "calories": "0",
+      "protein": "1",
+      "carbs": "35",
+      "fat": "0"
+    },
+    {
+      "dish": "Boston Iced Tea (Raspberry)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "44",
+      "fat": "0"
+    },
+    {
+      "dish": "Coffee",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Coke\u00ae",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "52",
+      "fat": "0"
+    },
+    {
+      "dish": "Diet Coke\u00ae",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Fruit Smoothie (Peach)",
+      "calories": "50",
+      "protein": "7",
+      "carbs": "96",
+      "fat": "6"
+    },
+    {
+      "dish": "Fruit Smoothie (Raspberry)",
+      "calories": "50",
+      "protein": "7",
+      "carbs": "94",
+      "fat": "6"
+    },
+    {
+      "dish": "Crab Queso",
+      "calories": "540",
+      "protein": "28",
+      "carbs": "74",
+      "fat": "60"
+    },
+    {
+      "dish": "Crabby Stuffed Mushrooms",
+      "calories": "420",
+      "protein": "35",
+      "carbs": "29",
+      "fat": "47"
+    },
+    {
+      "dish": "Crab-Topped Baked Potato",
+      "calories": "120",
+      "protein": "16",
+      "carbs": "62",
+      "fat": "13"
+    },
+    {
+      "dish": "Crab-Topped Mashed Potatoes",
+      "calories": "150",
+      "protein": "12",
+      "carbs": "26",
+      "fat": "17"
+    },
+    {
+      "dish": "Mariner's Seafood Boil, Cajun Style",
+      "calories": "1260",
+      "protein": "64",
+      "carbs": "98",
+      "fat": "141"
+    },
+    {
+      "dish": "Mariner's Seafood Boil, Roasted Garlic & Herb Sauce",
+      "calories": "1600",
+      "protein": "67",
+      "carbs": "117",
+      "fat": "179"
+    },
+    {
+      "dish": "Roasted Asparagus",
+      "calories": "50",
+      "protein": "3",
+      "carbs": "5",
+      "fat": "6"
+    },
+    {
+      "dish": "Salmon Oscar",
+      "calories": "450",
+      "protein": "59",
+      "carbs": "13",
+      "fat": "50"
+    },
+    {
+      "dish": "Sailor's Seafood Boil, Cajun Style",
+      "calories": "1790",
+      "protein": "98",
+      "carbs": "111",
+      "fat": "199"
+    },
+    {
+      "dish": "Sailor's Seafood Boil, Roasted Garlic & Herb Sauce",
+      "calories": "2130",
+      "protein": "101",
+      "carbs": "129",
+      "fat": "237"
+    },
+    {
+      "dish": "Steak Oscar, New York Strip",
+      "calories": "370",
+      "protein": "74",
+      "carbs": "14",
+      "fat": "41"
+    },
+    {
+      "dish": "Steak Oscar, Sirloin",
+      "calories": "279",
+      "protein": "58",
+      "carbs": "13",
+      "fat": "31"
+    },
+    {
+      "dish": "Black Tiger Shrimp Cocktail",
+      "calories": "30",
+      "protein": "22",
+      "carbs": "13",
+      "fat": "4"
+    },
+    {
+      "dish": "Escargot",
+      "calories": "290",
+      "protein": "17",
+      "carbs": "30",
+      "fat": "33"
+    },
+    {
+      "dish": "Family Chesapeake Fries",
+      "calories": "720",
+      "protein": "28",
+      "carbs": "300",
+      "fat": "80"
+    },
+    {
+      "dish": "Family Coleslaw",
+      "calories": "440",
+      "protein": "8",
+      "carbs": "40",
+      "fat": "48"
+    },
+    {
+      "dish": "Family Crispy Brussels Sprouts",
+      "calories": "840",
+      "protein": "52",
+      "carbs": "220",
+      "fat": "96"
+    },
+    {
+      "dish": "Family Green Beans",
+      "calories": "120",
+      "protein": "8",
+      "carbs": "33",
+      "fat": "14"
+    },
+    {
+      "dish": "Family Mashed Potatoes",
+      "calories": "240",
+      "protein": "11",
+      "carbs": "73",
+      "fat": "26"
+    },
+    {
+      "dish": "Family Rice",
+      "calories": "120",
+      "protein": "16",
+      "carbs": "180",
+      "fat": "16"
+    },
+    {
+      "dish": "Cheesecake* (10 slices)",
+      "calories": "5560",
+      "protein": "130",
+      "carbs": "705",
+      "fat": "618"
+    },
+    {
+      "dish": "Chocolate Wave Cake (14 slices)",
+      "calories": "6720",
+      "protein": "118",
+      "carbs": "1564",
+      "fat": "746"
+    },
+    {
+      "dish": "Key Lime Pie (8 slices)",
+      "calories": "1580",
+      "protein": "80",
+      "carbs": "568",
+      "fat": "176"
+    },
+    {
+      "dish": "Triple Chocolate Brownie (24 pieces)",
+      "calories": "3250",
+      "protein": "78",
+      "carbs": "720",
+      "fat": "360"
+    },
+    {
+      "dish": "Black Tiger Shrimp Cocktail Platter - Small",
+      "calories": "140",
+      "protein": "90",
+      "carbs": "48",
+      "fat": "16"
+    },
+    {
+      "dish": "Black Tiger Shrimp Cocktail Platter - Large",
+      "calories": "280",
+      "protein": "181",
+      "carbs": "96",
+      "fat": "31"
+    },
+    {
+      "dish": "Crab Queso Platter",
+      "calories": "2880",
+      "protein": "160",
+      "carbs": "350",
+      "fat": "320"
+    },
+    {
+      "dish": "Crispy Chicken Tenders Platter",
+      "calories": "2330",
+      "protein": "230",
+      "carbs": "314",
+      "fat": "260"
+    },
+    {
+      "dish": "Crunchy Popcorn Shrimp Platter",
+      "calories": "1050",
+      "protein": "91",
+      "carbs": "267",
+      "fat": "117"
+    },
+    {
+      "dish": "Island Coconut Shrimp Platter",
+      "calories": "1570",
+      "protein": "83",
+      "carbs": "245",
+      "fat": "174"
+    },
+    {
+      "dish": "Mozzarella Cheesesticks Platter",
+      "calories": "870",
+      "protein": "152",
+      "carbs": "173",
+      "fat": "97"
+    },
+    {
+      "dish": "Savoury Garlic Shrimp Platter",
+      "calories": "890",
+      "protein": "51",
+      "carbs": "8",
+      "fat": "101"
+    },
+    {
+      "dish": "Sweet Chili Shrimp Platter",
+      "calories": "2500",
+      "protein": "99",
+      "carbs": "263",
+      "fat": "278"
+    },
+    {
+      "dish": "Caesar Salad",
+      "calories": "240",
+      "protein": "6",
+      "carbs": "11",
+      "fat": "27"
+    },
+    {
+      "dish": "Chocolate Milk",
+      "calories": "20",
+      "protein": "7",
+      "carbs": "24",
+      "fat": "3"
+    },
+    {
+      "dish": "Coastal Cooler (Peachy Breezy Smoothie)",
+      "calories": "0",
+      "protein": "3",
+      "carbs": "45",
+      "fat": "0"
+    },
+    {
+      "dish": "Costal Cooler (Raspberry Bay Smoothie)",
+      "calories": "0",
+      "protein": "3",
+      "carbs": "44",
+      "fat": "0"
+    },
+    {
+      "dish": "Coastal Cooler (Sunset Strawberry Smoothie)",
+      "calories": "0",
+      "protein": "3",
+      "carbs": "44",
+      "fat": "0"
+    },
+    {
+      "dish": "Crispy Chicken Tenders",
+      "calories": "300",
+      "protein": "51",
+      "carbs": "36",
+      "fat": "34"
+    },
+    {
+      "dish": "Golden-Fried Fish",
+      "calories": "80",
+      "protein": "17",
+      "carbs": "24",
+      "fat": "9"
+    },
+    {
+      "dish": "Grilled Chicken",
+      "calories": "30",
+      "protein": "18",
+      "carbs": "16",
+      "fat": "4"
+    },
+    {
+      "dish": "Juice",
+      "calories": "0",
+      "protein": "2",
+      "carbs": "27",
+      "fat": "0"
+    },
+    {
+      "dish": "Lemonade",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "22",
+      "fat": "0"
+    },
+    {
+      "dish": "Macaroni and Cheese",
+      "calories": "80",
+      "protein": "9",
+      "carbs": "40",
+      "fat": "9"
+    },
+    {
+      "dish": "Milk 2%",
+      "calories": "40",
+      "protein": "8",
+      "carbs": "12",
+      "fat": "5"
+    },
+    {
+      "dish": "Petite Maritime Lobster Tail",
+      "calories": "320",
+      "protein": "10",
+      "carbs": "1",
+      "fat": "35"
+    },
+    {
+      "dish": "Raspberry Lemonade",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "24",
+      "fat": "0"
+    },
+    {
+      "dish": "Surf's Up Sundae",
+      "calories": "50",
+      "protein": "2",
+      "carbs": "25",
+      "fat": "6"
+    }
+  ]
+}

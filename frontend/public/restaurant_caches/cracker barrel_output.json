@@ -1,0 +1,1113 @@
+{
+  "restaurant_name": "cracker barrel",
+  "url": "https://prod-cbdigitalstore.azurefd.net/-/media/Project/cb-brandsite/brandsite/pdfs/Nutrition-Guide.pdf?rev=13a87877b54a40e29c65b38fa002d38e",
+  "date": "2025-08-25 00:26:33",
+  "menu_items": [
+    {
+      "dish": "Country Fried Pickles",
+      "calories": "510",
+      "protein": "9",
+      "carbs": "84",
+      "fat": "56"
+    },
+    {
+      "dish": "White Cheddar Cheese Bites",
+      "calories": "350",
+      "protein": "27",
+      "carbs": "28",
+      "fat": "39"
+    },
+    {
+      "dish": "Biscuit Beignets",
+      "calories": "240",
+      "protein": "7",
+      "carbs": "54",
+      "fat": "26"
+    },
+    {
+      "dish": "Loaded Hashbrown Casserole Tots",
+      "calories": "330",
+      "protein": "17",
+      "carbs": "48",
+      "fat": "38"
+    },
+    {
+      "dish": "Monday-Friday",
+      "calories": "80",
+      "protein": "19",
+      "carbs": "53",
+      "fat": "8"
+    },
+    {
+      "dish": "Wednesday",
+      "calories": "390",
+      "protein": "40",
+      "carbs": "35",
+      "fat": "44"
+    },
+    {
+      "dish": "Homestyle Fried Chicken Salad",
+      "calories": "340",
+      "protein": "46",
+      "carbs": "45",
+      "fat": "38"
+    },
+    {
+      "dish": "Homestyle Grilled Chicken Salad",
+      "calories": "120",
+      "protein": "40",
+      "carbs": "16",
+      "fat": "24"
+    },
+    {
+      "dish": "House Salad",
+      "calories": "80",
+      "protein": "10",
+      "carbs": "13",
+      "fat": "9"
+    },
+    {
+      "dish": "The Barrel Cheeseburger",
+      "calories": "310",
+      "protein": "50",
+      "carbs": "40",
+      "fat": "65"
+    },
+    {
+      "dish": "Lil' Barrel Cheeseburgers: two mini cheeseburgers",
+      "calories": "230",
+      "protein": "31",
+      "carbs": "18",
+      "fat": "32"
+    },
+    {
+      "dish": "Grilled Cheese Sandwich",
+      "calories": "50",
+      "protein": "14",
+      "carbs": "47",
+      "fat": "33"
+    },
+    {
+      "dish": "Grilled Chicken Tenderloins: three tenders",
+      "calories": "40",
+      "protein": "28",
+      "carbs": "3",
+      "fat": "4"
+    },
+    {
+      "dish": "Fried Chicken Tenderloins: three tenders",
+      "calories": "130",
+      "protein": "29",
+      "carbs": "13",
+      "fat": "15"
+    },
+    {
+      "dish": "plus choice of",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "21",
+      "fat": "0"
+    },
+    {
+      "dish": "Mmmm Mac n' Cheese",
+      "calories": "280",
+      "protein": "19",
+      "carbs": "45",
+      "fat": "31"
+    },
+    {
+      "dish": "Crispy Rockin' Shrimp: fried shrimp, hushpuppy, cocktail sauce, and steak fries",
+      "calories": "300",
+      "protein": "19",
+      "carbs": "91",
+      "fat": "33"
+    },
+    {
+      "dish": "100% Premium Orange",
+      "calories": "0",
+      "protein": "2",
+      "carbs": "32",
+      "fat": "0"
+    },
+    {
+      "dish": "Apple",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "42",
+      "fat": "0"
+    },
+    {
+      "dish": "Skim",
+      "calories": "0",
+      "protein": "8",
+      "carbs": "13",
+      "fat": "0"
+    },
+    {
+      "dish": "Whole",
+      "calories": "70",
+      "protein": "8",
+      "carbs": "12",
+      "fat": "8"
+    },
+    {
+      "dish": "Chocolate",
+      "calories": "40",
+      "protein": "7",
+      "carbs": "30",
+      "fat": "5"
+    },
+    {
+      "dish": "Unsweet",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "Sweet",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "26",
+      "fat": "0"
+    },
+    {
+      "dish": "Peach Tea",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "51",
+      "fat": "0"
+    },
+    {
+      "dish": "Southern Half n' Half",
+      "calories": "0",
+      "protein": "1",
+      "carbs": "24",
+      "fat": "0"
+    },
+    {
+      "dish": "Diet Coke",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Coca-Cola\u00ae Classic",
+      "calories": "10",
+      "protein": "0",
+      "carbs": "51",
+      "fat": "1"
+    },
+    {
+      "dish": "Coca-Cola\u00ae Zero Sugar",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Coca-Cola\u00ae Cherry",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "58",
+      "fat": "0"
+    },
+    {
+      "dish": "Mello Yello",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "47",
+      "fat": "0"
+    },
+    {
+      "dish": "Sprite",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "43",
+      "fat": "0"
+    },
+    {
+      "dish": "Seagram's Ginger Ale",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "32",
+      "fat": "0"
+    },
+    {
+      "dish": "New York Strip Steak N' Eggs: New York Strip Steak with buttery garlic sauce",
+      "calories": "90",
+      "protein": "67",
+      "carbs": "2",
+      "fat": "19"
+    },
+    {
+      "dish": "with choice of",
+      "calories": "400",
+      "protein": "30",
+      "carbs": "36",
+      "fat": "50"
+    },
+    {
+      "dish": "Sunrise Pancake Special: two pancakes with butter",
+      "calories": "210",
+      "protein": "6",
+      "carbs": "74",
+      "fat": "23"
+    },
+    {
+      "dish": "Egg Sandwich: two eggs, sourdough bread, tomato, Duke's Mayonnaise",
+      "calories": "220",
+      "protein": "20",
+      "carbs": "44",
+      "fat": "26"
+    },
+    {
+      "dish": "Fried Chicken Tenders: 20 each",
+      "calories": "45",
+      "protein": "10",
+      "carbs": "4",
+      "fat": "5"
+    },
+    {
+      "dish": "Homestyle Chicken: 5 each",
+      "calories": "260",
+      "protein": "36",
+      "carbs": "32",
+      "fat": "29"
+    },
+    {
+      "dish": "Country Fried Shrimp: catfish, hushpuppies, fries,",
+      "calories": "1270",
+      "protein": "100",
+      "carbs": "424",
+      "fat": "141"
+    },
+    {
+      "dish": "tartar sauce, and lemon wedges",
+      "calories": "250",
+      "protein": "20",
+      "carbs": "85",
+      "fat": "28"
+    },
+    {
+      "dish": "Fried Catfish: with tartar sauce, lemon wedges and",
+      "calories": "2050",
+      "protein": "98",
+      "carbs": "123",
+      "fat": "228"
+    },
+    {
+      "dish": "hushpuppies",
+      "calories": "410",
+      "protein": "20",
+      "carbs": "25",
+      "fat": "46"
+    },
+    {
+      "dish": "Sirloin Steak Tips n' Tenders: steak tips, with garlic",
+      "calories": "980",
+      "protein": "131",
+      "carbs": "3",
+      "fat": "109"
+    },
+    {
+      "dish": "butter glaze",
+      "calories": "200",
+      "protein": "26",
+      "carbs": "1",
+      "fat": "22"
+    },
+    {
+      "dish": "Applesauce (Kid's Menu)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "13",
+      "fat": "0"
+    },
+    {
+      "dish": "Breaded Fried Okra",
+      "calories": "80",
+      "protein": "3",
+      "carbs": "38",
+      "fat": "9"
+    },
+    {
+      "dish": "Coarse Ground Grits",
+      "calories": "0",
+      "protein": "1",
+      "carbs": "15",
+      "fat": "0"
+    },
+    {
+      "dish": "Cole Slaw",
+      "calories": "190",
+      "protein": "0",
+      "carbs": "10",
+      "fat": "20"
+    },
+    {
+      "dish": "Cornbread Dressing (served with Turkey n' Dressing)",
+      "calories": "160",
+      "protein": "5",
+      "carbs": "33",
+      "fat": "18"
+    },
+    {
+      "dish": "Country Green Beans",
+      "calories": "45",
+      "protein": "2",
+      "carbs": "8",
+      "fat": "5"
+    },
+    {
+      "dish": "Dumplins",
+      "calories": "50",
+      "protein": "6",
+      "carbs": "41",
+      "fat": "6"
+    },
+    {
+      "dish": "Steamed Broccoli",
+      "calories": "0",
+      "protein": "2",
+      "carbs": "6",
+      "fat": "0"
+    },
+    {
+      "dish": "Fried Apples",
+      "calories": "45",
+      "protein": "23",
+      "carbs": "41",
+      "fat": "5"
+    },
+    {
+      "dish": "Hashbrown Casserole",
+      "calories": "15",
+      "protein": "3",
+      "carbs": "16",
+      "fat": "8"
+    },
+    {
+      "dish": "Macaroni n' Cheese",
+      "calories": "200",
+      "protein": "9",
+      "carbs": "8",
+      "fat": "22"
+    },
+    {
+      "dish": "Mashed Potatoes",
+      "calories": "0",
+      "protein": "3",
+      "carbs": "28",
+      "fat": "11"
+    },
+    {
+      "dish": "Pinto Beans",
+      "calories": "10",
+      "protein": "12",
+      "carbs": "27",
+      "fat": "2"
+    },
+    {
+      "dish": "Steak Fries",
+      "calories": "150",
+      "protein": "5",
+      "carbs": "53",
+      "fat": "17"
+    },
+    {
+      "dish": "Sweet Potato Casserole (served with Turkey n' Dressing)",
+      "calories": "40",
+      "protein": "2",
+      "carbs": "41",
+      "fat": "8"
+    },
+    {
+      "dish": "Sweet Whole Baby Carrots",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "18",
+      "fat": "5"
+    },
+    {
+      "dish": "Turnip Greens",
+      "calories": "0",
+      "protein": "7",
+      "carbs": "6",
+      "fat": "3"
+    },
+    {
+      "dish": "Whole Kernel Corn",
+      "calories": "0",
+      "protein": "2",
+      "carbs": "16",
+      "fat": "13"
+    },
+    {
+      "dish": "Loaded Mashed Potatoes",
+      "calories": "70",
+      "protein": "10",
+      "carbs": "28",
+      "fat": "19"
+    },
+    {
+      "dish": "Loaded Baked Sweet Potato",
+      "calories": "240",
+      "protein": "6",
+      "carbs": "79",
+      "fat": "27"
+    },
+    {
+      "dish": "Loaded Baked Potato",
+      "calories": "80",
+      "protein": "15",
+      "carbs": "64",
+      "fat": "30"
+    },
+    {
+      "dish": "Hashbrown Casserole Tots",
+      "calories": "150",
+      "protein": "5",
+      "carbs": "28",
+      "fat": "17"
+    },
+    {
+      "dish": "Bacon Macaroni n' Cheese",
+      "calories": "150",
+      "protein": "5",
+      "carbs": "28",
+      "fat": "17"
+    },
+    {
+      "dish": "Loaded Hashbrown Casserole",
+      "calories": "15",
+      "protein": "12",
+      "carbs": "16",
+      "fat": "21"
+    },
+    {
+      "dish": "Two Buttermilk Pancakes: with one scoop whipped butter",
+      "calories": "340",
+      "protein": "6",
+      "carbs": "59",
+      "fat": "38"
+    },
+    {
+      "dish": "Bowl of Pinto Beans",
+      "calories": "35",
+      "protein": "37",
+      "carbs": "132",
+      "fat": "5"
+    },
+    {
+      "dish": "Bowl of Turnip Greens",
+      "calories": "10",
+      "protein": "15",
+      "carbs": "12",
+      "fat": "7"
+    },
+    {
+      "dish": "Beans n' Greens",
+      "calories": "20",
+      "protein": "29",
+      "carbs": "100",
+      "fat": "8"
+    },
+    {
+      "dish": "comes with",
+      "calories": "360",
+      "protein": "2",
+      "carbs": "5",
+      "fat": "40"
+    },
+    {
+      "dish": "Chocolate Chip Cookies: 5 each",
+      "calories": "100",
+      "protein": "3",
+      "carbs": "30",
+      "fat": "11"
+    },
+    {
+      "dish": "Coke Cake",
+      "calories": "290",
+      "protein": "8",
+      "carbs": "87",
+      "fat": "32"
+    },
+    {
+      "dish": "Balsamic Herb Vinaigrette",
+      "calories": "240",
+      "protein": "0",
+      "carbs": "7",
+      "fat": "26"
+    },
+    {
+      "dish": "Blue Cheese Dressing",
+      "calories": "330",
+      "protein": "3",
+      "carbs": "2",
+      "fat": "37"
+    },
+    {
+      "dish": "Buttermilk Ranch",
+      "calories": "240",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "27"
+    },
+    {
+      "dish": "Dijon Honey Mustard",
+      "calories": "240",
+      "protein": "0",
+      "carbs": "14",
+      "fat": "26"
+    },
+    {
+      "dish": "Dill Pickle Ranch",
+      "calories": "310",
+      "protein": "2",
+      "carbs": "3",
+      "fat": "35"
+    },
+    {
+      "dish": "Monday",
+      "calories": "180",
+      "protein": "24",
+      "carbs": "56",
+      "fat": "20"
+    },
+    {
+      "dish": "Tuesday",
+      "calories": "650",
+      "protein": "53",
+      "carbs": "43",
+      "fat": "72"
+    },
+    {
+      "dish": "Fish Fry: four cod fillets with Tartar Sauce",
+      "calories": "350",
+      "protein": "37",
+      "carbs": "60",
+      "fat": "39"
+    },
+    {
+      "dish": "Saturday",
+      "calories": "450",
+      "protein": "35",
+      "carbs": "46",
+      "fat": "51"
+    },
+    {
+      "dish": "Sunday",
+      "calories": "500",
+      "protein": "35",
+      "carbs": "82",
+      "fat": "55"
+    },
+    {
+      "dish": "Country Fried Steak: with sawmill gravy",
+      "calories": "210",
+      "protein": "37",
+      "carbs": "49",
+      "fat": "28"
+    },
+    {
+      "dish": "Meatloaf",
+      "calories": "260",
+      "protein": "32",
+      "carbs": "14",
+      "fat": "29"
+    },
+    {
+      "dish": "Pot Roast",
+      "calories": "150",
+      "protein": "74",
+      "carbs": "14",
+      "fat": "19"
+    },
+    {
+      "dish": "Hashbrown Casserole Shephard's Pie",
+      "calories": "280",
+      "protein": "82",
+      "carbs": "102",
+      "fat": "95"
+    },
+    {
+      "dish": "Chicken n' Dumplins",
+      "calories": "80",
+      "protein": "19",
+      "carbs": "53",
+      "fat": "8"
+    },
+    {
+      "dish": "Chicken Fried Chicken: Homestyle Chicken Breasts with sawmill gravy",
+      "calories": "570",
+      "protein": "74",
+      "carbs": "70",
+      "fat": "60"
+    },
+    {
+      "dish": "Biscuit: each",
+      "calories": "0",
+      "protein": "3",
+      "carbs": "20",
+      "fat": "6"
+    },
+    {
+      "dish": "Cornbread: each",
+      "calories": "20",
+      "protein": "3",
+      "carbs": "19",
+      "fat": "11"
+    },
+    {
+      "dish": "Multigrain: one slice",
+      "calories": "20",
+      "protein": "3",
+      "carbs": "18",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Sourdough: one slice",
+      "calories": "20",
+      "protein": "3",
+      "carbs": "21",
+      "fat": "2"
+    },
+    {
+      "dish": "White: one slice",
+      "calories": "10",
+      "protein": "2",
+      "carbs": "14",
+      "fat": "1"
+    },
+    {
+      "dish": "Crackers: 2 packs",
+      "calories": "20",
+      "protein": "0",
+      "carbs": "12",
+      "fat": "2"
+    },
+    {
+      "dish": "Real Butter: each",
+      "calories": "35",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "4"
+    },
+    {
+      "dish": "Best Preserves n\u2019 Jam: each",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "9",
+      "fat": "0"
+    },
+    {
+      "dish": "Bacon Pieces: 0.5 oz.",
+      "calories": "50",
+      "protein": "5",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "Colby Cheese Shreds: 1 oz.",
+      "calories": "80",
+      "protein": "7",
+      "carbs": "1",
+      "fat": "9"
+    },
+    {
+      "dish": "BBQ: 2 oz.",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "28",
+      "fat": "0"
+    },
+    {
+      "dish": "Cocktail Sauce: 1 oz.",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "5",
+      "fat": "0"
+    },
+    {
+      "dish": "Cranberry Sauce: 1 oz.",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "11",
+      "fat": "0"
+    },
+    {
+      "dish": "Chow Chow: 1 oz.",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "50",
+      "fat": "0"
+    },
+    {
+      "dish": "Tartar Sauce: 1 oz.",
+      "calories": "140",
+      "protein": "0",
+      "carbs": "3",
+      "fat": "15"
+    },
+    {
+      "dish": "Mini Confetti Pancakes",
+      "calories": "140",
+      "protein": "5",
+      "carbs": "58",
+      "fat": "16"
+    },
+    {
+      "dish": "Mini Pancakes",
+      "calories": "0",
+      "protein": "4",
+      "carbs": "41",
+      "fat": "15"
+    },
+    {
+      "dish": "Cereal:  Fruity Cereal",
+      "calories": "30",
+      "protein": "3",
+      "carbs": "105",
+      "fat": "3.5"
+    },
+    {
+      "dish": "Kid's Milk Straw",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "4",
+      "fat": "0"
+    },
+    {
+      "dish": "your choice of",
+      "calories": "520",
+      "protein": "71",
+      "carbs": "64",
+      "fat": "58"
+    },
+    {
+      "dish": "Southern Fried Chicken",
+      "calories": "900",
+      "protein": "108",
+      "carbs": "78",
+      "fat": "100"
+    },
+    {
+      "dish": "Homestyle Chicken",
+      "calories": "520",
+      "protein": "71",
+      "carbs": "64",
+      "fat": "58"
+    },
+    {
+      "dish": "Smoky Southern Grilled Chicken",
+      "calories": "35",
+      "protein": "29",
+      "carbs": "3",
+      "fat": "6"
+    },
+    {
+      "dish": "Steak Tips Dinner",
+      "calories": "200",
+      "protein": "26",
+      "carbs": "1",
+      "fat": "22"
+    },
+    {
+      "dish": "Grandma's Sampler Pancake Breakfast: two pancakes with butter and two eggs",
+      "calories": "90",
+      "protein": "19",
+      "carbs": "61",
+      "fat": "47"
+    },
+    {
+      "dish": "Grandma's Sampler French Toast Breakfast:  french toast with butter and two eggs",
+      "calories": "90",
+      "protein": "26",
+      "carbs": "59",
+      "fat": "34"
+    },
+    {
+      "dish": "Momma's Pancake Breakfast: three pancakes with butter and and two eggs",
+      "calories": "90",
+      "protein": "22",
+      "carbs": "89",
+      "fat": "57"
+    },
+    {
+      "dish": "Momma's French Toast Breakfast: french toast with butter and two eggs",
+      "calories": "90",
+      "protein": "38",
+      "carbs": "114",
+      "fat": "53"
+    },
+    {
+      "dish": "Blueberry Topping for Pancakes",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "8",
+      "fat": "0"
+    },
+    {
+      "dish": "Pecan Topping for Pancakes",
+      "calories": "370",
+      "protein": "5",
+      "carbs": "8",
+      "fat": "41"
+    },
+    {
+      "dish": "Country Peaches",
+      "calories": "80",
+      "protein": "6",
+      "carbs": "58",
+      "fat": "9"
+    },
+    {
+      "dish": "100% Pure Natural Syrup",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "29",
+      "fat": "0"
+    },
+    {
+      "dish": "Strawberry Syrup",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "44",
+      "fat": "0"
+    },
+    {
+      "dish": "Sugar Free Syrup",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "4",
+      "fat": "0"
+    },
+    {
+      "dish": "Tomato Slices",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "Thick-Sliced Bacon: three slices",
+      "calories": "140",
+      "protein": "13",
+      "carbs": "0",
+      "fat": "16"
+    },
+    {
+      "dish": "Smoked Sausage Patties: two patties",
+      "calories": "180",
+      "protein": "14",
+      "carbs": "2",
+      "fat": "20"
+    },
+    {
+      "dish": "Spicy Chicken Sausage: two links",
+      "calories": "130",
+      "protein": "21",
+      "carbs": "2",
+      "fat": "15"
+    },
+    {
+      "dish": "Impossible\u2122 Sausage: two patties",
+      "calories": "130",
+      "protein": "12",
+      "carbs": "9",
+      "fat": "14"
+    },
+    {
+      "dish": "Sugar Cured Ham",
+      "calories": "70",
+      "protein": "22",
+      "carbs": "0",
+      "fat": "2.5"
+    },
+    {
+      "dish": "Country Ham",
+      "calories": "80",
+      "protein": "25",
+      "carbs": "1",
+      "fat": "9"
+    },
+    {
+      "dish": "Egg Whites: 2 each",
+      "calories": "0",
+      "protein": "11",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "Colby Cheese Shreds (for eggs): 1 oz.",
+      "calories": "80",
+      "protein": "7",
+      "carbs": "1",
+      "fat": "9"
+    },
+    {
+      "dish": "Sawmill Gravy: 6 oz.",
+      "calories": "10",
+      "protein": "7",
+      "carbs": "14",
+      "fat": "16"
+    },
+    {
+      "dish": "Sawmill Gravy: 10 oz.",
+      "calories": "20",
+      "protein": "11",
+      "carbs": "24",
+      "fat": "26"
+    },
+    {
+      "dish": "Multigrain Toast: one slice",
+      "calories": "20",
+      "protein": "3",
+      "carbs": "18",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Country Apple Butter: 2 oz.",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "24",
+      "fat": "0"
+    },
+    {
+      "dish": "Bud Light",
+      "calories": "0",
+      "protein": "1",
+      "carbs": "5",
+      "fat": "0"
+    },
+    {
+      "dish": "Miller Lite",
+      "calories": "0",
+      "protein": "1",
+      "carbs": "3",
+      "fat": "0"
+    },
+    {
+      "dish": "Corona Extra",
+      "calories": "0",
+      "protein": "1",
+      "carbs": "15",
+      "fat": "0"
+    },
+    {
+      "dish": "Michelob Ultra",
+      "calories": "0",
+      "protein": "1",
+      "carbs": "3",
+      "fat": "0"
+    },
+    {
+      "dish": "Budweiser",
+      "calories": "0",
+      "protein": "1",
+      "carbs": "10",
+      "fat": "0"
+    },
+    {
+      "dish": "Gambino Sparkling Wine: 187 mL bottle",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "7",
+      "fat": "0"
+    },
+    {
+      "dish": "Sutter Home Chardonnay: 187 mL bottle",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "4",
+      "fat": "0"
+    },
+    {
+      "dish": "Bloody Mary",
+      "calories": "0",
+      "protein": "3",
+      "carbs": "14",
+      "fat": "0"
+    },
+    {
+      "dish": "Double Fudge Coca-Cola\u00ae Cake",
+      "calories": "290",
+      "protein": "8",
+      "carbs": "87",
+      "fat": "32"
+    },
+    {
+      "dish": "Peach Cobbler",
+      "calories": "100",
+      "protein": "2",
+      "carbs": "194",
+      "fat": "14"
+    },
+    {
+      "dish": "Old Timer's Breakfast: two eggs",
+      "calories": "90",
+      "protein": "14",
+      "carbs": "2",
+      "fat": "10"
+    },
+    {
+      "dish": "Grandpa's Country Fried Breakfast\u00ae: two eggs",
+      "calories": "90",
+      "protein": "14",
+      "carbs": "2",
+      "fat": "10"
+    },
+    {
+      "dish": "Build Your Own Homestyle Breakfast : two eggs",
+      "calories": "90",
+      "protein": "14",
+      "carbs": "2",
+      "fat": "10"
+    },
+    {
+      "dish": "Coffee",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Hot Tea",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Peach",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "55",
+      "fat": "0"
+    },
+    {
+      "dish": "Lemonade",
+      "calories": "0",
+      "protein": "2",
+      "carbs": "50",
+      "fat": "0"
+    },
+    {
+      "dish": "Stewart's Root Beer",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "38",
+      "fat": "0"
+    },
+    {
+      "dish": "Hot Chocolate: with chocolate whipped cream",
+      "calories": "50",
+      "protein": "14",
+      "carbs": "56",
+      "fat": "10"
+    }
+  ]
+}

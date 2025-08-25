@@ -1,0 +1,476 @@
+{
+  "restaurant_name": "yogen fr\u00fcz",
+  "url": "https://yogenfruz.com/wp-content/uploads/2020/03/Nutritional-Facts-NEW-VERSION-US-20200228.pdf",
+  "date": "2025-08-24 23:22:13",
+  "menu_items": [
+    {
+      "dish": "Banana",
+      "calories": "120",
+      "protein": "3",
+      "carbs": "21",
+      "fat": "2"
+    },
+    {
+      "dish": "Blackberry",
+      "calories": "110",
+      "protein": "3",
+      "carbs": "19",
+      "fat": "2.5"
+    },
+    {
+      "dish": "Blueberry",
+      "calories": "110",
+      "protein": "3",
+      "carbs": "20",
+      "fat": "2.5"
+    },
+    {
+      "dish": "Kiwi",
+      "calories": "110",
+      "protein": "3",
+      "carbs": "19",
+      "fat": "2"
+    },
+    {
+      "dish": "Mango",
+      "calories": "110",
+      "protein": "3",
+      "carbs": "20",
+      "fat": "2"
+    },
+    {
+      "dish": "Papaya",
+      "calories": "100",
+      "protein": "3",
+      "carbs": "19",
+      "fat": "2"
+    },
+    {
+      "dish": "Peach",
+      "calories": "110",
+      "protein": "3",
+      "carbs": "22",
+      "fat": "2"
+    },
+    {
+      "dish": "Pineapple",
+      "calories": "110",
+      "protein": "3",
+      "carbs": "21",
+      "fat": "2"
+    },
+    {
+      "dish": "Raspberry",
+      "calories": "110",
+      "protein": "4",
+      "carbs": "20",
+      "fat": "2.5"
+    },
+    {
+      "dish": "Strawberry",
+      "calories": "100",
+      "protein": "3",
+      "carbs": "18",
+      "fat": "2"
+    },
+    {
+      "dish": "Sweet Cherry",
+      "calories": "110",
+      "protein": "3",
+      "carbs": "19",
+      "fat": "2.5"
+    },
+    {
+      "dish": "Vanilla",
+      "calories": "120",
+      "protein": "5",
+      "carbs": "25",
+      "fat": "0"
+    },
+    {
+      "dish": "Birthday Cake",
+      "calories": "130",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "2"
+    },
+    {
+      "dish": "Chocolate Truffle",
+      "calories": "120",
+      "protein": "3",
+      "carbs": "22",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Cookies n\u2019 Cream",
+      "calories": "130",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "2"
+    },
+    {
+      "dish": "Cotton Candy",
+      "calories": "120",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Cr\u00e8me Brule",
+      "calories": "130",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "2"
+    },
+    {
+      "dish": "Dulce De Leche",
+      "calories": "130",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Espresso Coffee",
+      "calories": "120",
+      "protein": "3",
+      "carbs": "23",
+      "fat": "1.5"
+    },
+    {
+      "dish": "French Vanilla",
+      "calories": "120",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Give me Smores",
+      "calories": "120",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Key Lime Meringue",
+      "calories": "130",
+      "protein": "3",
+      "carbs": "25",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Marshmallow",
+      "calories": "120",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Mint Chocolate Chip",
+      "calories": "120",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Mint",
+      "calories": "130",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Neapolitan",
+      "calories": "130",
+      "protein": "3",
+      "carbs": "26",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Nutella",
+      "calories": "160",
+      "protein": "4",
+      "carbs": "26",
+      "fat": "4.5"
+    },
+    {
+      "dish": "Orange Creamsicle",
+      "calories": "130",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Peanut Butter",
+      "calories": "130",
+      "protein": "4",
+      "carbs": "23",
+      "fat": "3"
+    },
+    {
+      "dish": "Pina Colada",
+      "calories": "130",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Pistachio",
+      "calories": "130",
+      "protein": "4",
+      "carbs": "23",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Red Velvet",
+      "calories": "120",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Tiramisu",
+      "calories": "130",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "2"
+    },
+    {
+      "dish": "Triple Butter Pecan",
+      "calories": "130",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "1.5"
+    },
+    {
+      "dish": "White Chocolate",
+      "calories": "130",
+      "protein": "3",
+      "carbs": "25",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Chocolate",
+      "calories": "120",
+      "protein": "4",
+      "carbs": "21",
+      "fat": "2.5"
+    },
+    {
+      "dish": "Vegan Chocolate",
+      "calories": "130",
+      "protein": "1",
+      "carbs": "24",
+      "fat": "3"
+    },
+    {
+      "dish": "Chocolate Almond",
+      "calories": "160",
+      "protein": "5",
+      "carbs": "22",
+      "fat": "7"
+    },
+    {
+      "dish": "Hazelnut Hot",
+      "calories": "140",
+      "protein": "4",
+      "carbs": "25",
+      "fat": "3"
+    },
+    {
+      "dish": "Banoffee",
+      "calories": "140",
+      "protein": "3",
+      "carbs": "26",
+      "fat": "3"
+    },
+    {
+      "dish": "Chai Latte",
+      "calories": "160",
+      "protein": "6",
+      "carbs": "22",
+      "fat": "6"
+    },
+    {
+      "dish": "Chocolate Mint",
+      "calories": "170",
+      "protein": "4",
+      "carbs": "26",
+      "fat": "5"
+    },
+    {
+      "dish": "Coffee",
+      "calories": "160",
+      "protein": "5",
+      "carbs": "24",
+      "fat": "6"
+    },
+    {
+      "dish": "Key Lime Pie",
+      "calories": "160",
+      "protein": "4",
+      "carbs": "30",
+      "fat": "3"
+    },
+    {
+      "dish": "Matcha Mochi LF",
+      "calories": "140",
+      "protein": "4",
+      "carbs": "26",
+      "fat": "2.5"
+    },
+    {
+      "dish": "Matcha Mochi",
+      "calories": "140",
+      "protein": "5",
+      "carbs": "30",
+      "fat": "0"
+    },
+    {
+      "dish": "Almond Kale",
+      "calories": "180",
+      "protein": "5",
+      "carbs": "28",
+      "fat": "7"
+    },
+    {
+      "dish": "Avocado Kale",
+      "calories": "140",
+      "protein": "3",
+      "carbs": "26",
+      "fat": "3.5"
+    },
+    {
+      "dish": "Apple Coconut",
+      "calories": "110",
+      "protein": "2",
+      "carbs": "17",
+      "fat": "4"
+    },
+    {
+      "dish": "Blueberry Breeze",
+      "calories": "130",
+      "protein": "3",
+      "carbs": "28",
+      "fat": "0"
+    },
+    {
+      "dish": "Kiwi Kale",
+      "calories": "130",
+      "protein": "1",
+      "carbs": "31",
+      "fat": "0"
+    },
+    {
+      "dish": "Mango Matcha",
+      "calories": "150",
+      "protein": "4",
+      "carbs": "32",
+      "fat": "0"
+    },
+    {
+      "dish": "Mango Mint",
+      "calories": "140",
+      "protein": "4",
+      "carbs": "30",
+      "fat": "0"
+    },
+    {
+      "dish": "Peach Berry Sunset",
+      "calories": "110",
+      "protein": "3",
+      "carbs": "29",
+      "fat": "0"
+    },
+    {
+      "dish": "Raspberry Blast",
+      "calories": "130",
+      "protein": "3",
+      "carbs": "29",
+      "fat": "0"
+    },
+    {
+      "dish": "Strawberry Banana",
+      "calories": "130",
+      "protein": "3",
+      "carbs": "28",
+      "fat": "0"
+    },
+    {
+      "dish": "Very Berry",
+      "calories": "110",
+      "protein": "3",
+      "carbs": "25",
+      "fat": "0"
+    },
+    {
+      "dish": "Classic Acai",
+      "calories": "130",
+      "protein": "3",
+      "carbs": "23",
+      "fat": "3"
+    },
+    {
+      "dish": "Bananarama",
+      "calories": "110",
+      "protein": "4",
+      "carbs": "24",
+      "fat": "0"
+    },
+    {
+      "dish": "Mango Alfonso",
+      "calories": "110",
+      "protein": "4",
+      "carbs": "24",
+      "fat": "0"
+    },
+    {
+      "dish": "Passionfruit",
+      "calories": "110",
+      "protein": "4",
+      "carbs": "24",
+      "fat": "0"
+    },
+    {
+      "dish": "Wild Watermelon",
+      "calories": "120",
+      "protein": "4",
+      "carbs": "24",
+      "fat": "0"
+    },
+    {
+      "dish": "Mangolicious",
+      "calories": "110",
+      "protein": "4",
+      "carbs": "22",
+      "fat": "0"
+    },
+    {
+      "dish": "Pear",
+      "calories": "110",
+      "protein": "4",
+      "carbs": "22",
+      "fat": "0"
+    },
+    {
+      "dish": "Tart",
+      "calories": "110",
+      "protein": "4",
+      "carbs": "21",
+      "fat": "0"
+    },
+    {
+      "dish": "Creamy Coconut",
+      "calories": "140",
+      "protein": "0",
+      "carbs": "26",
+      "fat": "3.5"
+    },
+    {
+      "dish": "Salted Caramel",
+      "calories": "130",
+      "protein": "0",
+      "carbs": "28",
+      "fat": "1.5"
+    }
+  ]
+}

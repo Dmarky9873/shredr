@@ -1,0 +1,91 @@
+{
+  "restaurant_name": "nandos",
+  "url": "https://assets.ctfassets.net/xlzobf9ybr6d/7H8AEs2h3Vo4VrlE344MA6/a39889c2ded7d6b6422718b4d3e2f3cf/InsideScoop_October2021.pdf",
+  "date": "2025-08-25 00:14:43",
+  "menu_items": [
+    {
+      "dish": "Sides",
+      "calories": "360",
+      "protein": "4",
+      "carbs": "23",
+      "fat": "29"
+    },
+    {
+      "dish": "Condiments",
+      "calories": "40",
+      "protein": "0",
+      "carbs": "3",
+      "fat": "3"
+    },
+    {
+      "dish": "Dessert",
+      "calories": "250",
+      "protein": "3",
+      "carbs": "39",
+      "fat": "11"
+    },
+    {
+      "dish": "Handheld",
+      "calories": "480",
+      "protein": "40",
+      "carbs": "49",
+      "fat": "14"
+    },
+    {
+      "dish": "Nandinos",
+      "calories": "410",
+      "protein": "31",
+      "carbs": "37",
+      "fat": "15"
+    },
+    {
+      "dish": "Nandinos - Sides",
+      "calories": "120",
+      "protein": "1",
+      "carbs": "8",
+      "fat": "10"
+    },
+    {
+      "dish": "Bowls & Salads",
+      "calories": "770",
+      "protein": "15",
+      "carbs": "102",
+      "fat": "34"
+    },
+    {
+      "dish": "Chicken",
+      "calories": "540",
+      "protein": "68",
+      "carbs": "0",
+      "fat": "29"
+    },
+    {
+      "dish": "Beverage, Alcohol",
+      "calories": "620",
+      "protein": "2",
+      "carbs": "70",
+      "fat": "0"
+    },
+    {
+      "dish": "Add-on",
+      "calories": "140",
+      "protein": "2",
+      "carbs": "8",
+      "fat": "13"
+    },
+    {
+      "dish": "Baste",
+      "calories": "90",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "9"
+    },
+    {
+      "dish": "Beverage",
+      "calories": "230",
+      "protein": "1",
+      "carbs": "57",
+      "fat": "0"
+    }
+  ]
+}
