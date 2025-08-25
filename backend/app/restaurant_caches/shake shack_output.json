@@ -1,0 +1,1260 @@
+{
+  "restaurant_name": "shake shack",
+  "url": "https://shakeshack.com/sites/default/files/2023-12/SS%20Nutrition%2012.5.23.pdf",
+  "date": "2025-08-25 00:16:28",
+  "menu_items": [
+    {
+      "dish": "Shack-made Lemonade Small",
+      "calories": "160",
+      "protein": "0",
+      "carbs": "43",
+      "fat": "0"
+    },
+    {
+      "dish": "Shack-made Lemonade Large",
+      "calories": "270",
+      "protein": "0",
+      "carbs": "70",
+      "fat": "0"
+    },
+    {
+      "dish": "Fifty-Fifty Shack made Lemonade Small",
+      "calories": "80",
+      "protein": "0",
+      "carbs": "22",
+      "fat": "0"
+    },
+    {
+      "dish": "Fifty-Fifty Shack made Lemonade Large",
+      "calories": "140",
+      "protein": "0",
+      "carbs": "36",
+      "fat": "0"
+    },
+    {
+      "dish": "Strawberry Lemonade Small",
+      "calories": "140",
+      "protein": "0",
+      "carbs": "36",
+      "fat": "0"
+    },
+    {
+      "dish": "Strawberry Lemonade Large",
+      "calories": "230",
+      "protein": "0",
+      "carbs": "58",
+      "fat": "0"
+    },
+    {
+      "dish": "Fresh Brewed Unsweetened Iced Tea Small",
+      "calories": "5",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "Fresh Brewed Unsweetened Iced Tea Large",
+      "calories": "5",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "Fresh Brewed Sweetened Iced Tea Small",
+      "calories": "110",
+      "protein": "0",
+      "carbs": "28",
+      "fat": "0"
+    },
+    {
+      "dish": "Fresh Brewed Sweetened Iced Tea Large",
+      "calories": "170",
+      "protein": "0",
+      "carbs": "45",
+      "fat": "0"
+    },
+    {
+      "dish": "Coke Small",
+      "calories": "140",
+      "protein": "0",
+      "carbs": "39",
+      "fat": "0"
+    },
+    {
+      "dish": "Coke Large",
+      "calories": "210",
+      "protein": "0",
+      "carbs": "58",
+      "fat": "0"
+    },
+    {
+      "dish": "Diet Coke Small",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Diet Coke Large",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Coke Zero Small",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Coke Zero Large",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Sprite Small",
+      "calories": "140",
+      "protein": "0",
+      "carbs": "36",
+      "fat": "0"
+    },
+    {
+      "dish": "Sprite Large",
+      "calories": "240",
+      "protein": "0",
+      "carbs": "60",
+      "fat": "0"
+    },
+    {
+      "dish": "Fanta Orange Small",
+      "calories": "160",
+      "protein": "0",
+      "carbs": "45",
+      "fat": "0"
+    },
+    {
+      "dish": "Fanta Orange Large",
+      "calories": "240",
+      "protein": "0",
+      "carbs": "67",
+      "fat": "0"
+    },
+    {
+      "dish": "Gingerale Small",
+      "calories": "120",
+      "protein": "0",
+      "carbs": "31",
+      "fat": "0"
+    },
+    {
+      "dish": "Gingerale Large",
+      "calories": "190",
+      "protein": "0",
+      "carbs": "51",
+      "fat": "0"
+    },
+    {
+      "dish": "Dr. Pepper Small",
+      "calories": "150",
+      "protein": "0",
+      "carbs": "40",
+      "fat": "0"
+    },
+    {
+      "dish": "Dr. Pepper Large",
+      "calories": "220",
+      "protein": "0",
+      "carbs": "59",
+      "fat": "0"
+    },
+    {
+      "dish": "Diet Dr. Pepper Small*",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Diet Dr. Pepper Large*",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Crush Small*",
+      "calories": "160",
+      "protein": "0",
+      "carbs": "43",
+      "fat": "0"
+    },
+    {
+      "dish": "Crush Large*",
+      "calories": "240",
+      "protein": "0",
+      "carbs": "65",
+      "fat": "0"
+    },
+    {
+      "dish": "Diet Pepsi Small*",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Diet Pepsi Large*",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Starry Small*",
+      "calories": "140",
+      "protein": "0",
+      "carbs": "39",
+      "fat": "0"
+    },
+    {
+      "dish": "Starry Large*",
+      "calories": "220",
+      "protein": "0",
+      "carbs": "58",
+      "fat": "0"
+    },
+    {
+      "dish": "Mountain Dew Small*",
+      "calories": "170",
+      "protein": "0",
+      "carbs": "46",
+      "fat": "0"
+    },
+    {
+      "dish": "Mountain Dew Large*",
+      "calories": "260",
+      "protein": "0",
+      "carbs": "69",
+      "fat": "0"
+    },
+    {
+      "dish": "Diet Mountain Dew Small*",
+      "calories": "5",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "Diet Mountain Dew Large*",
+      "calories": "10",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "Pepsi Small*",
+      "calories": "150",
+      "protein": "0",
+      "carbs": "41",
+      "fat": "0"
+    },
+    {
+      "dish": "Bacon Breakfast Sandwich*",
+      "calories": "400",
+      "protein": "23",
+      "carbs": "25",
+      "fat": "23"
+    },
+    {
+      "dish": "Bacon Breakfast Sandwich (Double Egg)*",
+      "calories": "490",
+      "protein": "29",
+      "carbs": "26",
+      "fat": "30"
+    },
+    {
+      "dish": "Egg and Cheese Breakfast Sandwich*",
+      "calories": "340",
+      "protein": "17",
+      "carbs": "25",
+      "fat": "19"
+    },
+    {
+      "dish": "Egg and Cheese Breakfast Sandwich (Double Egg*)",
+      "calories": "430",
+      "protein": "23",
+      "carbs": "25",
+      "fat": "25"
+    },
+    {
+      "dish": "Sausage Breakfast Sandwich*",
+      "calories": "530",
+      "protein": "30",
+      "carbs": "28",
+      "fat": "32"
+    },
+    {
+      "dish": "Sausage Breakfast Sandwich (Double Egg)*",
+      "calories": "620",
+      "protein": "36",
+      "carbs": "28",
+      "fat": "39"
+    },
+    {
+      "dish": "Wake up Shack*",
+      "calories": "510",
+      "protein": "24",
+      "carbs": "34",
+      "fat": "30"
+    },
+    {
+      "dish": "Wake up Shack (Double Egg)*",
+      "calories": "600",
+      "protein": "30",
+      "carbs": "34",
+      "fat": "37"
+    },
+    {
+      "dish": "Egg White Light*",
+      "calories": "320",
+      "protein": "15",
+      "carbs": "26",
+      "fat": "18"
+    },
+    {
+      "dish": "Egg White Light (Double Egg)*",
+      "calories": "340",
+      "protein": "19",
+      "carbs": "26",
+      "fat": "18"
+    },
+    {
+      "dish": "Breakfast Tots*",
+      "calories": "420",
+      "protein": "4",
+      "carbs": "36",
+      "fat": "29"
+    },
+    {
+      "dish": "Sausage Patty",
+      "calories": "190",
+      "protein": "13",
+      "carbs": "3",
+      "fat": "14"
+    },
+    {
+      "dish": "Egg",
+      "calories": "90",
+      "protein": "6",
+      "carbs": "0",
+      "fat": "7"
+    },
+    {
+      "dish": "Egg White",
+      "calories": "15",
+      "protein": "4",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Breakfast Tots",
+      "calories": "270",
+      "protein": "3",
+      "carbs": "32",
+      "fat": "13"
+    },
+    {
+      "dish": "Single ShackBurger\u00ae",
+      "calories": "500",
+      "protein": "29",
+      "carbs": "26",
+      "fat": "30"
+    },
+    {
+      "dish": "Double ShackBurger\u00ae",
+      "calories": "760",
+      "protein": "51",
+      "carbs": "27",
+      "fat": "48"
+    },
+    {
+      "dish": "Single Hamburger",
+      "calories": "370",
+      "protein": "25",
+      "carbs": "24",
+      "fat": "18"
+    },
+    {
+      "dish": "Double Hamburger",
+      "calories": "560",
+      "protein": "44",
+      "carbs": "24",
+      "fat": "30"
+    },
+    {
+      "dish": "Single Cheeseburger",
+      "calories": "440",
+      "protein": "29",
+      "carbs": "25",
+      "fat": "24"
+    },
+    {
+      "dish": "Double Cheeseburger",
+      "calories": "700",
+      "protein": "51",
+      "carbs": "25",
+      "fat": "42"
+    },
+    {
+      "dish": "\u2018Shroom Burger",
+      "calories": "510",
+      "protein": "18",
+      "carbs": "49",
+      "fat": "27"
+    },
+    {
+      "dish": "Shack Stack\u00ae",
+      "calories": "770",
+      "protein": "40",
+      "carbs": "50",
+      "fat": "45"
+    },
+    {
+      "dish": "Single SmokeShack\u2122",
+      "calories": "570",
+      "protein": "36",
+      "carbs": "28",
+      "fat": "35"
+    },
+    {
+      "dish": "Double SmokeShack\u2122",
+      "calories": "830",
+      "protein": "58",
+      "carbs": "28",
+      "fat": "53"
+    },
+    {
+      "dish": "Roadside Double Burger*",
+      "calories": "770",
+      "protein": "53",
+      "carbs": "32",
+      "fat": "46"
+    },
+    {
+      "dish": "Lockhart Link Burger*",
+      "calories": "780",
+      "protein": "39",
+      "carbs": "27",
+      "fat": "56"
+    },
+    {
+      "dish": "Lockhart Link Burger, Double*",
+      "calories": "1040",
+      "protein": "61",
+      "carbs": "28",
+      "fat": "74"
+    },
+    {
+      "dish": "Lockhart Link Burger, Triple*",
+      "calories": "1300",
+      "protein": "83",
+      "carbs": "29",
+      "fat": "92"
+    },
+    {
+      "dish": "Link Burger*",
+      "calories": "680",
+      "protein": "39",
+      "carbs": "27",
+      "fat": "46"
+    },
+    {
+      "dish": "Link Burger, Double*",
+      "calories": "930",
+      "protein": "61",
+      "carbs": "28",
+      "fat": "64"
+    },
+    {
+      "dish": "Link Burger, Triple*",
+      "calories": "1190",
+      "protein": "83",
+      "carbs": "28",
+      "fat": "82"
+    },
+    {
+      "dish": "Green Chile CheddarShack, Single*",
+      "calories": "470",
+      "protein": "30",
+      "carbs": "28",
+      "fat": "26"
+    },
+    {
+      "dish": "Green Chile CheddarShack, Double*",
+      "calories": "750",
+      "protein": "53",
+      "carbs": "28",
+      "fat": "46"
+    },
+    {
+      "dish": "Mound City Double*",
+      "calories": "780",
+      "protein": "56",
+      "carbs": "26",
+      "fat": "48"
+    },
+    {
+      "dish": "Brat Burger, Single*",
+      "calories": "860",
+      "protein": "44",
+      "carbs": "34",
+      "fat": "61"
+    },
+    {
+      "dish": "Brat Burger, Double*",
+      "calories": "1050",
+      "protein": "62",
+      "carbs": "34",
+      "fat": "73"
+    },
+    {
+      "dish": "Montlake Single Cut*",
+      "calories": "670",
+      "protein": "29",
+      "carbs": "36",
+      "fat": "45"
+    },
+    {
+      "dish": "Montlake Double Cut*",
+      "calories": "980",
+      "protein": "54",
+      "carbs": "36",
+      "fat": "68"
+    },
+    {
+      "dish": "Golden State Single*",
+      "calories": "560",
+      "protein": "31",
+      "carbs": "26",
+      "fat": "37"
+    },
+    {
+      "dish": "Golden State Double*",
+      "calories": "840",
+      "protein": "54",
+      "carbs": "27",
+      "fat": "56"
+    },
+    {
+      "dish": "Slap Shot Burger, Single*",
+      "calories": "490",
+      "protein": "28",
+      "carbs": "33",
+      "fat": "27"
+    },
+    {
+      "dish": "Slap Shot Burger, Double*",
+      "calories": "680",
+      "protein": "47",
+      "carbs": "33",
+      "fat": "40"
+    },
+    {
+      "dish": "SilverLake Shack, Single*",
+      "calories": "530",
+      "protein": "30",
+      "carbs": "28",
+      "fat": "33"
+    },
+    {
+      "dish": "SilverLake Shack, Double*",
+      "calories": "790",
+      "protein": "52",
+      "carbs": "28",
+      "fat": "51"
+    },
+    {
+      "dish": "Bacon Cheeseburger, single",
+      "calories": "500",
+      "protein": "35",
+      "carbs": "25",
+      "fat": "29"
+    },
+    {
+      "dish": "Bacon Cheeseburger, double",
+      "calories": "760",
+      "protein": "58",
+      "carbs": "25",
+      "fat": "47"
+    },
+    {
+      "dish": "Avocado Bacon Burger, Single",
+      "calories": "610",
+      "protein": "36",
+      "carbs": "28",
+      "fat": "39"
+    },
+    {
+      "dish": "Avocado Bacon Burger, Double",
+      "calories": "870",
+      "protein": "58",
+      "carbs": "29",
+      "fat": "57"
+    },
+    {
+      "dish": "Spicy Shackmeister Burger, Single",
+      "calories": "660",
+      "protein": "31",
+      "carbs": "36",
+      "fat": "44"
+    },
+    {
+      "dish": "Spicy Shackmeister Burger, Double",
+      "calories": "880",
+      "protein": "53",
+      "carbs": "37",
+      "fat": "58"
+    },
+    {
+      "dish": "Sichuan Chili Crisp Burger, Single*",
+      "calories": "690",
+      "protein": "31",
+      "carbs": "30",
+      "fat": "49"
+    },
+    {
+      "dish": "Sichuan Chili Crisp Burger, Double*",
+      "calories": "930",
+      "protein": "54",
+      "carbs": "30",
+      "fat": "64"
+    },
+    {
+      "dish": "Veggie Shack Single",
+      "calories": "630",
+      "protein": "20",
+      "carbs": "53",
+      "fat": "31"
+    },
+    {
+      "dish": "Veggie Shack Double",
+      "calories": "910",
+      "protein": "31",
+      "carbs": "73",
+      "fat": "41"
+    },
+    {
+      "dish": "Grilled Cheese",
+      "calories": "320",
+      "protein": "14",
+      "carbs": "25",
+      "fat": "18"
+    },
+    {
+      "dish": "Martin's Potato Roll",
+      "calories": "180",
+      "protein": "7",
+      "carbs": "24",
+      "fat": "6"
+    },
+    {
+      "dish": "Gluten Free Bun",
+      "calories": "160",
+      "protein": "3",
+      "carbs": "31",
+      "fat": "3.0"
+    },
+    {
+      "dish": "Lettuce Wrap",
+      "calories": "5",
+      "protein": "1",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "Burger Patty",
+      "calories": "190",
+      "protein": "19",
+      "carbs": "0",
+      "fat": "12"
+    },
+    {
+      "dish": "Veggie Patty",
+      "calories": "210",
+      "protein": "8",
+      "carbs": "20",
+      "fat": "4"
+    },
+    {
+      "dish": "American Cheese",
+      "calories": "70",
+      "protein": "4",
+      "carbs": "1",
+      "fat": "6"
+    },
+    {
+      "dish": "ShackSauce",
+      "calories": "60",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "Avocado",
+      "calories": "60",
+      "protein": "1",
+      "carbs": "3",
+      "fat": "5"
+    },
+    {
+      "dish": "Lettuce",
+      "calories": "1",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Tomato",
+      "calories": "5",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "Pickle",
+      "calories": "1",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Hot Dog",
+      "calories": "350",
+      "protein": "16",
+      "carbs": "25",
+      "fat": "22"
+    },
+    {
+      "dish": "Sausage Link*",
+      "calories": "240",
+      "protein": "9",
+      "carbs": "2",
+      "fat": "20"
+    },
+    {
+      "dish": "Shackmeister Cheddar Brat*",
+      "calories": "690",
+      "protein": "27",
+      "carbs": "33",
+      "fat": "51"
+    },
+    {
+      "dish": "Shack-Cago Dog*",
+      "calories": "390",
+      "protein": "17",
+      "carbs": "32",
+      "fat": "22"
+    },
+    {
+      "dish": "Garden Dog*",
+      "calories": "180",
+      "protein": "8",
+      "carbs": "27",
+      "fat": "3"
+    },
+    {
+      "dish": "Add Cheese Sauce",
+      "calories": "80",
+      "protein": "2",
+      "carbs": "1",
+      "fat": "7"
+    },
+    {
+      "dish": "Vanilla Shake",
+      "calories": "680",
+      "protein": "18",
+      "carbs": "72",
+      "fat": "36"
+    },
+    {
+      "dish": "Vanilla Shake, Mini (8oz)",
+      "calories": "340",
+      "protein": "9",
+      "carbs": "36",
+      "fat": "18"
+    },
+    {
+      "dish": "Chocolate Shake",
+      "calories": "750",
+      "protein": "16",
+      "carbs": "76",
+      "fat": "45"
+    },
+    {
+      "dish": "Chocolate Shake, Mini (8oz)",
+      "calories": "380",
+      "protein": "8",
+      "carbs": "38",
+      "fat": "23"
+    },
+    {
+      "dish": "Vanilla & Chocolate Shake",
+      "calories": "720",
+      "protein": "18",
+      "carbs": "74",
+      "fat": "41"
+    },
+    {
+      "dish": "Vanilla & Chocolate Shake, Mini (8oz)",
+      "calories": "360",
+      "protein": "9",
+      "carbs": "37",
+      "fat": "21"
+    },
+    {
+      "dish": "Black & White Shake",
+      "calories": "770",
+      "protein": "19",
+      "carbs": "80",
+      "fat": "42"
+    },
+    {
+      "dish": "Black & White Shake, Mini (8oz)",
+      "calories": "390",
+      "protein": "9",
+      "carbs": "30",
+      "fat": "21"
+    },
+    {
+      "dish": "Strawberry Shake",
+      "calories": "690",
+      "protein": "17",
+      "carbs": "77",
+      "fat": "35"
+    },
+    {
+      "dish": "Strawberry Shake, Mini (8oz)",
+      "calories": "350",
+      "protein": "9",
+      "carbs": "38",
+      "fat": "18"
+    },
+    {
+      "dish": "Cookies & Cream Shake",
+      "calories": "850",
+      "protein": "19",
+      "carbs": "98",
+      "fat": "44"
+    },
+    {
+      "dish": "Cookies & Cream Shake, Mini (8oz)",
+      "calories": "430",
+      "protein": "10",
+      "carbs": "49",
+      "fat": "22"
+    },
+    {
+      "dish": "Salted Caramel Shake",
+      "calories": "840",
+      "protein": "17",
+      "carbs": "99",
+      "fat": "42"
+    },
+    {
+      "dish": "Bourbon Salted Honey Shake*",
+      "calories": "890",
+      "protein": "18",
+      "carbs": "89",
+      "fat": "44"
+    },
+    {
+      "dish": "Loaded Chocolate Cookies & Cream Shake*",
+      "calories": "1160",
+      "protein": "17",
+      "carbs": "126",
+      "fat": "56"
+    },
+    {
+      "dish": "Orange County Dreamsicle Shake*",
+      "calories": "740",
+      "protein": "16",
+      "carbs": "86",
+      "fat": "38"
+    },
+    {
+      "dish": "Non Dairy Chocolate Shake",
+      "calories": "850",
+      "protein": "11",
+      "carbs": "99",
+      "fat": "47"
+    },
+    {
+      "dish": "Non Dairy Chocolate Shake, Mini",
+      "calories": "420",
+      "protein": "6",
+      "carbs": "49",
+      "fat": "24"
+    },
+    {
+      "dish": "Featured Trolls Viva's Cinnamon Roll Shake",
+      "calories": "730",
+      "protein": "17",
+      "carbs": "85",
+      "fat": "36"
+    },
+    {
+      "dish": "Featured Trolls Viva's Cinnamon Roll Shake- Mini",
+      "calories": "370",
+      "protein": "9",
+      "carbs": "42",
+      "fat": "18"
+    },
+    {
+      "dish": "Featured Trolls Branch's Chocolate Peppermint Shake",
+      "calories": "880",
+      "protein": "18",
+      "carbs": "104",
+      "fat": "46"
+    },
+    {
+      "dish": "Featured Trolls Branch's Chocolate Peppermint Shake- Mini",
+      "calories": "440",
+      "protein": "9",
+      "carbs": "52",
+      "fat": "23"
+    },
+    {
+      "dish": "Featured Trolls Poppy's Sugar Cookie Shake",
+      "calories": "950",
+      "protein": "19",
+      "carbs": "120",
+      "fat": "45"
+    },
+    {
+      "dish": "Featured Trolls Poppy's Sugar Cookie Shake- Mini",
+      "calories": "480",
+      "protein": "9",
+      "carbs": "60",
+      "fat": "23"
+    },
+    {
+      "dish": "Christmas Cookie Shake",
+      "calories": "830",
+      "protein": "19",
+      "carbs": "99",
+      "fat": "41"
+    },
+    {
+      "dish": "Whipped Cream",
+      "calories": "70",
+      "protein": "1",
+      "carbs": "5",
+      "fat": "5"
+    },
+    {
+      "dish": "Malt",
+      "calories": "90",
+      "protein": "2",
+      "carbs": "19",
+      "fat": "1"
+    },
+    {
+      "dish": "Brooklyn Brewery ShackMeister Ale (12oz. Draft)",
+      "calories": "160",
+      "protein": "2",
+      "carbs": "17",
+      "fat": "0"
+    },
+    {
+      "dish": "Brooklyn Brewery ShackMeister Ale (16oz. Draft)",
+      "calories": "210",
+      "protein": "2",
+      "carbs": "17",
+      "fat": "0"
+    },
+    {
+      "dish": "Brooklyn Brewery ShackMeister Ale (24oz. Draft)",
+      "calories": "310",
+      "protein": "4",
+      "carbs": "25",
+      "fat": "0"
+    },
+    {
+      "dish": "Brooklyn Brewery ShackMeister Ale (32oz. Draft)",
+      "calories": "420",
+      "protein": "5",
+      "carbs": "33",
+      "fat": "0"
+    },
+    {
+      "dish": "Brooklyn Brewery ShackMeister Ale (60oz. Draft)",
+      "calories": "780",
+      "protein": "9",
+      "carbs": "62",
+      "fat": "0"
+    },
+    {
+      "dish": "Beer Float",
+      "calories": "490",
+      "protein": "8",
+      "carbs": "52",
+      "fat": "15"
+    },
+    {
+      "dish": "Shack White (6 oz)",
+      "calories": "140",
+      "protein": "0",
+      "carbs": "4",
+      "fat": "0"
+    },
+    {
+      "dish": "Shack Red (6 oz)",
+      "calories": "150",
+      "protein": "0",
+      "carbs": "5",
+      "fat": "0"
+    },
+    {
+      "dish": "Shack Red Can (8.4 oz)",
+      "calories": "210",
+      "protein": "0",
+      "carbs": "6",
+      "fat": "0"
+    },
+    {
+      "dish": "Shack White Can (8.4 oz)",
+      "calories": "200",
+      "protein": "0",
+      "carbs": "5",
+      "fat": "0"
+    },
+    {
+      "dish": "Shack Ros\u00e9 Can (8.4 oz)",
+      "calories": "210",
+      "protein": "1",
+      "carbs": "9",
+      "fat": "0"
+    },
+    {
+      "dish": "Shack Sparkling Can (8.4 oz)",
+      "calories": "200",
+      "protein": "0",
+      "carbs": "6",
+      "fat": "0"
+    },
+    {
+      "dish": "Gotham Project Red Wine Can (8.4 oz)*",
+      "calories": "210",
+      "protein": "0",
+      "carbs": "6",
+      "fat": "0"
+    },
+    {
+      "dish": "Gotham Project White Wine Can (8.4 oz)*",
+      "calories": "200",
+      "protein": "0",
+      "carbs": "5",
+      "fat": "0"
+    },
+    {
+      "dish": "Gotham Project Ros\u00e9 Wine Can (8.4 oz)*",
+      "calories": "210",
+      "protein": "1",
+      "carbs": "9",
+      "fat": "0"
+    },
+    {
+      "dish": "Margarita Can (100mL)*",
+      "calories": "190",
+      "protein": "0",
+      "carbs": "15",
+      "fat": "0"
+    },
+    {
+      "dish": "Old Fashioned Can (100mL)*",
+      "calories": "230",
+      "protein": "0",
+      "carbs": "4",
+      "fat": "0"
+    },
+    {
+      "dish": "Negroni Can (100mL)*",
+      "calories": "210",
+      "protein": "0",
+      "carbs": "9",
+      "fat": "0"
+    },
+    {
+      "dish": "Appico Spritz Can (250mL)*",
+      "calories": "240",
+      "protein": "0",
+      "carbs": "18",
+      "fat": "0"
+    },
+    {
+      "dish": "Vodka White Tea Soda Can (250mL)*",
+      "calories": "80",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Paloma Can (250mL)*",
+      "calories": "170",
+      "protein": "0",
+      "carbs": "7",
+      "fat": "0"
+    },
+    {
+      "dish": "Regular Fries",
+      "calories": "470",
+      "protein": "6",
+      "carbs": "63",
+      "fat": "22"
+    },
+    {
+      "dish": "Cheese Fries",
+      "calories": "710",
+      "protein": "12",
+      "carbs": "64",
+      "fat": "44"
+    },
+    {
+      "dish": "Bacon Cheese Fries",
+      "calories": "840",
+      "protein": "24",
+      "carbs": "65",
+      "fat": "52"
+    },
+    {
+      "dish": "Double Down Fries*",
+      "calories": "1910",
+      "protein": "41",
+      "carbs": "164",
+      "fat": "117"
+    },
+    {
+      "dish": "Hot Fries",
+      "calories": "630",
+      "protein": "7",
+      "carbs": "66",
+      "fat": "38"
+    },
+    {
+      "dish": "Single Chocolate Cup",
+      "calories": "310",
+      "protein": "6",
+      "carbs": "32",
+      "fat": "19"
+    },
+    {
+      "dish": "Double Chocolate Cup",
+      "calories": "490",
+      "protein": "9",
+      "carbs": "51",
+      "fat": "30"
+    },
+    {
+      "dish": "Single Vanilla Cup",
+      "calories": "280",
+      "protein": "7",
+      "carbs": "30",
+      "fat": "15"
+    },
+    {
+      "dish": "Double Vanilla Cup",
+      "calories": "450",
+      "protein": "11",
+      "carbs": "49",
+      "fat": "24"
+    },
+    {
+      "dish": "Single Vanilla & Chocolate Cup",
+      "calories": "290",
+      "protein": "6",
+      "carbs": "31",
+      "fat": "17"
+    },
+    {
+      "dish": "Chicken Shack\u2122",
+      "calories": "550",
+      "protein": "33",
+      "carbs": "34",
+      "fat": "31"
+    },
+    {
+      "dish": "Chicken Bites (6 piece)",
+      "calories": "300",
+      "protein": "17",
+      "carbs": "15",
+      "fat": "19"
+    },
+    {
+      "dish": "Chicken Bites (10 piece)",
+      "calories": "510",
+      "protein": "29",
+      "carbs": "26",
+      "fat": "32"
+    },
+    {
+      "dish": "Avocado Bacon Chicken",
+      "calories": "680",
+      "protein": "40",
+      "carbs": "37",
+      "fat": "42"
+    },
+    {
+      "dish": "Herb Mayonnaise",
+      "calories": "90",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "10"
+    },
+    {
+      "dish": "Ranch",
+      "calories": "140",
+      "protein": "1",
+      "carbs": "1",
+      "fat": "14"
+    },
+    {
+      "dish": "BBQ Sauce",
+      "calories": "70",
+      "protein": "1",
+      "carbs": "16",
+      "fat": "0"
+    },
+    {
+      "dish": "Honey Mustard",
+      "calories": "180",
+      "protein": "1",
+      "carbs": "4",
+      "fat": "19"
+    },
+    {
+      "dish": "Hot Chicken Sandwich",
+      "calories": "570",
+      "protein": "34",
+      "carbs": "39",
+      "fat": "31"
+    },
+    {
+      "dish": "Add Extra Hot Spice",
+      "calories": "10",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "Sichuan Chili Crisp Chicken Sandwich*",
+      "calories": "660",
+      "protein": "34",
+      "carbs": "39",
+      "fat": "41"
+    }
+  ]
+}

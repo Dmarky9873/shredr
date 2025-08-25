@@ -1,1 +1,896 @@
-{"restaurant_name": "mr sub", "url": "https://mrsub.ca/wp-content/uploads/2020/12/nutritionals.pdf", "date": "2025-08-24 20:02:21", "menu_items": [{"dish": "small traditional white 75", "calories": "200", "protein": "8", "carbs": "250", "fat": "2.5"}, {"dish": "small harvest wheat 75", "calories": "200", "protein": "8", "carbs": "300", "fat": "2.5"}, {"dish": "small mediterranean greek 82", "calories": "230", "protein": "8", "carbs": "470", "fat": "3"}, {"dish": "Large Sub Buns", "calories": "420", "protein": "16", "carbs": "80", "fat": "5"}, {"dish": "Classics", "calories": "280", "protein": "18", "carbs": "4", "fat": "20"}, {"dish": "garden 250", "calories": "110", "protein": "7", "carbs": "9", "fat": "6"}, {"dish": "caesar 145", "calories": "130", "protein": "1", "carbs": "3", "fat": "9"}, {"dish": "greek 300", "calories": "140", "protein": "7", "carbs": "12", "fat": "8"}, {"dish": "grilled chicken 62", "calories": "80", "protein": "13", "carbs": "2", "fat": "1.5"}, {"dish": "albacore tuna 114", "calories": "150", "protein": "22", "carbs": "1", "fat": "6"}, {"dish": "seafood 114", "calories": "140", "protein": "6", "carbs": "13", "fat": "7"}, {"dish": "caesar 44", "calories": "230", "protein": "1", "carbs": "3", "fat": "23"}, {"dish": "greek feta 44", "calories": "260", "protein": "1", "carbs": "0", "fat": "28"}, {"dish": "ranch 44", "calories": "170", "protein": "0", "carbs": "2", "fat": "18"}, {"dish": "Italian spring herb 44", "calories": "60", "protein": "0.3", "carbs": "3", "fat": "6"}, {"dish": "balsamic vinaigrette 44", "calories": "160", "protein": "0.3", "carbs": "5", "fat": "13"}, {"dish": "croutons 14", "calories": "60", "protein": "1", "carbs": "10", "fat": "1.5"}, {"dish": "small traditional white", "calories": "200", "protein": "8", "carbs": "40", "fat": "2.5"}, {"dish": "small harvest wheat", "calories": "200", "protein": "8", "carbs": "39", "fat": "2.5"}, {"dish": "small hearty multigrain", "calories": "210", "protein": "8", "carbs": "40", "fat": "2.5"}, {"dish": "small mozza-cheddar", "calories": "250", "protein": "11", "carbs": "40", "fat": "6"}, {"dish": "small mediterranean greek", "calories": "230", "protein": "8", "carbs": "43", "fat": "3"}, {"dish": "white tortilla", "calories": "300", "protein": "9", "carbs": "52", "fat": "7"}, {"dish": "breakfast whole wheat tortilla", "calories": "290", "protein": "10", "carbs": "48", "fat": "7"}, {"dish": "tomato basil tortilla (where available)", "calories": "300", "protein": "9", "carbs": "52", "fat": "7"}, {"dish": "egg & cheese", "calories": "160", "protein": "11", "carbs": "1", "fat": "11.5"}, {"dish": "egg & ham", "calories": "190", "protein": "15", "carbs": "1", "fat": "12.5"}, {"dish": "egg & bacon", "calories": "230", "protein": "16", "carbs": "1", "fat": "16.5"}, {"dish": "egg & steak", "calories": "190", "protein": "16", "carbs": "2", "fat": "12.5"}, {"dish": "egg & sausage", "calories": "290", "protein": "18", "carbs": "2", "fat": "22.5"}, {"dish": "chicken bruschetta", "calories": "550", "protein": "24", "carbs": "60", "fat": "23"}, {"dish": "flatbread peppery chicken caesar", "calories": "660", "protein": "33", "carbs": "56", "fat": "33"}, {"dish": "chicken souvlaki", "calories": "720", "protein": "24", "carbs": "58", "fat": "43"}, {"dish": "150 steak & cheese", "calories": "240", "protein": "28", "carbs": "6", "fat": "12"}, {"dish": "Premium 128 chicken souvlaki", "calories": "220", "protein": "22", "carbs": "2", "fat": "14"}, {"dish": "224 ultimate club", "calories": "420", "protein": "46", "carbs": "0", "fat": "24"}, {"dish": "150 louisiana pepper chicken", "calories": "280", "protein": "28", "carbs": "6", "fat": "16"}, {"dish": "marinara 60", "calories": "30", "protein": "1", "carbs": "8", "fat": "0"}, {"dish": "pizza 60", "calories": "30", "protein": "0.6", "carbs": "8", "fat": "0"}, {"dish": "steak 60", "calories": "80", "protein": "0.2", "carbs": "10", "fat": "2"}, {"dish": "Caesar  30", "calories": "160", "protein": "0.8", "carbs": "0", "fat": "20"}, {"dish": "louisiana chicken 60", "calories": "40", "protein": "0.8", "carbs": "12", "fat": "0"}, {"dish": "'68 sub sauce 30", "calories": "140", "protein": "0", "carbs": "0", "fat": "16"}, {"dish": "light mayo 30", "calories": "120", "protein": "0.2", "carbs": "4", "fat": "10"}, {"dish": "buttermilk ranch 30", "calories": "120", "protein": "0.8", "carbs": "2", "fat": "12"}, {"dish": "honey mustard 20", "calories": "40", "protein": "0", "carbs": "8", "fat": "0"}, {"dish": "yellow mustard 20", "calories": "10", "protein": "0", "carbs": "2", "fat": "0"}, {"dish": "tzatziki sauce 56", "calories": "280", "protein": "0.4", "carbs": "2", "fat": "32"}, {"dish": "southwest chipotle 56", "calories": "220", "protein": "0.8", "carbs": "4", "fat": "22"}, {"dish": "sweet & spicy thai 56", "calories": "240", "protein": "0.2", "carbs": "32", "fat": "0"}, {"dish": "20 Frank's RedHot\u00ae Buffalo Wings", "calories": "5", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "Grace Spicy Jerk 56", "calories": "40", "protein": "0", "carbs": "12", "fat": "0"}, {"dish": "Forty Creek Whisky BBQ 56", "calories": "120", "protein": "0.8", "carbs": "26", "fat": "0.2"}, {"dish": "dijon mustard 56", "calories": "60", "protein": "0", "carbs": "12", "fat": "0"}, {"dish": "Spicy '68 sub sauce 30", "calories": "140", "protein": "0", "carbs": "0", "fat": "16"}, {"dish": "shredded lettuce 56", "calories": "10", "protein": "2", "carbs": "6", "fat": "0"}, {"dish": "tomatoes 60", "calories": "10", "protein": "2", "carbs": "8", "fat": "0"}, {"dish": "red onions 20", "calories": "10", "protein": "0.2", "carbs": "2", "fat": "0"}, {"dish": "green peppers 20", "calories": "5", "protein": "0.2", "carbs": "2", "fat": "0"}, {"dish": "sliced dill pickles 20", "calories": "4", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "green olives 20", "calories": "20", "protein": "0.2", "carbs": "2", "fat": "1"}, {"dish": "cucumbers 20", "calories": "2", "protein": "0.2", "carbs": "0", "fat": "0"}, {"dish": "jalape\u00f1o peppers 20", "calories": "4", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "banana peppers 20", "calories": "4", "protein": "0.2", "carbs": "0", "fat": "0"}, {"dish": "sliced mushrooms 20", "calories": "5", "protein": "0.4", "carbs": "2", "fat": "0"}, {"dish": "french fried onions 14", "calories": "50", "protein": "0", "carbs": "6", "fat": "7"}, {"dish": "pineapples 56", "calories": "30", "protein": "0.4", "carbs": "8", "fat": "0"}, {"dish": "black olives 20", "calories": "30", "protein": "0.2", "carbs": "2", "fat": "3"}, {"dish": "turkey 90", "calories": "90", "protein": "16", "carbs": "0", "fat": "2"}, {"dish": "bacon 20", "calories": "100", "protein": "6", "carbs": "0", "fat": "8"}, {"dish": "ham 120", "calories": "120", "protein": "16", "carbs": "0", "fat": "6"}, {"dish": "luncheon meat 72", "calories": "140", "protein": "8", "carbs": "4", "fat": "10"}, {"dish": "grilled chicken strips 114", "calories": "160", "protein": "26", "carbs": "6", "fat": "3"}, {"dish": "steak 114", "calories": "160", "protein": "22", "carbs": "4", "fat": "6"}, {"dish": "roast beef 144", "calories": "180", "protein": "28", "carbs": "0", "fat": "9"}, {"dish": "salami 80", "calories": "200", "protein": "14", "carbs": "2", "fat": "14"}, {"dish": "chicken souvlaki 114", "calories": "220", "protein": "20", "carbs": "2", "fat": "9"}, {"dish": "louisiana chicken strips 128", "calories": "220", "protein": "24", "carbs": "2", "fat": "12"}, {"dish": "meatballs 152", "calories": "380", "protein": "28", "carbs": "12", "fat": "24"}, {"dish": "spicy breaded chicken 170", "calories": "380", "protein": "26", "carbs": "24", "fat": "20"}, {"dish": "breaded chicken 170", "calories": "400", "protein": "24", "carbs": "24", "fat": "22"}, {"dish": "smoked meat 120", "calories": "160", "protein": "18", "carbs": "2", "fat": "8"}, {"dish": "white cheese 22", "calories": "80", "protein": "4", "carbs": "2", "fat": "5"}, {"dish": "mozza-cheddar blend 30", "calories": "100", "protein": "8", "carbs": "2", "fat": "7"}, {"dish": "parmesan 30", "calories": "120", "protein": "8", "carbs": "2", "fat": "8"}, {"dish": "feta 60", "calories": "160", "protein": "10", "carbs": "2", "fat": "14"}, {"dish": "cheddar 56", "calories": "240", "protein": "24", "carbs": "0", "fat": "14"}, {"dish": "deli dill pickle 85", "calories": "10", "protein": "1", "carbs": "2", "fat": "0"}, {"dish": "peppery chicken caesar 266", "calories": "580", "protein": "27", "carbs": "49", "fat": "31"}, {"dish": "southwest thai chicken 170", "calories": "540", "protein": "25", "carbs": "59", "fat": "23"}, {"dish": "chipotle turkey & bacon 247", "calories": "560", "protein": "22", "carbs": "50", "fat": "29"}, {"dish": "Wraps whole wheat tortilla", "calories": "290", "protein": "10", "carbs": "48", "fat": "7"}, {"dish": "white flatbread (where available)", "calories": "270", "protein": "9", "carbs": "53", "fat": "3"}, {"dish": "assorted", "calories": "180", "protein": "13", "carbs": "4", "fat": "12"}, {"dish": "veggie & cheese", "calories": "80", "protein": "5", "carbs": "4", "fat": "5"}, {"dish": "turkey", "calories": "80", "protein": "10", "carbs": "1", "fat": "3.5"}, {"dish": "seafood", "calories": "100", "protein": "7", "carbs": "11", "fat": "3.5"}, {"dish": "roast beef & cheddar", "calories": "130", "protein": "18", "carbs": "0", "fat": "7"}, {"dish": "smoked meat", "calories": "110", "protein": "11", "carbs": "2", "fat": "7"}, {"dish": "Selects double stacked smoked meat", "calories": "190", "protein": "20", "carbs": "3", "fat": "11"}, {"dish": "meatball", "calories": "230", "protein": "10", "carbs": "7", "fat": "15"}, {"dish": "buffalo chicken", "calories": "150", "protein": "14", "carbs": "6", "fat": "7"}, {"dish": "grilled chicken", "calories": "100", "protein": "14", "carbs": "3", "fat": "4"}, {"dish": "chicken parmesan", "calories": "280", "protein": "19", "carbs": "13", "fat": "16"}, {"dish": "steak & cheese", "calories": "120", "protein": "14", "carbs": "3", "fat": "6"}, {"dish": "Premium chicken souvlaki", "calories": "110", "protein": "11", "carbs": "1", "fat": "7"}, {"dish": "ultimate club", "calories": "210", "protein": "23", "carbs": "0", "fat": "12"}, {"dish": "louisiana pepper chicken", "calories": "140", "protein": "14", "carbs": "3", "fat": "8"}, {"dish": "marinara", "calories": "15", "protein": "0.5", "carbs": "4", "fat": "0"}, {"dish": "pizza", "calories": "15", "protein": "0.3", "carbs": "4", "fat": "0"}, {"dish": "steak", "calories": "40", "protein": "0.1", "carbs": "5", "fat": "1"}, {"dish": "Caesar", "calories": "80", "protein": "0.4", "carbs": "0", "fat": "10"}, {"dish": "louisiana chicken", "calories": "20", "protein": "0.4", "carbs": "6", "fat": "0"}, {"dish": "'68 sub sauce", "calories": "70", "protein": "0", "carbs": "0", "fat": "8"}, {"dish": "light mayo", "calories": "60", "protein": "0.1", "carbs": "2", "fat": "5"}, {"dish": "buttermilk ranch", "calories": "60", "protein": "0.4", "carbs": "1", "fat": "6"}, {"dish": "honey mustard", "calories": "20", "protein": "0", "carbs": "4", "fat": "0"}, {"dish": "yellow mustard", "calories": "5", "protein": "0", "carbs": "1", "fat": "0"}, {"dish": "tzatziki sauce", "calories": "140", "protein": "0.2", "carbs": "1", "fat": "16"}, {"dish": "southwest chipotle", "calories": "110", "protein": "0.4", "carbs": "2", "fat": "11"}, {"dish": "sweet & spicy thai", "calories": "120", "protein": "0.1", "carbs": "16", "fat": "0"}, {"dish": "Frank's RedHot\u00ae Buffalo Wings", "calories": "3", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "Grace Spicy Jerk", "calories": "20", "protein": "0", "carbs": "6", "fat": "0"}, {"dish": "Forty Creek Whisky BBQ", "calories": "60", "protein": "0.4", "carbs": "13", "fat": "0.1"}, {"dish": "dijon mustard", "calories": "30", "protein": "0", "carbs": "6", "fat": "0"}, {"dish": "Spicy '68 sub sauce", "calories": "70", "protein": "0", "carbs": "0", "fat": "8"}, {"dish": "Selects", "calories": "380", "protein": "40", "carbs": "6", "fat": "22"}]}
+{
+  "restaurant_name": "mr sub",
+  "url": "https://mrsub.ca/wp-content/uploads/2020/12/nutritionals.pdf",
+  "date": "2025-08-24 20:02:21",
+  "menu_items": [
+    {
+      "dish": "small traditional white 75",
+      "calories": "200",
+      "protein": "8",
+      "carbs": "250",
+      "fat": "2.5"
+    },
+    {
+      "dish": "small harvest wheat 75",
+      "calories": "200",
+      "protein": "8",
+      "carbs": "300",
+      "fat": "2.5"
+    },
+    {
+      "dish": "small mediterranean greek 82",
+      "calories": "230",
+      "protein": "8",
+      "carbs": "470",
+      "fat": "3"
+    },
+    {
+      "dish": "Large Sub Buns",
+      "calories": "420",
+      "protein": "16",
+      "carbs": "80",
+      "fat": "5"
+    },
+    {
+      "dish": "Classics",
+      "calories": "280",
+      "protein": "18",
+      "carbs": "4",
+      "fat": "20"
+    },
+    {
+      "dish": "garden 250",
+      "calories": "110",
+      "protein": "7",
+      "carbs": "9",
+      "fat": "6"
+    },
+    {
+      "dish": "caesar 145",
+      "calories": "130",
+      "protein": "1",
+      "carbs": "3",
+      "fat": "9"
+    },
+    {
+      "dish": "greek 300",
+      "calories": "140",
+      "protein": "7",
+      "carbs": "12",
+      "fat": "8"
+    },
+    {
+      "dish": "grilled chicken 62",
+      "calories": "80",
+      "protein": "13",
+      "carbs": "2",
+      "fat": "1.5"
+    },
+    {
+      "dish": "albacore tuna 114",
+      "calories": "150",
+      "protein": "22",
+      "carbs": "1",
+      "fat": "6"
+    },
+    {
+      "dish": "seafood 114",
+      "calories": "140",
+      "protein": "6",
+      "carbs": "13",
+      "fat": "7"
+    },
+    {
+      "dish": "caesar 44",
+      "calories": "230",
+      "protein": "1",
+      "carbs": "3",
+      "fat": "23"
+    },
+    {
+      "dish": "greek feta 44",
+      "calories": "260",
+      "protein": "1",
+      "carbs": "0",
+      "fat": "28"
+    },
+    {
+      "dish": "ranch 44",
+      "calories": "170",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "18"
+    },
+    {
+      "dish": "Italian spring herb 44",
+      "calories": "60",
+      "protein": "0.3",
+      "carbs": "3",
+      "fat": "6"
+    },
+    {
+      "dish": "balsamic vinaigrette 44",
+      "calories": "160",
+      "protein": "0.3",
+      "carbs": "5",
+      "fat": "13"
+    },
+    {
+      "dish": "croutons 14",
+      "calories": "60",
+      "protein": "1",
+      "carbs": "10",
+      "fat": "1.5"
+    },
+    {
+      "dish": "small traditional white",
+      "calories": "200",
+      "protein": "8",
+      "carbs": "40",
+      "fat": "2.5"
+    },
+    {
+      "dish": "small harvest wheat",
+      "calories": "200",
+      "protein": "8",
+      "carbs": "39",
+      "fat": "2.5"
+    },
+    {
+      "dish": "small hearty multigrain",
+      "calories": "210",
+      "protein": "8",
+      "carbs": "40",
+      "fat": "2.5"
+    },
+    {
+      "dish": "small mozza-cheddar",
+      "calories": "250",
+      "protein": "11",
+      "carbs": "40",
+      "fat": "6"
+    },
+    {
+      "dish": "small mediterranean greek",
+      "calories": "230",
+      "protein": "8",
+      "carbs": "43",
+      "fat": "3"
+    },
+    {
+      "dish": "white tortilla",
+      "calories": "300",
+      "protein": "9",
+      "carbs": "52",
+      "fat": "7"
+    },
+    {
+      "dish": "breakfast whole wheat tortilla",
+      "calories": "290",
+      "protein": "10",
+      "carbs": "48",
+      "fat": "7"
+    },
+    {
+      "dish": "tomato basil tortilla (where available)",
+      "calories": "300",
+      "protein": "9",
+      "carbs": "52",
+      "fat": "7"
+    },
+    {
+      "dish": "egg & cheese",
+      "calories": "160",
+      "protein": "11",
+      "carbs": "1",
+      "fat": "11.5"
+    },
+    {
+      "dish": "egg & ham",
+      "calories": "190",
+      "protein": "15",
+      "carbs": "1",
+      "fat": "12.5"
+    },
+    {
+      "dish": "egg & bacon",
+      "calories": "230",
+      "protein": "16",
+      "carbs": "1",
+      "fat": "16.5"
+    },
+    {
+      "dish": "egg & steak",
+      "calories": "190",
+      "protein": "16",
+      "carbs": "2",
+      "fat": "12.5"
+    },
+    {
+      "dish": "egg & sausage",
+      "calories": "290",
+      "protein": "18",
+      "carbs": "2",
+      "fat": "22.5"
+    },
+    {
+      "dish": "chicken bruschetta",
+      "calories": "550",
+      "protein": "24",
+      "carbs": "60",
+      "fat": "23"
+    },
+    {
+      "dish": "flatbread peppery chicken caesar",
+      "calories": "660",
+      "protein": "33",
+      "carbs": "56",
+      "fat": "33"
+    },
+    {
+      "dish": "chicken souvlaki",
+      "calories": "720",
+      "protein": "24",
+      "carbs": "58",
+      "fat": "43"
+    },
+    {
+      "dish": "150 steak & cheese",
+      "calories": "240",
+      "protein": "28",
+      "carbs": "6",
+      "fat": "12"
+    },
+    {
+      "dish": "Premium 128 chicken souvlaki",
+      "calories": "220",
+      "protein": "22",
+      "carbs": "2",
+      "fat": "14"
+    },
+    {
+      "dish": "224 ultimate club",
+      "calories": "420",
+      "protein": "46",
+      "carbs": "0",
+      "fat": "24"
+    },
+    {
+      "dish": "150 louisiana pepper chicken",
+      "calories": "280",
+      "protein": "28",
+      "carbs": "6",
+      "fat": "16"
+    },
+    {
+      "dish": "marinara 60",
+      "calories": "30",
+      "protein": "1",
+      "carbs": "8",
+      "fat": "0"
+    },
+    {
+      "dish": "pizza 60",
+      "calories": "30",
+      "protein": "0.6",
+      "carbs": "8",
+      "fat": "0"
+    },
+    {
+      "dish": "steak 60",
+      "calories": "80",
+      "protein": "0.2",
+      "carbs": "10",
+      "fat": "2"
+    },
+    {
+      "dish": "Caesar  30",
+      "calories": "160",
+      "protein": "0.8",
+      "carbs": "0",
+      "fat": "20"
+    },
+    {
+      "dish": "louisiana chicken 60",
+      "calories": "40",
+      "protein": "0.8",
+      "carbs": "12",
+      "fat": "0"
+    },
+    {
+      "dish": "'68 sub sauce 30",
+      "calories": "140",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "16"
+    },
+    {
+      "dish": "light mayo 30",
+      "calories": "120",
+      "protein": "0.2",
+      "carbs": "4",
+      "fat": "10"
+    },
+    {
+      "dish": "buttermilk ranch 30",
+      "calories": "120",
+      "protein": "0.8",
+      "carbs": "2",
+      "fat": "12"
+    },
+    {
+      "dish": "honey mustard 20",
+      "calories": "40",
+      "protein": "0",
+      "carbs": "8",
+      "fat": "0"
+    },
+    {
+      "dish": "yellow mustard 20",
+      "calories": "10",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "tzatziki sauce 56",
+      "calories": "280",
+      "protein": "0.4",
+      "carbs": "2",
+      "fat": "32"
+    },
+    {
+      "dish": "southwest chipotle 56",
+      "calories": "220",
+      "protein": "0.8",
+      "carbs": "4",
+      "fat": "22"
+    },
+    {
+      "dish": "sweet & spicy thai 56",
+      "calories": "240",
+      "protein": "0.2",
+      "carbs": "32",
+      "fat": "0"
+    },
+    {
+      "dish": "20 Frank's RedHot\u00ae Buffalo Wings",
+      "calories": "5",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Grace Spicy Jerk 56",
+      "calories": "40",
+      "protein": "0",
+      "carbs": "12",
+      "fat": "0"
+    },
+    {
+      "dish": "Forty Creek Whisky BBQ 56",
+      "calories": "120",
+      "protein": "0.8",
+      "carbs": "26",
+      "fat": "0.2"
+    },
+    {
+      "dish": "dijon mustard 56",
+      "calories": "60",
+      "protein": "0",
+      "carbs": "12",
+      "fat": "0"
+    },
+    {
+      "dish": "Spicy '68 sub sauce 30",
+      "calories": "140",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "16"
+    },
+    {
+      "dish": "shredded lettuce 56",
+      "calories": "10",
+      "protein": "2",
+      "carbs": "6",
+      "fat": "0"
+    },
+    {
+      "dish": "tomatoes 60",
+      "calories": "10",
+      "protein": "2",
+      "carbs": "8",
+      "fat": "0"
+    },
+    {
+      "dish": "red onions 20",
+      "calories": "10",
+      "protein": "0.2",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "green peppers 20",
+      "calories": "5",
+      "protein": "0.2",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "sliced dill pickles 20",
+      "calories": "4",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "green olives 20",
+      "calories": "20",
+      "protein": "0.2",
+      "carbs": "2",
+      "fat": "1"
+    },
+    {
+      "dish": "cucumbers 20",
+      "calories": "2",
+      "protein": "0.2",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "jalape\u00f1o peppers 20",
+      "calories": "4",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "banana peppers 20",
+      "calories": "4",
+      "protein": "0.2",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "sliced mushrooms 20",
+      "calories": "5",
+      "protein": "0.4",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "french fried onions 14",
+      "calories": "50",
+      "protein": "0",
+      "carbs": "6",
+      "fat": "7"
+    },
+    {
+      "dish": "pineapples 56",
+      "calories": "30",
+      "protein": "0.4",
+      "carbs": "8",
+      "fat": "0"
+    },
+    {
+      "dish": "black olives 20",
+      "calories": "30",
+      "protein": "0.2",
+      "carbs": "2",
+      "fat": "3"
+    },
+    {
+      "dish": "turkey 90",
+      "calories": "90",
+      "protein": "16",
+      "carbs": "0",
+      "fat": "2"
+    },
+    {
+      "dish": "bacon 20",
+      "calories": "100",
+      "protein": "6",
+      "carbs": "0",
+      "fat": "8"
+    },
+    {
+      "dish": "ham 120",
+      "calories": "120",
+      "protein": "16",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "luncheon meat 72",
+      "calories": "140",
+      "protein": "8",
+      "carbs": "4",
+      "fat": "10"
+    },
+    {
+      "dish": "grilled chicken strips 114",
+      "calories": "160",
+      "protein": "26",
+      "carbs": "6",
+      "fat": "3"
+    },
+    {
+      "dish": "steak 114",
+      "calories": "160",
+      "protein": "22",
+      "carbs": "4",
+      "fat": "6"
+    },
+    {
+      "dish": "roast beef 144",
+      "calories": "180",
+      "protein": "28",
+      "carbs": "0",
+      "fat": "9"
+    },
+    {
+      "dish": "salami 80",
+      "calories": "200",
+      "protein": "14",
+      "carbs": "2",
+      "fat": "14"
+    },
+    {
+      "dish": "chicken souvlaki 114",
+      "calories": "220",
+      "protein": "20",
+      "carbs": "2",
+      "fat": "9"
+    },
+    {
+      "dish": "louisiana chicken strips 128",
+      "calories": "220",
+      "protein": "24",
+      "carbs": "2",
+      "fat": "12"
+    },
+    {
+      "dish": "meatballs 152",
+      "calories": "380",
+      "protein": "28",
+      "carbs": "12",
+      "fat": "24"
+    },
+    {
+      "dish": "spicy breaded chicken 170",
+      "calories": "380",
+      "protein": "26",
+      "carbs": "24",
+      "fat": "20"
+    },
+    {
+      "dish": "breaded chicken 170",
+      "calories": "400",
+      "protein": "24",
+      "carbs": "24",
+      "fat": "22"
+    },
+    {
+      "dish": "smoked meat 120",
+      "calories": "160",
+      "protein": "18",
+      "carbs": "2",
+      "fat": "8"
+    },
+    {
+      "dish": "white cheese 22",
+      "calories": "80",
+      "protein": "4",
+      "carbs": "2",
+      "fat": "5"
+    },
+    {
+      "dish": "mozza-cheddar blend 30",
+      "calories": "100",
+      "protein": "8",
+      "carbs": "2",
+      "fat": "7"
+    },
+    {
+      "dish": "parmesan 30",
+      "calories": "120",
+      "protein": "8",
+      "carbs": "2",
+      "fat": "8"
+    },
+    {
+      "dish": "feta 60",
+      "calories": "160",
+      "protein": "10",
+      "carbs": "2",
+      "fat": "14"
+    },
+    {
+      "dish": "cheddar 56",
+      "calories": "240",
+      "protein": "24",
+      "carbs": "0",
+      "fat": "14"
+    },
+    {
+      "dish": "deli dill pickle 85",
+      "calories": "10",
+      "protein": "1",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "peppery chicken caesar 266",
+      "calories": "580",
+      "protein": "27",
+      "carbs": "49",
+      "fat": "31"
+    },
+    {
+      "dish": "southwest thai chicken 170",
+      "calories": "540",
+      "protein": "25",
+      "carbs": "59",
+      "fat": "23"
+    },
+    {
+      "dish": "chipotle turkey & bacon 247",
+      "calories": "560",
+      "protein": "22",
+      "carbs": "50",
+      "fat": "29"
+    },
+    {
+      "dish": "Wraps whole wheat tortilla",
+      "calories": "290",
+      "protein": "10",
+      "carbs": "48",
+      "fat": "7"
+    },
+    {
+      "dish": "white flatbread (where available)",
+      "calories": "270",
+      "protein": "9",
+      "carbs": "53",
+      "fat": "3"
+    },
+    {
+      "dish": "assorted",
+      "calories": "180",
+      "protein": "13",
+      "carbs": "4",
+      "fat": "12"
+    },
+    {
+      "dish": "veggie & cheese",
+      "calories": "80",
+      "protein": "5",
+      "carbs": "4",
+      "fat": "5"
+    },
+    {
+      "dish": "turkey",
+      "calories": "80",
+      "protein": "10",
+      "carbs": "1",
+      "fat": "3.5"
+    },
+    {
+      "dish": "seafood",
+      "calories": "100",
+      "protein": "7",
+      "carbs": "11",
+      "fat": "3.5"
+    },
+    {
+      "dish": "roast beef & cheddar",
+      "calories": "130",
+      "protein": "18",
+      "carbs": "0",
+      "fat": "7"
+    },
+    {
+      "dish": "smoked meat",
+      "calories": "110",
+      "protein": "11",
+      "carbs": "2",
+      "fat": "7"
+    },
+    {
+      "dish": "Selects double stacked smoked meat",
+      "calories": "190",
+      "protein": "20",
+      "carbs": "3",
+      "fat": "11"
+    },
+    {
+      "dish": "meatball",
+      "calories": "230",
+      "protein": "10",
+      "carbs": "7",
+      "fat": "15"
+    },
+    {
+      "dish": "buffalo chicken",
+      "calories": "150",
+      "protein": "14",
+      "carbs": "6",
+      "fat": "7"
+    },
+    {
+      "dish": "grilled chicken",
+      "calories": "100",
+      "protein": "14",
+      "carbs": "3",
+      "fat": "4"
+    },
+    {
+      "dish": "chicken parmesan",
+      "calories": "280",
+      "protein": "19",
+      "carbs": "13",
+      "fat": "16"
+    },
+    {
+      "dish": "steak & cheese",
+      "calories": "120",
+      "protein": "14",
+      "carbs": "3",
+      "fat": "6"
+    },
+    {
+      "dish": "Premium chicken souvlaki",
+      "calories": "110",
+      "protein": "11",
+      "carbs": "1",
+      "fat": "7"
+    },
+    {
+      "dish": "ultimate club",
+      "calories": "210",
+      "protein": "23",
+      "carbs": "0",
+      "fat": "12"
+    },
+    {
+      "dish": "louisiana pepper chicken",
+      "calories": "140",
+      "protein": "14",
+      "carbs": "3",
+      "fat": "8"
+    },
+    {
+      "dish": "marinara",
+      "calories": "15",
+      "protein": "0.5",
+      "carbs": "4",
+      "fat": "0"
+    },
+    {
+      "dish": "pizza",
+      "calories": "15",
+      "protein": "0.3",
+      "carbs": "4",
+      "fat": "0"
+    },
+    {
+      "dish": "steak",
+      "calories": "40",
+      "protein": "0.1",
+      "carbs": "5",
+      "fat": "1"
+    },
+    {
+      "dish": "Caesar",
+      "calories": "80",
+      "protein": "0.4",
+      "carbs": "0",
+      "fat": "10"
+    },
+    {
+      "dish": "louisiana chicken",
+      "calories": "20",
+      "protein": "0.4",
+      "carbs": "6",
+      "fat": "0"
+    },
+    {
+      "dish": "'68 sub sauce",
+      "calories": "70",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "8"
+    },
+    {
+      "dish": "light mayo",
+      "calories": "60",
+      "protein": "0.1",
+      "carbs": "2",
+      "fat": "5"
+    },
+    {
+      "dish": "buttermilk ranch",
+      "calories": "60",
+      "protein": "0.4",
+      "carbs": "1",
+      "fat": "6"
+    },
+    {
+      "dish": "honey mustard",
+      "calories": "20",
+      "protein": "0",
+      "carbs": "4",
+      "fat": "0"
+    },
+    {
+      "dish": "yellow mustard",
+      "calories": "5",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "tzatziki sauce",
+      "calories": "140",
+      "protein": "0.2",
+      "carbs": "1",
+      "fat": "16"
+    },
+    {
+      "dish": "southwest chipotle",
+      "calories": "110",
+      "protein": "0.4",
+      "carbs": "2",
+      "fat": "11"
+    },
+    {
+      "dish": "sweet & spicy thai",
+      "calories": "120",
+      "protein": "0.1",
+      "carbs": "16",
+      "fat": "0"
+    },
+    {
+      "dish": "Frank's RedHot\u00ae Buffalo Wings",
+      "calories": "3",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Grace Spicy Jerk",
+      "calories": "20",
+      "protein": "0",
+      "carbs": "6",
+      "fat": "0"
+    },
+    {
+      "dish": "Forty Creek Whisky BBQ",
+      "calories": "60",
+      "protein": "0.4",
+      "carbs": "13",
+      "fat": "0.1"
+    },
+    {
+      "dish": "dijon mustard",
+      "calories": "30",
+      "protein": "0",
+      "carbs": "6",
+      "fat": "0"
+    },
+    {
+      "dish": "Spicy '68 sub sauce",
+      "calories": "70",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "8"
+    },
+    {
+      "dish": "Selects",
+      "calories": "380",
+      "protein": "40",
+      "carbs": "6",
+      "fat": "22"
+    }
+  ]
+}

@@ -20,10 +20,10 @@ import warnings
 from tqdm import tqdm
 
 from app.analysis.json_to_menu import json_to_macro_caches
-from app.analysis.pdf_to_json import pdf_to_json
+from app.analysis.pdf_to_json import has_menu_items, pdf_to_json
 from app.scraping.find_restaurant_link import (
     clean_restaurant_name,
-    find_restaurant_link,
+    find_restaurant_links,
 )
 
 # List of 100 most popular restaurants in Toronto
@@ -99,21 +99,62 @@ def create_restaurant_json(
                 print(f"✓ Found cached data for {restaurant_name} ({clean_name})")
             return True
 
-        # Find restaurant URL
+        # Find restaurant URLs (up to 3)
         if show_detailed_output:
             print(f"🔍 Searching for {restaurant_name}...")
-        url = find_restaurant_link(clean_name)
-        if url is None:
+        urls, error_occurred = find_restaurant_links(clean_name, max_links=3)
+        if not urls:
             if show_detailed_output:
-                print(f"❌ No PDF URL found for {restaurant_name}")
+                if not error_occurred:
+                    print(f"❌ No PDF URLs found for {restaurant_name}")
+                else:
+                    print(f"❌ Error occurred while searching for {restaurant_name}")
             return False
 
-        # Extract PDF to JSON
+        # Try each URL until we find one with valid menu items
+        successful_extraction = False
+        for i, url in enumerate(urls, 1):
+            if show_detailed_output:
+                print(f"📄 Trying URL {i}/{len(urls)}: {url}")
+
+            try:
+                json_data = pdf_to_json(url, cache_file, clean_name)
+
+                if has_menu_items(json_data):
+                    if show_detailed_output:
+                        print(
+                            f"✓ Successfully extracted {len(json_data['menu_items'])} "
+                            f"menu items from URL {i}"
+                        )
+                    successful_extraction = True
+                    break
+                else:
+                    if show_detailed_output:
+                        print(f"⚠️  No menu items found in URL {i}, trying next...")
+                    # Remove the file if no menu items were found, so we can try
+                    # the next URL
+                    if os.path.exists(cache_file):
+                        os.remove(cache_file)
+
+            except Exception as e:
+                error_msg = str(e)
+                if show_detailed_output:
+                    print(f"❌ Error processing URL {i}: {error_msg}")
+                # Remove the file if there was an error, so we can try the next URL
+                if os.path.exists(cache_file):
+                    os.remove(cache_file)
+                continue
+
+        if not successful_extraction:
+            if show_detailed_output:
+                print(
+                    f"❌ Failed to extract menu items from any of the {len(urls)} "
+                    f"URLs for {restaurant_name}"
+                )
+            return False
+
         if show_detailed_output:
-            print(f"📄 Extracting PDF data from {url}...")
-        pdf_to_json(url, cache_file, clean_name)
-        if show_detailed_output:
-            print(f"✓ Extracted tables from {url} into {clean_name}_output.json")
+            print(f"✓ Extracted tables into {clean_name}_output.json")
 
         return True
 

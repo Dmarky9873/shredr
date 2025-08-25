@@ -370,12 +370,16 @@ def _save_json_data(json_data: Dict[str, Any], out_json_path: Path) -> None:
         json.dump(json_data, f)
 
 
-def pdf_to_json(url: str, out_json: str, restaurant_name: str):
-    """Convert a PDF file to a JSON file.
+def pdf_to_json(url: str, out_json: str, restaurant_name: str) -> Dict[str, Any]:
+    """Convert a PDF file to a JSON file and return the extracted data.
 
     Args:
         url (str): The URL of the PDF file to convert.
         out_json (str): The path to the output JSON file.
+        restaurant_name (str): The name of the restaurant.
+
+    Returns:
+        Dict[str, Any]: The extracted restaurant data including menu items.
     """
     out_json_path = Path(out_json)
     tmp_path = out_json_path.with_suffix(".pdf")
@@ -396,6 +400,24 @@ def pdf_to_json(url: str, out_json: str, restaurant_name: str):
 
         _save_json_data(json_data, out_json_path)
 
+        return json_data
+
     finally:
         if os.path.exists(tmp_path):
             os.remove(tmp_path)
+
+
+def has_menu_items(json_data: Dict[str, Any]) -> bool:
+    """Check if the extracted data contains valid menu items.
+
+    Args:
+        json_data (Dict[str, Any]): The extracted restaurant data.
+
+    Returns:
+        bool: True if menu items are present and non-empty, False otherwise.
+    """
+    return (
+        "menu_items" in json_data
+        and isinstance(json_data["menu_items"], list)
+        and len(json_data["menu_items"]) > 0
+    )

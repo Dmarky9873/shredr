@@ -1,0 +1,98 @@
+{
+  "restaurant_name": "wingstop",
+  "url": "https://s3.amazonaws.com/wingstop.com/assets/static/WSR18-0009-Corporate-NutritionalGuide-JumboWings-HR_OFFICAL.pdf",
+  "date": "2025-08-25 00:15:11",
+  "menu_items": [
+    {
+      "dish": "Atomic",
+      "calories": "10",
+      "protein": "10",
+      "carbs": "1",
+      "fat": "5"
+    },
+    {
+      "dish": "Cajun",
+      "calories": "14",
+      "protein": "10",
+      "carbs": "0",
+      "fat": "5"
+    },
+    {
+      "dish": "Garlic Parmesan",
+      "calories": "15",
+      "protein": "10",
+      "carbs": "1",
+      "fat": "8"
+    },
+    {
+      "dish": "Hawaiian",
+      "calories": "9",
+      "protein": "10",
+      "carbs": "3",
+      "fat": "5"
+    },
+    {
+      "dish": "Hickory Smoked BBQ",
+      "calories": "11",
+      "protein": "10",
+      "carbs": "4",
+      "fat": "5"
+    },
+    {
+      "dish": "Hot Honey Rub",
+      "calories": "10",
+      "protein": "10",
+      "carbs": "2",
+      "fat": "8"
+    },
+    {
+      "dish": "Lemon Pepper",
+      "calories": "16",
+      "protein": "10",
+      "carbs": "0",
+      "fat": "8"
+    },
+    {
+      "dish": "Louisiana Rub",
+      "calories": "14",
+      "protein": "10",
+      "carbs": "0",
+      "fat": "7"
+    },
+    {
+      "dish": "Mango Habanero",
+      "calories": "9",
+      "protein": "10",
+      "carbs": "4",
+      "fat": "5"
+    },
+    {
+      "dish": "Mild",
+      "calories": "9",
+      "protein": "10",
+      "carbs": "0",
+      "fat": "8"
+    },
+    {
+      "dish": "Original Hot",
+      "calories": "9",
+      "protein": "10",
+      "carbs": "0",
+      "fat": "5"
+    },
+    {
+      "dish": "Plain",
+      "calories": "8",
+      "protein": "10",
+      "carbs": "0",
+      "fat": "5"
+    },
+    {
+      "dish": "Spicy Korean Q",
+      "calories": "10",
+      "protein": "10",
+      "carbs": "3",
+      "fat": "5"
+    }
+  ]
+}

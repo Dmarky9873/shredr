@@ -1,1 +1,252 @@
-{"restaurant_name": "jimmy the greek", "url": "https://jimmythegreek.com/wp-content/uploads/2024/12/Jimmy-The-Greek-Ontario-Menu.pdf", "date": "2025-08-24 20:02:33", "menu_items": []}
+{
+  "restaurant_name": "jimmy the greek",
+  "url": "https://thesimplegreek.com/wp-content/uploads/2019/11/The-Simple-Greek-Nutritionals.pdf",
+  "date": "2025-08-25 00:11:36",
+  "menu_items": [
+    {
+      "dish": "Spanakopita",
+      "calories": "180",
+      "protein": "6",
+      "carbs": "18",
+      "fat": "20"
+    },
+    {
+      "dish": "Tiropita",
+      "calories": "190",
+      "protein": "8",
+      "carbs": "18",
+      "fat": "22"
+    },
+    {
+      "dish": "Avgolemono Soup",
+      "calories": "45",
+      "protein": "16",
+      "carbs": "24",
+      "fat": "5"
+    },
+    {
+      "dish": "Lentil Soup",
+      "calories": "110",
+      "protein": "9",
+      "carbs": "25",
+      "fat": "12"
+    },
+    {
+      "dish": "Fresh Cut Fries",
+      "calories": "329",
+      "protein": "9",
+      "carbs": "87",
+      "fat": "37"
+    },
+    {
+      "dish": "Greek Fries",
+      "calories": "383",
+      "protein": "12",
+      "carbs": "88",
+      "fat": "43"
+    },
+    {
+      "dish": "Rizogalo",
+      "calories": "90",
+      "protein": "7",
+      "carbs": "43",
+      "fat": "10"
+    },
+    {
+      "dish": "Pumpkin Spice Rizogalo",
+      "calories": "60",
+      "protein": "6",
+      "carbs": "36",
+      "fat": "8"
+    },
+    {
+      "dish": "Baklava",
+      "calories": "140",
+      "protein": "5",
+      "carbs": "60",
+      "fat": "16"
+    },
+    {
+      "dish": "Baklava Cheesecake",
+      "calories": "410",
+      "protein": "13",
+      "carbs": "53",
+      "fat": "45"
+    },
+    {
+      "dish": "Chocolate Chip Cookie",
+      "calories": "18",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "9"
+    },
+    {
+      "dish": "White Pita",
+      "calories": "22",
+      "protein": "8",
+      "carbs": "40",
+      "fat": "3"
+    },
+    {
+      "dish": "Wheat Pita",
+      "calories": "40",
+      "protein": "8",
+      "carbs": "33",
+      "fat": "4"
+    },
+    {
+      "dish": "Mixed Greens",
+      "calories": "0",
+      "protein": "2",
+      "carbs": "3",
+      "fat": "0"
+    },
+    {
+      "dish": "Lemon Rice Pilaf",
+      "calories": "40",
+      "protein": "4",
+      "carbs": "41",
+      "fat": "5"
+    },
+    {
+      "dish": "Brown Rice",
+      "calories": "3",
+      "protein": "6",
+      "carbs": "55",
+      "fat": "3"
+    },
+    {
+      "dish": "Lentils",
+      "calories": "100",
+      "protein": "15",
+      "carbs": "40",
+      "fat": "12"
+    },
+    {
+      "dish": "Traditional Gyro",
+      "calories": "280",
+      "protein": "21",
+      "carbs": "9",
+      "fat": "32"
+    },
+    {
+      "dish": "Chicken Gyro",
+      "calories": "67",
+      "protein": "29",
+      "carbs": "4",
+      "fat": "8"
+    },
+    {
+      "dish": "Grilled Chicken",
+      "calories": "80",
+      "protein": "28",
+      "carbs": "1",
+      "fat": "10"
+    },
+    {
+      "dish": "Mediterranean Shrimp GF, DF, SF, WF",
+      "calories": "5",
+      "protein": "16",
+      "carbs": "5",
+      "fat": "6"
+    },
+    {
+      "dish": "Feta Cheese",
+      "calories": "35",
+      "protein": "5",
+      "carbs": "1",
+      "fat": "4"
+    },
+    {
+      "dish": "Kalamata Olives",
+      "calories": "35",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "4"
+    },
+    {
+      "dish": "Village Salad",
+      "calories": "45",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "5"
+    },
+    {
+      "dish": "Shredded Romaine",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Olive/Canola Oil",
+      "calories": "120",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "14"
+    },
+    {
+      "dish": "Red Wine Vinegar",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Greek Dressing",
+      "calories": "130",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "17"
+    },
+    {
+      "dish": "Garlic Cream Sauce",
+      "calories": "45",
+      "protein": "1",
+      "carbs": "1",
+      "fat": "5"
+    },
+    {
+      "dish": "Tzatziki",
+      "calories": "15",
+      "protein": "1",
+      "carbs": "1",
+      "fat": "2"
+    },
+    {
+      "dish": "Hummus",
+      "calories": "20",
+      "protein": "1",
+      "carbs": "3",
+      "fat": "3"
+    },
+    {
+      "dish": "Spicy Hummus",
+      "calories": "15",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "2"
+    },
+    {
+      "dish": "Garlic Green Beans",
+      "calories": "50",
+      "protein": "1",
+      "carbs": "4",
+      "fat": "6"
+    },
+    {
+      "dish": "Lemonis Potatoes",
+      "calories": "35",
+      "protein": "2",
+      "carbs": "9",
+      "fat": "4"
+    },
+    {
+      "dish": "Dolmades- Vegan",
+      "calories": "72",
+      "protein": "2",
+      "carbs": "20",
+      "fat": "8"
+    }
+  ]
+}
