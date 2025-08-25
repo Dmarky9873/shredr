@@ -25,9 +25,9 @@ export default function AboutPage() {
 
           <div>
             <p className="text-lg">
-              To use Shredr, simply search for a restaurant. You'll instantly
-              see three tables (or one table and options to switch between them,
-              if on mobile). These tables rank menu items by their
+              To use Shredr, simply search for a restaurant. You&apos;ll
+              instantly see three tables (or one table and options to switch
+              between them, if on mobile). These tables rank menu items by their
               nutrient-to-calorie ratio, so you can easily find the best options
               for your goals. Trying to cut? Use the protein table to ensure you
               hit your protein goals while minimizing calorie intake. Have a big
@@ -42,7 +42,7 @@ export default function AboutPage() {
               out your meal so you can hit each and every macro goal. Every menu
               item is ranked by nutrient-to-calorie ratio, so you can find the
               dish with the most protein for the fewest calories—or flip the
-              view to focus on carbs or fats instead. We're combining
+              view to focus on carbs or fats instead. We&apos;re combining
               performance, convenience, and transparency to make eating out work
               for your fitness goals instead of against them.
             </p>
@@ -95,10 +95,10 @@ export default function AboutPage() {
           <div className="flex justify-end">
             <div className="max-w-2xl text-right">
               <p className="text-lg">
-                To use Shredr, simply search for a restaurant. You'll instantly
-                see three tables (or one table and options to switch between
-                them, if on mobile). These tables rank menu items by their
-                nutrient-to-calorie ratio, so you can easily find the best
+                To use Shredr, simply search for a restaurant. You&apos;ll
+                instantly see three tables (or one table and options to switch
+                between them, if on mobile). These tables rank menu items by
+                their nutrient-to-calorie ratio, so you can easily find the best
                 options for your goals. Trying to cut? Use the protein table to
                 ensure you hit your protein goals while minimizing calorie
                 intake. Have a big day of training ahead? The carb table will
@@ -114,9 +114,9 @@ export default function AboutPage() {
                 Every menu item is ranked by nutrient-to-calorie ratio, so you
                 can find the dish with the most protein for the fewest
                 calories—or flip the view to focus on carbs or fats instead.
-                We're combining performance, convenience, and transparency to
-                make eating out work for your fitness goals instead of against
-                them.
+                We&apos;re combining performance, convenience, and transparency
+                to make eating out work for your fitness goals instead of
+                against them.
               </p>
             </div>
           </div>

@@ -146,18 +146,23 @@ def _find_column_indices_from_cells(
 
 
 def _is_valid_dish_name(dish_name: str) -> bool:
-    """Check if the dish name is valid (not a nutrition header).
+    """Check if the dish name is valid (not a nutrition header or just numbers).
 
     Args:
         dish_name (str): The dish name to validate.
 
     Returns:
-        bool: True if valid dish name, False if it's a nutrition header.
+        bool: True if valid dish name, False if it's a nutrition header or just numbers.
     """
     if dish_name is None or str(dish_name).strip() == "":
         return False
 
-    dish_name_lower = str(dish_name).lower()
+    dish_name_str = str(dish_name).strip()
+    dish_name_lower = dish_name_str.lower()
+
+    if dish_name_str.replace(" ", "").replace(",", "").replace(".", "").isdigit():
+        return False
+
     nutrition_keywords = [
         "cal",
         "kcal",
