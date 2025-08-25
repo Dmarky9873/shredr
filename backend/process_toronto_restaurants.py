@@ -12,8 +12,10 @@ The script includes a progress bar with time estimation.
 """
 
 import json
+import logging
 import os
 import time
+import warnings
 
 from tqdm import tqdm
 
@@ -182,7 +184,17 @@ def create_restaurant_json(
 
     except (FileNotFoundError, json.JSONDecodeError, IOError) as e:
         if show_detailed_output:
-            print(f"❌ Error processing {restaurant_name}: {e}")
+            print(f"❌ File/IO error processing {restaurant_name}: {e}")
+        return False
+    except Exception as e:
+        # Handle PDF parsing errors and other unexpected errors
+        error_msg = str(e)
+        if "PDF" in error_msg or "pdfplumber" in error_msg or "pdfminer" in error_msg:
+            if show_detailed_output:
+                print(f"❌ Invalid PDF for {restaurant_name}: {error_msg}")
+        else:
+            if show_detailed_output:
+                print(f"❌ Unexpected error processing {restaurant_name}: {error_msg}")
         return False
 
 
@@ -294,7 +306,12 @@ def process_restaurant(restaurant_name: str, show_detailed_output: bool = True) 
 
     except (FileNotFoundError, json.JSONDecodeError, IOError) as e:
         if show_detailed_output:
-            print(f"❌ Failed to process {restaurant_name}: {e}")
+            print(f"❌ File/IO error processing {restaurant_name}: {e}")
+    except Exception as e:
+        # Handle any other unexpected errors
+        error_msg = str(e)
+        if show_detailed_output:
+            print(f"❌ Unexpected error processing {restaurant_name}: {error_msg}")
 
     return results
 
@@ -303,6 +320,14 @@ def main():
     """
     Main function to process all Toronto restaurants.
     """
+    # Suppress PDF parsing warnings that clutter the progress bar
+    warnings.filterwarnings("ignore", message=".*wrong pointing object.*")
+    warnings.filterwarnings("ignore", message=".*Ignoring wrong pointing object.*")
+
+    # Also suppress pdfminer logging warnings
+    logging.getLogger("pdfminer").setLevel(logging.ERROR)
+    logging.getLogger("pdfplumber").setLevel(logging.ERROR)
+
     print("🍽️  Starting Toronto Restaurant Processing")
     print(f"📋 Processing {len(TORONTO_RESTAURANTS)} restaurants")
     print(f"⏰ Started at {time.strftime('%Y-%m-%d %H:%M:%S')}")
@@ -318,40 +343,71 @@ def main():
     successful_count = 0
     failed_count = 0
     skipped_count = 0
+    pdf_error_count = 0
 
     # Process each restaurant
     with tqdm(
         total=len(TORONTO_RESTAURANTS),
         desc="Processing restaurants",
         unit="restaurant",
-        ncols=100,
+        ncols=120,
         bar_format="{l_bar}{bar}| {n_fmt}/{total_fmt} [{elapsed}<{remaining}, "
         "{rate_fmt}]",
     ) as pbar:
         for i, restaurant in enumerate(TORONTO_RESTAURANTS, 1):
-            pbar.set_description(f"Processing: {restaurant[:30]}...")
+            pbar.set_description(f"Processing: {restaurant[:25]}...")
 
-            # Add delay between requests to be respectful
-            if i > 1:
-                time.sleep(2)  # 2 second delay between restaurants
+            try:
+                results = process_restaurant(restaurant, show_detailed_output=False)
+                all_results.append(results)
 
-            results = process_restaurant(restaurant, show_detailed_output=False)
-            all_results.append(results)
+                if results["success"]:
+                    successful_count += 1
+                    status = "✅"
+                elif results["json_created"]:
+                    failed_count += 1
+                    status = "⚠️"
+                else:
+                    skipped_count += 1
+                    status = "⏭️"
 
-            if results["success"]:
-                successful_count += 1
                 pbar.set_postfix(
-                    {"✅": successful_count, "❌": failed_count, "⏭️": skipped_count}
+                    {
+                        "✅": successful_count,
+                        "⚠️": failed_count,
+                        "⏭️": skipped_count,
+                        "Status": status,
+                    }
                 )
-            elif results["json_created"]:
-                failed_count += 1
+
+            except Exception as e:
+                # Handle any critical errors that might crash the entire process
+                error_msg = str(e)
+                if "PDF" in error_msg:
+                    pdf_error_count += 1
+                    skipped_count += 1
+                else:
+                    failed_count += 1
+
+                # Create a failed result entry
+                results = {
+                    "restaurant": restaurant,
+                    "clean_name": clean_restaurant_name(restaurant),
+                    "json_created": False,
+                    "macro_caches_created": False,
+                    "list_updated": False,
+                    "success": False,
+                    "error": error_msg,
+                }
+                all_results.append(results)
+
                 pbar.set_postfix(
-                    {"✅": successful_count, "❌": failed_count, "⏭️": skipped_count}
-                )
-            else:
-                skipped_count += 1
-                pbar.set_postfix(
-                    {"✅": successful_count, "❌": failed_count, "⏭️": skipped_count}
+                    {
+                        "✅": successful_count,
+                        "⚠️": failed_count,
+                        "⏭️": skipped_count,
+                        "Status": "❌",
+                    }
                 )
 
             pbar.update(1)
@@ -361,8 +417,10 @@ def main():
     print("🎉 PROCESSING COMPLETE!")
     print(f"{'='*60}")
     print(f"✅ Successfully processed: {successful_count}")
-    print(f"❌ Failed to process: {failed_count}")
+    print(f"⚠️  Failed to process: {failed_count}")
     print(f"⏭️  Skipped (no PDF found): {skipped_count}")
+    if pdf_error_count > 0:
+        print(f"📄 PDF parsing errors: {pdf_error_count}")
     print(f"📊 Total restaurants: {len(TORONTO_RESTAURANTS)}")
     print(f"⏰ Finished at {time.strftime('%Y-%m-%d %H:%M:%S')}")
 
@@ -376,6 +434,7 @@ def main():
                     "successful": successful_count,
                     "failed": failed_count,
                     "skipped": skipped_count,
+                    "pdf_errors": pdf_error_count,
                     "processed_at": time.strftime("%Y-%m-%d %H:%M:%S"),
                 },
                 "detailed_results": all_results,
