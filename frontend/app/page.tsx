@@ -7,6 +7,7 @@ import RestaurantInput from "./components/RestaurantInput";
 export default function Home() {
   const [shouldRenderTitleTagline, setShouldRenderTitleTagline] =
     useState(true);
+
   useEffect(() => {
     const timeout = setTimeout(() => {
       const element = document.getElementById("title-and-tagline");
@@ -26,6 +27,8 @@ export default function Home() {
   }, []);
   return (
     <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 relative text-center">
+      {/* About Link - Top Right */}
+
       {shouldRenderTitleTagline && (
         <div
           id="title-and-tagline"
