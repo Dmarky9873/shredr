@@ -1,1 +1,567 @@
-{"restaurant_name": "sukhothai", "url": "https://www.thaiexpressfood.com/assets/pdf/nutritionals.pdf", "date": "2025-08-24 20:27:05", "menu_items": [{"dish": "Stir-Fry Chilli Paste - (GF)", "calories": "290", "protein": "2", "carbs": "37", "fat": "18"}, {"dish": "Pad Thai", "calories": "680", "protein": "23", "carbs": "66", "fat": "42"}, {"dish": "Pad Thai - (V)", "calories": "660", "protein": "23", "carbs": "62", "fat": "41"}, {"dish": "Pad Thai - (GF)", "calories": "660", "protein": "23", "carbs": "62", "fat": "41"}, {"dish": "Pad See Ew", "calories": "270", "protein": "2", "carbs": "35", "fat": "15"}, {"dish": "Pad See Ew - (V)", "calories": "270", "protein": "2", "carbs": "39", "fat": "15"}, {"dish": "Pad See Ew - (GF)", "calories": "360", "protein": "1", "carbs": "30", "fat": "29"}, {"dish": "Mini Tom Yum Soup", "calories": "140", "protein": "4", "carbs": "22", "fat": "4"}, {"dish": "Mini Thai Soup", "calories": "70", "protein": "5", "carbs": "8", "fat": "3"}, {"dish": "Tom Yum Soup (Meal)", "calories": "320", "protein": "14", "carbs": "47", "fat": "11"}, {"dish": "Thai Soup (Meal)", "calories": "170", "protein": "14", "carbs": "19", "fat": "8"}, {"dish": "Shrimp (6)", "calories": "70", "protein": "17", "carbs": "0", "fat": "1"}, {"dish": "Beef", "calories": "110", "protein": "16", "carbs": "0", "fat": "5"}, {"dish": "Chicken", "calories": "150", "protein": "23", "carbs": "0", "fat": "6"}, {"dish": "Green Pepper", "calories": "5", "protein": "0", "carbs": "2", "fat": "0"}, {"dish": "Red Pepper", "calories": "10", "protein": "0", "carbs": "2", "fat": "0"}, {"dish": "Onion", "calories": "15", "protein": "0", "carbs": "3", "fat": "0"}, {"dish": "Carrot", "calories": "10", "protein": "0", "carbs": "2", "fat": "0"}, {"dish": "Broccoli", "calories": "10", "protein": "1", "carbs": "2", "fat": "0"}, {"dish": "Baby Corn", "calories": "15", "protein": "1", "carbs": "3", "fat": "0"}, {"dish": "Napa Cabbage", "calories": "5", "protein": "0", "carbs": "1", "fat": "0"}, {"dish": "Lettuce", "calories": "5", "protein": "0", "carbs": "1", "fat": "0"}, {"dish": "Chinese Broccoli", "calories": "25", "protein": "1", "carbs": "4", "fat": "0.5"}, {"dish": "Tofu", "calories": "280", "protein": "21", "carbs": "3", "fat": "22"}, {"dish": "Fish Filet", "calories": "60", "protein": "11", "carbs": "0", "fat": "1"}, {"dish": "Orange Chicken", "calories": "170", "protein": "26", "carbs": "0", "fat": "7"}, {"dish": "General Thai\u00ae Chicken", "calories": "290", "protein": "23", "carbs": "16", "fat": "13"}, {"dish": "Egg (Fried Rice, Pad Thai, Pad See Ew)", "calories": "60", "protein": "6", "carbs": "0", "fat": "4"}, {"dish": "Rice", "calories": "260", "protein": "5", "carbs": "57", "fat": "0"}, {"dish": "Rice for Fried Rice", "calories": "460", "protein": "8", "carbs": "100", "fat": "0.5"}, {"dish": "Lettuce Mix (Subsitute for Rice) 10oz", "calories": "40", "protein": "3", "carbs": "9", "fat": "0"}, {"dish": "Red Curry", "calories": "330", "protein": "5", "carbs": "19", "fat": "29"}, {"dish": "Green Curry", "calories": "340", "protein": "5", "carbs": "19", "fat": "29"}, {"dish": "Yellow Curry", "calories": "380", "protein": "5", "carbs": "30", "fat": "29"}, {"dish": "General Thai\u00ae", "calories": "350", "protein": "3", "carbs": "55", "fat": "15"}, {"dish": "Drunken Noodles", "calories": "520", "protein": "4", "carbs": "65", "fat": "29"}, {"dish": "Fried Rice Thai", "calories": "390", "protein": "3", "carbs": "33", "fat": "29"}, {"dish": "Fried Rice Thai - (V)", "calories": "380", "protein": "2", "carbs": "38", "fat": "28"}, {"dish": "Fried Rice Thai - (GF)", "calories": "360", "protein": "2", "carbs": "33", "fat": "28"}, {"dish": "Fried Rice Basil", "calories": "360", "protein": "3", "carbs": "26", "fat": "28"}, {"dish": "Fried Rice Basil - (V)", "calories": "350", "protein": "2", "carbs": "31", "fat": "28"}, {"dish": "Fried Rice Basil - (GF)", "calories": "330", "protein": "1", "carbs": "26", "fat": "28"}, {"dish": "Stir-Fry Basil", "calories": "240", "protein": "3", "carbs": "29", "fat": "15"}, {"dish": "Stir-Fry Basil - (V)", "calories": "250", "protein": "3", "carbs": "34", "fat": "15"}, {"dish": "Stir-Fry Basil - (GF)", "calories": "250", "protein": "3", "carbs": "34", "fat": "15"}, {"dish": "Stir-Fry Cashew", "calories": "320", "protein": "5", "carbs": "30", "fat": "22"}, {"dish": "Stir-Fry Cashew - (V)", "calories": "320", "protein": "4", "carbs": "34", "fat": "22"}, {"dish": "Stir-Fry Cashew - (GF)", "calories": "310", "protein": "4", "carbs": "31", "fat": "22"}, {"dish": "Stir-Fry Soy Garlic", "calories": "250", "protein": "4", "carbs": "31", "fat": "15"}, {"dish": "Stir-Fry Soy Garlic - (V)", "calories": "240", "protein": "3", "carbs": "32", "fat": "15"}, {"dish": "Stir-Fry Soy Garlic - (GF)", "calories": "250", "protein": "3", "carbs": "35", "fat": "15"}, {"dish": "Stir-Fry Sweet & Sour", "calories": "350", "protein": "3", "carbs": "55", "fat": "15"}, {"dish": "Stir-Fry Sweet & Sour - (V)", "calories": "300", "protein": "2", "carbs": "44", "fat": "14"}, {"dish": "Stir-Fry Sweet & Sour - (GF)", "calories": "310", "protein": "3", "carbs": "45", "fat": "14"}, {"dish": "Stir-Fry Peanut", "calories": "380", "protein": "6", "carbs": "27", "fat": "30"}, {"dish": "Stir-Fry Peanut - (V)", "calories": "380", "protein": "6", "carbs": "30", "fat": "30"}, {"dish": "Stir-Fry Peanut - (GF)", "calories": "380", "protein": "6", "carbs": "30", "fat": "30"}, {"dish": "Stir-Fry Chili Paste", "calories": "290", "protein": "2", "carbs": "33", "fat": "18"}, {"dish": "Stir-Fry Chili Paste - (V)", "calories": "220", "protein": "2", "carbs": "29", "fat": "14"}, {"dish": "Noodle for Pad Thai", "calories": "210", "protein": "4", "carbs": "48", "fat": "0"}, {"dish": "Noodle for Pad See Ew", "calories": "280", "protein": "5", "carbs": "61", "fat": "0.5"}, {"dish": "Noodle for Regular Soup", "calories": "210", "protein": "4", "carbs": "48", "fat": "0"}, {"dish": "Noodle for Mini Soup", "calories": "60", "protein": "0", "carbs": "14", "fat": "0"}, {"dish": "Extra Coconut Milk (Regular Soup)", "calories": "230", "protein": "3", "carbs": "3", "fat": "23"}, {"dish": "Extra Coconut Milk (Mini Soup)", "calories": "110", "protein": "2", "carbs": "2", "fat": "11"}, {"dish": "Cashew", "calories": "220", "protein": "6", "carbs": "12", "fat": "17"}, {"dish": "Roasted Crushed Peanuts", "calories": "320", "protein": "14", "carbs": "9", "fat": "28"}, {"dish": "Imperial Roll", "calories": "60", "protein": "2", "carbs": "10", "fat": "1"}, {"dish": "Spring Roll Shrimp (1)", "calories": "220", "protein": "15", "carbs": "37", "fat": "2"}, {"dish": "Spring Roll Vegetable (1)", "calories": "170", "protein": "5", "carbs": "37", "fat": "1.5"}, {"dish": "Fried Dumplings (4)", "calories": "170", "protein": "5", "carbs": "17", "fat": "10"}, {"dish": "Steamed Dumplings (4)", "calories": "110", "protein": "5", "carbs": "17", "fat": "2.5"}, {"dish": "Plum Sauce", "calories": "100", "protein": "0", "carbs": "24", "fat": "0"}, {"dish": "Peanut Sauce (Spring Roll)", "calories": "100", "protein": "2", "carbs": "9", "fat": "6"}, {"dish": "Peanut Sauce (Steamed Dumplings)", "calories": "100", "protein": "2", "carbs": "4", "fat": "9"}, {"dish": "Peanut Sauce (Stir-Fry)", "calories": "140", "protein": "3", "carbs": "4", "fat": "12"}, {"dish": "Sweet Chili Sauce (Imperial Roll)", "calories": "160", "protein": "0", "carbs": "40", "fat": "0"}, {"dish": "General Thai-Ger", "calories": "410", "protein": "15", "carbs": "54", "fat": "14"}, {"dish": "King Kong Chicken", "calories": "330", "protein": "13", "carbs": "47", "fat": "10"}, {"dish": "Elephant Noodles", "calories": "480", "protein": "15", "carbs": "61", "fat": "19"}]}
+{
+  "restaurant_name": "sukhothai",
+  "url": "https://www.thaiexpressfood.com/assets/pdf/nutritionals.pdf",
+  "date": "2025-08-24 20:27:05",
+  "menu_items": [
+    {
+      "dish": "Stir-Fry Chilli Paste - (GF)",
+      "calories": "290",
+      "protein": "2",
+      "carbs": "37",
+      "fat": "18"
+    },
+    {
+      "dish": "Pad Thai",
+      "calories": "680",
+      "protein": "23",
+      "carbs": "66",
+      "fat": "42"
+    },
+    {
+      "dish": "Pad Thai - (V)",
+      "calories": "660",
+      "protein": "23",
+      "carbs": "62",
+      "fat": "41"
+    },
+    {
+      "dish": "Pad Thai - (GF)",
+      "calories": "660",
+      "protein": "23",
+      "carbs": "62",
+      "fat": "41"
+    },
+    {
+      "dish": "Pad See Ew",
+      "calories": "270",
+      "protein": "2",
+      "carbs": "35",
+      "fat": "15"
+    },
+    {
+      "dish": "Pad See Ew - (V)",
+      "calories": "270",
+      "protein": "2",
+      "carbs": "39",
+      "fat": "15"
+    },
+    {
+      "dish": "Pad See Ew - (GF)",
+      "calories": "360",
+      "protein": "1",
+      "carbs": "30",
+      "fat": "29"
+    },
+    {
+      "dish": "Mini Tom Yum Soup",
+      "calories": "140",
+      "protein": "4",
+      "carbs": "22",
+      "fat": "4"
+    },
+    {
+      "dish": "Mini Thai Soup",
+      "calories": "70",
+      "protein": "5",
+      "carbs": "8",
+      "fat": "3"
+    },
+    {
+      "dish": "Tom Yum Soup (Meal)",
+      "calories": "320",
+      "protein": "14",
+      "carbs": "47",
+      "fat": "11"
+    },
+    {
+      "dish": "Thai Soup (Meal)",
+      "calories": "170",
+      "protein": "14",
+      "carbs": "19",
+      "fat": "8"
+    },
+    {
+      "dish": "Shrimp (6)",
+      "calories": "70",
+      "protein": "17",
+      "carbs": "0",
+      "fat": "1"
+    },
+    {
+      "dish": "Beef",
+      "calories": "110",
+      "protein": "16",
+      "carbs": "0",
+      "fat": "5"
+    },
+    {
+      "dish": "Chicken",
+      "calories": "150",
+      "protein": "23",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "Green Pepper",
+      "calories": "5",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "Red Pepper",
+      "calories": "10",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "Onion",
+      "calories": "15",
+      "protein": "0",
+      "carbs": "3",
+      "fat": "0"
+    },
+    {
+      "dish": "Carrot",
+      "calories": "10",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "Broccoli",
+      "calories": "10",
+      "protein": "1",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "Baby Corn",
+      "calories": "15",
+      "protein": "1",
+      "carbs": "3",
+      "fat": "0"
+    },
+    {
+      "dish": "Napa Cabbage",
+      "calories": "5",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "Lettuce",
+      "calories": "5",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "Chinese Broccoli",
+      "calories": "25",
+      "protein": "1",
+      "carbs": "4",
+      "fat": "0.5"
+    },
+    {
+      "dish": "Tofu",
+      "calories": "280",
+      "protein": "21",
+      "carbs": "3",
+      "fat": "22"
+    },
+    {
+      "dish": "Fish Filet",
+      "calories": "60",
+      "protein": "11",
+      "carbs": "0",
+      "fat": "1"
+    },
+    {
+      "dish": "Orange Chicken",
+      "calories": "170",
+      "protein": "26",
+      "carbs": "0",
+      "fat": "7"
+    },
+    {
+      "dish": "General Thai\u00ae Chicken",
+      "calories": "290",
+      "protein": "23",
+      "carbs": "16",
+      "fat": "13"
+    },
+    {
+      "dish": "Egg (Fried Rice, Pad Thai, Pad See Ew)",
+      "calories": "60",
+      "protein": "6",
+      "carbs": "0",
+      "fat": "4"
+    },
+    {
+      "dish": "Rice",
+      "calories": "260",
+      "protein": "5",
+      "carbs": "57",
+      "fat": "0"
+    },
+    {
+      "dish": "Rice for Fried Rice",
+      "calories": "460",
+      "protein": "8",
+      "carbs": "100",
+      "fat": "0.5"
+    },
+    {
+      "dish": "Lettuce Mix (Subsitute for Rice) 10oz",
+      "calories": "40",
+      "protein": "3",
+      "carbs": "9",
+      "fat": "0"
+    },
+    {
+      "dish": "Red Curry",
+      "calories": "330",
+      "protein": "5",
+      "carbs": "19",
+      "fat": "29"
+    },
+    {
+      "dish": "Green Curry",
+      "calories": "340",
+      "protein": "5",
+      "carbs": "19",
+      "fat": "29"
+    },
+    {
+      "dish": "Yellow Curry",
+      "calories": "380",
+      "protein": "5",
+      "carbs": "30",
+      "fat": "29"
+    },
+    {
+      "dish": "General Thai\u00ae",
+      "calories": "350",
+      "protein": "3",
+      "carbs": "55",
+      "fat": "15"
+    },
+    {
+      "dish": "Drunken Noodles",
+      "calories": "520",
+      "protein": "4",
+      "carbs": "65",
+      "fat": "29"
+    },
+    {
+      "dish": "Fried Rice Thai",
+      "calories": "390",
+      "protein": "3",
+      "carbs": "33",
+      "fat": "29"
+    },
+    {
+      "dish": "Fried Rice Thai - (V)",
+      "calories": "380",
+      "protein": "2",
+      "carbs": "38",
+      "fat": "28"
+    },
+    {
+      "dish": "Fried Rice Thai - (GF)",
+      "calories": "360",
+      "protein": "2",
+      "carbs": "33",
+      "fat": "28"
+    },
+    {
+      "dish": "Fried Rice Basil",
+      "calories": "360",
+      "protein": "3",
+      "carbs": "26",
+      "fat": "28"
+    },
+    {
+      "dish": "Fried Rice Basil - (V)",
+      "calories": "350",
+      "protein": "2",
+      "carbs": "31",
+      "fat": "28"
+    },
+    {
+      "dish": "Fried Rice Basil - (GF)",
+      "calories": "330",
+      "protein": "1",
+      "carbs": "26",
+      "fat": "28"
+    },
+    {
+      "dish": "Stir-Fry Basil",
+      "calories": "240",
+      "protein": "3",
+      "carbs": "29",
+      "fat": "15"
+    },
+    {
+      "dish": "Stir-Fry Basil - (V)",
+      "calories": "250",
+      "protein": "3",
+      "carbs": "34",
+      "fat": "15"
+    },
+    {
+      "dish": "Stir-Fry Basil - (GF)",
+      "calories": "250",
+      "protein": "3",
+      "carbs": "34",
+      "fat": "15"
+    },
+    {
+      "dish": "Stir-Fry Cashew",
+      "calories": "320",
+      "protein": "5",
+      "carbs": "30",
+      "fat": "22"
+    },
+    {
+      "dish": "Stir-Fry Cashew - (V)",
+      "calories": "320",
+      "protein": "4",
+      "carbs": "34",
+      "fat": "22"
+    },
+    {
+      "dish": "Stir-Fry Cashew - (GF)",
+      "calories": "310",
+      "protein": "4",
+      "carbs": "31",
+      "fat": "22"
+    },
+    {
+      "dish": "Stir-Fry Soy Garlic",
+      "calories": "250",
+      "protein": "4",
+      "carbs": "31",
+      "fat": "15"
+    },
+    {
+      "dish": "Stir-Fry Soy Garlic - (V)",
+      "calories": "240",
+      "protein": "3",
+      "carbs": "32",
+      "fat": "15"
+    },
+    {
+      "dish": "Stir-Fry Soy Garlic - (GF)",
+      "calories": "250",
+      "protein": "3",
+      "carbs": "35",
+      "fat": "15"
+    },
+    {
+      "dish": "Stir-Fry Sweet & Sour",
+      "calories": "350",
+      "protein": "3",
+      "carbs": "55",
+      "fat": "15"
+    },
+    {
+      "dish": "Stir-Fry Sweet & Sour - (V)",
+      "calories": "300",
+      "protein": "2",
+      "carbs": "44",
+      "fat": "14"
+    },
+    {
+      "dish": "Stir-Fry Sweet & Sour - (GF)",
+      "calories": "310",
+      "protein": "3",
+      "carbs": "45",
+      "fat": "14"
+    },
+    {
+      "dish": "Stir-Fry Peanut",
+      "calories": "380",
+      "protein": "6",
+      "carbs": "27",
+      "fat": "30"
+    },
+    {
+      "dish": "Stir-Fry Peanut - (V)",
+      "calories": "380",
+      "protein": "6",
+      "carbs": "30",
+      "fat": "30"
+    },
+    {
+      "dish": "Stir-Fry Peanut - (GF)",
+      "calories": "380",
+      "protein": "6",
+      "carbs": "30",
+      "fat": "30"
+    },
+    {
+      "dish": "Stir-Fry Chili Paste",
+      "calories": "290",
+      "protein": "2",
+      "carbs": "33",
+      "fat": "18"
+    },
+    {
+      "dish": "Stir-Fry Chili Paste - (V)",
+      "calories": "220",
+      "protein": "2",
+      "carbs": "29",
+      "fat": "14"
+    },
+    {
+      "dish": "Noodle for Pad Thai",
+      "calories": "210",
+      "protein": "4",
+      "carbs": "48",
+      "fat": "0"
+    },
+    {
+      "dish": "Noodle for Pad See Ew",
+      "calories": "280",
+      "protein": "5",
+      "carbs": "61",
+      "fat": "0.5"
+    },
+    {
+      "dish": "Noodle for Regular Soup",
+      "calories": "210",
+      "protein": "4",
+      "carbs": "48",
+      "fat": "0"
+    },
+    {
+      "dish": "Noodle for Mini Soup",
+      "calories": "60",
+      "protein": "0",
+      "carbs": "14",
+      "fat": "0"
+    },
+    {
+      "dish": "Extra Coconut Milk (Regular Soup)",
+      "calories": "230",
+      "protein": "3",
+      "carbs": "3",
+      "fat": "23"
+    },
+    {
+      "dish": "Extra Coconut Milk (Mini Soup)",
+      "calories": "110",
+      "protein": "2",
+      "carbs": "2",
+      "fat": "11"
+    },
+    {
+      "dish": "Cashew",
+      "calories": "220",
+      "protein": "6",
+      "carbs": "12",
+      "fat": "17"
+    },
+    {
+      "dish": "Roasted Crushed Peanuts",
+      "calories": "320",
+      "protein": "14",
+      "carbs": "9",
+      "fat": "28"
+    },
+    {
+      "dish": "Imperial Roll",
+      "calories": "60",
+      "protein": "2",
+      "carbs": "10",
+      "fat": "1"
+    },
+    {
+      "dish": "Spring Roll Shrimp (1)",
+      "calories": "220",
+      "protein": "15",
+      "carbs": "37",
+      "fat": "2"
+    },
+    {
+      "dish": "Spring Roll Vegetable (1)",
+      "calories": "170",
+      "protein": "5",
+      "carbs": "37",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Fried Dumplings (4)",
+      "calories": "170",
+      "protein": "5",
+      "carbs": "17",
+      "fat": "10"
+    },
+    {
+      "dish": "Steamed Dumplings (4)",
+      "calories": "110",
+      "protein": "5",
+      "carbs": "17",
+      "fat": "2.5"
+    },
+    {
+      "dish": "Plum Sauce",
+      "calories": "100",
+      "protein": "0",
+      "carbs": "24",
+      "fat": "0"
+    },
+    {
+      "dish": "Peanut Sauce (Spring Roll)",
+      "calories": "100",
+      "protein": "2",
+      "carbs": "9",
+      "fat": "6"
+    },
+    {
+      "dish": "Peanut Sauce (Steamed Dumplings)",
+      "calories": "100",
+      "protein": "2",
+      "carbs": "4",
+      "fat": "9"
+    },
+    {
+      "dish": "Peanut Sauce (Stir-Fry)",
+      "calories": "140",
+      "protein": "3",
+      "carbs": "4",
+      "fat": "12"
+    },
+    {
+      "dish": "Sweet Chili Sauce (Imperial Roll)",
+      "calories": "160",
+      "protein": "0",
+      "carbs": "40",
+      "fat": "0"
+    },
+    {
+      "dish": "General Thai-Ger",
+      "calories": "410",
+      "protein": "15",
+      "carbs": "54",
+      "fat": "14"
+    },
+    {
+      "dish": "King Kong Chicken",
+      "calories": "330",
+      "protein": "13",
+      "carbs": "47",
+      "fat": "10"
+    },
+    {
+      "dish": "Elephant Noodles",
+      "calories": "480",
+      "protein": "15",
+      "carbs": "61",
+      "fat": "19"
+    }
+  ]
+}

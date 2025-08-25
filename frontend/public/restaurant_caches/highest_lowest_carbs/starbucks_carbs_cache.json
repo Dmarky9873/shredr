@@ -1,4 +1,8 @@
 {
     "name": "starbucks",
-    "menu": []
+    "menu": [
+        "Lunch",
+        "Breakfast",
+        "Bakery"
+    ]
 }

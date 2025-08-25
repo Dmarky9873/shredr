@@ -1,1 +1,623 @@
-{"restaurant_name": "panera bread", "url": "https://www.panerabread.com/content/dam/panerabread/documents/nutrition/Panera-Nutrition.pdf", "date": "2025-08-24 20:02:56", "menu_items": [{"dish": "20 fl oz (591 mL)", "calories": "250", "protein": "0", "carbs": "69", "fat": "0"}, {"dish": "20 fl oz bottle (591 mL)", "calories": "250", "protein": "0", "carbs": "69", "fat": "0"}, {"dish": "30 fl oz (887 mL)", "calories": "380", "protein": "0", "carbs": "103", "fat": "0"}, {"dish": "12 fl oz can (355 mL)", "calories": "150", "protein": "0", "carbs": "41", "fat": "0"}, {"dish": "2 Containers", "calories": "1800", "protein": "33", "carbs": "408", "fat": "0"}, {"dish": "1 Bottle", "calories": "160", "protein": "2", "carbs": "37", "fat": "0"}, {"dish": "1 Can (355 mL)", "calories": "150", "protein": "0", "carbs": "39", "fat": "0"}, {"dish": "20 fl oz bottle (591mL)", "calories": "240", "protein": "0", "carbs": "65", "fat": "0"}, {"dish": "1/2 Sandwich", "calories": "420", "protein": "14", "carbs": "35", "fat": "25"}, {"dish": "1 Sandwich", "calories": "840", "protein": "27", "carbs": "71", "fat": "51"}, {"dish": "16 fl oz (473 mL)", "calories": "10", "protein": "1", "carbs": "2", "fat": "0"}, {"dish": "20 fl oz (591 mL", "calories": "400", "protein": "14", "carbs": "62", "fat": "11"}, {"dish": "6.75 fl oz (200 mL)", "calories": "100", "protein": "0", "carbs": "24", "fat": "0"}, {"dish": "8 fl oz (237 mL)", "calories": "150", "protein": "8", "carbs": "23", "fat": "2.5"}, {"dish": "1 Panini", "calories": "950", "protein": "44", "carbs": "87", "fat": "47"}, {"dish": "1 Apple", "calories": "80", "protein": "0", "carbs": "22", "fat": "0"}, {"dish": "1 Banana", "calories": "90", "protein": "1", "carbs": "23", "fat": "0"}, {"dish": "2.4 oz (69g / about 3 1/3 inch slice)", "calories": "180", "protein": "7", "carbs": "36", "fat": "0.5"}, {"dish": "1 Parfait", "calories": "250", "protein": "16", "carbs": "29", "fat": "9"}, {"dish": "1 package", "calories": "150", "protein": "2", "carbs": "17", "fat": "9"}, {"dish": "1 Spear", "calories": "5", "protein": "0", "carbs": "1", "fat": "0"}, {"dish": "1 Container", "calories": "60", "protein": "1", "carbs": "17", "fat": "0"}, {"dish": "16 fl oz ( 473 mL)", "calories": "260", "protein": "12", "carbs": "43", "fat": "4.5"}, {"dish": "1 Souffle", "calories": "470", "protein": "14", "carbs": "36", "fat": "30"}, {"dish": "1 Bread bowl with soup", "calories": "860", "protein": "34", "carbs": "153", "fat": "12"}, {"dish": "1 1/2 Cups", "calories": "280", "protein": "10", "carbs": "33", "fat": "12"}, {"dish": "1 Cup", "calories": "190", "protein": "7", "carbs": "22", "fat": "8"}, {"dish": "1 bowl", "calories": "150", "protein": "14", "carbs": "17", "fat": "3"}, {"dish": "12 fl oz (355 mL)", "calories": "10", "protein": "1", "carbs": "2", "fat": "0"}, {"dish": "16 fl oz (473mL)", "calories": "130", "protein": "9", "carbs": "13", "fat": "5"}, {"dish": "20 fl oz (591mL)", "calories": "160", "protein": "11", "carbs": "16", "fat": "6"}, {"dish": "12 oz can (355 mL)", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "2 fl oz (59 mL)", "calories": "10", "protein": "1", "carbs": "2", "fat": "0"}, {"dish": "18.5 fl oz (547 mL)", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "16.9 fl oz bottle", "calories": "100", "protein": "0", "carbs": "26", "fat": "0"}, {"dish": "1/4 Loaf", "calories": "200", "protein": "7", "carbs": "38", "fat": "2"}, {"dish": "1 egg", "calories": "90", "protein": "8", "carbs": "1", "fat": "7"}, {"dish": "1 1/2 Tbsp", "calories": "45", "protein": "0", "carbs": "2", "fat": "4"}, {"dish": "3 Tbsp", "calories": "90", "protein": "0", "carbs": "4", "fat": "8"}, {"dish": "1 Bread bowl with Broccoli Cheddar Mac", "calories": "1040", "protein": "39", "carbs": "157", "fat": "28"}, {"dish": "1 flatbread pizza", "calories": "920", "protein": "40", "carbs": "95", "fat": "41"}, {"dish": "1 Bread bowl with mac & cheese", "calories": "1150", "protein": "43", "carbs": "164", "fat": "36"}, {"dish": "About 2 Cups", "calories": "960", "protein": "32", "carbs": "67", "fat": "64"}, {"dish": "About 1 Cup", "calories": "480", "protein": "16", "carbs": "34", "fat": "32"}, {"dish": "1 Tube", "calories": "50", "protein": "2", "carbs": "8", "fat": "1"}, {"dish": "1 Muffie", "calories": "340", "protein": "5", "carbs": "51", "fat": "13"}, {"dish": "1 Cookie", "calories": "390", "protein": "4", "carbs": "52", "fat": "19"}, {"dish": "1 Croissant", "calories": "410", "protein": "7", "carbs": "49", "fat": "21"}, {"dish": "1 Muffin", "calories": "530", "protein": "7", "carbs": "82", "fat": "20"}, {"dish": "1 Pastry", "calories": "500", "protein": "10", "carbs": "65", "fat": "23"}, {"dish": "1 mini scone", "calories": "150", "protein": "3", "carbs": "21", "fat": "6"}, {"dish": "1 Mini Brownie", "calories": "120", "protein": "2", "carbs": "17", "fat": "4.5"}, {"dish": "1 Mini Cookie", "calories": "130", "protein": "1", "carbs": "18", "fat": "6"}, {"dish": "1 Mini Muffin", "calories": "80", "protein": "1", "carbs": "13", "fat": "3"}, {"dish": "1 Piece", "calories": "420", "protein": "7", "carbs": "58", "fat": "19"}, {"dish": "1 Scone", "calories": "550", "protein": "8", "carbs": "77", "fat": "21"}, {"dish": "1/2 Salad", "calories": "140", "protein": "1", "carbs": "6", "fat": "13"}, {"dish": "1 Salad", "calories": "280", "protein": "3", "carbs": "12", "fat": "25"}, {"dish": "1 Wrap", "calories": "460", "protein": "31", "carbs": "38", "fat": "21"}, {"dish": "1 Chipper", "calories": "60", "protein": "1", "carbs": "9", "fat": "3"}, {"dish": "1 Bagel", "calories": "320", "protein": "14", "carbs": "55", "fat": "5"}, {"dish": "1 Bagel Flat", "calories": "180", "protein": "7", "carbs": "32", "fat": "3"}, {"dish": "2 oz (about 3 1/2 inch slice/ 57g)", "calories": "150", "protein": "6", "carbs": "30", "fat": "1.5"}, {"dish": "2 oz (57g / about 4.75 inch slice)", "calories": "140", "protein": "5", "carbs": "26", "fat": "2"}, {"dish": "1 Roll", "calories": "210", "protein": "8", "carbs": "31", "fat": "7"}, {"dish": "2 oz (about 1 1/4 inch slice / 57 g)", "calories": "150", "protein": "6", "carbs": "31", "fat": "0"}, {"dish": "2 oz (about 2/3 inch slice / 57g)", "calories": "160", "protein": "6", "carbs": "27", "fat": "4"}, {"dish": "2 oz (about 2/3 inch slice / 57 g)", "calories": "130", "protein": "5", "carbs": "28", "fat": "0"}, {"dish": "2 oz (57g / about 4 inch slice)", "calories": "150", "protein": "6", "carbs": "24", "fat": "3"}, {"dish": "2 oz (57g / about 2 3/4 inch slice)", "calories": "150", "protein": "5", "carbs": "30", "fat": "0"}, {"dish": "1 Bread Bowl", "calories": "670", "protein": "27", "carbs": "130", "fat": "4.5"}, {"dish": "2 oz (57g / about 1/2 inch slice)", "calories": "130", "protein": "5", "carbs": "27", "fat": "0"}, {"dish": "2 oz (57g / about 7/8 inch slice)", "calories": "130", "protein": "6", "carbs": "25", "fat": "0.5"}, {"dish": "1 Lahvash", "calories": "170", "protein": "12", "carbs": "25", "fat": "4"}, {"dish": "about 0.5 oz", "calories": "110", "protein": "0", "carbs": "0", "fat": "12"}, {"dish": "1 Pastry Ring", "calories": "2550", "protein": "41", "carbs": "346", "fat": "114"}, {"dish": "2 Tbsp", "calories": "110", "protein": "1", "carbs": "3", "fat": "10"}, {"dish": "2 Tbsp (30g)", "calories": "80", "protein": "3", "carbs": "1", "fat": "6"}, {"dish": "1 Box", "calories": "760", "protein": "10", "carbs": "107", "fat": "35"}, {"dish": "2 oz (57g / about 2/3 inch slice)", "calories": "150", "protein": "5", "carbs": "32", "fat": "0"}, {"dish": "1 pat", "calories": "35", "protein": "0", "carbs": "0", "fat": "4"}, {"dish": "1 Baguette", "calories": "1060", "protein": "40", "carbs": "217", "fat": "3.5"}, {"dish": "4 fl oz (118 mL)", "calories": "40", "protein": "4", "carbs": "6", "fat": "0"}, {"dish": "1 Shot", "calories": "20", "protein": "0", "carbs": "5", "fat": "0"}, {"dish": "12 fl oz can", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "1 Bottle (500 mL)", "calories": "130", "protein": "0", "carbs": "31", "fat": "0"}, {"dish": "16.9 fl oz (500mL)", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "1/2 Panini", "calories": "400", "protein": "22", "carbs": "39", "fat": "18"}]}
+{
+  "restaurant_name": "panera bread",
+  "url": "https://www.panerabread.com/content/dam/panerabread/documents/nutrition/Panera-Nutrition.pdf",
+  "date": "2025-08-24 20:02:56",
+  "menu_items": [
+    {
+      "dish": "20 fl oz (591 mL)",
+      "calories": "250",
+      "protein": "0",
+      "carbs": "69",
+      "fat": "0"
+    },
+    {
+      "dish": "20 fl oz bottle (591 mL)",
+      "calories": "250",
+      "protein": "0",
+      "carbs": "69",
+      "fat": "0"
+    },
+    {
+      "dish": "30 fl oz (887 mL)",
+      "calories": "380",
+      "protein": "0",
+      "carbs": "103",
+      "fat": "0"
+    },
+    {
+      "dish": "12 fl oz can (355 mL)",
+      "calories": "150",
+      "protein": "0",
+      "carbs": "41",
+      "fat": "0"
+    },
+    {
+      "dish": "2 Containers",
+      "calories": "1800",
+      "protein": "33",
+      "carbs": "408",
+      "fat": "0"
+    },
+    {
+      "dish": "1 Bottle",
+      "calories": "160",
+      "protein": "2",
+      "carbs": "37",
+      "fat": "0"
+    },
+    {
+      "dish": "1 Can (355 mL)",
+      "calories": "150",
+      "protein": "0",
+      "carbs": "39",
+      "fat": "0"
+    },
+    {
+      "dish": "20 fl oz bottle (591mL)",
+      "calories": "240",
+      "protein": "0",
+      "carbs": "65",
+      "fat": "0"
+    },
+    {
+      "dish": "1/2 Sandwich",
+      "calories": "420",
+      "protein": "14",
+      "carbs": "35",
+      "fat": "25"
+    },
+    {
+      "dish": "1 Sandwich",
+      "calories": "840",
+      "protein": "27",
+      "carbs": "71",
+      "fat": "51"
+    },
+    {
+      "dish": "16 fl oz (473 mL)",
+      "calories": "10",
+      "protein": "1",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "20 fl oz (591 mL",
+      "calories": "400",
+      "protein": "14",
+      "carbs": "62",
+      "fat": "11"
+    },
+    {
+      "dish": "6.75 fl oz (200 mL)",
+      "calories": "100",
+      "protein": "0",
+      "carbs": "24",
+      "fat": "0"
+    },
+    {
+      "dish": "8 fl oz (237 mL)",
+      "calories": "150",
+      "protein": "8",
+      "carbs": "23",
+      "fat": "2.5"
+    },
+    {
+      "dish": "1 Panini",
+      "calories": "950",
+      "protein": "44",
+      "carbs": "87",
+      "fat": "47"
+    },
+    {
+      "dish": "1 Apple",
+      "calories": "80",
+      "protein": "0",
+      "carbs": "22",
+      "fat": "0"
+    },
+    {
+      "dish": "1 Banana",
+      "calories": "90",
+      "protein": "1",
+      "carbs": "23",
+      "fat": "0"
+    },
+    {
+      "dish": "2.4 oz (69g / about 3 1/3 inch slice)",
+      "calories": "180",
+      "protein": "7",
+      "carbs": "36",
+      "fat": "0.5"
+    },
+    {
+      "dish": "1 Parfait",
+      "calories": "250",
+      "protein": "16",
+      "carbs": "29",
+      "fat": "9"
+    },
+    {
+      "dish": "1 package",
+      "calories": "150",
+      "protein": "2",
+      "carbs": "17",
+      "fat": "9"
+    },
+    {
+      "dish": "1 Spear",
+      "calories": "5",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "1 Container",
+      "calories": "60",
+      "protein": "1",
+      "carbs": "17",
+      "fat": "0"
+    },
+    {
+      "dish": "16 fl oz ( 473 mL)",
+      "calories": "260",
+      "protein": "12",
+      "carbs": "43",
+      "fat": "4.5"
+    },
+    {
+      "dish": "1 Souffle",
+      "calories": "470",
+      "protein": "14",
+      "carbs": "36",
+      "fat": "30"
+    },
+    {
+      "dish": "1 Bread bowl with soup",
+      "calories": "860",
+      "protein": "34",
+      "carbs": "153",
+      "fat": "12"
+    },
+    {
+      "dish": "1 1/2 Cups",
+      "calories": "280",
+      "protein": "10",
+      "carbs": "33",
+      "fat": "12"
+    },
+    {
+      "dish": "1 Cup",
+      "calories": "190",
+      "protein": "7",
+      "carbs": "22",
+      "fat": "8"
+    },
+    {
+      "dish": "1 bowl",
+      "calories": "150",
+      "protein": "14",
+      "carbs": "17",
+      "fat": "3"
+    },
+    {
+      "dish": "12 fl oz (355 mL)",
+      "calories": "10",
+      "protein": "1",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "16 fl oz (473mL)",
+      "calories": "130",
+      "protein": "9",
+      "carbs": "13",
+      "fat": "5"
+    },
+    {
+      "dish": "20 fl oz (591mL)",
+      "calories": "160",
+      "protein": "11",
+      "carbs": "16",
+      "fat": "6"
+    },
+    {
+      "dish": "12 oz can (355 mL)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "2 fl oz (59 mL)",
+      "calories": "10",
+      "protein": "1",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "18.5 fl oz (547 mL)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "16.9 fl oz bottle",
+      "calories": "100",
+      "protein": "0",
+      "carbs": "26",
+      "fat": "0"
+    },
+    {
+      "dish": "1/4 Loaf",
+      "calories": "200",
+      "protein": "7",
+      "carbs": "38",
+      "fat": "2"
+    },
+    {
+      "dish": "1 egg",
+      "calories": "90",
+      "protein": "8",
+      "carbs": "1",
+      "fat": "7"
+    },
+    {
+      "dish": "1 1/2 Tbsp",
+      "calories": "45",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "4"
+    },
+    {
+      "dish": "3 Tbsp",
+      "calories": "90",
+      "protein": "0",
+      "carbs": "4",
+      "fat": "8"
+    },
+    {
+      "dish": "1 Bread bowl with Broccoli Cheddar Mac",
+      "calories": "1040",
+      "protein": "39",
+      "carbs": "157",
+      "fat": "28"
+    },
+    {
+      "dish": "1 flatbread pizza",
+      "calories": "920",
+      "protein": "40",
+      "carbs": "95",
+      "fat": "41"
+    },
+    {
+      "dish": "1 Bread bowl with mac & cheese",
+      "calories": "1150",
+      "protein": "43",
+      "carbs": "164",
+      "fat": "36"
+    },
+    {
+      "dish": "About 2 Cups",
+      "calories": "960",
+      "protein": "32",
+      "carbs": "67",
+      "fat": "64"
+    },
+    {
+      "dish": "About 1 Cup",
+      "calories": "480",
+      "protein": "16",
+      "carbs": "34",
+      "fat": "32"
+    },
+    {
+      "dish": "1 Tube",
+      "calories": "50",
+      "protein": "2",
+      "carbs": "8",
+      "fat": "1"
+    },
+    {
+      "dish": "1 Muffie",
+      "calories": "340",
+      "protein": "5",
+      "carbs": "51",
+      "fat": "13"
+    },
+    {
+      "dish": "1 Cookie",
+      "calories": "390",
+      "protein": "4",
+      "carbs": "52",
+      "fat": "19"
+    },
+    {
+      "dish": "1 Croissant",
+      "calories": "410",
+      "protein": "7",
+      "carbs": "49",
+      "fat": "21"
+    },
+    {
+      "dish": "1 Muffin",
+      "calories": "530",
+      "protein": "7",
+      "carbs": "82",
+      "fat": "20"
+    },
+    {
+      "dish": "1 Pastry",
+      "calories": "500",
+      "protein": "10",
+      "carbs": "65",
+      "fat": "23"
+    },
+    {
+      "dish": "1 mini scone",
+      "calories": "150",
+      "protein": "3",
+      "carbs": "21",
+      "fat": "6"
+    },
+    {
+      "dish": "1 Mini Brownie",
+      "calories": "120",
+      "protein": "2",
+      "carbs": "17",
+      "fat": "4.5"
+    },
+    {
+      "dish": "1 Mini Cookie",
+      "calories": "130",
+      "protein": "1",
+      "carbs": "18",
+      "fat": "6"
+    },
+    {
+      "dish": "1 Mini Muffin",
+      "calories": "80",
+      "protein": "1",
+      "carbs": "13",
+      "fat": "3"
+    },
+    {
+      "dish": "1 Piece",
+      "calories": "420",
+      "protein": "7",
+      "carbs": "58",
+      "fat": "19"
+    },
+    {
+      "dish": "1 Scone",
+      "calories": "550",
+      "protein": "8",
+      "carbs": "77",
+      "fat": "21"
+    },
+    {
+      "dish": "1/2 Salad",
+      "calories": "140",
+      "protein": "1",
+      "carbs": "6",
+      "fat": "13"
+    },
+    {
+      "dish": "1 Salad",
+      "calories": "280",
+      "protein": "3",
+      "carbs": "12",
+      "fat": "25"
+    },
+    {
+      "dish": "1 Wrap",
+      "calories": "460",
+      "protein": "31",
+      "carbs": "38",
+      "fat": "21"
+    },
+    {
+      "dish": "1 Chipper",
+      "calories": "60",
+      "protein": "1",
+      "carbs": "9",
+      "fat": "3"
+    },
+    {
+      "dish": "1 Bagel",
+      "calories": "320",
+      "protein": "14",
+      "carbs": "55",
+      "fat": "5"
+    },
+    {
+      "dish": "1 Bagel Flat",
+      "calories": "180",
+      "protein": "7",
+      "carbs": "32",
+      "fat": "3"
+    },
+    {
+      "dish": "2 oz (about 3 1/2 inch slice/ 57g)",
+      "calories": "150",
+      "protein": "6",
+      "carbs": "30",
+      "fat": "1.5"
+    },
+    {
+      "dish": "2 oz (57g / about 4.75 inch slice)",
+      "calories": "140",
+      "protein": "5",
+      "carbs": "26",
+      "fat": "2"
+    },
+    {
+      "dish": "1 Roll",
+      "calories": "210",
+      "protein": "8",
+      "carbs": "31",
+      "fat": "7"
+    },
+    {
+      "dish": "2 oz (about 1 1/4 inch slice / 57 g)",
+      "calories": "150",
+      "protein": "6",
+      "carbs": "31",
+      "fat": "0"
+    },
+    {
+      "dish": "2 oz (about 2/3 inch slice / 57g)",
+      "calories": "160",
+      "protein": "6",
+      "carbs": "27",
+      "fat": "4"
+    },
+    {
+      "dish": "2 oz (about 2/3 inch slice / 57 g)",
+      "calories": "130",
+      "protein": "5",
+      "carbs": "28",
+      "fat": "0"
+    },
+    {
+      "dish": "2 oz (57g / about 4 inch slice)",
+      "calories": "150",
+      "protein": "6",
+      "carbs": "24",
+      "fat": "3"
+    },
+    {
+      "dish": "2 oz (57g / about 2 3/4 inch slice)",
+      "calories": "150",
+      "protein": "5",
+      "carbs": "30",
+      "fat": "0"
+    },
+    {
+      "dish": "1 Bread Bowl",
+      "calories": "670",
+      "protein": "27",
+      "carbs": "130",
+      "fat": "4.5"
+    },
+    {
+      "dish": "2 oz (57g / about 1/2 inch slice)",
+      "calories": "130",
+      "protein": "5",
+      "carbs": "27",
+      "fat": "0"
+    },
+    {
+      "dish": "2 oz (57g / about 7/8 inch slice)",
+      "calories": "130",
+      "protein": "6",
+      "carbs": "25",
+      "fat": "0.5"
+    },
+    {
+      "dish": "1 Lahvash",
+      "calories": "170",
+      "protein": "12",
+      "carbs": "25",
+      "fat": "4"
+    },
+    {
+      "dish": "about 0.5 oz",
+      "calories": "110",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "12"
+    },
+    {
+      "dish": "1 Pastry Ring",
+      "calories": "2550",
+      "protein": "41",
+      "carbs": "346",
+      "fat": "114"
+    },
+    {
+      "dish": "2 Tbsp",
+      "calories": "110",
+      "protein": "1",
+      "carbs": "3",
+      "fat": "10"
+    },
+    {
+      "dish": "2 Tbsp (30g)",
+      "calories": "80",
+      "protein": "3",
+      "carbs": "1",
+      "fat": "6"
+    },
+    {
+      "dish": "1 Box",
+      "calories": "760",
+      "protein": "10",
+      "carbs": "107",
+      "fat": "35"
+    },
+    {
+      "dish": "2 oz (57g / about 2/3 inch slice)",
+      "calories": "150",
+      "protein": "5",
+      "carbs": "32",
+      "fat": "0"
+    },
+    {
+      "dish": "1 pat",
+      "calories": "35",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "4"
+    },
+    {
+      "dish": "1 Baguette",
+      "calories": "1060",
+      "protein": "40",
+      "carbs": "217",
+      "fat": "3.5"
+    },
+    {
+      "dish": "4 fl oz (118 mL)",
+      "calories": "40",
+      "protein": "4",
+      "carbs": "6",
+      "fat": "0"
+    },
+    {
+      "dish": "1 Shot",
+      "calories": "20",
+      "protein": "0",
+      "carbs": "5",
+      "fat": "0"
+    },
+    {
+      "dish": "12 fl oz can",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "1 Bottle (500 mL)",
+      "calories": "130",
+      "protein": "0",
+      "carbs": "31",
+      "fat": "0"
+    },
+    {
+      "dish": "16.9 fl oz (500mL)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "1/2 Panini",
+      "calories": "400",
+      "protein": "22",
+      "carbs": "39",
+      "fat": "18"
+    }
+  ]
+}

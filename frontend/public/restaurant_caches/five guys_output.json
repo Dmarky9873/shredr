@@ -1,1 +1,259 @@
-{"restaurant_name": "five guys", "url": "https://www.fiveguys.ca/-/media/public-site/files/allergen-ingredients-and-nutrition-info/five-guys-canada-ingredient--allergen-guide-english.pdf", "date": "2025-08-24 19:58:45", "menu_items": []}
+{
+  "restaurant_name": "five guys",
+  "url": "https://www.fiveguys.com/wp-content/uploads/2025/07/five-guys-us-nutrition-allergen-guide-english-1-final.pdf",
+  "date": "2025-08-24 23:58:38",
+  "menu_items": [
+    {
+      "dish": "Bacon (2 pieces) (Supplier S)",
+      "calories": "14",
+      "protein": "5",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "Bacon (2 pieces) (Supplier D)",
+      "calories": "14",
+      "protein": "6",
+      "carbs": "0",
+      "fat": "5"
+    },
+    {
+      "dish": "Hamburger Patty",
+      "calories": "65",
+      "protein": "16",
+      "carbs": "0",
+      "fat": "17"
+    },
+    {
+      "dish": "Hot Dog (Supplier H)",
+      "calories": "90",
+      "protein": "11",
+      "carbs": "1",
+      "fat": "26"
+    },
+    {
+      "dish": "Hot Dog (Supplier K)",
+      "calories": "90",
+      "protein": "11",
+      "carbs": "460",
+      "fat": "24"
+    },
+    {
+      "dish": "Bun",
+      "calories": "77",
+      "protein": "7",
+      "carbs": "39",
+      "fat": "9"
+    },
+    {
+      "dish": "Little Five Guys Style",
+      "calories": "227",
+      "protein": "8",
+      "carbs": "72",
+      "fat": "23"
+    },
+    {
+      "dish": "Regular Five Guys Style",
+      "calories": "411",
+      "protein": "15",
+      "carbs": "131",
+      "fat": "41"
+    },
+    {
+      "dish": "Large Five Guys Style",
+      "calories": "567",
+      "protein": "20",
+      "carbs": "181",
+      "fat": "57"
+    },
+    {
+      "dish": "Little Cajun Style",
+      "calories": "232",
+      "protein": "8",
+      "carbs": "75",
+      "fat": "28"
+    },
+    {
+      "dish": "Regular Cajun Style",
+      "calories": "416",
+      "protein": "15",
+      "carbs": "134",
+      "fat": "41"
+    },
+    {
+      "dish": "Large Cajun Style",
+      "calories": "572",
+      "protein": "20",
+      "carbs": "184",
+      "fat": "57"
+    },
+    {
+      "dish": "A.1.\u00ae Sauce",
+      "calories": "17",
+      "protein": "0",
+      "carbs": "3",
+      "fat": "0"
+    },
+    {
+      "dish": "Cheese (1 slice) (Supplier S)",
+      "calories": "19",
+      "protein": "3",
+      "carbs": "1",
+      "fat": "6"
+    },
+    {
+      "dish": "Green Peppers",
+      "calories": "25",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "Grilled Mushrooms",
+      "calories": "21",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "Hot Sauce",
+      "calories": "5",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Ketchup",
+      "calories": "17",
+      "protein": "0",
+      "carbs": "5",
+      "fat": "0"
+    },
+    {
+      "dish": "Lettuce",
+      "calories": "30",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "Mayonnaise (Supplier K)",
+      "calories": "14",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "11"
+    },
+    {
+      "dish": "Mayonnaise (Supplier S)",
+      "calories": "14",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "11"
+    },
+    {
+      "dish": "Mustard",
+      "calories": "5",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Onions / Grilled Onions",
+      "calories": "26",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "Pickles (Supplier M)",
+      "calories": "28",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Pickles (Supplier B)",
+      "calories": "28",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Relish",
+      "calories": "15",
+      "protein": "0",
+      "carbs": "4",
+      "fat": "0"
+    },
+    {
+      "dish": "Vanilla Shake Base",
+      "calories": "396",
+      "protein": "13",
+      "carbs": "84",
+      "fat": "32"
+    },
+    {
+      "dish": "Whipped Cream (Supplier S)",
+      "calories": "7",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Whipped Cream (Supplier A)",
+      "calories": "6",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "1.5"
+    },
+    {
+      "dish": "Bacon (2 pieces)",
+      "calories": "14",
+      "protein": "5",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "Candy Cane Crunch",
+      "calories": "48",
+      "protein": "0",
+      "carbs": "48",
+      "fat": "0"
+    },
+    {
+      "dish": "Chocolate",
+      "calories": "50",
+      "protein": "2",
+      "carbs": "30",
+      "fat": "2"
+    },
+    {
+      "dish": "Oreo\u00ae Cr\u00e8me",
+      "calories": "50",
+      "protein": "0",
+      "carbs": "23",
+      "fat": "25"
+    },
+    {
+      "dish": "Oreo\u00ae Cookie Pieces",
+      "calories": "25",
+      "protein": "1",
+      "carbs": "18",
+      "fat": "5"
+    },
+    {
+      "dish": "Peanut Butter",
+      "calories": "50",
+      "protein": "9",
+      "carbs": "9",
+      "fat": "29"
+    },
+    {
+      "dish": "Reese\u2019s\u00ae Peanut Butter Cup",
+      "calories": "28",
+      "protein": "3",
+      "carbs": "15",
+      "fat": "8"
+    }
+  ]
+}
