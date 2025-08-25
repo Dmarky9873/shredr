@@ -1,0 +1,756 @@
+{
+  "restaurant_name": "cold stone creamery",
+  "url": "https://www.coldstonecreamery.com/assets/pdf/nutrition/nutrition_info_icecream.pdf",
+  "date": "2025-08-24 23:21:01",
+  "menu_items": [
+    {
+      "dish": "Mint Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "23",
+      "fat": "12"
+    },
+    {
+      "dish": "Mocha Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "21",
+      "fat": "12"
+    },
+    {
+      "dish": "Oatmeal Cookie Batter Ice Cream",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "23",
+      "fat": "12"
+    },
+    {
+      "dish": "Orange Dreamsicle Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "21",
+      "fat": "12"
+    },
+    {
+      "dish": "OREO\u00ae Cr\u00e8me Ice Cream",
+      "calories": "280",
+      "protein": "3",
+      "carbs": "26",
+      "fat": "19"
+    },
+    {
+      "dish": "OREO Cr\u00e8me Ice Cream",
+      "calories": "460",
+      "protein": "4",
+      "carbs": "43",
+      "fat": "31"
+    },
+    {
+      "dish": "Peach Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "11"
+    },
+    {
+      "dish": "Peanut Butter Ice Cream",
+      "calories": "230",
+      "protein": "5",
+      "carbs": "21",
+      "fat": "15"
+    },
+    {
+      "dish": "Peanut Butter Cookie Batter Ice Cream",
+      "calories": "230",
+      "protein": "4",
+      "carbs": "24",
+      "fat": "13"
+    },
+    {
+      "dish": "Peanut Butter & Jelly Ice Cream",
+      "calories": "230",
+      "protein": "4",
+      "carbs": "26",
+      "fat": "14"
+    },
+    {
+      "dish": "Pecan Praline Ice Cream",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "12"
+    },
+    {
+      "dish": "Peppermint Mocha Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "21",
+      "fat": "12"
+    },
+    {
+      "dish": "Pina Colada Ice Cream",
+      "calories": "170",
+      "protein": "3",
+      "carbs": "20",
+      "fat": "10"
+    },
+    {
+      "dish": "Pineapple Upside Down Cake Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "25",
+      "fat": "11"
+    },
+    {
+      "dish": "Pistachio Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "22",
+      "fat": "12"
+    },
+    {
+      "dish": "Fudge Brownie Batter Ice Cream",
+      "calories": "220",
+      "protein": "3",
+      "carbs": "27",
+      "fat": "12"
+    },
+    {
+      "dish": "Fudge Mint Cookie Ice Cream",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "23",
+      "fat": "12"
+    },
+    {
+      "dish": "Fudge Truffle Ice Cream",
+      "calories": "200",
+      "protein": "4",
+      "carbs": "26",
+      "fat": "10"
+    },
+    {
+      "dish": "Ghirardelli\u00ae Chocolate Ice Cream",
+      "calories": "220",
+      "protein": "4",
+      "carbs": "23",
+      "fat": "13"
+    },
+    {
+      "dish": "Ghirardelli Chocolate Ice Cream",
+      "calories": "370",
+      "protein": "7",
+      "carbs": "39",
+      "fat": "22"
+    },
+    {
+      "dish": "Gooey Butter Cake Ice Cream",
+      "calories": "220",
+      "protein": "3",
+      "carbs": "28",
+      "fat": "11"
+    },
+    {
+      "dish": "Golden OREO\u00ae Cookie Ice Cream",
+      "calories": "220",
+      "protein": "3",
+      "carbs": "25",
+      "fat": "13"
+    },
+    {
+      "dish": "Golden OREO Cookie Ice Cream",
+      "calories": "370",
+      "protein": "5",
+      "carbs": "42",
+      "fat": "21"
+    },
+    {
+      "dish": "Honey Cornbread & Blackberry Jam Ice Cream",
+      "calories": "220",
+      "protein": "3",
+      "carbs": "27",
+      "fat": "11"
+    },
+    {
+      "dish": "Honey Cornbread & Blackberry Jam Ice Cream 142",
+      "calories": "360",
+      "protein": "5",
+      "carbs": "45",
+      "fat": "19"
+    },
+    {
+      "dish": "Honey Cornbread & Blackberry Jam Ice Cream 227",
+      "calories": "580",
+      "protein": "8",
+      "carbs": "72",
+      "fat": "31"
+    },
+    {
+      "dish": "Honey Cornbread & Blackberry Jam Ice Cream 340",
+      "calories": "860",
+      "protein": "12",
+      "carbs": "108",
+      "fat": "46"
+    },
+    {
+      "dish": "Irish Cream Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "21",
+      "fat": "12"
+    },
+    {
+      "dish": "Key Lime Ice Cream",
+      "calories": "220",
+      "protein": "3",
+      "carbs": "26",
+      "fat": "12"
+    },
+    {
+      "dish": "Macadamia Nut Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "21",
+      "fat": "12"
+    },
+    {
+      "dish": "Mango Ice Cream",
+      "calories": "190",
+      "protein": "3",
+      "carbs": "21",
+      "fat": "12"
+    },
+    {
+      "dish": "Marshmallow Ice Cream",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "26",
+      "fat": "11"
+    },
+    {
+      "dish": "Milk & Cookies Ice Cream made with Chips Ahoy!\u00ae",
+      "calories": "220",
+      "protein": "3",
+      "carbs": "25",
+      "fat": "13"
+    },
+    {
+      "dish": "Milk & Cookies Ice Cream made with Chips Ahoy!",
+      "calories": "370",
+      "protein": "6",
+      "carbs": "41",
+      "fat": "22"
+    },
+    {
+      "dish": "Milk & Honey Graham Ice Cream",
+      "calories": "220",
+      "protein": "3",
+      "carbs": "26",
+      "fat": "13"
+    },
+    {
+      "dish": "Caramel Chocolate Cheesecake Ice Cream",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "23",
+      "fat": "12"
+    },
+    {
+      "dish": "Caramel Latte Ice Cream",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "25",
+      "fat": "12"
+    },
+    {
+      "dish": "Cheesecake Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "12"
+    },
+    {
+      "dish": "Cherry Vanilla Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "23",
+      "fat": "11"
+    },
+    {
+      "dish": "Chocolate Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "20",
+      "fat": "12"
+    },
+    {
+      "dish": "Chocolate Cake Batter Ice Cream\u00ae",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "26",
+      "fat": "11"
+    },
+    {
+      "dish": "Chocolate Cake Batter Ice Cream",
+      "calories": "350",
+      "protein": "5",
+      "carbs": "44",
+      "fat": "18"
+    },
+    {
+      "dish": "Chocolate Cake Batter\u2122 Ganache Ice Cream",
+      "calories": "230",
+      "protein": "3",
+      "carbs": "28",
+      "fat": "12"
+    },
+    {
+      "dish": "Chocolate Cake Batter Ganache Ice Cream",
+      "calories": "380",
+      "protein": "5",
+      "carbs": "46",
+      "fat": "21"
+    },
+    {
+      "dish": "Chocolate Cupcake Ice Cream",
+      "calories": "210",
+      "protein": "4",
+      "carbs": "24",
+      "fat": "12"
+    },
+    {
+      "dish": "Chocolate Dipped Strawberry Ice Cream",
+      "calories": "180",
+      "protein": "3",
+      "carbs": "21",
+      "fat": "11"
+    },
+    {
+      "dish": "Chocolate Hazelnut Ice Cream",
+      "calories": "220",
+      "protein": "3",
+      "carbs": "23",
+      "fat": "13"
+    },
+    {
+      "dish": "Chocolate Layer Cake Ice Cream",
+      "calories": "210",
+      "protein": "4",
+      "carbs": "24",
+      "fat": "11"
+    },
+    {
+      "dish": "Chocolate Malt Ice Cream",
+      "calories": "210",
+      "protein": "4",
+      "carbs": "24",
+      "fat": "11"
+    },
+    {
+      "dish": "Chocolate Peanut Butter Ice Cream",
+      "calories": "260",
+      "protein": "6",
+      "carbs": "23",
+      "fat": "17"
+    },
+    {
+      "dish": "Chocolate Pudding Ice Cream",
+      "calories": "220",
+      "protein": "3",
+      "carbs": "29",
+      "fat": "11"
+    },
+    {
+      "dish": "Pistachio Pudding Ice Cream",
+      "calories": "220",
+      "protein": "3",
+      "carbs": "29",
+      "fat": "11"
+    },
+    {
+      "dish": "Pumpkin Ice Cream",
+      "calories": "170",
+      "protein": "2",
+      "carbs": "21",
+      "fat": "9"
+    },
+    {
+      "dish": "Pumpkin Cheesecake Ice Cream",
+      "calories": "190",
+      "protein": "3",
+      "carbs": "23",
+      "fat": "11"
+    },
+    {
+      "dish": "Raspberry Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "12"
+    },
+    {
+      "dish": "Red Velvet Cake Ice Cream",
+      "calories": "220",
+      "protein": "4",
+      "carbs": "26",
+      "fat": "12"
+    },
+    {
+      "dish": "Reese's Peanut Butter Cup Ice Cream",
+      "calories": "230",
+      "protein": "4",
+      "carbs": "21",
+      "fat": "15"
+    },
+    {
+      "dish": "Rum Raisin Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "22",
+      "fat": "12"
+    },
+    {
+      "dish": "Salted Caramel Ice Cream",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "26",
+      "fat": "11"
+    },
+    {
+      "dish": "Salted Chocolate Caramel Ice Cream",
+      "calories": "230",
+      "protein": "3",
+      "carbs": "26",
+      "fat": "14"
+    },
+    {
+      "dish": "Sea Salt Caramel Ice Cream made with Ghirardelli\u00ae",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "26",
+      "fat": "11"
+    },
+    {
+      "dish": "Sea Salt Caramel Ice Cream made with Ghirardelli",
+      "calories": "350",
+      "protein": "5",
+      "carbs": "44",
+      "fat": "18"
+    },
+    {
+      "dish": "Sea Salt Fudge Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "22",
+      "fat": "11"
+    },
+    {
+      "dish": "Sea Salt Sweet Cream Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "22",
+      "fat": "12"
+    },
+    {
+      "dish": "Sea Salt Vanilla Bean Ice Cream",
+      "calories": "190",
+      "protein": "2",
+      "carbs": "20",
+      "fat": "12"
+    },
+    {
+      "dish": "Strawberry Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "22",
+      "fat": "11"
+    },
+    {
+      "dish": "Strawberry Cake Batter Ice Cream\u00ae",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "27",
+      "fat": "11"
+    },
+    {
+      "dish": "Strawberry Cake Batter Ice Cream",
+      "calories": "350",
+      "protein": "5",
+      "carbs": "45",
+      "fat": "18"
+    },
+    {
+      "dish": "Strawberry Cheesecake Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "11"
+    },
+    {
+      "dish": "Strawberry Shortcake Ice Cream",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "25",
+      "fat": "12"
+    },
+    {
+      "dish": "Sweet Cream Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "22",
+      "fat": "12"
+    },
+    {
+      "dish": "Tangy Orange Ice Cream",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "25",
+      "fat": "12"
+    },
+    {
+      "dish": "Vanilla Bean Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "21",
+      "fat": "12"
+    },
+    {
+      "dish": "Vanilla Lite\u2122 No Sugar Added Ice Cream",
+      "calories": "120",
+      "protein": "4",
+      "carbs": "24",
+      "fat": "3.5"
+    },
+    {
+      "dish": "Vanilla Lite No Sugar Added Ice Cream",
+      "calories": "200",
+      "protein": "6",
+      "carbs": "40",
+      "fat": "6"
+    },
+    {
+      "dish": "White Chocolate Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "21",
+      "fat": "12"
+    },
+    {
+      "dish": "White Peppermint Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "22",
+      "fat": "12"
+    },
+    {
+      "dish": "Amaretto Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "21",
+      "fat": "12"
+    },
+    {
+      "dish": "Apple Cinnamon Oatmeal Ice Cream",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "23",
+      "fat": "12"
+    },
+    {
+      "dish": "Banana Ice Cream",
+      "calories": "190",
+      "protein": "3",
+      "carbs": "21",
+      "fat": "11"
+    },
+    {
+      "dish": "Banana Bread Batter Ice Cream",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "29",
+      "fat": "11"
+    },
+    {
+      "dish": "Black Cherry Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "23",
+      "fat": "12"
+    },
+    {
+      "dish": "Blue Arctic Marshmallow Ice Cream",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "23",
+      "fat": "12"
+    },
+    {
+      "dish": "Blue Velvet Cake Ice Cream",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "25",
+      "fat": "12"
+    },
+    {
+      "dish": "Blueberry Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "11"
+    },
+    {
+      "dish": "Blueberry Muffin Batter Ice Cream",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "27",
+      "fat": "11"
+    },
+    {
+      "dish": "Butter Pecan Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "22",
+      "fat": "12"
+    },
+    {
+      "dish": "Butterscotch Pudding Ice Cream",
+      "calories": "220",
+      "protein": "3",
+      "carbs": "29",
+      "fat": "11"
+    },
+    {
+      "dish": "Cake Batter Ice Cream\u00ae",
+      "calories": "220",
+      "protein": "3",
+      "carbs": "27",
+      "fat": "12"
+    },
+    {
+      "dish": "Cake Batter Ice Cream",
+      "calories": "360",
+      "protein": "5",
+      "carbs": "44",
+      "fat": "19"
+    },
+    {
+      "dish": "Cake Batter Ganache\u2122 Ice Cream",
+      "calories": "230",
+      "protein": "3",
+      "carbs": "28",
+      "fat": "12"
+    },
+    {
+      "dish": "Cake Batter Ganache Ice Cream",
+      "calories": "390",
+      "protein": "5",
+      "carbs": "47",
+      "fat": "22"
+    },
+    {
+      "dish": "Candy Cane Ice Cream",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "25",
+      "fat": "12"
+    },
+    {
+      "dish": "Chocolate Raspberry Truffle Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "26",
+      "fat": "10"
+    },
+    {
+      "dish": "Cinnamon Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "22",
+      "fat": "12"
+    },
+    {
+      "dish": "Cinnamon Bun Batter Ice Cream",
+      "calories": "220",
+      "protein": "3",
+      "carbs": "31",
+      "fat": "11"
+    },
+    {
+      "dish": "Circus Animal Cookies Ice Cream",
+      "calories": "230",
+      "protein": "3",
+      "carbs": "29",
+      "fat": "13"
+    },
+    {
+      "dish": "Classic Cookie Dough Ice Cream",
+      "calories": "220",
+      "protein": "3",
+      "carbs": "30",
+      "fat": "11"
+    },
+    {
+      "dish": "Coconut Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "22",
+      "fat": "12"
+    },
+    {
+      "dish": "Coffee Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "22",
+      "fat": "12"
+    },
+    {
+      "dish": "Cookie Butter Ice Cream",
+      "calories": "240",
+      "protein": "3",
+      "carbs": "24",
+      "fat": "16"
+    },
+    {
+      "dish": "Cotton Candy Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "22",
+      "fat": "12"
+    },
+    {
+      "dish": "Dark Chocolate Ice Cream",
+      "calories": "190",
+      "protein": "4",
+      "carbs": "21",
+      "fat": "12"
+    },
+    {
+      "dish": "Dark Chocolate Peppermint Ice Cream",
+      "calories": "190",
+      "protein": "4",
+      "carbs": "21",
+      "fat": "12"
+    },
+    {
+      "dish": "Dulce De Leche Ice Cream",
+      "calories": "210",
+      "protein": "4",
+      "carbs": "25",
+      "fat": "12"
+    },
+    {
+      "dish": "Eggnog Ice Cream",
+      "calories": "160",
+      "protein": "3",
+      "carbs": "17",
+      "fat": "10"
+    },
+    {
+      "dish": "French Vanilla Ice Cream",
+      "calories": "200",
+      "protein": "3",
+      "carbs": "22",
+      "fat": "12"
+    }
+  ]
+}

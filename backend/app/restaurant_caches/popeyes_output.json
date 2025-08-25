@@ -1,1 +1,399 @@
-{"restaurant_name": "popeyes", "url": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf", "date": "2025-08-24 19:57:23", "menu_items": [{"dish": "BISCUIT", "calories": "210", "protein": "3", "carbs": "20", "fat": "13"}, {"dish": "CAJUN FRIES", "calories": "270", "protein": "4", "carbs": "33", "fat": "14"}, {"dish": "HOMESTYLE MAC & CHEESE", "calories": "280", "protein": "11", "carbs": "16", "fat": "21"}, {"dish": "RED BEANS & RICE", "calories": "250", "protein": "8", "carbs": "22", "fat": "16"}, {"dish": "COLESLAW", "calories": "140", "protein": "1", "carbs": "12", "fat": "10"}, {"dish": "JALAPE\u00d1O", "calories": "5", "protein": "0", "carbs": "1", "fat": "0"}, {"dish": "BAYOU BUFFALO\u2122", "calories": "60", "protein": "0", "carbs": "2", "fat": "6"}, {"dish": "BOLDBQ\u2122", "calories": "70", "protein": "0", "carbs": "16", "fat": "0"}, {"dish": "BUTTERMILK RANCH", "calories": "140", "protein": "0", "carbs": "2", "fat": "15"}, {"dish": "MARDI GRAS MUSTARD\u2122", "calories": "100", "protein": "1", "carbs": "5", "fat": "8"}, {"dish": "SWEET HEAT\u00ae", "calories": "70", "protein": "0", "carbs": "19", "fat": "0"}, {"dish": "TARTAR", "calories": "140", "protein": "0", "carbs": "1", "fat": "15"}, {"dish": "WILD HONEY MUSTARD", "calories": "110", "protein": "0", "carbs": "5", "fat": "11"}, {"dish": "COCKTAIL SAUCE", "calories": "40", "protein": "0", "carbs": "9", "fat": "0"}, {"dish": "CHICKEN BISCUIT", "calories": "490", "protein": "17", "carbs": "47", "fat": "26"}, {"dish": "SAUSAGE BISCUIT", "calories": "540", "protein": "13", "carbs": "41", "fat": "36"}, {"dish": "EGG BISCUIT", "calories": "510", "protein": "13", "carbs": "41", "fat": "29"}, {"dish": "EGG & SAUSAGE BISCUIT", "calories": "690", "protein": "20", "carbs": "43", "fat": "45"}, {"dish": "BACON BISCUIT", "calories": "400", "protein": "8", "carbs": "37", "fat": "25"}, {"dish": "SAUSAGE & GRAVY BISCUIT", "calories": "510", "protein": "10", "carbs": "42", "fat": "33"}, {"dish": "GRITS", "calories": "370", "protein": "5", "carbs": "80", "fat": "5"}, {"dish": "HASH ROUNDS", "calories": "360", "protein": "3", "carbs": "41", "fat": "20"}, {"dish": "COFFEE", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "ORANGE JUICE", "calories": "140", "protein": "2", "carbs": "33", "fat": "0"}, {"dish": "COKE", "calories": "240", "protein": "0", "carbs": "66", "fat": "0"}, {"dish": "DIET COKE", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "SPRITE", "calories": "230", "protein": "0", "carbs": "61", "fat": "0"}, {"dish": "FANTA STRAWBERRY", "calories": "270", "protein": "0", "carbs": "70", "fat": "0"}, {"dish": "FANTA ORANGE", "calories": "260", "protein": "0", "carbs": "70", "fat": "0"}, {"dish": "MOUNTAIN DEW", "calories": "280", "protein": "0", "carbs": "73", "fat": "0"}, {"dish": "PEPSI", "calories": "250", "protein": "0", "carbs": "69", "fat": "0"}, {"dish": "DIET PEPSI", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "DR PEPPER", "calories": "240", "protein": "0", "carbs": "65", "fat": "0"}, {"dish": "UNSWEETENED TEA", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "SWEET TEA", "calories": "180", "protein": "0", "carbs": "16", "fat": "0"}, {"dish": "MINUTE MAID LEMONADE", "calories": "270", "protein": "0", "carbs": "71", "fat": "0"}, {"dish": "CINNAMON APPLE PIE", "calories": "240", "protein": "3", "carbs": "35", "fat": "16"}, {"dish": "TENDER - CLASSIC", "calories": "150", "protein": "13", "carbs": "12", "fat": "7"}, {"dish": "LEG - CLASSIC", "calories": "160", "protein": "14", "carbs": "5", "fat": "9"}, {"dish": "WING (EACH)", "calories": "210", "protein": "13", "carbs": "8", "fat": "14"}, {"dish": "LEG (EACH)", "calories": "160", "protein": "14", "carbs": "5", "fat": "9"}, {"dish": "THIGH (EACH)", "calories": "280", "protein": "14", "carbs": "7", "fat": "21"}, {"dish": "BREAST (EACH)", "calories": "380", "protein": "35", "carbs": "16", "fat": "20"}, {"dish": "TENDERS - CLASSIC OR SPICY", "calories": "450", "protein": "38", "carbs": "29", "fat": "21"}, {"dish": "TENDERS - BLACKENED", "calories": "170", "protein": "26", "carbs": "2", "fat": "2"}, {"dish": "CLASSIC BONELESS WINGS", "calories": "500", "protein": "26", "carbs": "23", "fat": "34"}, {"dish": "HONEY BBQ BONELESS WINGS", "calories": "700", "protein": "27", "carbs": "72", "fat": "34"}, {"dish": "SIGNATURE HOT BONELESS WINGS", "calories": "1020", "protein": "28", "carbs": "46", "fat": "82"}, {"dish": "SWEET 'N SPICY BONELESS WINGS", "calories": "730", "protein": "27", "carbs": "78", "fat": "34"}, {"dish": "SPICY BONE-IN WINGS", "calories": "680", "protein": "45", "carbs": "22", "fat": "46"}, {"dish": "HONEY BBQ BONE-IN WINGS", "calories": "880", "protein": "46", "carbs": "70", "fat": "46"}, {"dish": "SIGNATURE HOT BONE-IN WINGS", "calories": "1190", "protein": "46", "carbs": "45", "fat": "94"}, {"dish": "SWEET 'N SPICY BONE-IN WINGS", "calories": "950", "protein": "46", "carbs": "77", "fat": "46"}, {"dish": "POPCORN SHRIMP", "calories": "390", "protein": "14", "carbs": "28", "fat": "25"}, {"dish": "CHICKEN SANDWICH-CLASSIC", "calories": "700", "protein": "28", "carbs": "50", "fat": "42"}, {"dish": "CHICKEN SANDWICH-SPICY", "calories": "700", "protein": "28", "carbs": "50", "fat": "42"}]}
+{
+  "restaurant_name": "popeyes",
+  "url": "https://plk-use1-prod.sites.rbictg.com/nutrition/PLK_Nutrition.pdf",
+  "date": "2025-08-24 19:57:23",
+  "menu_items": [
+    {
+      "dish": "BISCUIT",
+      "calories": "210",
+      "protein": "3",
+      "carbs": "20",
+      "fat": "13"
+    },
+    {
+      "dish": "CAJUN FRIES",
+      "calories": "270",
+      "protein": "4",
+      "carbs": "33",
+      "fat": "14"
+    },
+    {
+      "dish": "HOMESTYLE MAC & CHEESE",
+      "calories": "280",
+      "protein": "11",
+      "carbs": "16",
+      "fat": "21"
+    },
+    {
+      "dish": "RED BEANS & RICE",
+      "calories": "250",
+      "protein": "8",
+      "carbs": "22",
+      "fat": "16"
+    },
+    {
+      "dish": "COLESLAW",
+      "calories": "140",
+      "protein": "1",
+      "carbs": "12",
+      "fat": "10"
+    },
+    {
+      "dish": "JALAPE\u00d1O",
+      "calories": "5",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "BAYOU BUFFALO\u2122",
+      "calories": "60",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "6"
+    },
+    {
+      "dish": "BOLDBQ\u2122",
+      "calories": "70",
+      "protein": "0",
+      "carbs": "16",
+      "fat": "0"
+    },
+    {
+      "dish": "BUTTERMILK RANCH",
+      "calories": "140",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "15"
+    },
+    {
+      "dish": "MARDI GRAS MUSTARD\u2122",
+      "calories": "100",
+      "protein": "1",
+      "carbs": "5",
+      "fat": "8"
+    },
+    {
+      "dish": "SWEET HEAT\u00ae",
+      "calories": "70",
+      "protein": "0",
+      "carbs": "19",
+      "fat": "0"
+    },
+    {
+      "dish": "TARTAR",
+      "calories": "140",
+      "protein": "0",
+      "carbs": "1",
+      "fat": "15"
+    },
+    {
+      "dish": "WILD HONEY MUSTARD",
+      "calories": "110",
+      "protein": "0",
+      "carbs": "5",
+      "fat": "11"
+    },
+    {
+      "dish": "COCKTAIL SAUCE",
+      "calories": "40",
+      "protein": "0",
+      "carbs": "9",
+      "fat": "0"
+    },
+    {
+      "dish": "CHICKEN BISCUIT",
+      "calories": "490",
+      "protein": "17",
+      "carbs": "47",
+      "fat": "26"
+    },
+    {
+      "dish": "SAUSAGE BISCUIT",
+      "calories": "540",
+      "protein": "13",
+      "carbs": "41",
+      "fat": "36"
+    },
+    {
+      "dish": "EGG BISCUIT",
+      "calories": "510",
+      "protein": "13",
+      "carbs": "41",
+      "fat": "29"
+    },
+    {
+      "dish": "EGG & SAUSAGE BISCUIT",
+      "calories": "690",
+      "protein": "20",
+      "carbs": "43",
+      "fat": "45"
+    },
+    {
+      "dish": "BACON BISCUIT",
+      "calories": "400",
+      "protein": "8",
+      "carbs": "37",
+      "fat": "25"
+    },
+    {
+      "dish": "SAUSAGE & GRAVY BISCUIT",
+      "calories": "510",
+      "protein": "10",
+      "carbs": "42",
+      "fat": "33"
+    },
+    {
+      "dish": "GRITS",
+      "calories": "370",
+      "protein": "5",
+      "carbs": "80",
+      "fat": "5"
+    },
+    {
+      "dish": "HASH ROUNDS",
+      "calories": "360",
+      "protein": "3",
+      "carbs": "41",
+      "fat": "20"
+    },
+    {
+      "dish": "COFFEE",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "ORANGE JUICE",
+      "calories": "140",
+      "protein": "2",
+      "carbs": "33",
+      "fat": "0"
+    },
+    {
+      "dish": "COKE",
+      "calories": "240",
+      "protein": "0",
+      "carbs": "66",
+      "fat": "0"
+    },
+    {
+      "dish": "DIET COKE",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "SPRITE",
+      "calories": "230",
+      "protein": "0",
+      "carbs": "61",
+      "fat": "0"
+    },
+    {
+      "dish": "FANTA STRAWBERRY",
+      "calories": "270",
+      "protein": "0",
+      "carbs": "70",
+      "fat": "0"
+    },
+    {
+      "dish": "FANTA ORANGE",
+      "calories": "260",
+      "protein": "0",
+      "carbs": "70",
+      "fat": "0"
+    },
+    {
+      "dish": "MOUNTAIN DEW",
+      "calories": "280",
+      "protein": "0",
+      "carbs": "73",
+      "fat": "0"
+    },
+    {
+      "dish": "PEPSI",
+      "calories": "250",
+      "protein": "0",
+      "carbs": "69",
+      "fat": "0"
+    },
+    {
+      "dish": "DIET PEPSI",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "DR PEPPER",
+      "calories": "240",
+      "protein": "0",
+      "carbs": "65",
+      "fat": "0"
+    },
+    {
+      "dish": "UNSWEETENED TEA",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "SWEET TEA",
+      "calories": "180",
+      "protein": "0",
+      "carbs": "16",
+      "fat": "0"
+    },
+    {
+      "dish": "MINUTE MAID LEMONADE",
+      "calories": "270",
+      "protein": "0",
+      "carbs": "71",
+      "fat": "0"
+    },
+    {
+      "dish": "CINNAMON APPLE PIE",
+      "calories": "240",
+      "protein": "3",
+      "carbs": "35",
+      "fat": "16"
+    },
+    {
+      "dish": "TENDER - CLASSIC",
+      "calories": "150",
+      "protein": "13",
+      "carbs": "12",
+      "fat": "7"
+    },
+    {
+      "dish": "LEG - CLASSIC",
+      "calories": "160",
+      "protein": "14",
+      "carbs": "5",
+      "fat": "9"
+    },
+    {
+      "dish": "WING (EACH)",
+      "calories": "210",
+      "protein": "13",
+      "carbs": "8",
+      "fat": "14"
+    },
+    {
+      "dish": "LEG (EACH)",
+      "calories": "160",
+      "protein": "14",
+      "carbs": "5",
+      "fat": "9"
+    },
+    {
+      "dish": "THIGH (EACH)",
+      "calories": "280",
+      "protein": "14",
+      "carbs": "7",
+      "fat": "21"
+    },
+    {
+      "dish": "BREAST (EACH)",
+      "calories": "380",
+      "protein": "35",
+      "carbs": "16",
+      "fat": "20"
+    },
+    {
+      "dish": "TENDERS - CLASSIC OR SPICY",
+      "calories": "450",
+      "protein": "38",
+      "carbs": "29",
+      "fat": "21"
+    },
+    {
+      "dish": "TENDERS - BLACKENED",
+      "calories": "170",
+      "protein": "26",
+      "carbs": "2",
+      "fat": "2"
+    },
+    {
+      "dish": "CLASSIC BONELESS WINGS",
+      "calories": "500",
+      "protein": "26",
+      "carbs": "23",
+      "fat": "34"
+    },
+    {
+      "dish": "HONEY BBQ BONELESS WINGS",
+      "calories": "700",
+      "protein": "27",
+      "carbs": "72",
+      "fat": "34"
+    },
+    {
+      "dish": "SIGNATURE HOT BONELESS WINGS",
+      "calories": "1020",
+      "protein": "28",
+      "carbs": "46",
+      "fat": "82"
+    },
+    {
+      "dish": "SWEET 'N SPICY BONELESS WINGS",
+      "calories": "730",
+      "protein": "27",
+      "carbs": "78",
+      "fat": "34"
+    },
+    {
+      "dish": "SPICY BONE-IN WINGS",
+      "calories": "680",
+      "protein": "45",
+      "carbs": "22",
+      "fat": "46"
+    },
+    {
+      "dish": "HONEY BBQ BONE-IN WINGS",
+      "calories": "880",
+      "protein": "46",
+      "carbs": "70",
+      "fat": "46"
+    },
+    {
+      "dish": "SIGNATURE HOT BONE-IN WINGS",
+      "calories": "1190",
+      "protein": "46",
+      "carbs": "45",
+      "fat": "94"
+    },
+    {
+      "dish": "SWEET 'N SPICY BONE-IN WINGS",
+      "calories": "950",
+      "protein": "46",
+      "carbs": "77",
+      "fat": "46"
+    },
+    {
+      "dish": "POPCORN SHRIMP",
+      "calories": "390",
+      "protein": "14",
+      "carbs": "28",
+      "fat": "25"
+    },
+    {
+      "dish": "CHICKEN SANDWICH-CLASSIC",
+      "calories": "700",
+      "protein": "28",
+      "carbs": "50",
+      "fat": "42"
+    },
+    {
+      "dish": "CHICKEN SANDWICH-SPICY",
+      "calories": "700",
+      "protein": "28",
+      "carbs": "50",
+      "fat": "42"
+    }
+  ]
+}

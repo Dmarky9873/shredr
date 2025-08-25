@@ -27,117 +27,52 @@ from app.scraping.find_restaurant_link import (
 )
 
 # List of 100 most popular restaurants in Toronto
-TORONTO_RESTAURANTS = [
-    "McDonald's",
-    "Tim Hortons",
-    "Starbucks",
-    "Subway",
-    "A&W",
-    "Burger King",
-    "Wendy's",
-    "Popeyes",
-    "KFC",
-    "Pizza Pizza",
-    "Domino's Pizza",
-    "Harvey's",
-    "Chipotle",
-    "Five Guys",
-    "Freshii",
-    "Booster Juice",
-    "Second Cup",
-    "Mr. Sub",
-    "Thai Express",
-    "Jimmy the Greek",
-    "Panera Bread",
-    "Osmow's",
-    "Paramount Fine Foods",
-    "Shawarma Palace",
-    "Mary Brown's Chicken",
-    "Chungchun Rice Dog",
-    "Chatime",
-    "Gong Cha",
-    "CoCo Fresh Tea & Juice",
-    "Bubble Lee",
-    "The Alley",
-    "David's Tea",
-    "Jollibee",
-    "Pho Hung",
-    "Pho Xe Lua",
-    "Banh Mi Boys",
-    "Pita Pit",
-    "Hero Certified Burgers",
-    "Shawarma King",
-    "Mandarin",
-    "Swiss Chalet",
-    "Boston Pizza",
-    "Jack Astor's",
-    "Milestones",
-    "The Keg",
-    "Earls",
-    "Cactus Club Cafe",
-    "Joey",
-    "Moxies",
-    "Scaddabush",
-    "La Carnita",
-    "El Catrin",
-    "Baro",
-    "Planta",
-    "Kupfert & Kim",
-    "Impact Kitchen",
-    "Salad King",
-    "Pai",
-    "Khao San Road",
-    "Sukhothai",
-    "Banh Mi Nguyen Huong",
-    "Ding Tai Fung",
-    "Sansotei Ramen",
-    "Kinton Ramen",
-    "Hokkaido Ramen Santouka",
-    "Ichiban Sushi House",
-    "Sushi Kaji",
-    "Miku Toronto",
-    "JaBistro",
-    "Kinka Izakaya",
-    "Gyubee Japanese Grill",
-    "Yakiniku King",
-    "Rol San",
-    "Dim Sum King",
-    "Crown Princess Fine Dining",
-    "Dragon Pearl Buffet",
-    "Congee Queen",
-    "Congee Wong",
-    "Ho Lee Chow",
-    "Mother's Dumplings",
-    "New Ho King",
-    "Chinatown BBQ",
-    "Swatow",
-    "Richmond Station",
-    "Alo",
-    "Canoe",
-    "Buca",
-    "Terroni",
-    "Gusto 101",
-    "Pizzeria Libretto",
-    "Maker Pizza",
-    "North of Brooklyn Pizzeria",
-    "Pizza Nova",
-    "Frank's Pizza House",
-    "Matt's Burger Lab",
-    "Holy Chuck",
-    "Big Smoke Burger",
-    "Burger Priest",
-    "Rudy",
-    "Shake Shack (Toronto location)",
-    "St. Louis Bar & Grill",
-    "Hooters",
-    "Wing Machine",
-    "Smoke's Poutinerie",
-    "Poutini's House of Poutine",
-    "The Rec Room",
-    "Sneaky Dee's",
-    "El Furniture Warehouse",
-    "Queen Mother Café",
-    "The Rivoli",
+RESTAURANTS = [
+    "Dairy Queen",
+    "Orange Julius",
+    "Baskin-Robbins",
+    "Cold Stone Creamery",
+    "Menchie's Frozen Yogurt",
+    "Marble Slab Creamery",
+    "Ben & Jerry's",
+    "Haagen-Dazs Shop",
+    "Yogen Früz",
+    "Pret A Manger",
+    "Taco Bell",
+    "Quesada Burritos & Tacos",
+    "BarBurrito",
+    "Mucho Burrito",
+    "Chili's",
+    "TGI Fridays",
+    "Olive Garden",
+    "Red Lobster",
+    "The Cheesecake Factory",
+    "PF Chang's",
+    "Benihana",
+    "Nando's",
+    "Perkins Restaurant & Bakery",
+    "Denny's",
+    "IHOP",
+    "Waffle House",
+    "Cracker Barrel",
+    "The Works Gourmet Burger Bistro",
+    "South St. Burger",
+    "Fuddruckers",
+    "Fatburger",
+    "Johnny Rockets",
+    "Shake Shack (U.S. mainstream)",
+    "Carl's Jr.",
+    "Hardee's",
+    "In-N-Out Burger",
+    "Checkers",
+    "Church's Chicken",
+    "Wingstop",
+    "Buffalo Wild Wings",
+    "Quiznos",
+    "Firehouse Subs",
+    "Jersey Mike's Subs",
+    "Jimmy John's",
+    "Pretzelmaker",
 ]
 
 
@@ -270,11 +205,9 @@ def process_restaurant(restaurant_name: str, show_detailed_output: bool = True) 
         clean_name = clean_restaurant_name(restaurant_name)
         results["clean_name"] = clean_name
 
-        # Step 1: Create restaurant JSON
         if create_restaurant_json(restaurant_name, show_detailed_output):
             results["json_created"] = True
 
-            # Step 2: Create macro caches
             try:
                 cache_file = f"app/restaurant_caches/{clean_name}_output.json"
                 if show_detailed_output:
@@ -287,11 +220,9 @@ def process_restaurant(restaurant_name: str, show_detailed_output: bool = True) 
                 if show_detailed_output:
                     print(f"❌ Error creating macro caches: {e}")
 
-            # Step 3: Update restaurant list
             if update_restaurant_list(clean_name, show_detailed_output):
                 results["list_updated"] = True
 
-        # Determine overall success
         results["success"] = (
             results["json_created"]
             and results["macro_caches_created"]
@@ -308,7 +239,6 @@ def process_restaurant(restaurant_name: str, show_detailed_output: bool = True) 
         if show_detailed_output:
             print(f"❌ File/IO error processing {restaurant_name}: {e}")
     except Exception as e:
-        # Handle any other unexpected errors
         error_msg = str(e)
         if show_detailed_output:
             print(f"❌ Unexpected error processing {restaurant_name}: {error_msg}")
@@ -318,43 +248,38 @@ def process_restaurant(restaurant_name: str, show_detailed_output: bool = True) 
 
 def main():
     """
-    Main function to process all Toronto restaurants.
+    Main function to process all restaurants.
     """
-    # Suppress PDF parsing warnings that clutter the progress bar
     warnings.filterwarnings("ignore", message=".*wrong pointing object.*")
     warnings.filterwarnings("ignore", message=".*Ignoring wrong pointing object.*")
 
-    # Also suppress pdfminer logging warnings
     logging.getLogger("pdfminer").setLevel(logging.ERROR)
     logging.getLogger("pdfplumber").setLevel(logging.ERROR)
 
-    print("🍽️  Starting Toronto Restaurant Processing")
-    print(f"📋 Processing {len(TORONTO_RESTAURANTS)} restaurants")
+    print("🍽️  Starting Restaurant Processing")
+    print(f"📋 Processing {len(RESTAURANTS)} restaurants")
     print(f"⏰ Started at {time.strftime('%Y-%m-%d %H:%M:%S')}")
 
-    # Create cache directory if it doesn't exist
     os.makedirs("app/restaurant_caches", exist_ok=True)
     os.makedirs("app/restaurant_caches/highest_lowest_protein", exist_ok=True)
     os.makedirs("app/restaurant_caches/highest_lowest_fat", exist_ok=True)
     os.makedirs("app/restaurant_caches/highest_lowest_carbs", exist_ok=True)
 
-    # Track results
     all_results = []
     successful_count = 0
     failed_count = 0
     skipped_count = 0
     pdf_error_count = 0
 
-    # Process each restaurant
     with tqdm(
-        total=len(TORONTO_RESTAURANTS),
+        total=len(RESTAURANTS),
         desc="Processing restaurants",
         unit="restaurant",
         ncols=120,
         bar_format="{l_bar}{bar}| {n_fmt}/{total_fmt} [{elapsed}<{remaining}, "
         "{rate_fmt}]",
     ) as pbar:
-        for i, restaurant in enumerate(TORONTO_RESTAURANTS, 1):
+        for i, restaurant in enumerate(RESTAURANTS, 1):
             pbar.set_description(f"Processing: {restaurant[:25]}...")
 
             try:
@@ -421,16 +346,16 @@ def main():
     print(f"⏭️  Skipped (no PDF found): {skipped_count}")
     if pdf_error_count > 0:
         print(f"📄 PDF parsing errors: {pdf_error_count}")
-    print(f"📊 Total restaurants: {len(TORONTO_RESTAURANTS)}")
+    print(f"📊 Total restaurants: {len(RESTAURANTS)}")
     print(f"⏰ Finished at {time.strftime('%Y-%m-%d %H:%M:%S')}")
 
     # Save detailed results
-    results_file = "toronto_restaurants_processing_results.json"
+    results_file = "RESTAURANTS_processing_results.json"
     with open(results_file, "w", encoding="utf-8") as f:
         json.dump(
             {
                 "summary": {
-                    "total": len(TORONTO_RESTAURANTS),
+                    "total": len(RESTAURANTS),
                     "successful": successful_count,
                     "failed": failed_count,
                     "skipped": skipped_count,

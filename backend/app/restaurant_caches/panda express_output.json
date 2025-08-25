@@ -1,1 +1,658 @@
-{"restaurant_name": "panda express", "url": "https://s3.amazonaws.com/PandaExpressWebsite/files/pdf/Nutrition_2030118.pdf", "date": "2025-08-24 19:05:44", "menu_items": [{"dish": "Chow Mein", "calories": "510", "protein": "13", "carbs": "65", "fat": "22"}, {"dish": "Chow Fun*", "calories": "410", "protein": "9", "carbs": "73", "fat": "9"}, {"dish": "Fried Rice", "calories": "520", "protein": "12", "carbs": "82", "fat": "16"}, {"dish": "Brown Steamed Rice", "calories": "420", "protein": "9", "carbs": "86", "fat": "4"}, {"dish": "White Steamed Rice", "calories": "380", "protein": "7", "carbs": "87", "fat": "0"}, {"dish": "Mixed Vegetables (Side)", "calories": "80", "protein": "4", "carbs": "16", "fat": "0.5"}, {"dish": "Country Style Bean Curd*", "calories": "191", "protein": "7", "carbs": "14", "fat": "12"}, {"dish": "Eggplant Tofu*", "calories": "340", "protein": "7", "carbs": "23", "fat": "24"}, {"dish": "Hot Szechuan Tofu*", "calories": "140", "protein": "6", "carbs": "10", "fat": "8"}, {"dish": "Mixed Veggies (Entree)", "calories": "35", "protein": "2", "carbs": "8", "fat": "0"}, {"dish": "Black Pepper Chicken", "calories": "280", "protein": "13", "carbs": "14", "fat": "19"}, {"dish": "Kung Pao Chicken", "calories": "290", "protein": "16", "carbs": "14", "fat": "19"}, {"dish": "Grilled Teriyaki Chicken", "calories": "300", "protein": "36", "carbs": "8", "fat": "13"}, {"dish": "Grilled Asian Chicken", "calories": "300", "protein": "36", "carbs": "8", "fat": "13"}, {"dish": "Teriyaki Chicken", "calories": "340", "protein": "41", "carbs": "14", "fat": "13"}, {"dish": "Fortune Cookies", "calories": "32", "protein": "1", "carbs": "7", "fat": "0"}, {"dish": "Chocolate Chip Chunk Cookie", "calories": "160", "protein": "2", "carbs": "25", "fat": "7"}, {"dish": "Pepsi\u00ae (Sm.)", "calories": "240", "protein": "0", "carbs": "67", "fat": "0"}, {"dish": "Pepsi\u00ae (Med.)", "calories": "330", "protein": "0", "carbs": "92", "fat": "0"}, {"dish": "Pepsi\u00ae (Lrg.)", "calories": "460", "protein": "0", "carbs": "129", "fat": "0"}, {"dish": "Diet Pepsi\u00ae (Sm.)", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "Diet Pepsi\u00ae (Med.)", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "Diet Pepsi\u00ae (Lrg.)", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "Mountain Dew\u00ae (Sm.)", "calories": "260", "protein": "0", "carbs": "70", "fat": "0"}, {"dish": "Mountain Dew\u00ae (Med.)", "calories": "360", "protein": "0", "carbs": "95", "fat": "0"}, {"dish": "Mountain Dew\u00ae (Lrg.)", "calories": "510", "protein": "0", "carbs": "133", "fat": "0"}, {"dish": "Dr Pepper\u00ae (Sm.)", "calories": "206", "protein": "0", "carbs": "56", "fat": "0"}, {"dish": "Dr Pepper\u00ae (Med.)", "calories": "281", "protein": "0", "carbs": "76", "fat": "0"}, {"dish": "Dr. Pepper (Lrg.)", "calories": "394", "protein": "0", "carbs": "106", "fat": "0"}, {"dish": "Mug Root Beer\u00ae (Sm.)", "calories": "240", "protein": "0", "carbs": "63", "fat": "0"}, {"dish": "Mug Root Beer\u00ae (Med.)", "calories": "330", "protein": "0", "carbs": "85", "fat": "0"}, {"dish": "Mug Root Beer\u00ae (Lrg.)", "calories": "460", "protein": "0", "carbs": "119", "fat": "0"}, {"dish": "Sierra Mist\u00ae (Sm.)", "calories": "240", "protein": "0", "carbs": "65", "fat": "0"}, {"dish": "Sierra Mist\u00ae (Med.)", "calories": "330", "protein": "0", "carbs": "89", "fat": "0"}, {"dish": "Sierra Mist\u00ae (Lrg.)", "calories": "460", "protein": "0", "carbs": "124", "fat": "0"}, {"dish": "Lipton Brisk Raspberry\u00ae (Sm.)", "calories": "190", "protein": "0", "carbs": "51", "fat": "0"}, {"dish": "Lipton Brisk Raspberry\u00ae (Med.)", "calories": "260", "protein": "0", "carbs": "69", "fat": "0"}, {"dish": "Lipton Brisk Raspberry\u00ae (Lrg.)", "calories": "370", "protein": "0", "carbs": "96", "fat": "0"}, {"dish": "Sobe Lean\u00ae (Sm.)", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "Sobe Lean\u00ae (Med.)", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "Sobe Lean\u00ae (Lrg.)", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "Tropicana Fruit Punch\u00ae (Sm.)", "calories": "260", "protein": "0", "carbs": "72", "fat": "0"}, {"dish": "Tropicana Fruit Punch\u00ae (Med.)", "calories": "360", "protein": "0", "carbs": "98", "fat": "0"}, {"dish": "Tropicana Fruit Punch\u00ae (Lrg.)", "calories": "510", "protein": "0", "carbs": "138", "fat": "0"}, {"dish": "Tropicana Lemonade\u00ae (Sm.)", "calories": "240", "protein": "0", "carbs": "65", "fat": "0"}, {"dish": "Tropicana Lemonade\u00ae (Med.)", "calories": "330", "protein": "0", "carbs": "89", "fat": "0"}, {"dish": "Tropicana Lemonade\u00ae (Lrg.)", "calories": "460", "protein": "0", "carbs": "124", "fat": "0"}, {"dish": "Tropicana Pink Lemonade\u00ae (Sm.)", "calories": "240", "protein": "0", "carbs": "65", "fat": "0"}, {"dish": "Tropicana Pink Lemonade\u00ae (Med.)", "calories": "330", "protein": "0", "carbs": "89", "fat": "0"}, {"dish": "Tropicana Pink Lemonade\u00ae (Lrg.)", "calories": "460", "protein": "0", "carbs": "124", "fat": "0"}, {"dish": "China Mist Iced Tea\u00ae (Sm.)", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "China Mist Iced Tea\u00ae (Med.)", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "China Mist Iced Tea\u00ae (Lrg.)", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "Asian Chicken", "calories": "340", "protein": "41", "carbs": "14", "fat": "13"}, {"dish": "Mushroom Chicken", "calories": "170", "protein": "12", "carbs": "11", "fat": "9"}, {"dish": "Orange Chicken", "calories": "380", "protein": "14", "carbs": "45", "fat": "18"}, {"dish": "Potato Chicken*", "calories": "190", "protein": "8", "carbs": "18", "fat": "10"}, {"dish": "String Bean Chicken Breast", "calories": "190", "protein": "14", "carbs": "13", "fat": "9"}, {"dish": "SweetFire Chicken BreastTM", "calories": "380", "protein": "13", "carbs": "47", "fat": "15"}, {"dish": "Sweet & Sour Chicken Breast*", "calories": "300", "protein": "10", "carbs": "40", "fat": "12"}, {"dish": "Beijing BeefTM", "calories": "470", "protein": "13", "carbs": "46", "fat": "26"}, {"dish": "Broccoli Beef", "calories": "150", "protein": "9", "carbs": "13", "fat": "7"}, {"dish": "Shanghai Angus SteakTM", "calories": "310", "protein": "22", "carbs": "16", "fat": "19"}, {"dish": "Chinese Spare Ribs*", "calories": "370", "protein": "28", "carbs": "7", "fat": "25"}, {"dish": "Crispy Shrimp (Entree)", "calories": "260", "protein": "9", "carbs": "26", "fat": "13"}, {"dish": "Honey Walnut Shrimp", "calories": "360", "protein": "13", "carbs": "35", "fat": "23"}, {"dish": "Golden Treasure Shrimp*", "calories": "360", "protein": "14", "carbs": "35", "fat": "18"}, {"dish": "Steamed Ginger Fish*", "calories": "200", "protein": "15", "carbs": "8", "fat": "12"}, {"dish": "Crispy Shrimp", "calories": "130", "protein": "5", "carbs": "13", "fat": "6"}, {"dish": "Chicken Egg Roll", "calories": "160", "protein": "6", "carbs": "20", "fat": "6"}, {"dish": "Chicken Potsticker", "calories": "160", "protein": "6", "carbs": "20", "fat": "6"}, {"dish": "Cream Cheese Rangoon", "calories": "190", "protein": "5", "carbs": "24", "fat": "8"}, {"dish": "Veggie Spring Roll", "calories": "190", "protein": "3", "carbs": "27", "fat": "8"}, {"dish": "Hot & Sour Soup (Cup)", "calories": "120", "protein": "7", "carbs": "14", "fat": "4.5"}, {"dish": "Hot & Sour Soup (Bowl)", "calories": "170", "protein": "10", "carbs": "20", "fat": "6"}, {"dish": "Teriyaki Sauce", "calories": "70", "protein": "0", "carbs": "16", "fat": "0"}, {"dish": "Sweet & Sour Sauce", "calories": "70", "protein": "0", "carbs": "21", "fat": "0"}, {"dish": "Chili Sauce", "calories": "10", "protein": "0", "carbs": "2", "fat": "0"}, {"dish": "Soy Sauce", "calories": "5", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "Potsticker Sauce", "calories": "10", "protein": "0", "carbs": "3", "fat": "0"}, {"dish": "Hot Mustard", "calories": "10", "protein": "0", "carbs": "0", "fat": "1"}, {"dish": "Plum Sauce", "calories": "15", "protein": "0", "carbs": "3", "fat": "0"}, {"dish": "Pepsi \u00ae (Kids)", "calories": "130", "protein": "0", "carbs": "37", "fat": "0"}, {"dish": "Diet Pepsi\u00ae (Kids)", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "Mountain Dew\u00ae (Kids)", "calories": "140", "protein": "0", "carbs": "38", "fat": "0"}, {"dish": "Dr Pepper\u00ae (Kids)", "calories": "113", "protein": "0", "carbs": "30", "fat": "0"}, {"dish": "Mug Root Beer\u00ae (Kids)", "calories": "130", "protein": "0", "carbs": "34", "fat": "0"}, {"dish": "Sierra Mist\u00ae (Kids)", "calories": "130", "protein": "0", "carbs": "35", "fat": "0"}, {"dish": "Sobe Lean\u00ae (Kids)", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "Tropicana Fruit Punch\u00ae (Kids)", "calories": "140", "protein": "0", "carbs": "39", "fat": "0"}, {"dish": "Tropicana Lemonade\u00ae (Kids)", "calories": "130", "protein": "0", "carbs": "35", "fat": "0"}, {"dish": "China Mist Iced Tea\u00ae (Kids)", "calories": "0", "protein": "0", "carbs": "0", "fat": "0"}, {"dish": "Mixed Veggies (Side)", "calories": "70", "protein": "3", "carbs": "12", "fat": "0"}]}
+{
+  "restaurant_name": "panda express",
+  "url": "https://s3.amazonaws.com/PandaExpressWebsite/files/pdf/Nutrition_2030118.pdf",
+  "date": "2025-08-24 19:05:44",
+  "menu_items": [
+    {
+      "dish": "Chow Mein",
+      "calories": "510",
+      "protein": "13",
+      "carbs": "65",
+      "fat": "22"
+    },
+    {
+      "dish": "Chow Fun*",
+      "calories": "410",
+      "protein": "9",
+      "carbs": "73",
+      "fat": "9"
+    },
+    {
+      "dish": "Fried Rice",
+      "calories": "520",
+      "protein": "12",
+      "carbs": "82",
+      "fat": "16"
+    },
+    {
+      "dish": "Brown Steamed Rice",
+      "calories": "420",
+      "protein": "9",
+      "carbs": "86",
+      "fat": "4"
+    },
+    {
+      "dish": "White Steamed Rice",
+      "calories": "380",
+      "protein": "7",
+      "carbs": "87",
+      "fat": "0"
+    },
+    {
+      "dish": "Mixed Vegetables (Side)",
+      "calories": "80",
+      "protein": "4",
+      "carbs": "16",
+      "fat": "0.5"
+    },
+    {
+      "dish": "Country Style Bean Curd*",
+      "calories": "191",
+      "protein": "7",
+      "carbs": "14",
+      "fat": "12"
+    },
+    {
+      "dish": "Eggplant Tofu*",
+      "calories": "340",
+      "protein": "7",
+      "carbs": "23",
+      "fat": "24"
+    },
+    {
+      "dish": "Hot Szechuan Tofu*",
+      "calories": "140",
+      "protein": "6",
+      "carbs": "10",
+      "fat": "8"
+    },
+    {
+      "dish": "Mixed Veggies (Entree)",
+      "calories": "35",
+      "protein": "2",
+      "carbs": "8",
+      "fat": "0"
+    },
+    {
+      "dish": "Black Pepper Chicken",
+      "calories": "280",
+      "protein": "13",
+      "carbs": "14",
+      "fat": "19"
+    },
+    {
+      "dish": "Kung Pao Chicken",
+      "calories": "290",
+      "protein": "16",
+      "carbs": "14",
+      "fat": "19"
+    },
+    {
+      "dish": "Grilled Teriyaki Chicken",
+      "calories": "300",
+      "protein": "36",
+      "carbs": "8",
+      "fat": "13"
+    },
+    {
+      "dish": "Grilled Asian Chicken",
+      "calories": "300",
+      "protein": "36",
+      "carbs": "8",
+      "fat": "13"
+    },
+    {
+      "dish": "Teriyaki Chicken",
+      "calories": "340",
+      "protein": "41",
+      "carbs": "14",
+      "fat": "13"
+    },
+    {
+      "dish": "Fortune Cookies",
+      "calories": "32",
+      "protein": "1",
+      "carbs": "7",
+      "fat": "0"
+    },
+    {
+      "dish": "Chocolate Chip Chunk Cookie",
+      "calories": "160",
+      "protein": "2",
+      "carbs": "25",
+      "fat": "7"
+    },
+    {
+      "dish": "Pepsi\u00ae (Sm.)",
+      "calories": "240",
+      "protein": "0",
+      "carbs": "67",
+      "fat": "0"
+    },
+    {
+      "dish": "Pepsi\u00ae (Med.)",
+      "calories": "330",
+      "protein": "0",
+      "carbs": "92",
+      "fat": "0"
+    },
+    {
+      "dish": "Pepsi\u00ae (Lrg.)",
+      "calories": "460",
+      "protein": "0",
+      "carbs": "129",
+      "fat": "0"
+    },
+    {
+      "dish": "Diet Pepsi\u00ae (Sm.)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Diet Pepsi\u00ae (Med.)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Diet Pepsi\u00ae (Lrg.)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Mountain Dew\u00ae (Sm.)",
+      "calories": "260",
+      "protein": "0",
+      "carbs": "70",
+      "fat": "0"
+    },
+    {
+      "dish": "Mountain Dew\u00ae (Med.)",
+      "calories": "360",
+      "protein": "0",
+      "carbs": "95",
+      "fat": "0"
+    },
+    {
+      "dish": "Mountain Dew\u00ae (Lrg.)",
+      "calories": "510",
+      "protein": "0",
+      "carbs": "133",
+      "fat": "0"
+    },
+    {
+      "dish": "Dr Pepper\u00ae (Sm.)",
+      "calories": "206",
+      "protein": "0",
+      "carbs": "56",
+      "fat": "0"
+    },
+    {
+      "dish": "Dr Pepper\u00ae (Med.)",
+      "calories": "281",
+      "protein": "0",
+      "carbs": "76",
+      "fat": "0"
+    },
+    {
+      "dish": "Dr. Pepper (Lrg.)",
+      "calories": "394",
+      "protein": "0",
+      "carbs": "106",
+      "fat": "0"
+    },
+    {
+      "dish": "Mug Root Beer\u00ae (Sm.)",
+      "calories": "240",
+      "protein": "0",
+      "carbs": "63",
+      "fat": "0"
+    },
+    {
+      "dish": "Mug Root Beer\u00ae (Med.)",
+      "calories": "330",
+      "protein": "0",
+      "carbs": "85",
+      "fat": "0"
+    },
+    {
+      "dish": "Mug Root Beer\u00ae (Lrg.)",
+      "calories": "460",
+      "protein": "0",
+      "carbs": "119",
+      "fat": "0"
+    },
+    {
+      "dish": "Sierra Mist\u00ae (Sm.)",
+      "calories": "240",
+      "protein": "0",
+      "carbs": "65",
+      "fat": "0"
+    },
+    {
+      "dish": "Sierra Mist\u00ae (Med.)",
+      "calories": "330",
+      "protein": "0",
+      "carbs": "89",
+      "fat": "0"
+    },
+    {
+      "dish": "Sierra Mist\u00ae (Lrg.)",
+      "calories": "460",
+      "protein": "0",
+      "carbs": "124",
+      "fat": "0"
+    },
+    {
+      "dish": "Lipton Brisk Raspberry\u00ae (Sm.)",
+      "calories": "190",
+      "protein": "0",
+      "carbs": "51",
+      "fat": "0"
+    },
+    {
+      "dish": "Lipton Brisk Raspberry\u00ae (Med.)",
+      "calories": "260",
+      "protein": "0",
+      "carbs": "69",
+      "fat": "0"
+    },
+    {
+      "dish": "Lipton Brisk Raspberry\u00ae (Lrg.)",
+      "calories": "370",
+      "protein": "0",
+      "carbs": "96",
+      "fat": "0"
+    },
+    {
+      "dish": "Sobe Lean\u00ae (Sm.)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Sobe Lean\u00ae (Med.)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Sobe Lean\u00ae (Lrg.)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Tropicana Fruit Punch\u00ae (Sm.)",
+      "calories": "260",
+      "protein": "0",
+      "carbs": "72",
+      "fat": "0"
+    },
+    {
+      "dish": "Tropicana Fruit Punch\u00ae (Med.)",
+      "calories": "360",
+      "protein": "0",
+      "carbs": "98",
+      "fat": "0"
+    },
+    {
+      "dish": "Tropicana Fruit Punch\u00ae (Lrg.)",
+      "calories": "510",
+      "protein": "0",
+      "carbs": "138",
+      "fat": "0"
+    },
+    {
+      "dish": "Tropicana Lemonade\u00ae (Sm.)",
+      "calories": "240",
+      "protein": "0",
+      "carbs": "65",
+      "fat": "0"
+    },
+    {
+      "dish": "Tropicana Lemonade\u00ae (Med.)",
+      "calories": "330",
+      "protein": "0",
+      "carbs": "89",
+      "fat": "0"
+    },
+    {
+      "dish": "Tropicana Lemonade\u00ae (Lrg.)",
+      "calories": "460",
+      "protein": "0",
+      "carbs": "124",
+      "fat": "0"
+    },
+    {
+      "dish": "Tropicana Pink Lemonade\u00ae (Sm.)",
+      "calories": "240",
+      "protein": "0",
+      "carbs": "65",
+      "fat": "0"
+    },
+    {
+      "dish": "Tropicana Pink Lemonade\u00ae (Med.)",
+      "calories": "330",
+      "protein": "0",
+      "carbs": "89",
+      "fat": "0"
+    },
+    {
+      "dish": "Tropicana Pink Lemonade\u00ae (Lrg.)",
+      "calories": "460",
+      "protein": "0",
+      "carbs": "124",
+      "fat": "0"
+    },
+    {
+      "dish": "China Mist Iced Tea\u00ae (Sm.)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "China Mist Iced Tea\u00ae (Med.)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "China Mist Iced Tea\u00ae (Lrg.)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Asian Chicken",
+      "calories": "340",
+      "protein": "41",
+      "carbs": "14",
+      "fat": "13"
+    },
+    {
+      "dish": "Mushroom Chicken",
+      "calories": "170",
+      "protein": "12",
+      "carbs": "11",
+      "fat": "9"
+    },
+    {
+      "dish": "Orange Chicken",
+      "calories": "380",
+      "protein": "14",
+      "carbs": "45",
+      "fat": "18"
+    },
+    {
+      "dish": "Potato Chicken*",
+      "calories": "190",
+      "protein": "8",
+      "carbs": "18",
+      "fat": "10"
+    },
+    {
+      "dish": "String Bean Chicken Breast",
+      "calories": "190",
+      "protein": "14",
+      "carbs": "13",
+      "fat": "9"
+    },
+    {
+      "dish": "SweetFire Chicken BreastTM",
+      "calories": "380",
+      "protein": "13",
+      "carbs": "47",
+      "fat": "15"
+    },
+    {
+      "dish": "Sweet & Sour Chicken Breast*",
+      "calories": "300",
+      "protein": "10",
+      "carbs": "40",
+      "fat": "12"
+    },
+    {
+      "dish": "Beijing BeefTM",
+      "calories": "470",
+      "protein": "13",
+      "carbs": "46",
+      "fat": "26"
+    },
+    {
+      "dish": "Broccoli Beef",
+      "calories": "150",
+      "protein": "9",
+      "carbs": "13",
+      "fat": "7"
+    },
+    {
+      "dish": "Shanghai Angus SteakTM",
+      "calories": "310",
+      "protein": "22",
+      "carbs": "16",
+      "fat": "19"
+    },
+    {
+      "dish": "Chinese Spare Ribs*",
+      "calories": "370",
+      "protein": "28",
+      "carbs": "7",
+      "fat": "25"
+    },
+    {
+      "dish": "Crispy Shrimp (Entree)",
+      "calories": "260",
+      "protein": "9",
+      "carbs": "26",
+      "fat": "13"
+    },
+    {
+      "dish": "Honey Walnut Shrimp",
+      "calories": "360",
+      "protein": "13",
+      "carbs": "35",
+      "fat": "23"
+    },
+    {
+      "dish": "Golden Treasure Shrimp*",
+      "calories": "360",
+      "protein": "14",
+      "carbs": "35",
+      "fat": "18"
+    },
+    {
+      "dish": "Steamed Ginger Fish*",
+      "calories": "200",
+      "protein": "15",
+      "carbs": "8",
+      "fat": "12"
+    },
+    {
+      "dish": "Crispy Shrimp",
+      "calories": "130",
+      "protein": "5",
+      "carbs": "13",
+      "fat": "6"
+    },
+    {
+      "dish": "Chicken Egg Roll",
+      "calories": "160",
+      "protein": "6",
+      "carbs": "20",
+      "fat": "6"
+    },
+    {
+      "dish": "Chicken Potsticker",
+      "calories": "160",
+      "protein": "6",
+      "carbs": "20",
+      "fat": "6"
+    },
+    {
+      "dish": "Cream Cheese Rangoon",
+      "calories": "190",
+      "protein": "5",
+      "carbs": "24",
+      "fat": "8"
+    },
+    {
+      "dish": "Veggie Spring Roll",
+      "calories": "190",
+      "protein": "3",
+      "carbs": "27",
+      "fat": "8"
+    },
+    {
+      "dish": "Hot & Sour Soup (Cup)",
+      "calories": "120",
+      "protein": "7",
+      "carbs": "14",
+      "fat": "4.5"
+    },
+    {
+      "dish": "Hot & Sour Soup (Bowl)",
+      "calories": "170",
+      "protein": "10",
+      "carbs": "20",
+      "fat": "6"
+    },
+    {
+      "dish": "Teriyaki Sauce",
+      "calories": "70",
+      "protein": "0",
+      "carbs": "16",
+      "fat": "0"
+    },
+    {
+      "dish": "Sweet & Sour Sauce",
+      "calories": "70",
+      "protein": "0",
+      "carbs": "21",
+      "fat": "0"
+    },
+    {
+      "dish": "Chili Sauce",
+      "calories": "10",
+      "protein": "0",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "Soy Sauce",
+      "calories": "5",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Potsticker Sauce",
+      "calories": "10",
+      "protein": "0",
+      "carbs": "3",
+      "fat": "0"
+    },
+    {
+      "dish": "Hot Mustard",
+      "calories": "10",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "1"
+    },
+    {
+      "dish": "Plum Sauce",
+      "calories": "15",
+      "protein": "0",
+      "carbs": "3",
+      "fat": "0"
+    },
+    {
+      "dish": "Pepsi \u00ae (Kids)",
+      "calories": "130",
+      "protein": "0",
+      "carbs": "37",
+      "fat": "0"
+    },
+    {
+      "dish": "Diet Pepsi\u00ae (Kids)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Mountain Dew\u00ae (Kids)",
+      "calories": "140",
+      "protein": "0",
+      "carbs": "38",
+      "fat": "0"
+    },
+    {
+      "dish": "Dr Pepper\u00ae (Kids)",
+      "calories": "113",
+      "protein": "0",
+      "carbs": "30",
+      "fat": "0"
+    },
+    {
+      "dish": "Mug Root Beer\u00ae (Kids)",
+      "calories": "130",
+      "protein": "0",
+      "carbs": "34",
+      "fat": "0"
+    },
+    {
+      "dish": "Sierra Mist\u00ae (Kids)",
+      "calories": "130",
+      "protein": "0",
+      "carbs": "35",
+      "fat": "0"
+    },
+    {
+      "dish": "Sobe Lean\u00ae (Kids)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Tropicana Fruit Punch\u00ae (Kids)",
+      "calories": "140",
+      "protein": "0",
+      "carbs": "39",
+      "fat": "0"
+    },
+    {
+      "dish": "Tropicana Lemonade\u00ae (Kids)",
+      "calories": "130",
+      "protein": "0",
+      "carbs": "35",
+      "fat": "0"
+    },
+    {
+      "dish": "China Mist Iced Tea\u00ae (Kids)",
+      "calories": "0",
+      "protein": "0",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "Mixed Veggies (Side)",
+      "calories": "70",
+      "protein": "3",
+      "carbs": "12",
+      "fat": "0"
+    }
+  ]
+}
