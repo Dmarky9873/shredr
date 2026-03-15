@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Shredr",
-  description: "By Daniel Markusson and Kaibo Huang",
+  description: "By Daniel Markusson",
   icons: {
     icon: [
       { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },

@@ -8,7 +8,7 @@ export default function AboutPage() {
       <div className="lg:hidden flex flex-col items-center justify-center min-h-[calc(100vh-6rem)] text-center space-y-8">
         <div className="text-center">
           <h1 className="text-display font-bold mb-4">Shredr</h1>
-          <p className="text-lead">By Daniel Markusson & Kaibo Huang</p>
+          <p className="text-lead">By Daniel Markusson</p>
         </div>
 
         <FadeInStagger className="max-w-lg space-y-8" delay={400}>
@@ -61,11 +61,10 @@ export default function AboutPage() {
 
           <div>
             <p className="text-lg">
-              So, armed with a bit of free time during the summer and an RBC
-              internship that brought us together, we set out to create Shredr.
-              Our goal was simple: make eating out easier and more aligned with
-              fitness goals. The result is an effective, simple tool that does
-              exactly what it set out to do.
+              So, armed with a bit of free time during the summer, I set out to
+              create Shredr. My goal was simple: make eating out easier and more
+              aligned with fitness goals. The result is an effective, simple
+              tool that does exactly what it set out to do.
             </p>
           </div>
         </FadeInStagger>
@@ -75,7 +74,7 @@ export default function AboutPage() {
       <div className="hidden lg:flex flex-col items-center justify-center min-h-[calc(100vh-6rem)] space-y-16">
         <div className="text-center">
           <h1 className="text-display font-bold mb-4">Shredr</h1>
-          <p className="text-lead">By Daniel Markusson & Kaibo Huang</p>
+          <p className="text-lead">By Daniel Markusson</p>
         </div>
 
         <FadeInStagger className="w-full max-w-6xl space-y-16" delay={500}>
@@ -136,11 +135,10 @@ export default function AboutPage() {
           <div className="flex justify-start">
             <div className="max-w-2xl text-left">
               <p className="text-lg">
-                So, armed with a bit of free time during the summer and an RBC
-                internship that brought us together, we set out to create
-                Shredr. Our goal was simple: make eating out easier and more
-                aligned with fitness goals. The result is an effective, simple
-                tool that does exactly what it set out to do.
+                So, armed with a bit of free time during the summer, I set out
+                to create Shredr. My goal was simple: make eating out easier and
+                more aligned with fitness goals. The result is an effective,
+                simple tool that does exactly what it set out to do.
               </p>
             </div>
           </div>

@@ -111,7 +111,6 @@ def create_restaurant_json(
                     print(f"❌ Error occurred while searching for {restaurant_name}")
             return False
 
-        # Try each URL until we find one with valid menu items
         successful_extraction = False
         for i, url in enumerate(urls, 1):
             if show_detailed_output:
