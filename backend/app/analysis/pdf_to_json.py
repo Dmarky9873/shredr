@@ -2,6 +2,7 @@
 Extract tables from PDF file.
 """
 
+import hashlib
 import json
 import os
 import re
@@ -36,6 +37,12 @@ AI_ESTIMATE_SOURCE = "ai_estimated"
 PDF_SOURCE = "pdf"
 CALCULATED_SOURCE = "calculated_from_macros"
 AI_ESTIMATES_ENABLED_VALUES = {"1", "true", "yes", "on"}
+DEFAULT_AI_ESTIMATE_CACHE_PATH = (
+    "app/restaurant_caches/ai_nutrition_estimates_cache.json"
+)
+AI_ESTIMATE_CACHE_VERSION = 1
+AI_ESTIMATE_PROMPT_VERSION = "2026-06-07"
+_LOCAL_ENV_LOADED = False
 
 AiNutritionEstimator = Callable[
     [str, str, Dict[str, Optional[float]]], Optional[Dict[str, Any]]
@@ -825,8 +832,170 @@ def _macro_calorie_estimate(values: Dict[str, Optional[float]]) -> Optional[int]
     return int(round((protein * 4) + (carbs * 4) + (fat * 9)))
 
 
+def _parse_env_line(line: str) -> Optional[Tuple[str, str]]:
+    """Parse a simple KEY=VALUE env file line."""
+    stripped = line.strip()
+    if not stripped or stripped.startswith("#") or "=" not in stripped:
+        return None
+
+    if stripped.startswith("export "):
+        stripped = stripped[len("export ") :].strip()
+
+    key, value = stripped.split("=", 1)
+    key = key.strip()
+    value = value.strip().strip("'\"")
+    if not key:
+        return None
+    return key, value
+
+
+def _load_local_env() -> None:
+    """Load ignored local env files once without overriding real environment vars."""
+    global _LOCAL_ENV_LOADED  # pylint: disable=global-statement
+    if _LOCAL_ENV_LOADED:
+        return
+
+    candidate_paths = [
+        Path(".env"),
+        Path("backend/.env"),
+        Path(__file__).resolve().parents[3] / ".env",
+        Path(__file__).resolve().parents[2] / ".env",
+    ]
+    seen_paths = set()
+
+    for env_path in candidate_paths:
+        resolved_path = env_path.resolve()
+        if resolved_path in seen_paths or not resolved_path.exists():
+            continue
+        seen_paths.add(resolved_path)
+
+        try:
+            for line in resolved_path.read_text(encoding="utf-8").splitlines():
+                parsed = _parse_env_line(line)
+                if parsed is None:
+                    continue
+                key, value = parsed
+                os.environ.setdefault(key, value)
+        except OSError:
+            continue
+
+    _LOCAL_ENV_LOADED = True
+
+
+def _ai_estimate_cache_path() -> Path:
+    """Return the configured AI estimate cache path."""
+    _load_local_env()
+    return Path(
+        os.environ.get("SHREDR_AI_ESTIMATE_CACHE_PATH", DEFAULT_AI_ESTIMATE_CACHE_PATH)
+    )
+
+
+def _empty_ai_estimate_cache() -> Dict[str, Any]:
+    """Return an empty cache payload."""
+    return {"version": AI_ESTIMATE_CACHE_VERSION, "responses": {}}
+
+
+def _load_ai_estimate_cache(cache_path: Optional[Path] = None) -> Dict[str, Any]:
+    """Load the AI estimate cache from disk."""
+    path = cache_path or _ai_estimate_cache_path()
+    if not path.exists():
+        return _empty_ai_estimate_cache()
+
+    try:
+        cache_data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return _empty_ai_estimate_cache()
+
+    if not isinstance(cache_data, dict) or not isinstance(
+        cache_data.get("responses"), dict
+    ):
+        return _empty_ai_estimate_cache()
+
+    cache_data.setdefault("version", AI_ESTIMATE_CACHE_VERSION)
+    return cache_data
+
+
+def _save_ai_estimate_cache(
+    cache_data: Dict[str, Any], cache_path: Optional[Path] = None
+) -> None:
+    """Persist the AI estimate cache to disk."""
+    path = cache_path or _ai_estimate_cache_path()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp_path = path.with_suffix(f"{path.suffix}.tmp")
+    tmp_path.write_text(
+        json.dumps(cache_data, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    tmp_path.replace(path)
+
+
+def _normalized_known_values(
+    known_values: Dict[str, Optional[float]],
+) -> Dict[str, Optional[float]]:
+    """Normalize known values for stable cache keys."""
+    return {
+        key: _coerce_nutrition_value(known_values.get(key)) for key in NUTRIENT_KEYS
+    }
+
+
+def _ai_estimate_cache_key(
+    dish_name: str,
+    restaurant_name: str,
+    known_values: Dict[str, Optional[float]],
+) -> str:
+    """Create a stable cache key for an AI nutrition estimate request."""
+    cache_payload = {
+        "prompt_version": AI_ESTIMATE_PROMPT_VERSION,
+        "restaurant_name": _normalize_whitespace(restaurant_name).lower(),
+        "dish_name": _normalize_whitespace(dish_name).lower(),
+        "known_values": _normalized_known_values(known_values),
+    }
+    serialized = json.dumps(cache_payload, sort_keys=True, ensure_ascii=False)
+    return hashlib.sha256(serialized.encode("utf-8")).hexdigest()
+
+
+def _estimate_nutrition_with_cache(
+    dish_name: str,
+    restaurant_name: str,
+    known_values: Dict[str, Optional[float]],
+    estimator: AiNutritionEstimator,
+    cache_path: Optional[Path] = None,
+) -> Optional[Dict[str, Any]]:
+    """Use cached AI nutrition output before calling the underlying estimator."""
+    cache_data = _load_ai_estimate_cache(cache_path)
+    cache_key = _ai_estimate_cache_key(dish_name, restaurant_name, known_values)
+    cached_entry = cache_data.get("responses", {}).get(cache_key)
+
+    if isinstance(cached_entry, dict) and isinstance(
+        cached_entry.get("response"), dict
+    ):
+        return cached_entry["response"]
+
+    response = estimator(dish_name, restaurant_name, known_values)
+    if response is None:
+        return None
+
+    response_data = {
+        key: _coerce_nutrition_value(response.get(key)) for key in NUTRIENT_KEYS
+    }
+    if any(value is None for value in response_data.values()):
+        return None
+
+    cache_data.setdefault("responses", {})[cache_key] = {
+        "restaurant_name": restaurant_name,
+        "dish_name": dish_name,
+        "known_values": _normalized_known_values(known_values),
+        "response": response_data,
+        "created_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+    }
+    _save_ai_estimate_cache(cache_data, cache_path)
+
+    return response_data
+
+
 def _ai_estimates_enabled() -> bool:
     """Return whether network AI estimates are explicitly enabled."""
+    _load_local_env()
     return (
         os.environ.get("SHREDR_ENABLE_AI_ESTIMATES", "").strip().lower()
         in AI_ESTIMATES_ENABLED_VALUES
@@ -855,6 +1024,7 @@ def _openai_nutrition_estimator(
     known_values: Dict[str, Optional[float]],
 ) -> Optional[Dict[str, Any]]:
     """Estimate missing nutrition values using OpenAI when explicitly configured."""
+    _load_local_env()
     if not _ai_estimates_enabled():
         return None
 
@@ -868,9 +1038,13 @@ def _openai_nutrition_estimator(
         "dish": dish_name,
         "known_values": known_values,
         "instructions": (
-            "Estimate one restaurant menu item's nutrition. Return JSON only "
-            "with numeric calories, protein, carbs, and fat. Protein, carbs, "
-            "and fat must be grams."
+            "Estimate nutrition for this restaurant menu item when official "
+            "PDF extraction is incomplete. Preserve known values exactly. "
+            "Estimate only missing or null fields. Return JSON only with "
+            "numeric calories, protein, carbs, and fat. Calories must be kcal. "
+            "Protein, carbs, and fat must be grams. Use realistic restaurant "
+            "serving sizes and keep estimates conservative and internally "
+            "consistent."
         ),
     }
     payload = {
@@ -879,8 +1053,15 @@ def _openai_nutrition_estimator(
             {
                 "role": "system",
                 "content": (
-                    "You estimate restaurant nutrition conservatively. "
-                    "Respond with JSON only."
+                    "You estimate restaurant menu nutrition when official PDF "
+                    "extraction is incomplete. Return JSON only. No markdown, "
+                    "no prose. Preserve any known_values exactly. Estimate "
+                    "only missing or null fields. If calories are known, make "
+                    "protein, carbs, and fat roughly compatible with that "
+                    "calorie total using 4 kcal/g protein, 4 kcal/g carbs, "
+                    "and 9 kcal/g fat. If calories are missing but all macros "
+                    "are known, calculate calories from macros. Use numbers "
+                    "only, not ranges or strings."
                 ),
             },
             {"role": "user", "content": json.dumps(prompt)},
@@ -907,8 +1088,16 @@ def _openai_nutrition_estimator(
 
 def _configured_ai_estimator() -> Optional[AiNutritionEstimator]:
     """Return the configured AI estimator, if the environment enables it."""
+    _load_local_env()
     if _ai_estimates_enabled() and os.environ.get("OPENAI_API_KEY"):
-        return _openai_nutrition_estimator
+        return lambda dish_name, restaurant_name, known_values: (
+            _estimate_nutrition_with_cache(
+                dish_name,
+                restaurant_name,
+                known_values,
+                _openai_nutrition_estimator,
+            )
+        )
     return None
 
 

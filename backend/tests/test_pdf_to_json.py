@@ -157,6 +157,133 @@ def test_process_table_data_uses_ai_estimator_for_missing_fields():
     assert data[0]["field_sources"]["protein"] == "ai_estimated"
 
 
+def test_estimate_nutrition_with_cache_reuses_stored_response(tmp_path):
+    """Test AI estimates are cached and reused for repeated restaurant dishes."""
+
+    cache_path = tmp_path / "ai_cache.json"
+    calls = []
+
+    def fake_estimator(dish_name, restaurant_name, known_values):
+        calls.append((dish_name, restaurant_name, known_values.copy()))
+        return {"calories": 500, "protein": 22, "carbs": 64, "fat": 18}
+
+    known_values = {"calories": 500, "protein": None, "carbs": 64, "fat": 18}
+
+    # pylint: disable=protected-access
+    first = mod._estimate_nutrition_with_cache(
+        "Tofu Bowl",
+        "Test Restaurant",
+        known_values,
+        fake_estimator,
+        cache_path=cache_path,
+    )
+    second = mod._estimate_nutrition_with_cache(
+        "Tofu Bowl",
+        "Test Restaurant",
+        known_values,
+        fake_estimator,
+        cache_path=cache_path,
+    )
+
+    assert first == {"calories": 500, "protein": 22, "carbs": 64, "fat": 18}
+    assert second == first
+    assert len(calls) == 1
+
+    cache_data = json.loads(cache_path.read_text(encoding="utf-8"))
+    assert cache_data["version"] == mod.AI_ESTIMATE_CACHE_VERSION
+    assert len(cache_data["responses"]) == 1
+    cached_entry = next(iter(cache_data["responses"].values()))
+    assert cached_entry["restaurant_name"] == "Test Restaurant"
+    assert cached_entry["dish_name"] == "Tofu Bowl"
+    assert cached_entry["response"] == first
+
+
+def test_configured_openai_estimator_uses_env_and_cache(tmp_path, monkeypatch):
+    """Test configured OpenAI fallback reads env settings and caches responses."""
+
+    cache_path = tmp_path / "openai_cache.json"
+    monkeypatch.setenv("SHREDR_ENABLE_AI_ESTIMATES", "1")
+    monkeypatch.setenv("OPENAI_API_KEY", "test-key")
+    monkeypatch.setenv("SHREDR_OPENAI_MODEL", "test-model")
+    monkeypatch.setenv("SHREDR_AI_ESTIMATE_CACHE_PATH", str(cache_path))
+    monkeypatch.setattr(mod, "_LOCAL_ENV_LOADED", False)
+
+    post_calls = []
+
+    class FakeOpenAIResponse:
+        """Fake OpenAI Responses API response."""
+
+        def raise_for_status(self):
+            return None
+
+        def json(self):
+            return {
+                "output_text": json.dumps(
+                    {"calories": 500, "protein": 22, "carbs": 64, "fat": 18}
+                )
+            }
+
+    def fake_post(url, headers, json, timeout):  # pylint: disable=redefined-outer-name
+        post_calls.append(
+            {
+                "url": url,
+                "headers": headers,
+                "json": json,
+                "timeout": timeout,
+            }
+        )
+        return FakeOpenAIResponse()
+
+    monkeypatch.setattr(mod.requests, "post", fake_post)
+
+    # pylint: disable=protected-access
+    estimator = mod._configured_ai_estimator()
+    assert estimator is not None
+
+    known_values = {"calories": 500, "protein": None, "carbs": 64, "fat": 18}
+    first = estimator("Tofu Bowl", "Test Restaurant", known_values)
+    second = estimator("Tofu Bowl", "Test Restaurant", known_values)
+
+    assert first == {"calories": 500, "protein": 22, "carbs": 64, "fat": 18}
+    assert second == first
+    assert len(post_calls) == 1
+    assert post_calls[0]["url"] == "https://api.openai.com/v1/responses"
+    assert post_calls[0]["headers"]["Authorization"] == "Bearer test-key"
+    assert post_calls[0]["json"]["model"] == "test-model"
+    assert cache_path.exists()
+
+
+def test_load_local_env_reads_ignored_env_files(tmp_path, monkeypatch):
+    """Test local .env files can configure AI estimates without overriding env."""
+
+    env_file = tmp_path / ".env"
+    env_file.write_text(
+        "\n".join(
+            [
+                "SHREDR_ENABLE_AI_ESTIMATES=1",
+                "OPENAI_API_KEY=from-file",
+                "SHREDR_OPENAI_MODEL='env-model'",
+                "EXISTING_VALUE=from-file",
+            ]
+        ),
+        encoding="utf-8",
+    )
+    monkeypatch.chdir(tmp_path)
+    monkeypatch.delenv("SHREDR_ENABLE_AI_ESTIMATES", raising=False)
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    monkeypatch.delenv("SHREDR_OPENAI_MODEL", raising=False)
+    monkeypatch.setenv("EXISTING_VALUE", "already-set")
+    monkeypatch.setattr(mod, "_LOCAL_ENV_LOADED", False)
+
+    # pylint: disable=protected-access
+    mod._load_local_env()
+
+    assert os.environ["SHREDR_ENABLE_AI_ESTIMATES"] == "1"
+    assert os.environ["OPENAI_API_KEY"] == "from-file"
+    assert os.environ["SHREDR_OPENAI_MODEL"] == "env-model"
+    assert os.environ["EXISTING_VALUE"] == "already-set"
+
+
 def test_clean_dish_data_removes_bilingual_duplicates():
     """Test English/French duplicates are collapsed and bilingual names are cleaned."""
 
