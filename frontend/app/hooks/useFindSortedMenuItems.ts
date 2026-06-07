@@ -180,6 +180,7 @@ export default function useFindSortedMenuItems({
 
   return {
     sortedItems,
+    menuItems,
     loading,
     hasData: menuItems.length > 0,
     restaurantMetadata,

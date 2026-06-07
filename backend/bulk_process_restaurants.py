@@ -16,6 +16,7 @@ import logging
 import os
 import time
 import warnings
+from pathlib import Path
 
 from tqdm import tqdm
 
@@ -24,6 +25,11 @@ from app.analysis.pdf_to_json import has_menu_items, pdf_to_json
 from app.scraping.find_restaurant_link import (
     clean_restaurant_name,
     find_restaurant_links,
+)
+from app.utils.cache_freshness import (
+    CACHE_MAX_AGE_DAYS,
+    refresh_cache_path,
+    restaurant_cache_is_stale,
 )
 
 # List of 100 most popular restaurants in Toronto
@@ -92,12 +98,21 @@ def create_restaurant_json(
     try:
         clean_name = clean_restaurant_name(restaurant_name)
 
-        # Check if already cached
-        cache_file = f"app/restaurant_caches/{clean_name}_output.json"
-        if os.path.exists(cache_file):
+        # Check if already cached and fresh enough
+        cache_file = Path(f"app/restaurant_caches/{clean_name}_output.json")
+        refresh_existing_cache = False
+        if cache_file.exists() and not restaurant_cache_is_stale(cache_file):
             if show_detailed_output:
                 print(f"✓ Found cached data for {restaurant_name} ({clean_name})")
             return True
+
+        if cache_file.exists():
+            refresh_existing_cache = True
+            if show_detailed_output:
+                print(
+                    f"↻ Cached data for {restaurant_name} is older than "
+                    f"{CACHE_MAX_AGE_DAYS} days. Refreshing PDF extraction."
+                )
 
         # Find restaurant URLs (up to 3)
         if show_detailed_output:
@@ -109,15 +124,22 @@ def create_restaurant_json(
                     print(f"❌ No PDF URLs found for {restaurant_name}")
                 else:
                     print(f"❌ Error occurred while searching for {restaurant_name}")
+            if refresh_existing_cache:
+                if show_detailed_output:
+                    print(f"✓ Using existing cached data for {restaurant_name}")
+                return True
             return False
 
         successful_extraction = False
+        extraction_path = (
+            refresh_cache_path(cache_file) if refresh_existing_cache else cache_file
+        )
         for i, url in enumerate(urls, 1):
             if show_detailed_output:
                 print(f"📄 Trying URL {i}/{len(urls)}: {url}")
 
             try:
-                json_data = pdf_to_json(url, cache_file, clean_name)
+                json_data = pdf_to_json(url, str(extraction_path), clean_name)
 
                 if has_menu_items(json_data):
                     if show_detailed_output:
@@ -125,6 +147,8 @@ def create_restaurant_json(
                             f"✓ Successfully extracted {len(json_data['menu_items'])} "
                             f"menu items from URL {i}"
                         )
+                    if refresh_existing_cache:
+                        extraction_path.replace(cache_file)
                     successful_extraction = True
                     break
                 else:
@@ -132,16 +156,16 @@ def create_restaurant_json(
                         print(f"⚠️  No menu items found in URL {i}, trying next...")
                     # Remove the file if no menu items were found, so we can try
                     # the next URL
-                    if os.path.exists(cache_file):
-                        os.remove(cache_file)
+                    if extraction_path.exists():
+                        extraction_path.unlink()
 
             except Exception as e:
                 error_msg = str(e)
                 if show_detailed_output:
                     print(f"❌ Error processing URL {i}: {error_msg}")
                 # Remove the file if there was an error, so we can try the next URL
-                if os.path.exists(cache_file):
-                    os.remove(cache_file)
+                if extraction_path.exists():
+                    extraction_path.unlink()
                 continue
 
         if not successful_extraction:
@@ -150,6 +174,10 @@ def create_restaurant_json(
                     f"❌ Failed to extract menu items from any of the {len(urls)} "
                     f"URLs for {restaurant_name}"
                 )
+            if refresh_existing_cache:
+                if show_detailed_output:
+                    print(f"✓ Using existing cached data for {restaurant_name}")
+                return True
             return False
 
         if show_detailed_output:

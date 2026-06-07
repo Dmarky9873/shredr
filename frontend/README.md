@@ -16,6 +16,13 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Menu Chat
+
+The menu chat API route uses OpenAI from the server. Copy `.env.example` to
+`.env.local` and set `OPENAI_API_KEY` before using chat locally. The browser only
+sends the loaded menu data and chat messages to `/api/menu-chat`; the API key is
+read on the server.
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

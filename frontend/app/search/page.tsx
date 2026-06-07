@@ -4,6 +4,8 @@ import { useSearchParams } from "next/navigation";
 import { useEffect, useState, Suspense } from "react";
 import RestaurantInput from "../components/RestaurantInput";
 import MacronutrientTable from "../components/MacronutrientTable";
+import MenuChat from "../components/MenuChat";
+import MenuItemSearch from "../components/MenuItemSearch";
 import useFindRestaurantName from "../hooks/useFindRestaurantName";
 import useFindSortedMenuItems from "../hooks/useFindSortedMenuItems";
 
@@ -17,7 +19,7 @@ function SearchContent() {
 
   const { searchRestaurantName, loading: restaurantNamesLoading } =
     useFindRestaurantName();
-  const { sortedItems, loading, hasData, restaurantMetadata } =
+  const { sortedItems, menuItems, loading, hasData, restaurantMetadata } =
     useFindSortedMenuItems({
       restaurantName: internalRestaurantName,
     });
@@ -108,6 +110,15 @@ function SearchContent() {
 
         {hasData ? (
           <div className="mt-8">
+            <MenuItemSearch menuItems={menuItems} />
+            <MenuChat
+              restaurantName={
+                restaurantMetadata?.restaurant_name || internalRestaurantName || query
+              }
+              menuItems={menuItems}
+              usesAiEstimates={restaurantMetadata?.uses_ai_estimates}
+            />
+
             {/* Mobile Table Selector */}
             <div className="lg:hidden mb-6">
               <div className="flex rounded-lg border border-foreground/20 overflow-hidden">
