@@ -25,7 +25,7 @@
       "fat": "32"
     },
     {
-      "dish": "McMuffin\u00ae with",
+      "dish": "McMuffin® with",
       "calories": "450",
       "protein": "21",
       "carbs": "30",
@@ -39,7 +39,7 @@
       "fat": "16"
     },
     {
-      "dish": "Egg McMuffin\u00ae",
+      "dish": "Egg McMuffin®",
       "calories": "300",
       "protein": "17",
       "carbs": "31",
@@ -81,35 +81,28 @@
       "fat": "0"
     },
     {
-      "dish": "OREO\u00ae Cookies",
+      "dish": "OREO® Cookies",
       "calories": "520",
       "protein": "12",
       "carbs": "80",
       "fat": "17"
     },
     {
-      "dish": "McCaf\u00e9 Shake",
-      "calories": "560",
-      "protein": "12",
-      "carbs": "91",
-      "fat": "16"
-    },
-    {
-      "dish": "McCafe\u00ae Shake",
+      "dish": "McCafe® Shake",
       "calories": "530",
       "protein": "11",
       "carbs": "86",
       "fat": "15"
     },
     {
-      "dish": "M&M'S\u00ae",
+      "dish": "M&M'S®",
       "calories": "430",
       "protein": "9",
       "carbs": "64",
       "fat": "15"
     },
     {
-      "dish": "McFlurry\u00ae with",
+      "dish": "McFlurry® with",
       "calories": "340",
       "protein": "8",
       "carbs": "53",
@@ -137,7 +130,7 @@
       "fat": "9"
     },
     {
-      "dish": "McChicken \u00ae",
+      "dish": "McChicken ®",
       "calories": "370",
       "protein": "14",
       "carbs": "40",
@@ -165,13 +158,6 @@
       "fat": "34"
     },
     {
-      "dish": "& Ranch",
-      "calories": "660",
-      "protein": "31",
-      "carbs": "59",
-      "fat": "34"
-    },
-    {
       "dish": "Sweet Chili",
       "calories": "590",
       "protein": "27",
@@ -179,7 +165,7 @@
       "fat": "25"
     },
     {
-      "dish": "McNuggets\u00ae (10",
+      "dish": "McNuggets® (10",
       "calories": "470",
       "protein": "22",
       "carbs": "30",
@@ -263,14 +249,14 @@
       "fat": "0"
     },
     {
-      "dish": "Dasani\u00ae Water",
+      "dish": "Dasani® Water",
       "calories": "0",
       "protein": "0",
       "carbs": "0",
       "fat": "0"
     },
     {
-      "dish": "Sprite\u00ae (Small) \u00a7",
+      "dish": "Sprite® (Small) §",
       "calories": "140",
       "protein": "0",
       "carbs": "37",
@@ -319,18 +305,11 @@
       "fat": "28"
     },
     {
-      "dish": "Pounder\u00ae with",
+      "dish": "Pounder® with",
       "calories": "540",
       "protein": "31",
       "carbs": "42",
       "fat": "28"
-    },
-    {
-      "dish": "Pounder with",
-      "calories": "780",
-      "protein": "50",
-      "carbs": "43",
-      "fat": "45"
     },
     {
       "dish": "Hamburger",
@@ -361,14 +340,14 @@
       "fat": "23"
     },
     {
-      "dish": "Daily Double \u2020",
+      "dish": "Daily Double †",
       "calories": "440",
       "protein": "22",
       "carbs": "34",
       "fat": "24"
     },
     {
-      "dish": "Jalape\u00f1o Double",
+      "dish": "Jalapeño Double",
       "calories": "440",
       "protein": "23",
       "carbs": "35",
@@ -550,7 +529,7 @@
       "fat": "11"
     },
     {
-      "dish": "Apple Slices \u2020",
+      "dish": "Apple Slices †",
       "calories": "15",
       "protein": "0",
       "carbs": "4",
@@ -585,21 +564,21 @@
       "fat": "5"
     },
     {
-      "dish": "Ranch Snack Wrap\u00ae (Buttermilk Crispy)",
+      "dish": "Ranch Snack Wrap® (Buttermilk Crispy)",
       "calories": "380",
       "protein": "16",
       "carbs": "33",
       "fat": "21"
     },
     {
-      "dish": "Ranch Snack Wrap\u00ae (Grilled)",
+      "dish": "Ranch Snack Wrap® (Grilled)",
       "calories": "290",
       "protein": "19",
       "carbs": "25",
       "fat": "13"
     },
     {
-      "dish": "Mac Snack Wrap \u2020",
+      "dish": "Mac Snack Wrap †",
       "calories": "330",
       "protein": "14",
       "carbs": "26",
@@ -620,14 +599,14 @@
       "fat": "10"
     },
     {
-      "dish": "Coffee (Small) \u00a7",
+      "dish": "Coffee (Small) §",
       "calories": "0",
       "protein": "0",
       "carbs": "0",
       "fat": "0"
     },
     {
-      "dish": "Coffee (Large) \u00a7",
+      "dish": "Coffee (Large) §",
       "calories": "0",
       "protein": "0",
       "carbs": "0",
@@ -641,7 +620,7 @@
       "fat": "0.5"
     },
     {
-      "dish": "100%  Apple",
+      "dish": "100% Apple",
       "calories": "80",
       "protein": "0",
       "carbs": "21",
@@ -697,13 +676,6 @@
       "fat": "37"
     },
     {
-      "dish": "McMuffin with",
-      "calories": "400",
-      "protein": "21",
-      "carbs": "30",
-      "fat": "23"
-    },
-    {
       "dish": "Oatmeal without",
       "calories": "260",
       "protein": "5",
@@ -753,28 +725,28 @@
       "fat": "0"
     },
     {
-      "dish": "McRib \u00ae \u2020",
+      "dish": "McRib ® †",
       "calories": "500",
       "protein": "22",
       "carbs": "44",
       "fat": "26"
     },
     {
-      "dish": "Mocha (Small) \u00a7",
+      "dish": "Mocha (Small) §",
       "calories": "340",
       "protein": "10",
       "carbs": "49",
       "fat": "11"
     },
     {
-      "dish": "Mocha (Large) \u00a7",
+      "dish": "Mocha (Large) §",
       "calories": "500",
       "protein": "16",
       "carbs": "72",
       "fat": "17"
     },
     {
-      "dish": "Latte (Small)  \u00a7",
+      "dish": "Latte (Small) §",
       "calories": "170",
       "protein": "9",
       "carbs": "15",
@@ -788,28 +760,28 @@
       "fat": "15"
     },
     {
-      "dish": "McNuggets\u00ae (20",
+      "dish": "McNuggets® (20",
       "calories": "940",
       "protein": "44",
       "carbs": "59",
       "fat": "59"
     },
     {
-      "dish": "McNuggets\u00ae (6",
+      "dish": "McNuggets® (6",
       "calories": "280",
       "protein": "13",
       "carbs": "18",
       "fat": "18"
     },
     {
-      "dish": "McNuggets\u00ae (40",
+      "dish": "McNuggets® (40",
       "calories": "1880",
       "protein": "87",
       "carbs": "118",
       "fat": "118"
     },
     {
-      "dish": "McNuggets\u00ae (4",
+      "dish": "McNuggets® (4",
       "calories": "190",
       "protein": "9",
       "carbs": "12",
@@ -830,25 +802,27 @@
       "fat": "38"
     },
     {
-      "dish": "Sprite\u00ae (Large) \u00a7",
+      "dish": "Sprite® (Large) §",
       "calories": "280",
       "protein": "0",
       "carbs": "74",
       "fat": "0"
     },
     {
-      "dish": "Latte (Medium) \u00a7",
+      "dish": "Latte (Medium) §",
       "calories": "210",
       "protein": "11",
       "carbs": "18",
       "fat": "10"
     },
     {
-      "dish": "Latte (Large) \u00a7",
+      "dish": "Latte (Large) §",
       "calories": "280",
       "protein": "15",
       "carbs": "24",
       "fat": "14"
     }
-  ]
+  ],
+  "uses_ai_estimates": false,
+  "estimated_item_count": 0
 }

@@ -1,5 +1,5 @@
 {
-  "restaurant_name": "yogen fr\u00fcz",
+  "restaurant_name": "yogen früz",
   "url": "https://yogenfruz.com/wp-content/uploads/2020/03/Nutritional-Facts-NEW-VERSION-US-20200228.pdf",
   "date": "2025-08-24 23:22:13",
   "menu_items": [
@@ -102,7 +102,7 @@
       "fat": "1.5"
     },
     {
-      "dish": "Cookies n\u2019 Cream",
+      "dish": "Cookies n’ Cream",
       "calories": "130",
       "protein": "3",
       "carbs": "24",
@@ -114,13 +114,6 @@
       "protein": "3",
       "carbs": "24",
       "fat": "1.5"
-    },
-    {
-      "dish": "Cr\u00e8me Brule",
-      "calories": "130",
-      "protein": "3",
-      "carbs": "24",
-      "fat": "2"
     },
     {
       "dish": "Dulce De Leche",
@@ -472,5 +465,7 @@
       "carbs": "28",
       "fat": "1.5"
     }
-  ]
+  ],
+  "uses_ai_estimates": false,
+  "estimated_item_count": 0
 }

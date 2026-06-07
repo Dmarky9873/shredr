@@ -137,7 +137,7 @@
       "fat": "5"
     },
     {
-      "dish": "English Muffin **",
+      "dish": "English Muffin",
       "calories": "120",
       "protein": "5",
       "carbs": "23",
@@ -151,7 +151,7 @@
       "fat": "5"
     },
     {
-      "dish": "Gluten Free Bread (as packaged)1**",
+      "dish": "Gluten Free Bread (as packaged)1",
       "calories": "340",
       "protein": "6",
       "carbs": "51",
@@ -326,7 +326,7 @@
       "fat": "0"
     },
     {
-      "dish": "Jalapeno Peppers**",
+      "dish": "Jalapeno Peppers",
       "calories": "1",
       "protein": "0",
       "carbs": "0",
@@ -424,7 +424,7 @@
       "fat": "1"
     },
     {
-      "dish": "Swiss**",
+      "dish": "Swiss",
       "calories": "50",
       "protein": "4",
       "carbs": "0",
@@ -452,7 +452,7 @@
       "fat": "2"
     },
     {
-      "dish": "Chicken, Grilled **",
+      "dish": "Chicken, Grilled",
       "calories": "60",
       "protein": "11",
       "carbs": "1",
@@ -494,7 +494,7 @@
       "fat": "2"
     },
     {
-      "dish": "Italian B.M.T.\u00ae Meats",
+      "dish": "Italian B.M.T.® Meats",
       "calories": "190",
       "protein": "12",
       "carbs": "3",
@@ -585,7 +585,7 @@
       "fat": "2.0"
     },
     {
-      "dish": "Veggie Patty**",
+      "dish": "Veggie Patty",
       "calories": "170",
       "protein": "6",
       "carbs": "17",
@@ -599,21 +599,21 @@
       "fat": "10"
     },
     {
-      "dish": "Double Chocolate Cookie**",
+      "dish": "Double Chocolate Cookie",
       "calories": "210",
       "protein": "2",
       "carbs": "29",
       "fat": "9"
     },
     {
-      "dish": "Chocolate Chip with M&M\u00ae Candies Cookie",
+      "dish": "Chocolate Chip with M&M® Candies Cookie",
       "calories": "210",
       "protein": "3",
       "carbs": "29",
       "fat": "9"
     },
     {
-      "dish": "Oatmeal Raisin Cookie**",
+      "dish": "Oatmeal Raisin Cookie",
       "calories": "200",
       "protein": "3",
       "carbs": "30",
@@ -865,7 +865,7 @@
       "fat": "16"
     },
     {
-      "dish": "Italian B.M.T.\u00ae",
+      "dish": "Italian B.M.T.®",
       "calories": "410",
       "protein": "20",
       "carbs": "44",
@@ -900,18 +900,11 @@
       "fat": "4"
     },
     {
-      "dish": "Veggie Delite\u00ae",
+      "dish": "Veggie Delite®",
       "calories": "210",
       "protein": "10",
       "carbs": "39",
       "fat": "3"
-    },
-    {
-      "dish": "Veggie Patty",
-      "calories": "390",
-      "protein": "16",
-      "carbs": "56",
-      "fat": "11"
     },
     {
       "dish": "Grilled Chicken",
@@ -962,5 +955,7 @@
       "carbs": "13",
       "fat": "6"
     }
-  ]
+  ],
+  "uses_ai_estimates": false,
+  "estimated_item_count": 0
 }

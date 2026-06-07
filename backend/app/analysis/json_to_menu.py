@@ -22,7 +22,7 @@ def json_to_menu(json_file_location: str) -> Menu:
         menu_items.add(
             MenuItem(
                 name=item["dish"],
-                calories=int(item["calories"]),
+                calories=int(float(item["calories"])),
                 protein=float(item["protein"]),
                 carbs=float(item["carbs"]),
                 fat=float(item["fat"]),

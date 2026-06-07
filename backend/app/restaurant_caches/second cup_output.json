@@ -11,7 +11,7 @@
       "fat": "3.5"
     },
     {
-      "dish": "Caff\u00e9 Latte",
+      "dish": "Caffé Latte",
       "calories": "140",
       "protein": "13",
       "carbs": "20",
@@ -25,14 +25,14 @@
       "fat": "6"
     },
     {
-      "dish": "Caramel  Corretto\u00ae / Corretto\u00ae caramel",
+      "dish": "Caramel Corretto® / Corretto® caramel",
       "calories": "370",
       "protein": "7",
       "carbs": "63",
       "fat": "10"
     },
     {
-      "dish": "Moccaccino*",
+      "dish": "Moccaccino",
       "calories": "360",
       "protein": "7",
       "carbs": "46",
@@ -46,7 +46,7 @@
       "fat": "5"
     },
     {
-      "dish": "ESPRESSO BAR / BAR \u00c0 ESPRESSO",
+      "dish": "ESPRESSO BAR",
       "calories": "120",
       "protein": "9",
       "carbs": "11",
@@ -60,42 +60,42 @@
       "fat": "16"
     },
     {
-      "dish": "Espresso               Macchiato",
+      "dish": "Espresso Macchiato",
       "calories": "10",
       "protein": "1",
       "carbs": "1",
       "fat": "0.5"
     },
     {
-      "dish": "Classic Hot Chocolate* / Chocolat chaud classique",
+      "dish": "Classic Hot Chocolate",
       "calories": "340",
       "protein": "6",
       "carbs": "43",
       "fat": "17"
     },
     {
-      "dish": "White Hot Chocolate* / Chocolat chaud blanc*",
+      "dish": "White Hot Chocolate",
       "calories": "360",
       "protein": "5",
       "carbs": "43",
       "fat": "19"
     },
     {
-      "dish": "Vanilla Bean  Hot  Chocolate* / Chocolat chaud \u00e0 la vanille*",
+      "dish": "Vanilla Bean Hot Chocolate",
       "calories": "340",
       "protein": "5",
       "carbs": "45",
       "fat": "16"
     },
     {
-      "dish": "Coffee /  Caf\u00e9",
+      "dish": "Coffee",
       "calories": "5",
       "protein": "1",
       "carbs": "0",
       "fat": "0.1"
     },
     {
-      "dish": "Th\u00e9",
+      "dish": "Thé",
       "calories": "0",
       "protein": "0",
       "carbs": "0",
@@ -109,98 +109,98 @@
       "fat": "8"
     },
     {
-      "dish": "Chai Latte / Latte au th\u00e9 chai",
+      "dish": "Chai Latte",
       "calories": "200",
       "protein": "5",
       "carbs": "37",
       "fat": "3"
     },
     {
-      "dish": "BREW BAR / BAR \u00c0 INFUSIONS",
+      "dish": "BREW BAR",
       "calories": "210",
       "protein": "1",
       "carbs": "38",
       "fat": "5"
     },
     {
-      "dish": "Honey Vanilla Tea Latte / Th\u00e9 latte miel et  vanille",
+      "dish": "Honey Vanilla Tea Latte",
       "calories": "200",
       "protein": "5",
       "carbs": "34",
       "fat": "5"
     },
     {
-      "dish": "Matcha Tea Latte / Latte au th\u00e9 vert matcha",
+      "dish": "Matcha Tea Latte",
       "calories": "230",
       "protein": "8",
       "carbs": "41",
       "fat": "4.5"
     },
     {
-      "dish": "Espresso Frapp\u00e9 / Frapp\u00e9 Espresso",
+      "dish": "Espresso Frappé / Frappé Espresso",
       "calories": "400",
       "protein": "4",
       "carbs": "66",
       "fat": "13"
     },
     {
-      "dish": "Mocca Frapp\u00e9 / Frapp\u00e9 Moka",
+      "dish": "Mocca Frappé / Frappé Moka",
       "calories": "360",
       "protein": "5",
       "carbs": "65",
       "fat": "10"
     },
     {
-      "dish": "Caramel Frapp\u00e9 / Frapp\u00e9 Caramel",
+      "dish": "Caramel Frappé / Frappé Caramel",
       "calories": "380",
       "protein": "3",
       "carbs": "72",
       "fat": "9"
     },
     {
-      "dish": "Vanilla Bean Frapp\u00e9 / Frapp\u00e9 Vanille",
+      "dish": "Vanilla Bean Frappé / Frappé Vanille",
       "calories": "370",
       "protein": "3",
       "carbs": "71",
       "fat": "9"
     },
     {
-      "dish": "Flash  Cold  Brew,",
+      "dish": "Flash Cold Brew,",
       "calories": "20",
       "protein": "0",
       "carbs": "4",
       "fat": "0.4"
     },
     {
-      "dish": "Flash  Cold  Brew,  Vanilla  Bean  glac\u00e9  /",
+      "dish": "Flash Cold Brew, Vanilla Bean glacé /",
       "calories": "100",
       "protein": "0.5",
       "carbs": "19",
       "fat": "2.5"
     },
     {
-      "dish": "Flash  Cold  Brew,  Mocca  glac\u00e9  Flash",
+      "dish": "Flash Cold Brew, Mocca glacé Flash",
       "calories": "90",
       "protein": "1",
       "carbs": "17",
       "fat": "2.5"
     },
     {
-      "dish": "Brew,  Vanilla  Bean  glac\u00e9  Flash,  /",
+      "dish": "Brew, Vanilla Bean glacé Flash, /",
       "calories": "100",
       "protein": "0.5",
       "carbs": "19",
       "fat": "2.5"
     },
     {
-      "dish": "Brew,  Mocca  glac\u00e9  Flash  Moka,  /",
+      "dish": "Brew, Mocca glacé Flash Moka, /",
       "calories": "90",
       "protein": "1",
       "carbs": "17",
       "fat": "2.5"
     },
     {
-      "dish": "Flash  Cold  Brew,  Oat/lait",
+      "dish": "Flash Cold Brew, Oat/lait",
       "calories": "140",
       "protein": "2",
       "carbs": "24",
@@ -214,77 +214,77 @@
       "fat": "0.2"
     },
     {
-      "dish": "Iced Caff\u00e8 Latte / Caff\u00e8 Latte glac\u00e9",
+      "dish": "Iced Caffè Latte / Caffè Latte glacé",
       "calories": "90",
       "protein": "5",
       "carbs": "11",
       "fat": "3"
     },
     {
-      "dish": "Iced Vanilla Bean Latte / Vanillatte glac\u00e9",
+      "dish": "Iced Vanilla Bean Latte",
       "calories": "210",
       "protein": "4",
       "carbs": "36",
       "fat": "6"
     },
     {
-      "dish": "Iced                  Moccaccino* / Moccaccino*  glac\u00e9",
+      "dish": "Iced Moccaccino",
       "calories": "370",
       "protein": "6",
       "carbs": "45",
       "fat": "20"
     },
     {
-      "dish": "Iced Caramel Corretto\u00ae / Corretto\u00ae caramel  glac\u00e9",
+      "dish": "Iced Caramel Corretto® / Corretto® caramel glacé",
       "calories": "400",
       "protein": "5",
       "carbs": "52",
       "fat": "20"
     },
     {
-      "dish": "Chai Frapp\u00e9",
+      "dish": "Chai Frappé",
       "calories": "300",
       "protein": "2",
       "carbs": "58",
       "fat": "5"
     },
     {
-      "dish": "Matcha Tea Frapp\u00e9 / Th\u00e9 vert matcha frapp\u00e9",
+      "dish": "Matcha Tea Frappé / Thé vert matcha frappé",
       "calories": "200",
       "protein": "5",
       "carbs": "39",
       "fat": "2.5"
     },
     {
-      "dish": "Brewed  Iced  Tea,",
+      "dish": "Brewed Iced Tea,",
       "calories": "0",
       "protein": "0",
       "carbs": "0",
       "fat": "0"
     },
     {
-      "dish": "FroCho\u00ae* / Choc\u2019frette\u00ae*",
+      "dish": "FroCho®* / Choc’frette®",
       "calories": "490",
       "protein": "15",
       "carbs": "79",
       "fat": "14"
     },
     {
-      "dish": "/  Smoothie",
+      "dish": "/ Smoothie",
       "calories": "340",
       "protein": "8",
       "carbs": "49",
       "fat": "16"
     },
     {
-      "dish": "Flash  Cold  Brew,  Vanilla  Bean  glac\u00e9  Flash,  /",
+      "dish": "Flash Cold Brew, Vanilla Bean glacé Flash, /",
       "calories": "100",
       "protein": "0.5",
       "carbs": "19",
       "fat": "2.5"
     },
     {
-      "dish": "Flash  Cold  Brew,  Mocca  glac\u00e9  Flash  Moka,  /",
+      "dish": "Flash Cold Brew, Mocca glacé Flash Moka, /",
       "calories": "90",
       "protein": "1",
       "carbs": "17",
@@ -297,5 +297,7 @@
       "carbs": "19",
       "fat": "2.5"
     }
-  ]
+  ],
+  "uses_ai_estimates": false,
+  "estimated_item_count": 0
 }

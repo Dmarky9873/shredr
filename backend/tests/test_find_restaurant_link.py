@@ -1,6 +1,9 @@
 """Unit tests for the find_restaurant_link function."""
 
+import os
 from unittest.mock import patch
+
+import pytest
 
 from app.scraping.find_restaurant_link import (
     clean_restaurant_name,
@@ -192,6 +195,10 @@ class TestFindRestaurantLink:
         mock_print.assert_called_once_with(f"No valid PDF URL found for {cleaned_name}")
 
 
+@pytest.mark.skipif(
+    os.environ.get("RUN_LIVE_SEARCH_TESTS") != "1",
+    reason="Live Google search tests are opt-in; set RUN_LIVE_SEARCH_TESTS=1.",
+)
 class TestFindRestaurantLinkIntegration:
     """Integration tests for find_restaurant_link function.
 

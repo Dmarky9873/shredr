@@ -98,6 +98,12 @@ function SearchContent() {
             </p>
           </div>
         )}
+        {restaurantMetadata?.uses_ai_estimates && (
+          <div className="mx-auto mb-6 max-w-3xl rounded border border-amber-500/40 bg-amber-100 px-4 py-3 text-sm text-amber-900 dark:bg-amber-900/30 dark:text-amber-100">
+            Some nutrition values are AI estimates because the PDF did not
+            provide parseable values. Treat those rows as approximate.
+          </div>
+        )}
         <RestaurantInput title="Search another restaurant?" />
 
         {hasData ? (

@@ -165,7 +165,7 @@
       "fat": "8"
     },
     {
-      "dish": "Kid: Chicken Fingers*",
+      "dish": "Kid: Chicken Fingers",
       "calories": "650",
       "protein": "31",
       "carbs": "65",
@@ -186,7 +186,7 @@
       "fat": "0"
     },
     {
-      "dish": "Kid: Fries*",
+      "dish": "Kid: Fries",
       "calories": "330",
       "protein": "4",
       "carbs": "46",
@@ -221,28 +221,28 @@
       "fat": "16"
     },
     {
-      "dish": "Kid: Dessert  - Vanilla Ice Cream (NO SAUCE OR CREAM)",
+      "dish": "Kid: Dessert - Vanilla Ice Cream (NO SAUCE OR CREAM)",
       "calories": "140",
       "protein": "1",
       "carbs": "15",
       "fat": "10"
     },
     {
-      "dish": "Kid: Dessert  - Add on: Caramel Sauce",
+      "dish": "Kid: Dessert - Add on: Caramel Sauce",
       "calories": "120",
       "protein": "0.3",
       "carbs": "11",
       "fat": "8"
     },
     {
-      "dish": "Kid: Dessert  - Add on: Chocolate Sauce",
+      "dish": "Kid: Dessert - Add on: Chocolate Sauce",
       "calories": "320",
       "protein": "2",
       "carbs": "52",
       "fat": "12"
     },
     {
-      "dish": "Kid: Dessert  - Chapman's Li'l  Sammich",
+      "dish": "Kid: Dessert - Chapman's Li'l Sammich",
       "calories": "90",
       "protein": "1",
       "carbs": "15",
@@ -354,14 +354,14 @@
       "fat": "49"
     },
     {
-      "dish": "Grilled Sirlion 8oz (no startch, veg or  topper)",
+      "dish": "Grilled Sirlion 8oz (no startch, veg or topper)",
       "calories": "560",
       "protein": "46",
       "carbs": "52",
       "fat": "20"
     },
     {
-      "dish": "Grilled Sirlion 6oz ( no startch, veg or topper)",
+      "dish": "Grilled Sirlion 6oz (no startch, veg or topper)",
       "calories": "420",
       "protein": "38",
       "carbs": "42",
@@ -389,7 +389,7 @@
       "fat": "23"
     },
     {
-      "dish": "Saut\u00e8ed Mushrooms",
+      "dish": "Side: Mushrooms",
       "calories": "230",
       "protein": "7",
       "carbs": "12",
@@ -424,13 +424,6 @@
       "fat": "4.5"
     },
     {
-      "dish": "Side: Mushrooms",
-      "calories": "230",
-      "protein": "7",
-      "carbs": "12",
-      "fat": "19"
-    },
-    {
       "dish": "Side: Crispy Brussels Sprouts",
       "calories": "280",
       "protein": "5",
@@ -452,14 +445,14 @@
       "fat": "39"
     },
     {
-      "dish": "Side: Red Corn Tortilla Chips*",
+      "dish": "Side: Red Corn Tortilla Chips",
       "calories": "580",
       "protein": "11",
       "carbs": "77",
       "fat": "21"
     },
     {
-      "dish": "Side: Fries*",
+      "dish": "Side: Fries",
       "calories": "670",
       "protein": "8",
       "carbs": "92",
@@ -487,7 +480,7 @@
       "fat": "12"
     },
     {
-      "dish": "Sweet Thai Chilli  Sauce",
+      "dish": "Sweet Thai Chilli Sauce",
       "calories": "100",
       "protein": "0.3",
       "carbs": "25",
@@ -599,7 +592,7 @@
       "fat": "99"
     },
     {
-      "dish": "Traditional Eggs Benedict   (NO BREAKFAST POTATOES)",
+      "dish": "Traditional Eggs Benedict (NO BREAKFAST POTATOES)",
       "calories": "1210",
       "protein": "38",
       "carbs": "84",
@@ -689,5 +682,7 @@
       "carbs": "0",
       "fat": "2.5"
     }
-  ]
+  ],
+  "uses_ai_estimates": false,
+  "estimated_item_count": 0
 }

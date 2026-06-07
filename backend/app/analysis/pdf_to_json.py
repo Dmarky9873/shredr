@@ -4,10 +4,13 @@ Extract tables from PDF file.
 
 import json
 import os
+import re
 import time
+import unicodedata
 import warnings
+from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Set, Tuple
+from typing import Any, Callable, Dict, List, Optional, Set, Tuple
 
 import camelot
 import pandas as pd
@@ -28,6 +31,26 @@ try:
 except pd.errors.OptionError:
     pass
 
+NUTRIENT_KEYS = ("calories", "protein", "carbs", "fat")
+AI_ESTIMATE_SOURCE = "ai_estimated"
+PDF_SOURCE = "pdf"
+CALCULATED_SOURCE = "calculated_from_macros"
+AI_ESTIMATES_ENABLED_VALUES = {"1", "true", "yes", "on"}
+
+AiNutritionEstimator = Callable[
+    [str, str, Dict[str, Optional[float]]], Optional[Dict[str, Any]]
+]
+
+
+@dataclass
+class ParsedTable:
+    """A normalized table extracted from a PDF page."""
+
+    df: pd.DataFrame
+    accuracy: float
+    extraction_method: str
+    page_number: int
+
 
 def _download_pdf(url: str, tmp_path: Path) -> None:
     """Download PDF from URL and save to temporary file.
@@ -36,30 +59,129 @@ def _download_pdf(url: str, tmp_path: Path) -> None:
         url (str): The URL of the PDF file to download.
         tmp_path (Path): The temporary file path to save the PDF.
     """
-    pdf_bytes = requests.get(url, timeout=30).content
+    response = requests.get(url, timeout=30)
+    response.raise_for_status()
+    pdf_bytes = response.content
+    if not pdf_bytes:
+        raise ValueError(f"Downloaded empty PDF from {url}")
     tmp_path.write_bytes(pdf_bytes)
 
 
-def _extract_tables_from_pdf(tmp_path: Path) -> Set:
+def _table_accuracy(table: Any) -> float:
+    """Return a Camelot table's accuracy across Camelot versions."""
+    accuracy = getattr(table, "accuracy", None)
+    if accuracy is None:
+        parsing_report = getattr(table, "parsing_report", {}) or {}
+        accuracy = parsing_report.get("accuracy", 100)
+
+    try:
+        return float(accuracy)
+    except (TypeError, ValueError):
+        return 100.0
+
+
+def _normalize_whitespace(value: Any) -> str:
+    """Normalize whitespace in scraped cells and names."""
+    return " ".join(str(value).replace("\xa0", " ").split())
+
+
+def _dataframe_fingerprint(df: pd.DataFrame) -> Tuple[Tuple[str, ...], ...]:
+    """Create a stable fingerprint so fallback extractors do not duplicate tables."""
+    rows = []
+    for row in df.fillna("").values.tolist():
+        rows.append(tuple(_normalize_whitespace(cell) for cell in row))
+    return tuple(rows)
+
+
+def _add_extracted_table(
+    tables: List[ParsedTable],
+    seen_tables: Set[Tuple[Tuple[str, ...], ...]],
+    df: pd.DataFrame,
+    accuracy: float,
+    extraction_method: str,
+    page_number: int,
+) -> None:
+    """Add a table once, ignoring empty and duplicate extraction results."""
+    if df.empty or len(df.columns) < 2:
+        return
+
+    fingerprint = _dataframe_fingerprint(df)
+    if fingerprint in seen_tables:
+        return
+
+    seen_tables.add(fingerprint)
+    tables.append(
+        ParsedTable(
+            df=df.fillna(""),
+            accuracy=accuracy,
+            extraction_method=extraction_method,
+            page_number=page_number,
+        )
+    )
+
+
+def _extract_tables_from_pdf(tmp_path: Path) -> List[ParsedTable]:
     """Extract tables from PDF file using camelot and pdfplumber.
 
     Args:
         tmp_path (Path): Path to the temporary PDF file.
 
     Returns:
-        Set: Set of cleaned tables with accuracy >= 80%.
+        List[ParsedTable]: Cleaned tables from all available extractors.
     """
-    cleaned_pdf_pages = set()
+    cleaned_pdf_pages: List[ParsedTable] = []
+    seen_tables: Set[Tuple[Tuple[str, ...], ...]] = set()
 
     with pdfplumber.open(tmp_path) as pdf:
-        for i, _ in enumerate(
+        for i, page in enumerate(
             tqdm(pdf.pages, desc="Processing PDF pages", unit="page")
         ):
-            tables = camelot.read_pdf(tmp_path, pages=str(i + 1), flavor="hybrid")
-            for table in tables:
-                if table.accuracy < 80:
+            page_number = i + 1
+            page_table_count = len(cleaned_pdf_pages)
+            for flavor in ("lattice", "stream", "hybrid"):
+                try:
+                    tables = camelot.read_pdf(
+                        tmp_path, pages=str(page_number), flavor=flavor
+                    )
+                except Exception:  # pylint: disable=broad-exception-caught
                     continue
-                cleaned_pdf_pages.add(table)
+
+                for table in tables:
+                    accuracy = _table_accuracy(table)
+                    if accuracy < 80:
+                        continue
+                    _add_extracted_table(
+                        cleaned_pdf_pages,
+                        seen_tables,
+                        table.df,
+                        accuracy,
+                        f"camelot:{flavor}",
+                        page_number,
+                    )
+
+            if len(cleaned_pdf_pages) > page_table_count:
+                continue
+
+            extract_tables = getattr(page, "extract_tables", None)
+            if not callable(extract_tables):
+                continue
+
+            try:
+                pdfplumber_tables = extract_tables() or []
+            except Exception:  # pylint: disable=broad-exception-caught
+                pdfplumber_tables = []
+
+            for rows in pdfplumber_tables:
+                if not rows:
+                    continue
+                _add_extracted_table(
+                    cleaned_pdf_pages,
+                    seen_tables,
+                    pd.DataFrame(rows),
+                    0.0,
+                    "pdfplumber",
+                    page_number,
+                )
 
     return cleaned_pdf_pages
 
@@ -83,16 +205,71 @@ def _find_column_indices_from_headers(
 
     for idx, col_name in enumerate(df.columns):
         col_name_lower = str(col_name).lower()
-        if any(keyword in col_name_lower for keyword in ["cal", "kcal", "energy"]):
+        if _looks_like_calorie_header(col_name_lower):
             calorie_col_idx = idx
-        elif "protein" in col_name_lower:
+        elif _looks_like_protein_header(col_name_lower):
             protein_col_idx = idx
-        elif any(keyword in col_name_lower for keyword in ["carb", "carbohydrate"]):
+        elif _looks_like_carb_header(col_name_lower):
             carb_col_idx = idx
-        elif any(keyword in col_name_lower for keyword in ["fat", "lipid"]):
+        elif _looks_like_fat_header(col_name_lower):
             fat_col_idx = idx
 
     return calorie_col_idx, protein_col_idx, carb_col_idx, fat_col_idx
+
+
+def _contains_any_word(value: str, words: Tuple[str, ...]) -> bool:
+    """Check for whole-word matches, allowing accented PDF text."""
+    for word in words:
+        if re.search(rf"(^|[^a-zA-ZÀ-ÿ]){re.escape(word)}([^a-zA-ZÀ-ÿ]|$)", value):
+            return True
+    return False
+
+
+def _looks_like_calorie_header(value: str) -> bool:
+    """Return whether text identifies a calorie/energy column."""
+    value = value.lower()
+    if "calcium" in value:
+        return False
+    return _contains_any_word(
+        value,
+        ("cal", "cals", "kcal", "calorie", "calories", "energy", "energie", "énergie"),
+    )
+
+
+def _looks_like_protein_header(value: str) -> bool:
+    """Return whether text identifies a protein column."""
+    return _contains_any_word(
+        value.lower(),
+        (
+            "protein",
+            "proteins",
+            "protein(g)",
+            "prot",
+            "proteine",
+            "proteines",
+            "protéine",
+            "protéines",
+        ),
+    )
+
+
+def _looks_like_carb_header(value: str) -> bool:
+    """Return whether text identifies a carbohydrate column."""
+    return _contains_any_word(
+        value.lower(),
+        ("carb", "carbs", "carbohydrate", "carbohydrates", "glucide", "glucides"),
+    )
+
+
+def _looks_like_fat_header(value: str) -> bool:
+    """Return whether text identifies a total fat column."""
+    value = value.lower()
+    if any(keyword in value for keyword in ("saturated", "trans", "calories", "kcal")):
+        return False
+    return _contains_any_word(
+        value,
+        ("fat", "fats", "lipid", "lipids", "gras", "lipide", "lipides"),
+    )
 
 
 def _find_column_indices_from_cells(
@@ -112,37 +289,50 @@ def _find_column_indices_from_cells(
     carb_col_idx = None
     fat_col_idx = None
 
-    for row_idx in range(len(df)):
-        for col_idx in range(len(df.columns)):
+    rows_to_scan = min(len(df), 8)
+    for row_idx in range(rows_to_scan):
+        for col_idx in range(1, len(df.columns)):
             cell_value = str(df.iloc[row_idx, col_idx]).lower()
 
-            if calorie_col_idx is None and any(
-                keyword in cell_value
-                for keyword in ["cal", "kcal", "energy", "calories"]
-            ):
+            if calorie_col_idx is None and _looks_like_calorie_header(cell_value):
                 calorie_col_idx = col_idx
-            elif protein_col_idx is None and "protein" in cell_value:
+            elif protein_col_idx is None and _looks_like_protein_header(cell_value):
                 protein_col_idx = col_idx
-            elif carb_col_idx is None and any(
-                keyword in cell_value for keyword in ["carb", "carbohydrate", "carbs"]
-            ):
+            elif carb_col_idx is None and _looks_like_carb_header(cell_value):
                 carb_col_idx = col_idx
-            elif fat_col_idx is None and any(
-                keyword in cell_value for keyword in ["fat", "lipid", "fats"]
-            ):
-                has_saturated = any(
-                    sat_keyword in cell_value for sat_keyword in ["saturated", "sat"]
-                )
-                has_cals = any(
-                    cal_keyword in cell_value
-                    for cal_keyword in ["calories", "kcal", "cal"]
-                )
-                has_trans = "trans" in cell_value
-
-                if not has_saturated and not has_trans and not has_cals:
-                    fat_col_idx = col_idx
+            elif fat_col_idx is None and _looks_like_fat_header(cell_value):
+                fat_col_idx = col_idx
 
     return calorie_col_idx, protein_col_idx, carb_col_idx, fat_col_idx
+
+
+def _find_dish_column_index(
+    df,
+    nutrition_column_indices: Tuple[
+        Optional[int], Optional[int], Optional[int], Optional[int]
+    ],
+) -> int:
+    """Choose the most likely dish/name column instead of assuming column 0."""
+    nutrition_columns = {idx for idx in nutrition_column_indices if idx is not None}
+    best_col_idx = 0
+    best_score = -1
+
+    for col_idx in range(len(df.columns)):
+        if col_idx in nutrition_columns:
+            continue
+
+        score = 0
+        rows_to_scan = min(len(df), 25)
+        for row_idx in range(rows_to_scan):
+            value = df.iloc[row_idx, col_idx]
+            if _is_valid_dish_name(value):
+                score += 1
+
+        if score > best_score:
+            best_score = score
+            best_col_idx = col_idx
+
+    return best_col_idx
 
 
 def _is_valid_dish_name(dish_name: str) -> bool:
@@ -157,31 +347,131 @@ def _is_valid_dish_name(dish_name: str) -> bool:
     if dish_name is None or str(dish_name).strip() == "":
         return False
 
-    dish_name_str = str(dish_name).strip()
+    dish_name_str = _normalize_whitespace(dish_name)
     dish_name_lower = dish_name_str.lower()
 
     if dish_name_str.replace(" ", "").replace(",", "").replace(".", "").isdigit():
         return False
 
-    nutrition_keywords = [
+    normalized = re.sub(r"[^a-zA-ZÀ-ÿ]+", " ", dish_name_lower).strip()
+    header_phrases = {
         "cal",
         "kcal",
         "energy",
+        "energie",
+        "énergie",
         "calories",
         "protein",
+        "proteins",
+        "protein g",
+        "protéine",
+        "protéines",
         "carb",
         "carbohydrate",
+        "carbohydrates",
         "carbs",
         "fat",
-        "lipid",
         "fats",
+        "lipid",
+        "lipids",
+        "nutrition",
+        "nutrition facts",
+        "nutritional information",
+        "serving",
+        "serving size",
+        "portion",
+        "portion size",
+        "amount per serving",
+        "menu item",
+        "item",
+        "description",
+    }
+    if normalized in header_phrases:
+        return False
+
+    words = normalized.split()
+    header_words = {
+        "cal",
+        "kcal",
+        "energy",
+        "energie",
+        "énergie",
+        "calories",
+        "protein",
+        "proteins",
+        "protéine",
+        "protéines",
+        "carb",
+        "carbohydrate",
+        "carbohydrates",
+        "carbs",
+        "fat",
+        "fats",
+        "lipid",
+        "lipids",
         "nutrition",
         "serving",
-        "size",
         "portion",
-    ]
+        "size",
+        "grams",
+        "gram",
+        "g",
+    }
+    if words and all(word in header_words for word in words):
+        return False
 
-    return not any(keyword in dish_name_lower for keyword in nutrition_keywords)
+    return True
+
+
+def _coerce_nutrition_value(value: Any) -> Optional[float]:
+    """Extract a numeric nutrition value from a scraped cell."""
+    if value is None:
+        return None
+
+    try:
+        if pd.isna(value):
+            return None
+    except (TypeError, ValueError):
+        pass
+
+    if isinstance(value, (int, float)):
+        return _normalize_numeric_value(float(value))
+
+    value_str = str(value).strip()
+    if not value_str:
+        return None
+
+    normalized = value_str.lower().replace(",", "")
+    if normalized in {"-", "--", "—", "n/a", "na", "not available"}:
+        return None
+
+    if is_number(normalized):
+        return _normalize_numeric_value(float(normalized))
+
+    numbers = re.findall(r"[-+]?\d+(?:\.\d+)?", normalized)
+    if not numbers:
+        return None
+
+    numeric_values = [float(number) for number in numbers]
+    if normalized.lstrip().startswith("<"):
+        return (
+            0.5
+            if numeric_values[0] <= 1
+            else _normalize_numeric_value(numeric_values[0])
+        )
+
+    if len(numeric_values) >= 2 and re.search(r"\d\s*(?:-|to)\s*\d", normalized):
+        return _normalize_numeric_value(sum(numeric_values[:2]) / 2)
+
+    return _normalize_numeric_value(numeric_values[0])
+
+
+def _normalize_numeric_value(value: float) -> float:
+    """Keep integer-looking values as ints for stable JSON output."""
+    rounded = round(value, 2)
+    if float(rounded).is_integer():
+        return int(rounded)
+    return rounded
 
 
 def _has_complete_nutrition_data(
@@ -218,15 +508,13 @@ def _has_complete_nutrition_data(
         df.iloc[row_idx, fat_col_idx],
     ]
 
-    return all(
-        value is not None and str(value).strip() != "" and is_number(value)
-        for value in nutrition_values
-    )
+    return all(_coerce_nutrition_value(value) is not None for value in nutrition_values)
 
 
 def _extract_dish_data(
     df,
     row_idx: int,
+    dish_col_idx: int,
     calorie_col_idx: Optional[int],
     protein_col_idx: Optional[int],
     carb_col_idx: Optional[int],
@@ -237,6 +525,7 @@ def _extract_dish_data(
     Args:
         df: DataFrame containing the data.
         row_idx (int): Row index to extract data from.
+        dish_col_idx (int): Column index for the dish name.
         calorie_col_idx (Optional[int]): Column index for calories.
         protein_col_idx (Optional[int]): Column index for protein.
         carb_col_idx (Optional[int]): Column index for carbs.
@@ -246,28 +535,436 @@ def _extract_dish_data(
         Dict: Dictionary containing dish name and nutrition data.
     """
     return {
-        "dish": str(df.iloc[row_idx, 0]).strip(),
-        "calories": (
+        "dish": _clean_dish_display_name(df.iloc[row_idx, dish_col_idx]),
+        "calories": _coerce_nutrition_value(
             df.iloc[row_idx, calorie_col_idx]
             if calorie_col_idx is not None and calorie_col_idx < len(df.columns)
             else None
         ),
-        "protein": (
+        "protein": _coerce_nutrition_value(
             df.iloc[row_idx, protein_col_idx]
             if protein_col_idx is not None and protein_col_idx < len(df.columns)
             else None
         ),
-        "carbs": (
+        "carbs": _coerce_nutrition_value(
             df.iloc[row_idx, carb_col_idx]
             if carb_col_idx is not None and carb_col_idx < len(df.columns)
             else None
         ),
-        "fat": (
+        "fat": _coerce_nutrition_value(
             df.iloc[row_idx, fat_col_idx]
             if fat_col_idx is not None and fat_col_idx < len(df.columns)
             else None
         ),
     }
+
+
+FRENCH_MENU_WORDS = {
+    "ail",
+    "au",
+    "aux",
+    "avec",
+    "beignet",
+    "beignets",
+    "bifteck",
+    "blanc",
+    "boeuf",
+    "bœuf",
+    "cafe",
+    "café",
+    "caramel",
+    "chaud",
+    "chocolat",
+    "chou",
+    "classique",
+    "cote",
+    "côte",
+    "crevette",
+    "crevettes",
+    "de",
+    "des",
+    "du",
+    "et",
+    "fleur",
+    "fromage",
+    "glace",
+    "glacé",
+    "glacée",
+    "gratine",
+    "gratiné",
+    "gratinée",
+    "grille",
+    "grillé",
+    "grillée",
+    "haut",
+    "homard",
+    "lait",
+    "miel",
+    "oignon",
+    "pain",
+    "panachee",
+    "panachée",
+    "petoncles",
+    "pétoncles",
+    "pommes",
+    "poulet",
+    "queue",
+    "salade",
+    "sans",
+    "soupe",
+    "surlonge",
+    "thé",
+    "thon",
+    "trempette",
+    "vanille",
+    "vert",
+    "vinaigrette",
+}
+
+SERVING_SIZE_WORDS = {
+    "bottle",
+    "bowl",
+    "can",
+    "cup",
+    "cups",
+    "fl",
+    "g",
+    "gallon",
+    "gallons",
+    "gram",
+    "grams",
+    "kg",
+    "l",
+    "lb",
+    "lbs",
+    "liter",
+    "litre",
+    "ml",
+    "oz",
+    "ounce",
+    "ounces",
+    "pc",
+    "pcs",
+    "piece",
+    "pieces",
+    "serving",
+    "size",
+}
+
+NUMBER_WORDS = {
+    "one": "1",
+    "two": "2",
+    "three": "3",
+    "four": "4",
+    "five": "5",
+    "six": "6",
+    "seven": "7",
+    "eight": "8",
+    "nine": "9",
+    "ten": "10",
+}
+
+
+def _strip_accents(value: str) -> str:
+    """Remove accents for duplicate comparison while preserving display text."""
+    return "".join(
+        char
+        for char in unicodedata.normalize("NFKD", value)
+        if not unicodedata.combining(char)
+    )
+
+
+def _tokenize_name(value: str) -> List[str]:
+    """Tokenize a menu name for language and duplicate checks."""
+    ascii_value = _strip_accents(value.lower())
+    return re.findall(r"[a-z0-9]+", ascii_value)
+
+
+def _french_language_score(value: str) -> int:
+    """Estimate whether a dish name is likely French."""
+    tokens = _tokenize_name(value)
+    score = sum(1 for token in tokens if token in FRENCH_MENU_WORDS)
+    if re.search(r"[éèêàâçôûùîïœÉÈÊÀÂÇÔÛÙÎÏŒ]", value):
+        score += 2
+    return score
+
+
+def _is_likely_french_name(value: str) -> bool:
+    """Return whether a display name appears to be French."""
+    return _french_language_score(value) >= 2
+
+
+def _is_serving_size_segment(value: str) -> bool:
+    """Avoid treating serving-size slashes like '(20 oz / bone-in)' as bilingual."""
+    tokens = _tokenize_name(value)
+    if not tokens:
+        return False
+
+    has_number = any(token.isdigit() for token in tokens)
+    has_serving_word = any(token in SERVING_SIZE_WORDS for token in tokens)
+    return has_number and has_serving_word and len(tokens) <= 4
+
+
+def _is_likely_bilingual_segments(segments: List[str]) -> bool:
+    """Return whether slash/newline segments look like English/French labels."""
+    if len(segments) < 2:
+        return False
+
+    if any(_is_serving_size_segment(segment) for segment in segments):
+        return False
+
+    french_scores = [_french_language_score(segment) for segment in segments]
+    return max(french_scores) >= 2 and min(french_scores) == 0
+
+
+def _clean_dish_display_name(raw_name: Any) -> str:
+    """Clean a scraped dish name and prefer English from bilingual labels."""
+    dish_name = str(raw_name).replace("\n", " / ")
+    dish_name = _normalize_whitespace(dish_name)
+    dish_name = re.sub(r"\s+([,;)])", r"\1", dish_name)
+    dish_name = re.sub(r"([([])\s+", r"\1", dish_name)
+    dish_name = dish_name.strip(" -*•")
+
+    segments = [
+        segment.strip(" -*•")
+        for segment in re.split(r"\s+/\s+|\s+\|\s+", dish_name)
+        if segment.strip(" -*•")
+    ]
+    if _is_likely_bilingual_segments(segments):
+        dish_name = min(
+            enumerate(segments),
+            key=lambda indexed_segment: (
+                _french_language_score(indexed_segment[1]),
+                indexed_segment[0],
+            ),
+        )[1]
+
+    return _normalize_whitespace(dish_name)
+
+
+def _normalize_dish_name_for_dedupe(dish_name: str) -> str:
+    """Normalize display names for stable exact duplicate removal."""
+    normalized = _strip_accents(dish_name.lower())
+    tokens = re.findall(r"[a-z0-9]+", normalized)
+    tokens = [NUMBER_WORDS.get(token, token) for token in tokens]
+    return " ".join(tokens)
+
+
+def _nutrition_signature(
+    item: Dict[str, Any],
+) -> Optional[Tuple[float, float, float, float]]:
+    """Return comparable nutrition values when all fields are present."""
+    values = []
+    for key in NUTRIENT_KEYS:
+        value = _coerce_nutrition_value(item.get(key))
+        if value is None:
+            return None
+        values.append(float(value))
+    return tuple(values)  # type: ignore[return-value]
+
+
+def _is_zero_nutrition_signature(signature: Tuple[float, float, float, float]) -> bool:
+    """Zero-calorie drinks often share values but are not duplicate dishes."""
+    return all(value == 0 for value in signature)
+
+
+def _is_probable_translation_duplicate(
+    existing_item: Dict[str, Any],
+    candidate_item: Dict[str, Any],
+) -> bool:
+    """Detect English/French duplicate rows with identical nutrition."""
+    existing_signature = _nutrition_signature(existing_item)
+    candidate_signature = _nutrition_signature(candidate_item)
+    if (
+        existing_signature is None
+        or candidate_signature is None
+        or existing_signature != candidate_signature
+    ):
+        return False
+
+    if _is_zero_nutrition_signature(existing_signature):
+        return False
+
+    existing_name = str(existing_item.get("dish", ""))
+    candidate_name = str(candidate_item.get("dish", ""))
+    existing_tokens = _tokenize_name(existing_name)
+    candidate_tokens = _tokenize_name(candidate_name)
+    if min(len(existing_tokens), len(candidate_tokens)) < 2:
+        return False
+
+    return _is_likely_french_name(existing_name) != _is_likely_french_name(
+        candidate_name
+    )
+
+
+def _item_quality_score(item: Dict[str, Any]) -> Tuple[int, int, int]:
+    """Prefer PDF-derived English rows over generated or translated duplicates."""
+    field_sources = item.get("field_sources", {})
+    pdf_fields = sum(1 for source in field_sources.values() if source == PDF_SOURCE)
+    non_french = 0 if _is_likely_french_name(str(item.get("dish", ""))) else 1
+    not_ai = 0 if item.get("nutrition_source") == AI_ESTIMATE_SOURCE else 1
+    return (non_french, not_ai, pdf_fields)
+
+
+def _choose_better_duplicate(
+    existing_item: Dict[str, Any], candidate_item: Dict[str, Any]
+) -> Dict[str, Any]:
+    """Pick the better item when two rows represent the same dish."""
+    if _item_quality_score(candidate_item) > _item_quality_score(existing_item):
+        return candidate_item
+    return existing_item
+
+
+def _macro_calorie_estimate(values: Dict[str, Optional[float]]) -> Optional[int]:
+    """Estimate calories from macros when PDFs omit calories but include grams."""
+    protein = values.get("protein")
+    carbs = values.get("carbs")
+    fat = values.get("fat")
+    if protein is None or carbs is None or fat is None:
+        return None
+    return int(round((protein * 4) + (carbs * 4) + (fat * 9)))
+
+
+def _ai_estimates_enabled() -> bool:
+    """Return whether network AI estimates are explicitly enabled."""
+    return (
+        os.environ.get("SHREDR_ENABLE_AI_ESTIMATES", "").strip().lower()
+        in AI_ESTIMATES_ENABLED_VALUES
+    )
+
+
+def _extract_response_text(response_data: Dict[str, Any]) -> str:
+    """Extract text from an OpenAI Responses API payload."""
+    output_text = response_data.get("output_text")
+    if isinstance(output_text, str):
+        return output_text
+
+    text_parts = []
+    for output_item in response_data.get("output", []) or []:
+        for content in output_item.get("content", []) or []:
+            if isinstance(content, dict):
+                text = content.get("text")
+                if isinstance(text, str):
+                    text_parts.append(text)
+    return "\n".join(text_parts)
+
+
+def _openai_nutrition_estimator(
+    dish_name: str,
+    restaurant_name: str,
+    known_values: Dict[str, Optional[float]],
+) -> Optional[Dict[str, Any]]:
+    """Estimate missing nutrition values using OpenAI when explicitly configured."""
+    if not _ai_estimates_enabled():
+        return None
+
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        return None
+
+    model = os.environ.get("SHREDR_OPENAI_MODEL", "gpt-4o-mini")
+    prompt = {
+        "restaurant": restaurant_name,
+        "dish": dish_name,
+        "known_values": known_values,
+        "instructions": (
+            "Estimate one restaurant menu item's nutrition. Return JSON only "
+            "with numeric calories, protein, carbs, and fat. Protein, carbs, "
+            "and fat must be grams."
+        ),
+    }
+    payload = {
+        "model": model,
+        "input": [
+            {
+                "role": "system",
+                "content": (
+                    "You estimate restaurant nutrition conservatively. "
+                    "Respond with JSON only."
+                ),
+            },
+            {"role": "user", "content": json.dumps(prompt)},
+        ],
+        "temperature": 0.2,
+    }
+
+    try:
+        response = requests.post(
+            "https://api.openai.com/v1/responses",
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json",
+            },
+            json=payload,
+            timeout=30,
+        )
+        response.raise_for_status()
+        response_text = _extract_response_text(response.json())
+        return json.loads(response_text)
+    except Exception:  # pylint: disable=broad-exception-caught
+        return None
+
+
+def _configured_ai_estimator() -> Optional[AiNutritionEstimator]:
+    """Return the configured AI estimator, if the environment enables it."""
+    if _ai_estimates_enabled() and os.environ.get("OPENAI_API_KEY"):
+        return _openai_nutrition_estimator
+    return None
+
+
+def _complete_nutrition_data(
+    dish_data: Dict[str, Any],
+    restaurant_name: str,
+    ai_estimator: Optional[AiNutritionEstimator],
+) -> Optional[Dict[str, Any]]:
+    """Fill missing nutrition values using deterministic and AI fallbacks."""
+    values: Dict[str, Optional[float]] = {
+        key: _coerce_nutrition_value(dish_data.get(key)) for key in NUTRIENT_KEYS
+    }
+    field_sources = {
+        key: PDF_SOURCE for key, value in values.items() if value is not None
+    }
+    estimated_fields: List[str] = []
+
+    if values["calories"] is None:
+        calories_from_macros = _macro_calorie_estimate(values)
+        if calories_from_macros is not None:
+            values["calories"] = calories_from_macros
+            field_sources["calories"] = CALCULATED_SOURCE
+            estimated_fields.append("calories")
+
+    missing_fields = [key for key, value in values.items() if value is None]
+    if missing_fields and ai_estimator is not None:
+        ai_values = ai_estimator(
+            str(dish_data.get("dish", "")),
+            restaurant_name,
+            values,
+        )
+        if ai_values:
+            for key in missing_fields:
+                ai_value = _coerce_nutrition_value(ai_values.get(key))
+                if ai_value is not None:
+                    values[key] = ai_value
+                    field_sources[key] = AI_ESTIMATE_SOURCE
+                    estimated_fields.append(key)
+
+    if any(values[key] is None for key in NUTRIENT_KEYS):
+        return None
+
+    completed = dish_data.copy()
+    for key in NUTRIENT_KEYS:
+        completed[key] = values[key]
+
+    completed["field_sources"] = field_sources
+    completed["estimated_fields"] = sorted(set(estimated_fields))
+    if any(source == AI_ESTIMATE_SOURCE for source in field_sources.values()):
+        completed["nutrition_source"] = AI_ESTIMATE_SOURCE
+    elif estimated_fields:
+        completed["nutrition_source"] = "calculated"
+    else:
+        completed["nutrition_source"] = PDF_SOURCE
+
+    return completed
 
 
 def clean_dish_data(dish_data: Dict[str, Any]) -> Dict[str, Any]:
@@ -286,33 +983,75 @@ def clean_dish_data(dish_data: Dict[str, Any]) -> Dict[str, Any]:
 
     menu_items = cleaned_data["menu_items"]
 
-    seen_dishes = set()
-    unique_menu_items = []
+    seen_dishes: Dict[str, int] = {}
+    unique_menu_items: List[Dict[str, Any]] = []
 
     for item in menu_items:
         if "dish" not in item:
             continue
 
-        dish_name = str(item["dish"]).strip().replace("\n", " ")
+        dish_name = _clean_dish_display_name(item["dish"])
+        if not _is_valid_dish_name(dish_name):
+            continue
 
-        normalized_dish_name = " ".join(dish_name.split()).lower()
+        normalized_dish_name = _normalize_dish_name_for_dedupe(dish_name)
+        item_copy = item.copy()
+        item_copy["dish"] = dish_name
 
-        if normalized_dish_name not in seen_dishes:
-            seen_dishes.add(normalized_dish_name)
-            item_copy = item.copy()
-            item_copy["dish"] = dish_name
-            unique_menu_items.append(item_copy)
+        if normalized_dish_name in seen_dishes:
+            existing_idx = seen_dishes[normalized_dish_name]
+            unique_menu_items[existing_idx] = _choose_better_duplicate(
+                unique_menu_items[existing_idx], item_copy
+            )
+            continue
+
+        duplicate_idx = None
+        for idx, existing_item in enumerate(unique_menu_items):
+            if _is_probable_translation_duplicate(existing_item, item_copy):
+                duplicate_idx = idx
+                break
+
+        if duplicate_idx is not None:
+            better_item = _choose_better_duplicate(
+                unique_menu_items[duplicate_idx], item_copy
+            )
+            old_key = _normalize_dish_name_for_dedupe(
+                str(unique_menu_items[duplicate_idx].get("dish", ""))
+            )
+            new_key = _normalize_dish_name_for_dedupe(str(better_item.get("dish", "")))
+            unique_menu_items[duplicate_idx] = better_item
+            seen_dishes.pop(old_key, None)
+            seen_dishes[new_key] = duplicate_idx
+            continue
+
+        seen_dishes[normalized_dish_name] = len(unique_menu_items)
+        unique_menu_items.append(item_copy)
 
     cleaned_data["menu_items"] = unique_menu_items
+    cleaned_data["uses_ai_estimates"] = any(
+        item.get("nutrition_source") == AI_ESTIMATE_SOURCE
+        for item in cleaned_data["menu_items"]
+    )
+    cleaned_data["estimated_item_count"] = sum(
+        1
+        for item in cleaned_data["menu_items"]
+        if item.get("nutrition_source") == AI_ESTIMATE_SOURCE
+    )
 
     return cleaned_data
 
 
-def _process_table_data(tables: Set) -> List[Dict]:
+def _process_table_data(
+    tables: List[Any],
+    restaurant_name: str = "",
+    ai_estimator: Optional[AiNutritionEstimator] = None,
+) -> List[Dict]:
     """Process extracted tables to extract nutrition data.
 
     Args:
-        tables (Set): Set of tables extracted from PDF.
+        tables (List[Any]): Tables extracted from PDF.
+        restaurant_name (str): Restaurant name for AI-estimation context.
+        ai_estimator (Optional[AiNutritionEstimator]): Optional fallback estimator.
 
     Returns:
         List[Dict]: List of dictionaries containing dish and nutrition data.
@@ -334,26 +1073,48 @@ def _process_table_data(tables: Set) -> List[Dict]:
                 cell_fat_col_idx,
             ) = _find_column_indices_from_cells(df)
 
-            calorie_col_idx = calorie_col_idx or cell_calorie_col_idx
-            protein_col_idx = protein_col_idx or cell_protein_col_idx
-            carb_col_idx = carb_col_idx or cell_carb_col_idx
-            fat_col_idx = fat_col_idx or cell_fat_col_idx
+            if calorie_col_idx is None:
+                calorie_col_idx = cell_calorie_col_idx
+            if protein_col_idx is None:
+                protein_col_idx = cell_protein_col_idx
+            if carb_col_idx is None:
+                carb_col_idx = cell_carb_col_idx
+            if fat_col_idx is None:
+                fat_col_idx = cell_fat_col_idx
+
+        nutrition_indices = (
+            calorie_col_idx,
+            protein_col_idx,
+            carb_col_idx,
+            fat_col_idx,
+        )
+        if all(col_idx is None for col_idx in nutrition_indices):
+            continue
+
+        dish_col_idx = _find_dish_column_index(df, nutrition_indices)
 
         for row_idx in range(len(df)):
-            dish_name = df.iloc[row_idx, 0]
+            dish_name = df.iloc[row_idx, dish_col_idx]
 
             if not _is_valid_dish_name(dish_name):
                 continue
 
-            if not _has_complete_nutrition_data(
-                df, row_idx, calorie_col_idx, protein_col_idx, carb_col_idx, fat_col_idx
-            ):
-                continue
-
             dish_data = _extract_dish_data(
-                df, row_idx, calorie_col_idx, protein_col_idx, carb_col_idx, fat_col_idx
+                df,
+                row_idx,
+                dish_col_idx,
+                calorie_col_idx,
+                protein_col_idx,
+                carb_col_idx,
+                fat_col_idx,
             )
-            json_data.append(dish_data)
+            completed_dish_data = _complete_nutrition_data(
+                dish_data,
+                restaurant_name,
+                ai_estimator,
+            )
+            if completed_dish_data is not None:
+                json_data.append(completed_dish_data)
 
     return json_data
 
@@ -370,19 +1131,28 @@ def _save_json_data(json_data: Dict[str, Any], out_json_path: Path) -> None:
         json.dump(json_data, f)
 
 
-def pdf_to_json(url: str, out_json: str, restaurant_name: str) -> Dict[str, Any]:
+def pdf_to_json(
+    url: str,
+    out_json: str,
+    restaurant_name: str,
+    ai_estimator: Optional[AiNutritionEstimator] = None,
+) -> Dict[str, Any]:
     """Convert a PDF file to a JSON file and return the extracted data.
 
     Args:
         url (str): The URL of the PDF file to convert.
         out_json (str): The path to the output JSON file.
         restaurant_name (str): The name of the restaurant.
+        ai_estimator (Optional[AiNutritionEstimator]): Fallback estimator for
+            missing nutrition fields. If omitted, an OpenAI estimator is used only
+            when SHREDR_ENABLE_AI_ESTIMATES and OPENAI_API_KEY are configured.
 
     Returns:
         Dict[str, Any]: The extracted restaurant data including menu items.
     """
     out_json_path = Path(out_json)
     tmp_path = out_json_path.with_suffix(".pdf")
+    estimator = ai_estimator if ai_estimator is not None else _configured_ai_estimator()
 
     try:
         _download_pdf(url, tmp_path)
@@ -393,7 +1163,11 @@ def pdf_to_json(url: str, out_json: str, restaurant_name: str) -> Dict[str, Any]
             "restaurant_name": restaurant_name,
             "url": url,
             "date": time.strftime("%Y-%m-%d %H:%M:%S"),
-            "menu_items": _process_table_data(cleaned_pdf_pages),
+            "menu_items": _process_table_data(
+                cleaned_pdf_pages,
+                restaurant_name=restaurant_name,
+                ai_estimator=estimator,
+            ),
         }
 
         json_data = clean_dish_data(json_data)

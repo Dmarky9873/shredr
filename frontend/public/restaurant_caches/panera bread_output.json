@@ -81,13 +81,6 @@
       "fat": "0"
     },
     {
-      "dish": "20 fl oz (591 mL",
-      "calories": "400",
-      "protein": "14",
-      "carbs": "62",
-      "fat": "11"
-    },
-    {
       "dish": "6.75 fl oz (200 mL)",
       "calories": "100",
       "protein": "0",
@@ -156,13 +149,6 @@
       "protein": "1",
       "carbs": "17",
       "fat": "0"
-    },
-    {
-      "dish": "16 fl oz ( 473 mL)",
-      "calories": "260",
-      "protein": "12",
-      "carbs": "43",
-      "fat": "4.5"
     },
     {
       "dish": "1 Souffle",
@@ -619,5 +605,7 @@
       "carbs": "39",
       "fat": "18"
     }
-  ]
+  ],
+  "uses_ai_estimates": false,
+  "estimated_item_count": 0
 }

@@ -2,10 +2,13 @@ import { useState } from "react";
 
 export interface MenuItem {
   dish: string;
-  protein: string;
-  carbs: string;
-  fat: string;
-  calories: string;
+  protein: string | number;
+  carbs: string | number;
+  fat: string | number;
+  calories: string | number;
+  nutrition_source?: "pdf" | "calculated" | "ai_estimated";
+  estimated_fields?: string[];
+  field_sources?: Record<string, "pdf" | "calculated_from_macros" | "ai_estimated">;
 }
 
 interface MacroNutrientTableProps {
@@ -26,6 +29,11 @@ export default function MacronutrientTable({
   const toggleOrder = () => {
     setIsReversed(!isReversed);
   };
+
+  const isAiEstimatedForColumn = (item: MenuItem) =>
+    item.nutrition_source === "ai_estimated" ||
+    item.field_sources?.calories === "ai_estimated" ||
+    item.field_sources?.[macronutrient] === "ai_estimated";
 
   return (
     <div className="w-full">
@@ -56,10 +64,17 @@ export default function MacronutrientTable({
             </tr>
           </thead>
           <tbody>
-            {displayData.map((item) => (
-              <tr key={item.dish}>
+            {displayData.map((item, index) => (
+              <tr key={`${item.dish}-${index}`}>
                 <td className="px-3 py-2 border-b border-foreground/20 text-sm break-words">
-                  {item.dish}
+                  <div className="flex flex-col gap-1">
+                    <span>{item.dish}</span>
+                    {isAiEstimatedForColumn(item) && (
+                      <span className="w-fit rounded border border-amber-500/40 bg-amber-100 px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-normal text-amber-800 dark:bg-amber-900/40 dark:text-amber-200">
+                        AI estimate
+                      </span>
+                    )}
+                  </div>
                 </td>
                 <td className="px-3 py-2 border-b border-foreground/20 text-sm whitespace-nowrap">
                   {item.calories}

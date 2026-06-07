@@ -44,6 +44,7 @@ def test_find_column_indices_from_cells():
     "name, expected",
     [
         ("Grilled Chicken", True),
+        ("Protein Shake", True),
         ("Protein", False),
         ("Calories", False),
         ("", False),
@@ -74,15 +75,182 @@ def test_process_table_data_keeps_only_complete_and_valid_rows():
         [
             ["Calories", "kcal", "protein", "carbs", "fat"],
             ["Chicken", 400, 45, 0, 8],
-            ["Mystery", None, 12, 10, 5],
+            ["Mystery", None, 12, None, 5],
         ],
         columns=["Dish", "CAL", "PROTEIN", "CARBS", "FAT"],
     )
     # pylint: disable=protected-access
     data = mod._process_table_data({FakeTable(accuracy=95, df=df)})
-    assert data == [
-        {"dish": "Chicken", "calories": 400, "protein": 45, "carbs": 0, "fat": 8}
-    ]
+    assert len(data) == 1
+    assert data[0]["dish"] == "Chicken"
+    assert data[0]["calories"] == 400
+    assert data[0]["protein"] == 45
+    assert data[0]["carbs"] == 0
+    assert data[0]["fat"] == 8
+    assert data[0]["nutrition_source"] == "pdf"
+    assert data[0]["field_sources"] == {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf",
+    }
+
+
+def test_process_table_data_calculates_missing_calories_from_macros():
+    """Test fallback calorie calculation from protein/carbs/fat grams."""
+
+    class FakeTable:
+        """Fake table for testing."""
+
+        def __init__(self, accuracy, df):
+            self.accuracy = accuracy
+            self.df = df
+
+    df = pd.DataFrame(
+        [["Macro Plate", "", 20, 30, 10]],
+        columns=["Dish", "Calories", "Protein", "Carbs", "Fat"],
+    )
+
+    # pylint: disable=protected-access
+    data = mod._process_table_data([FakeTable(accuracy=95, df=df)])
+
+    assert len(data) == 1
+    assert data[0]["dish"] == "Macro Plate"
+    assert data[0]["calories"] == 290
+    assert data[0]["nutrition_source"] == "calculated"
+    assert data[0]["estimated_fields"] == ["calories"]
+    assert data[0]["field_sources"]["calories"] == "calculated_from_macros"
+
+
+def test_process_table_data_uses_ai_estimator_for_missing_fields():
+    """Test explicit AI fallback for fields that cannot be parsed from the PDF."""
+
+    class FakeTable:
+        """Fake table for testing."""
+
+        def __init__(self, accuracy, df):
+            self.accuracy = accuracy
+            self.df = df
+
+    df = pd.DataFrame(
+        [["Tofu Bowl", 500, "", 64, 18]],
+        columns=["Dish", "Calories", "Protein", "Carbs", "Fat"],
+    )
+
+    def fake_ai_estimator(dish_name, restaurant_name, known_values):
+        assert dish_name == "Tofu Bowl"
+        assert restaurant_name == "Test Restaurant"
+        assert known_values["protein"] is None
+        return {"protein": 22}
+
+    # pylint: disable=protected-access
+    data = mod._process_table_data(
+        [FakeTable(accuracy=95, df=df)],
+        restaurant_name="Test Restaurant",
+        ai_estimator=fake_ai_estimator,
+    )
+
+    assert len(data) == 1
+    assert data[0]["protein"] == 22
+    assert data[0]["nutrition_source"] == "ai_estimated"
+    assert data[0]["estimated_fields"] == ["protein"]
+    assert data[0]["field_sources"]["protein"] == "ai_estimated"
+
+
+def test_clean_dish_data_removes_bilingual_duplicates():
+    """Test English/French duplicates are collapsed and bilingual names are cleaned."""
+
+    dish_data = {
+        "restaurant_name": "the keg",
+        "menu_items": [
+            {
+                "dish": "French Onion Soup",
+                "calories": 350,
+                "protein": 22,
+                "carbs": 19,
+                "fat": 20,
+            },
+            {
+                "dish": "Soupe à l’oignon gratinée",
+                "calories": 350,
+                "protein": 22,
+                "carbs": 19,
+                "fat": 20,
+            },
+            {
+                "dish": "Coffee / Café",
+                "calories": 5,
+                "protein": 0,
+                "carbs": 1,
+                "fat": 0,
+            },
+            {
+                "dish": "Diet Root Beer, 1/2 Gallon",
+                "calories": 0,
+                "protein": 0,
+                "carbs": 0,
+                "fat": 0,
+            },
+        ],
+    }
+
+    cleaned = mod.clean_dish_data(dish_data)
+    dish_names = [item["dish"] for item in cleaned["menu_items"]]
+
+    assert "French Onion Soup" in dish_names
+    assert "Soupe à l’oignon gratinée" not in dish_names
+    assert "Coffee" in dish_names
+    assert "Coffee / Café" not in dish_names
+    assert "Diet Root Beer, 1/2 Gallon" in dish_names
+
+
+def test_extract_tables_from_pdf_falls_back_to_pdfplumber(tmp_path, monkeypatch):
+    """Test pdfplumber table extraction runs when Camelot cannot read a page."""
+
+    pdf_path = tmp_path / "menu.pdf"
+    pdf_path.write_bytes(b"%PDF-FAKE%")
+
+    def fake_read_pdf(*args, **kwargs):  # pylint: disable=unused-argument
+        raise RuntimeError("camelot unavailable")
+
+    monkeypatch.setattr(mod.camelot, "read_pdf", fake_read_pdf)
+
+    class FakePage:
+        """Fake pdfplumber page."""
+
+        def extract_tables(self):
+            return [
+                [
+                    ["Dish", "Calories", "Protein", "Carbs", "Fat"],
+                    ["Soup", "100", "5", "10", "2"],
+                ]
+            ]
+
+    class FakePDF:
+        """Fake PDF for testing."""
+
+        def __init__(self, _):
+            self.pages = [FakePage()]
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, tb):
+            return False
+
+    monkeypatch.setattr(mod.pdfplumber, "open", FakePDF)
+
+    def fake_tqdm(*args, **kwargs):  # pylint: disable=unused-argument
+        return args[0]
+
+    monkeypatch.setattr(mod, "tqdm", fake_tqdm)
+
+    # pylint: disable=protected-access
+    tables = mod._extract_tables_from_pdf(pdf_path)
+
+    assert len(tables) == 1
+    assert tables[0].extraction_method == "pdfplumber"
+    assert tables[0].df.iloc[1, 0] == "Soup"
 
 
 def test_pdf_to_json_end_to_end(tmp_path, monkeypatch):
@@ -95,6 +263,9 @@ def test_pdf_to_json_end_to_end(tmp_path, monkeypatch):
         """Fake response for testing."""
 
         content = b"%PDF-FAKE%"
+
+        def raise_for_status(self):
+            return None
 
     def fake_get(*args, **kwargs):  # pylint: disable=unused-argument
         return FakeResp()
@@ -150,7 +321,7 @@ def test_pdf_to_json_end_to_end(tmp_path, monkeypatch):
                 "Blank",
                 "",
                 "protein 10",
-                "carbs 5",
+                "",
                 "fat 2",
             ],
         ],
@@ -187,21 +358,18 @@ def test_pdf_to_json_end_to_end(tmp_path, monkeypatch):
     assert result["restaurant_name"] == "Test Restaurant"
 
     menu_items = result["menu_items"]
-    result_sorted = sorted(menu_items, key=lambda x: x["dish"])
-    expected_sorted = sorted(
-        [
-            {
-                "dish": "Beef Carpaccio",
-                "calories": 320,
-                "protein": 28,
-                "carbs": 2,
-                "fat": 14,
-            },
-        ],
-        key=lambda x: x["dish"],
-    )
+    menu_items_by_name = {item["dish"]: item for item in menu_items}
 
-    assert result_sorted == expected_sorted
+    assert set(menu_items_by_name) == {"Beef Carpaccio", "Chicken Salad"}
+    assert {
+        key: menu_items_by_name["Beef Carpaccio"][key]
+        for key in ["calories", "protein", "carbs", "fat"]
+    } == {"calories": 320, "protein": 28, "carbs": 2, "fat": 14}
+    assert {
+        key: menu_items_by_name["Chicken Salad"][key]
+        for key in ["calories", "protein", "carbs", "fat"]
+    } == {"calories": 400, "protein": 35, "carbs": 8, "fat": 12}
+    assert result["uses_ai_estimates"] is False
 
     tmp_pdf = out_json.with_suffix(".pdf")
     assert not os.path.exists(tmp_pdf)

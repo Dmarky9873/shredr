@@ -193,7 +193,7 @@
       "fat": "0"
     },
     {
-      "dish": "Pi\u00f1a Colada Sauce",
+      "dish": "Piña Colada Sauce",
       "calories": "40",
       "protein": "1",
       "carbs": "14",
@@ -326,7 +326,7 @@
       "fat": "0"
     },
     {
-      "dish": "Shrimp Caesar\u00ae",
+      "dish": "Shrimp Caesar®",
       "calories": "0",
       "protein": "4",
       "carbs": "12",
@@ -389,7 +389,7 @@
       "fat": "96"
     },
     {
-      "dish": "Bairdi Crab, OLD BAY\u00ae & Parmesan, crispy potatoes",
+      "dish": "Bairdi Crab, OLD BAY® & Parmesan, crispy potatoes",
       "calories": "570",
       "protein": "53",
       "carbs": "67",
@@ -417,7 +417,7 @@
       "fat": "95"
     },
     {
-      "dish": "Snow Crab, OLD BAY\u00ae & Parmesan, crispy potatoes",
+      "dish": "Snow Crab, OLD BAY® & Parmesan, crispy potatoes",
       "calories": "560",
       "protein": "45",
       "carbs": "67",
@@ -669,7 +669,7 @@
       "fat": "27"
     },
     {
-      "dish": "Cheddar Bay Biscuits\u00ae (each)",
+      "dish": "Cheddar Bay Biscuits® (each)",
       "calories": "80",
       "protein": "3",
       "carbs": "17",
@@ -760,7 +760,7 @@
       "fat": "0"
     },
     {
-      "dish": "IBC\u2122 Root Beer",
+      "dish": "IBC™ Root Beer",
       "calories": "0",
       "protein": "0",
       "carbs": "43",
@@ -774,7 +774,7 @@
       "fat": "0"
     },
     {
-      "dish": "Sprite\u00ae",
+      "dish": "Sprite®",
       "calories": "0",
       "protein": "0",
       "carbs": "51",
@@ -823,32 +823,25 @@
       "fat": "32"
     },
     {
-      "dish": "Create Your Own Family Feast \u2013 Island Coconut Shrimp",
+      "dish": "Create Your Own Family Feast – Island Coconut Shrimp",
       "calories": "600",
       "protein": "28",
       "carbs": "110",
       "fat": "67"
     },
     {
-      "dish": "Create Your Own Family Feast \u2013 Savoury Garlic Shrimp",
+      "dish": "Create Your Own Family Feast – Savoury Garlic Shrimp",
       "calories": "720",
       "protein": "40",
       "carbs": "7",
       "fat": "81"
     },
     {
-      "dish": "Create Your Own Family Feast \u2013 Walt's Favourite Shrimp",
+      "dish": "Create Your Own Family Feast – Walt's Favourite Shrimp",
       "calories": "190",
       "protein": "20",
       "carbs": "86",
       "fat": "21"
-    },
-    {
-      "dish": "Snow Crab, Simply Steamed, crispy potatoes",
-      "calories": "1590",
-      "protein": "126",
-      "carbs": "168",
-      "fat": "177"
     },
     {
       "dish": "Fish Fry Family Meal",
@@ -928,14 +921,14 @@
       "fat": "321"
     },
     {
-      "dish": "Cheddar Bay Biscuits\u00ae (Half Dozen)",
+      "dish": "Cheddar Bay Biscuits® (Half Dozen)",
       "calories": "500",
       "protein": "14",
       "carbs": "100",
       "fat": "56"
     },
     {
-      "dish": "Cheddar Bay Biscuits\u00ae (One Dozen)",
+      "dish": "Cheddar Bay Biscuits® (One Dozen)",
       "calories": "940",
       "protein": "28",
       "carbs": "200",
@@ -998,7 +991,7 @@
       "fat": "0"
     },
     {
-      "dish": "Lobster Caesar\u00ae",
+      "dish": "Lobster Caesar®",
       "calories": "0",
       "protein": "5",
       "carbs": "12",
@@ -1033,7 +1026,7 @@
       "fat": "0"
     },
     {
-      "dish": "Pi\u00f1a Colada",
+      "dish": "Piña Colada",
       "calories": "40",
       "protein": "0",
       "carbs": "67",
@@ -1173,14 +1166,14 @@
       "fat": "0"
     },
     {
-      "dish": "Coke\u00ae",
+      "dish": "Coke®",
       "calories": "0",
       "protein": "0",
       "carbs": "52",
       "fat": "0"
     },
     {
-      "dish": "Diet Coke\u00ae",
+      "dish": "Diet Coke®",
       "calories": "0",
       "protein": "0",
       "carbs": "0",
@@ -1536,5 +1529,7 @@
       "carbs": "25",
       "fat": "6"
     }
-  ]
+  ],
+  "uses_ai_estimates": false,
+  "estimated_item_count": 0
 }

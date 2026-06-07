@@ -32,18 +32,11 @@
       "fat": "12"
     },
     {
-      "dish": "OREO\u00ae Cr\u00e8me Ice Cream",
+      "dish": "OREO® Crème Ice Cream",
       "calories": "280",
       "protein": "3",
       "carbs": "26",
       "fat": "19"
-    },
-    {
-      "dish": "OREO Cr\u00e8me Ice Cream",
-      "calories": "460",
-      "protein": "4",
-      "carbs": "43",
-      "fat": "31"
     },
     {
       "dish": "Peach Ice Cream",
@@ -130,18 +123,11 @@
       "fat": "10"
     },
     {
-      "dish": "Ghirardelli\u00ae Chocolate Ice Cream",
+      "dish": "Ghirardelli® Chocolate Ice Cream",
       "calories": "220",
       "protein": "4",
       "carbs": "23",
       "fat": "13"
-    },
-    {
-      "dish": "Ghirardelli Chocolate Ice Cream",
-      "calories": "370",
-      "protein": "7",
-      "carbs": "39",
-      "fat": "22"
     },
     {
       "dish": "Gooey Butter Cake Ice Cream",
@@ -151,18 +137,11 @@
       "fat": "11"
     },
     {
-      "dish": "Golden OREO\u00ae Cookie Ice Cream",
+      "dish": "Golden OREO® Cookie Ice Cream",
       "calories": "220",
       "protein": "3",
       "carbs": "25",
       "fat": "13"
-    },
-    {
-      "dish": "Golden OREO Cookie Ice Cream",
-      "calories": "370",
-      "protein": "5",
-      "carbs": "42",
-      "fat": "21"
     },
     {
       "dish": "Honey Cornbread & Blackberry Jam Ice Cream",
@@ -228,18 +207,11 @@
       "fat": "11"
     },
     {
-      "dish": "Milk & Cookies Ice Cream made with Chips Ahoy!\u00ae",
+      "dish": "Milk & Cookies Ice Cream made with Chips Ahoy!®",
       "calories": "220",
       "protein": "3",
       "carbs": "25",
       "fat": "13"
-    },
-    {
-      "dish": "Milk & Cookies Ice Cream made with Chips Ahoy!",
-      "calories": "370",
-      "protein": "6",
-      "carbs": "41",
-      "fat": "22"
     },
     {
       "dish": "Milk & Honey Graham Ice Cream",
@@ -284,32 +256,18 @@
       "fat": "12"
     },
     {
-      "dish": "Chocolate Cake Batter Ice Cream\u00ae",
+      "dish": "Chocolate Cake Batter Ice Cream®",
       "calories": "210",
       "protein": "3",
       "carbs": "26",
       "fat": "11"
     },
     {
-      "dish": "Chocolate Cake Batter Ice Cream",
-      "calories": "350",
-      "protein": "5",
-      "carbs": "44",
-      "fat": "18"
-    },
-    {
-      "dish": "Chocolate Cake Batter\u2122 Ganache Ice Cream",
+      "dish": "Chocolate Cake Batter™ Ganache Ice Cream",
       "calories": "230",
       "protein": "3",
       "carbs": "28",
       "fat": "12"
-    },
-    {
-      "dish": "Chocolate Cake Batter Ganache Ice Cream",
-      "calories": "380",
-      "protein": "5",
-      "carbs": "46",
-      "fat": "21"
     },
     {
       "dish": "Chocolate Cupcake Ice Cream",
@@ -424,18 +382,11 @@
       "fat": "14"
     },
     {
-      "dish": "Sea Salt Caramel Ice Cream made with Ghirardelli\u00ae",
+      "dish": "Sea Salt Caramel Ice Cream made with Ghirardelli®",
       "calories": "210",
       "protein": "3",
       "carbs": "26",
       "fat": "11"
-    },
-    {
-      "dish": "Sea Salt Caramel Ice Cream made with Ghirardelli",
-      "calories": "350",
-      "protein": "5",
-      "carbs": "44",
-      "fat": "18"
     },
     {
       "dish": "Sea Salt Fudge Ice Cream",
@@ -466,18 +417,11 @@
       "fat": "11"
     },
     {
-      "dish": "Strawberry Cake Batter Ice Cream\u00ae",
+      "dish": "Strawberry Cake Batter Ice Cream®",
       "calories": "210",
       "protein": "3",
       "carbs": "27",
       "fat": "11"
-    },
-    {
-      "dish": "Strawberry Cake Batter Ice Cream",
-      "calories": "350",
-      "protein": "5",
-      "carbs": "45",
-      "fat": "18"
     },
     {
       "dish": "Strawberry Cheesecake Ice Cream",
@@ -515,18 +459,11 @@
       "fat": "12"
     },
     {
-      "dish": "Vanilla Lite\u2122 No Sugar Added Ice Cream",
+      "dish": "Vanilla Lite™ No Sugar Added Ice Cream",
       "calories": "120",
       "protein": "4",
       "carbs": "24",
       "fat": "3.5"
-    },
-    {
-      "dish": "Vanilla Lite No Sugar Added Ice Cream",
-      "calories": "200",
-      "protein": "6",
-      "carbs": "40",
-      "fat": "6"
     },
     {
       "dish": "White Chocolate Ice Cream",
@@ -620,32 +557,18 @@
       "fat": "11"
     },
     {
-      "dish": "Cake Batter Ice Cream\u00ae",
+      "dish": "Cake Batter Ice Cream®",
       "calories": "220",
       "protein": "3",
       "carbs": "27",
       "fat": "12"
     },
     {
-      "dish": "Cake Batter Ice Cream",
-      "calories": "360",
-      "protein": "5",
-      "carbs": "44",
-      "fat": "19"
-    },
-    {
-      "dish": "Cake Batter Ganache\u2122 Ice Cream",
+      "dish": "Cake Batter Ganache™ Ice Cream",
       "calories": "230",
       "protein": "3",
       "carbs": "28",
       "fat": "12"
-    },
-    {
-      "dish": "Cake Batter Ganache Ice Cream",
-      "calories": "390",
-      "protein": "5",
-      "carbs": "47",
-      "fat": "22"
     },
     {
       "dish": "Candy Cane Ice Cream",
@@ -752,5 +675,7 @@
       "carbs": "22",
       "fat": "12"
     }
-  ]
+  ],
+  "uses_ai_estimates": false,
+  "estimated_item_count": 0
 }

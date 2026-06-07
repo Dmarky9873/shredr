@@ -53,7 +53,7 @@
       "fat": "41"
     },
     {
-      "dish": "PEPPERCORN SAUCE*",
+      "dish": "PEPPERCORN SAUCE",
       "calories": "45",
       "protein": "1",
       "carbs": "3",
@@ -179,63 +179,63 @@
       "fat": "37"
     },
     {
-      "dish": "PEPSI\u00ae",
+      "dish": "PEPSI®",
       "calories": "150",
       "protein": "0",
       "carbs": "40",
       "fat": "0"
     },
     {
-      "dish": "DIET PEPSI\u00ae",
+      "dish": "DIET PEPSI®",
       "calories": "0",
       "protein": "0",
       "carbs": "0",
       "fat": "0"
     },
     {
-      "dish": "7UP\u00ae",
+      "dish": "7UP®",
       "calories": "160",
       "protein": "0",
       "carbs": "42",
       "fat": "0"
     },
     {
-      "dish": "MUG\u00ae ROOT BEER",
+      "dish": "MUG® ROOT BEER",
       "calories": "160",
       "protein": "0",
       "carbs": "43",
       "fat": "0"
     },
     {
-      "dish": "DR PEPPER\u00ae*",
+      "dish": "DR PEPPER®",
       "calories": "140",
       "protein": "0",
       "carbs": "38",
       "fat": "0"
     },
     {
-      "dish": "BRISK\u00ae ICED TEA",
+      "dish": "BRISK® ICED TEA",
       "calories": "110",
       "protein": "0",
       "carbs": "30",
       "fat": "0"
     },
     {
-      "dish": "BRISK\u00ae LEMONADE",
+      "dish": "BRISK® LEMONADE",
       "calories": "110",
       "protein": "0",
       "carbs": "28",
       "fat": "0"
     },
     {
-      "dish": "SCHWEPPES\u00ae GINGER ALE",
+      "dish": "SCHWEPPES® GINGER ALE",
       "calories": "130",
       "protein": "0",
       "carbs": "34",
       "fat": "0"
     },
     {
-      "dish": "ORANGE CRUSH\u00ae*",
+      "dish": "ORANGE CRUSH®",
       "calories": "160",
       "protein": "0",
       "carbs": "44",
@@ -277,17 +277,10 @@
       "fat": "0"
     },
     {
-      "dish": "RED BULL\u00ae SUGAR FREE",
+      "dish": "RED BULL® SUGAR FREE",
       "calories": "10",
       "protein": "0.1",
       "carbs": "0",
-      "fat": "0"
-    },
-    {
-      "dish": "ORANGE CRUSH\u00ae",
-      "calories": "160",
-      "protein": "0",
-      "carbs": "43",
       "fat": "0"
     },
     {
@@ -298,7 +291,7 @@
       "fat": "0"
     },
     {
-      "dish": "AQUAFINA\u00ae BOTTLED WATER",
+      "dish": "AQUAFINA® BOTTLED WATER",
       "calories": "0",
       "protein": "0",
       "carbs": "0",
@@ -361,7 +354,7 @@
       "fat": "2"
     },
     {
-      "dish": "$10 COMBOS*",
+      "dish": "$10 COMBOS",
       "calories": "760",
       "protein": "27",
       "carbs": "59",
@@ -417,14 +410,14 @@
       "fat": "77"
     },
     {
-      "dish": "PIZZA-GHETTI \u2013 PIZZA OPTION*",
+      "dish": "PIZZA-GHETTI – PIZZA OPTION",
       "calories": "850",
       "protein": "37",
       "carbs": "127",
       "fat": "22"
     },
     {
-      "dish": "PIZZA-GHETTI \u2013 SAUCE OPTION*",
+      "dish": "PIZZA-GHETTI – SAUCE OPTION",
       "calories": "80",
       "protein": "1",
       "carbs": "8",
@@ -508,7 +501,7 @@
       "fat": "0"
     },
     {
-      "dish": "MINI NERDS\u00ae",
+      "dish": "MINI NERDS®",
       "calories": "60",
       "protein": "0",
       "carbs": "14",
@@ -522,14 +515,14 @@
       "fat": "4"
     },
     {
-      "dish": "MINI M&M\u2019S\u00ae",
+      "dish": "MINI M&M’S®",
       "calories": "70",
       "protein": "1",
       "carbs": "10",
       "fat": "3.5"
     },
     {
-      "dish": "OREO\u00ae",
+      "dish": "OREO®",
       "calories": "130",
       "protein": "1",
       "carbs": "21",
@@ -564,7 +557,7 @@
       "fat": "34"
     },
     {
-      "dish": "MONTREAL SMOKED MEAT SANDWICH*",
+      "dish": "MONTREAL SMOKED MEAT SANDWICH",
       "calories": "740",
       "protein": "57",
       "carbs": "49",
@@ -592,18 +585,20 @@
       "fat": "10"
     },
     {
-      "dish": "BP\u2019S PERFECTLY PLANT-BASED BURGER",
+      "dish": "BP’S PERFECTLY PLANT-BASED BURGER",
       "calories": "780",
       "protein": "29",
       "carbs": "55",
       "fat": "51"
     },
     {
-      "dish": "GLUTENWISE\u00ae\u00a7 CHOCOLATE BROWNIE ADDICTION",
+      "dish": "GLUTENWISE®§ CHOCOLATE BROWNIE ADDICTION",
       "calories": "1100",
       "protein": "15",
       "carbs": "141",
       "fat": "53"
     }
-  ]
+  ],
+  "uses_ai_estimates": false,
+  "estimated_item_count": 0
 }
