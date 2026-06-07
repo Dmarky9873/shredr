@@ -46,30 +46,23 @@ export default function MenuItemSearch({ menuItems }: MenuItemSearchProps) {
   }, [fuse, query]);
 
   return (
-    <section className="mb-8 border-y border-foreground/15 py-6">
-      <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-        <div>
-          <h2 className="text-xl font-semibold font-coustard">
-            Find a Menu Item
-          </h2>
-          <p className="mt-1 text-sm text-foreground/60">
-            Fuzzy matches catch misspellings and partial names.
-          </p>
-        </div>
-        <label className="w-full md:max-w-md">
+    <section className="mb-6 border-y border-foreground/15 py-4">
+      <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+        <h2 className="text-lg font-semibold font-coustard">Find a Menu Item</h2>
+        <label className="w-full md:max-w-sm">
           <span className="sr-only">Search menu items</span>
           <input
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Search dishes, sides, drinks..."
-            className="w-full rounded border-2 border-foreground/20 bg-background px-4 py-3 font-coustard text-foreground shadow-sm transition-colors placeholder:text-foreground/50 hover:border-foreground/40 focus:border-foreground/60 focus:outline-none focus:ring-2 focus:ring-foreground/10"
+            className="w-full rounded border-2 border-foreground/20 bg-background px-3 py-2 text-sm font-coustard text-foreground shadow-sm transition-colors placeholder:text-foreground/50 hover:border-foreground/40 focus:border-foreground/60 focus:outline-none focus:ring-2 focus:ring-foreground/10"
           />
         </label>
       </div>
 
       {query.trim() && (
-        <div className="mt-5 overflow-x-auto">
+        <div className="mt-4 overflow-x-auto">
           {results.length > 0 ? (
             <table className="w-full border border-foreground/20">
               <thead>
