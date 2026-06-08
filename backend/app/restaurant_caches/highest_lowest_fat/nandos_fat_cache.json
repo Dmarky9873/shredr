@@ -1,17 +1,6 @@
 {
     "name": "nandos",
     "menu": [
-        "Baste",
-        "Add-on",
-        "Nandinos - Sides",
-        "Sides",
-        "Condiments",
-        "Chicken",
-        "Bowls & Salads",
-        "Dessert",
-        "Nandinos",
-        "Handheld",
-        "Beverage, Alcohol",
-        "Beverage"
+        "Chicken"
     ]
 }

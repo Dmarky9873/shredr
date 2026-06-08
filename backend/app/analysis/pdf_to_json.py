@@ -92,6 +92,13 @@ def _normalize_whitespace(value: Any) -> str:
     return " ".join(str(value).replace("\xa0", " ").split())
 
 
+def _normalize_header_text(value: Any) -> str:
+    """Normalize PDF header text while preserving word boundaries for matching."""
+    text = str(value).replace("\xa0", " ").lower()
+    text = re.sub(r"([a-zA-ZÀ-ÿ])-\s+([a-zA-ZÀ-ÿ])", r"\1\2", text)
+    return _normalize_whitespace(text)
+
+
 def _dataframe_fingerprint(df: pd.DataFrame) -> Tuple[Tuple[str, ...], ...]:
     """Create a stable fingerprint so fallback extractors do not duplicate tables."""
     rows = []
@@ -234,7 +241,7 @@ def _contains_any_word(value: str, words: Tuple[str, ...]) -> bool:
 
 def _looks_like_calorie_header(value: str) -> bool:
     """Return whether text identifies a calorie/energy column."""
-    value = value.lower()
+    value = _normalize_header_text(value)
     if "calcium" in value:
         return False
     return _contains_any_word(
@@ -245,8 +252,9 @@ def _looks_like_calorie_header(value: str) -> bool:
 
 def _looks_like_protein_header(value: str) -> bool:
     """Return whether text identifies a protein column."""
+    value = _normalize_header_text(value)
     return _contains_any_word(
-        value.lower(),
+        value,
         (
             "protein",
             "proteins",
@@ -262,15 +270,16 @@ def _looks_like_protein_header(value: str) -> bool:
 
 def _looks_like_carb_header(value: str) -> bool:
     """Return whether text identifies a carbohydrate column."""
+    value = _normalize_header_text(value)
     return _contains_any_word(
-        value.lower(),
+        value,
         ("carb", "carbs", "carbohydrate", "carbohydrates", "glucide", "glucides"),
     )
 
 
 def _looks_like_fat_header(value: str) -> bool:
     """Return whether text identifies a total fat column."""
-    value = value.lower()
+    value = _normalize_header_text(value)
     if any(keyword in value for keyword in ("saturated", "trans", "calories", "kcal")):
         return False
     return _contains_any_word(
@@ -392,8 +401,50 @@ def _is_valid_dish_name(dish_name: str) -> bool:
         "menu item",
         "item",
         "description",
+        "note",
+        "notes",
     }
     if normalized in header_phrases:
+        return False
+
+    section_phrases = {
+        "breakfast",
+        "lunch",
+        "dinner",
+        "appetizers",
+        "starters",
+        "salads",
+        "sides",
+        "desserts",
+        "dessert",
+        "beverages",
+        "beverage",
+        "beverage alcohol",
+        "drinks",
+        "bakery",
+        "sandwiches",
+        "burgers",
+        "bowls",
+        "bowls salads",
+        "power bowls",
+        "base",
+        "smoothies",
+        "kids",
+        "condiments",
+        "handheld",
+        "handhelds",
+        "nandinos",
+        "nandinos sides",
+        "add on",
+        "baste",
+        "combos",
+        "lunch combos",
+        "more lunch options",
+    }
+    if normalized in section_phrases:
+        return False
+
+    if re.fullmatch(r"more [a-zA-ZÀ-ÿ ]+ options", normalized):
         return False
 
     words = normalized.split()

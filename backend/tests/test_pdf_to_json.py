@@ -40,13 +40,41 @@ def test_find_column_indices_from_cells():
     assert (cal, pro, carb, fat) == (1, 2, 3, 4)
 
 
+def test_find_column_indices_from_cells_handles_wrapped_headers():
+    """Test PDF headers split with hyphenated line breaks."""
+    df = pd.DataFrame(
+        [
+            [
+                "Lunch",
+                "Note",
+                "Serving\nSize (g)",
+                "Calories\n(kcal)",
+                "Total\nFat (g)",
+                "Carbo-\nHydrate (g)",
+                "Protein (g)",
+            ],
+        ]
+    )
+
+    # pylint: disable=protected-access
+    cal, pro, carb, fat = mod._find_column_indices_from_cells(df)
+    assert (cal, pro, carb, fat) == (3, 6, 5, 4)
+
+
 @pytest.mark.parametrize(
     "name, expected",
     [
         ("Grilled Chicken", True),
         ("Protein Shake", True),
+        ("CHICKEN CAESAR SALAD", True),
         ("Protein", False),
         ("Calories", False),
+        ("NOTE", False),
+        ("MORE LUNCH OPTIONS", False),
+        ("$10 COMBOS*", False),
+        ("Bakery", False),
+        ("Beverage, Alcohol", False),
+        ("Bowls & Salads", False),
         ("", False),
         (None, False),
     ],
@@ -94,6 +122,73 @@ def test_process_table_data_keeps_only_complete_and_valid_rows():
         "carbs": "pdf",
         "fat": "pdf",
     }
+
+
+def test_process_table_data_uses_item_column_over_section_column():
+    """Test grouped PDF tables prefer item names over section labels."""
+
+    class FakeTable:
+        """Fake table for testing."""
+
+        def __init__(self, accuracy, df):
+            self.accuracy = accuracy
+            self.df = df
+
+    df = pd.DataFrame(
+        [
+            [
+                "LUNCH",
+                "NOTE",
+                "SERVING\nSIZE (g)",
+                "CALORIES\n(kcal)",
+                "TOTAL\nFAT (g)",
+                "SATURATED\nFAT (g)",
+                "TRANS FAT\n(g)",
+                "CHOLES-\nTEROL (mg)",
+                "SODIUM\n(mg)",
+                "CARBO-\nHYDRATE (g)",
+                "PROTEIN (g)",
+            ],
+            [
+                "$10 COMBOS*",
+                "THE LITTLE DIPPER",
+                366,
+                760,
+                47,
+                9,
+                0.5,
+                80,
+                1840,
+                59,
+                27,
+            ],
+            [
+                "MORE LUNCH OPTIONS",
+                "1/2 CHICKEN CAESAR SALAD",
+                350,
+                410,
+                25,
+                6,
+                0.2,
+                115,
+                1160,
+                8,
+                42,
+            ],
+        ]
+    )
+
+    # pylint: disable=protected-access
+    data = mod._process_table_data([FakeTable(accuracy=95, df=df)])
+
+    assert [item["dish"] for item in data] == [
+        "THE LITTLE DIPPER",
+        "1/2 CHICKEN CAESAR SALAD",
+    ]
+    assert data[1]["calories"] == 410
+    assert data[1]["protein"] == 42
+    assert data[1]["carbs"] == 8
+    assert data[1]["fat"] == 25
 
 
 def test_process_table_data_calculates_missing_calories_from_macros():
