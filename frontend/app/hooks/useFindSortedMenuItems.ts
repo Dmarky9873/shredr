@@ -12,19 +12,24 @@ interface RestaurantMetadata {
   date: string;
   uses_ai_estimates?: boolean;
   estimated_item_count?: number;
+  source?: "official" | "ai_estimated";
+  cache_status?: "hit" | "miss";
 }
 
-interface MacroCache {
-  menu?: string[];
-}
-
-interface MenuItemsCache {
+interface RestaurantNutritionResponse {
   restaurant_name: string;
   url: string;
   date: string;
-  menu_items?: MenuItem[];
+  menu_items: MenuItem[];
   uses_ai_estimates?: boolean;
   estimated_item_count?: number;
+  sort_orders?: {
+    protein?: string[];
+    fat?: string[];
+    carbs?: string[];
+  };
+  source?: "official" | "ai_estimated";
+  cache_status?: "hit" | "miss";
 }
 
 async function fetchJsonOrNull<T>(url: string): Promise<T | null> {
@@ -94,29 +99,16 @@ export default function useFindSortedMenuItems({
         setMenuItems([]);
         setRestaurantMetadata(null);
 
-        const [
-          proteinCalorieData,
-          fatCalorieData,
-          carbsCalorieData,
-          menuItemsData,
-        ] = await Promise.all([
-          fetchJsonOrNull<MacroCache>(
-            `/restaurant_caches/highest_lowest_protein/${restaurantName}_protein_cache.json`
-          ),
-          fetchJsonOrNull<MacroCache>(
-            `/restaurant_caches/highest_lowest_fat/${restaurantName}_fat_cache.json`
-          ),
-          fetchJsonOrNull<MacroCache>(
-            `/restaurant_caches/highest_lowest_carbs/${restaurantName}_carbs_cache.json`
-          ),
-          fetchJsonOrNull<MenuItemsCache>(
-            `/restaurant_caches/${restaurantName}_output.json`
-          ),
-        ]);
+        const menuItemsData = await fetchJsonOrNull<RestaurantNutritionResponse>(
+          `/api/restaurants/nutrition?restaurantName=${encodeURIComponent(
+            restaurantName
+          )}`
+        );
 
         const nextMenuItems = menuItemsData?.menu_items ?? [];
         const hasAiEstimatedItems =
           Boolean(menuItemsData?.uses_ai_estimates) ||
+          menuItemsData?.source === "ai_estimated" ||
           nextMenuItems.some(
             (item) =>
               item.nutrition_source === "ai_estimated" ||
@@ -124,13 +116,15 @@ export default function useFindSortedMenuItems({
           );
 
         setProteinCalorieRatioOrder(
-          proteinCalorieData?.menu ?? fallbackOrder(nextMenuItems, "protein")
+          menuItemsData?.sort_orders?.protein ??
+            fallbackOrder(nextMenuItems, "protein")
         );
         setFatCalorieRatioOrder(
-          fatCalorieData?.menu ?? fallbackOrder(nextMenuItems, "fat")
+          menuItemsData?.sort_orders?.fat ?? fallbackOrder(nextMenuItems, "fat")
         );
         setCarbsCalorieRatioOrder(
-          carbsCalorieData?.menu ?? fallbackOrder(nextMenuItems, "carbs")
+          menuItemsData?.sort_orders?.carbs ??
+            fallbackOrder(nextMenuItems, "carbs")
         );
         setMenuItems(nextMenuItems);
         setRestaurantMetadata({
@@ -145,6 +139,8 @@ export default function useFindSortedMenuItems({
                 item.nutrition_source === "ai_estimated" ||
                 Object.values(item.field_sources ?? {}).includes("ai_estimated")
             ).length,
+          source: menuItemsData?.source,
+          cache_status: menuItemsData?.cache_status,
         });
       } catch (error) {
         console.error("Error loading menu items:", error);

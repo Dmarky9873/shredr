@@ -1,31 +1,13 @@
 import { NextResponse } from "next/server";
 import { promises as fs } from "fs";
 import path from "path";
-import { Redis } from "@upstash/redis";
-
-type NutritionSource = "pdf" | "calculated" | "ai_estimated";
-type CacheStatus = "hit" | "miss";
-
-interface EstimatedMenuItem {
-  dish: string;
-  calories: number;
-  protein: number;
-  carbs: number;
-  fat: number;
-  nutrition_source: "ai_estimated";
-  estimated_fields: string[];
-  field_sources: Record<string, NutritionSource>;
-}
-
-interface EstimatedMenuResponse {
-  restaurant_name: string;
-  url: string;
-  date: string;
-  menu_items: EstimatedMenuItem[];
-  uses_ai_estimates: true;
-  estimated_item_count: number;
-  cache_status?: CacheStatus;
-}
+import {
+  type EstimatedMenuItem,
+  type EstimatedMenuResponse,
+  normalizeRestaurantName,
+  readEstimatedMenuFromRedis,
+  writeEstimatedMenuToRedis,
+} from "../../server/nutrition-store";
 
 interface CachedEstimatedMenu {
   cache_key: string;
@@ -47,7 +29,9 @@ const ESTIMATED_MENU_CACHE_VERSION = 1;
 const DEFAULT_ESTIMATED_MENU_CACHE_PATH = ".cache/estimated-menu-cache.json";
 
 let inMemoryCache: EstimatedMenuCache | null = null;
-let redisClient: Redis | null | undefined;
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null;
@@ -74,38 +58,6 @@ function estimatedMenuCachePath() {
     process.env.SHREDR_ESTIMATED_MENU_CACHE_PATH ||
       DEFAULT_ESTIMATED_MENU_CACHE_PATH
   );
-}
-
-function redisCacheKey(restaurantName: string) {
-  return `estimated-menu:${normalizeRestaurantName(restaurantName)}`;
-}
-
-function getRedisClient() {
-  if (redisClient !== undefined) {
-    return redisClient;
-  }
-
-  const url =
-    process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL || "";
-  const token =
-    process.env.KV_REST_API_TOKEN ||
-    process.env.UPSTASH_REDIS_REST_TOKEN ||
-    "";
-
-  redisClient = url && token ? new Redis({ url, token }) : null;
-  return redisClient;
-}
-
-function normalizeRestaurantName(restaurantName: string) {
-  return restaurantName
-    .normalize("NFKD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/&/g, " and ")
-    .replace(/['\u2019`]/g, "")
-    .replace(/[^a-zA-Z0-9]+/g, " ")
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, " ");
 }
 
 function asEstimatedMenuResponse(value: unknown): EstimatedMenuResponse | null {
@@ -138,49 +90,6 @@ function asEstimatedMenuResponse(value: unknown): EstimatedMenuResponse | null {
         ? value.cache_status
         : undefined,
   };
-}
-
-async function readRedisEstimatedMenu(
-  restaurantName: string
-): Promise<EstimatedMenuResponse | null> {
-  const redis = getRedisClient();
-  if (!redis) {
-    return null;
-  }
-
-  try {
-    const cachedValue = await redis.get(redisCacheKey(restaurantName));
-    return asEstimatedMenuResponse(cachedValue);
-  } catch (error) {
-    console.warn("Failed to read estimated menu from Redis:", error);
-    return null;
-  }
-}
-
-async function writeRedisEstimatedMenu(
-  restaurantName: string,
-  response: EstimatedMenuResponse
-) {
-  const redis = getRedisClient();
-  if (!redis) {
-    return false;
-  }
-
-  try {
-    const cacheValue = {
-      ...response,
-      cache_status: "hit",
-    };
-    const cacheKeys = Array.from(
-      new Set([restaurantName, response.restaurant_name].map(redisCacheKey))
-    );
-
-    await Promise.all(cacheKeys.map((cacheKey) => redis.set(cacheKey, cacheValue)));
-    return true;
-  } catch (error) {
-    console.warn("Failed to write estimated menu to Redis:", error);
-    return false;
-  }
 }
 
 function asCachedEstimatedMenu(value: unknown): CachedEstimatedMenu | null {
@@ -428,8 +337,9 @@ export async function POST(request: Request) {
     );
   }
 
-  const redisCachedMenu = await readRedisEstimatedMenu(restaurantName);
+  const redisCachedMenu = await readEstimatedMenuFromRedis(restaurantName);
   if (redisCachedMenu) {
+    await writeEstimatedMenuToRedis(restaurantName, redisCachedMenu);
     return NextResponse.json({
       ...redisCachedMenu,
       cache_status: "hit",
@@ -441,6 +351,7 @@ export async function POST(request: Request) {
     restaurantName
   );
   if (cachedMenu) {
+    await writeEstimatedMenuToRedis(restaurantName, cachedMenu.response);
     return NextResponse.json({
       ...cachedMenu.response,
       cache_status: "hit",
@@ -530,7 +441,7 @@ export async function POST(request: Request) {
     cache_status: "miss",
   };
 
-  const storedInRedis = await writeRedisEstimatedMenu(
+  const storedInRedis = await writeEstimatedMenuToRedis(
     restaurantName,
     estimatedMenuResponse
   );

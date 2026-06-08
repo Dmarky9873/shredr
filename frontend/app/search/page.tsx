@@ -16,6 +16,7 @@ interface EstimatedMenuResponse {
   menu_items: MenuItem[];
   uses_ai_estimates: true;
   estimated_item_count: number;
+  source?: "ai_estimated";
 }
 
 function ratioFor(item: MenuItem, macro: "protein" | "fat" | "carbs") {
@@ -163,6 +164,8 @@ function SearchContent() {
     ? estimatedMenu
     : restaurantMetadata;
   const activeHasData = hasData || activeMenuItems.length > 0;
+  const showingAiEstimatedMenu =
+    showingEstimatedFallback || activeRestaurantMetadata?.source === "ai_estimated";
 
   if (!query) {
     return (
@@ -226,7 +229,7 @@ function SearchContent() {
             </p>
           </div>
         )}
-        {showingEstimatedFallback ? (
+        {showingAiEstimatedMenu ? (
           <div className="mx-auto mb-6 max-w-3xl rounded border border-amber-500/40 bg-amber-100 px-4 py-3 text-sm text-amber-900 dark:bg-amber-900/30 dark:text-amber-100">
             We couldn&apos;t find official cached nutrition data for
             &quot;{query}&quot;, so these menu items and nutrition numbers were

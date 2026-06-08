@@ -10,9 +10,7 @@ export default function useFindRestaurantName() {
     async function loadRestaurantNames() {
       try {
         setLoading(true);
-        const response = await fetch(
-          "/restaurant_caches/list_of_cached_restaurants.json"
-        );
+        const response = await fetch("/api/restaurants");
         if (!response.ok) {
           throw new Error("Failed to load restaurant names");
         }
