@@ -1,6 +1,6 @@
 "use client";
 
-import { type FormEvent, useState } from "react";
+import { type FormEvent, type SVGProps, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { MenuItem } from "./MacronutrientTable";
@@ -14,6 +14,30 @@ interface MenuChatProps {
   restaurantName: string;
   menuItems: MenuItem[];
   usesAiEstimates?: boolean;
+}
+
+const RECOMMENDED_PROMPTS = [
+  "Give me a meal for a cut",
+  "Find items with > 20g protein and < 230 cals",
+  "Build a high-protein meal under 600 cals",
+  "What are the leanest options here?",
+];
+
+function ChatIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      aria-hidden="true"
+      {...props}
+    >
+      <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" />
+    </svg>
+  );
 }
 
 function FormattedChatMessage({ content }: { content: string }) {
@@ -118,10 +142,8 @@ export default function MenuChat({
   const [error, setError] = useState("");
   const [isOpen, setIsOpen] = useState(false);
 
-  const submitMessage = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-
-    const question = input.trim();
+  const sendMessage = async (rawQuestion: string) => {
+    const question = rawQuestion.trim();
     if (!question || loading) {
       return;
     }
@@ -174,12 +196,22 @@ export default function MenuChat({
     }
   };
 
+  const submitMessage = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    void sendMessage(input);
+  };
+
   return (
     <div className="fixed bottom-4 right-4 z-50 flex max-w-[calc(100vw-2rem)] flex-col items-end gap-3">
       {isOpen && (
         <section className="w-[min(24rem,calc(100vw-2rem))] border border-foreground/20 bg-background shadow-2xl">
           <div className="flex items-center justify-between border-b border-foreground/15 px-4 py-3">
-            <h2 className="text-lg font-semibold font-coustard">Menu Chat</h2>
+            <div className="flex items-center gap-2">
+              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-foreground text-background">
+                <ChatIcon className="h-4 w-4" />
+              </span>
+              <h2 className="text-lg font-semibold font-coustard">Menu Chat</h2>
+            </div>
             <button
               type="button"
               onClick={() => setIsOpen(false)}
@@ -192,7 +224,24 @@ export default function MenuChat({
 
           <div className="max-h-[22rem] min-h-32 overflow-y-auto bg-foreground/[0.02] p-4">
             {messages.length === 0 ? (
-              <div className="text-sm text-foreground/50">No messages yet.</div>
+              <div className="flex flex-col gap-3">
+                <div className="text-sm font-medium text-foreground/70">
+                  Recommended prompts
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {RECOMMENDED_PROMPTS.map((prompt) => (
+                    <button
+                      key={prompt}
+                      type="button"
+                      onClick={() => void sendMessage(prompt)}
+                      disabled={loading}
+                      className="rounded-full border border-foreground/20 bg-background px-3 py-2 text-left text-xs leading-5 text-foreground transition-colors hover:border-foreground/40 hover:bg-foreground/5 disabled:cursor-not-allowed disabled:opacity-50"
+                    >
+                      {prompt}
+                    </button>
+                  ))}
+                </div>
+              </div>
             ) : (
               <div className="flex flex-col gap-3">
                 {messages.map((message, index) => (
@@ -251,9 +300,10 @@ export default function MenuChat({
       <button
         type="button"
         onClick={() => setIsOpen((currentValue) => !currentValue)}
-        className="rounded-full bg-foreground px-5 py-3 font-coustard text-sm text-background shadow-xl transition-transform hover:scale-[1.02] hover:opacity-90"
+        className="inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-3 font-coustard text-sm text-background shadow-xl transition-transform hover:scale-[1.02] hover:opacity-90"
         aria-expanded={isOpen}
       >
+        <ChatIcon className="h-4 w-4" />
         Menu Chat
       </button>
     </div>

@@ -213,15 +213,18 @@ def _find_column_indices_from_headers(
         (or None if not found).
     """
     calorie_col_idx = None
+    calorie_col_score = 0
     protein_col_idx = None
     carb_col_idx = None
     fat_col_idx = None
 
     for idx, col_name in enumerate(df.columns):
         col_name_lower = str(col_name).lower()
-        if _looks_like_calorie_header(col_name_lower):
+        calorie_score = _calorie_header_score(col_name_lower)
+        if calorie_score > calorie_col_score:
             calorie_col_idx = idx
-        elif _looks_like_protein_header(col_name_lower):
+            calorie_col_score = calorie_score
+        if _looks_like_protein_header(col_name_lower):
             protein_col_idx = idx
         elif _looks_like_carb_header(col_name_lower):
             carb_col_idx = idx
@@ -241,13 +244,21 @@ def _contains_any_word(value: str, words: Tuple[str, ...]) -> bool:
 
 def _looks_like_calorie_header(value: str) -> bool:
     """Return whether text identifies a calorie/energy column."""
+    return _calorie_header_score(value) > 0
+
+
+def _calorie_header_score(value: str) -> int:
+    """Score calorie-like headers, preferring kcal over kJ energy columns."""
     value = _normalize_header_text(value)
     if "calcium" in value:
-        return False
-    return _contains_any_word(
-        value,
-        ("cal", "cals", "kcal", "calorie", "calories", "energy", "energie", "énergie"),
-    )
+        return 0
+    if _contains_any_word(value, ("kcal", "calorie", "calories", "cals", "cal")):
+        return 3
+    if _contains_any_word(value, ("kj",)):
+        return 0
+    if _contains_any_word(value, ("energy", "energie", "énergie")):
+        return 1
+    return 0
 
 
 def _looks_like_protein_header(value: str) -> bool:
@@ -301,6 +312,7 @@ def _find_column_indices_from_cells(
         (or None if not found).
     """
     calorie_col_idx = None
+    calorie_col_score = 0
     protein_col_idx = None
     carb_col_idx = None
     fat_col_idx = None
@@ -310,9 +322,11 @@ def _find_column_indices_from_cells(
         for col_idx in range(1, len(df.columns)):
             cell_value = str(df.iloc[row_idx, col_idx]).lower()
 
-            if calorie_col_idx is None and _looks_like_calorie_header(cell_value):
+            calorie_score = _calorie_header_score(cell_value)
+            if calorie_score > calorie_col_score:
                 calorie_col_idx = col_idx
-            elif protein_col_idx is None and _looks_like_protein_header(cell_value):
+                calorie_col_score = calorie_score
+            if protein_col_idx is None and _looks_like_protein_header(cell_value):
                 protein_col_idx = col_idx
             elif carb_col_idx is None and _looks_like_carb_header(cell_value):
                 carb_col_idx = col_idx
