@@ -5,16 +5,26 @@ import { useRouter } from "next/navigation";
 export default function AboutButton() {
   const router = useRouter();
 
-  const handleAboutClick = () => {
-    router.push("/about");
+  const handleNavClick = (href: string) => {
+    router.push(href);
   };
 
   return (
-    <button
-      onClick={handleAboutClick}
-      className="fixed top-6 right-6 opacity-50 hover:opacity-100 transition-opacity duration-200 text-lg z-50 hover:cursor-pointer"
-    >
-      About
-    </button>
+    <nav className="fixed top-6 right-6 z-50 flex items-center gap-5 text-lg">
+      <button
+        type="button"
+        onClick={() => handleNavClick("/donate")}
+        className="opacity-50 transition-opacity duration-200 hover:cursor-pointer hover:opacity-100"
+      >
+        Donate
+      </button>
+      <button
+        type="button"
+        onClick={() => handleNavClick("/about")}
+        className="opacity-50 transition-opacity duration-200 hover:cursor-pointer hover:opacity-100"
+      >
+        About
+      </button>
+    </nav>
   );
 }
