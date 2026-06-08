@@ -23,6 +23,7 @@ export default function MacronutrientTable({
   macronutrient,
 }: MacroNutrientTableProps) {
   const [isReversed, setIsReversed] = useState(false);
+  const isCaloriesOnly = macronutrient === "calories";
 
   const displayData = isReversed ? [...data].reverse() : data;
 
@@ -58,9 +59,12 @@ export default function MacronutrientTable({
               <th className="px-3 py-3 border-b border-foreground/20 text-left text-sm font-medium whitespace-nowrap">
                 Calories
               </th>
-              <th className="px-3 py-3 border-b border-foreground/20 text-left text-sm font-medium whitespace-nowrap">
-                {macronutrient.charAt(0).toUpperCase() + macronutrient.slice(1)}
-              </th>
+              {!isCaloriesOnly && (
+                <th className="px-3 py-3 border-b border-foreground/20 text-left text-sm font-medium whitespace-nowrap">
+                  {macronutrient.charAt(0).toUpperCase() +
+                    macronutrient.slice(1)}
+                </th>
+              )}
             </tr>
           </thead>
           <tbody>
@@ -79,9 +83,11 @@ export default function MacronutrientTable({
                 <td className="px-3 py-2 border-b border-foreground/20 text-sm whitespace-nowrap">
                   {item.calories}
                 </td>
-                <td className="px-3 py-2 border-b border-foreground/20 text-sm whitespace-nowrap">
-                  {item[macronutrient]}
-                </td>
+                {!isCaloriesOnly && (
+                  <td className="px-3 py-2 border-b border-foreground/20 text-sm whitespace-nowrap">
+                    {item[macronutrient]}
+                  </td>
+                )}
               </tr>
             ))}
           </tbody>

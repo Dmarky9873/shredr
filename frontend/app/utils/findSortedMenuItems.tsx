@@ -7,6 +7,11 @@ interface FindSortedMenuItemsProps {
   menuItems: MenuItem[];
 }
 
+function caloriesFor(item: MenuItem) {
+  const calories = Number(item.calories);
+  return Number.isFinite(calories) ? calories : 0;
+}
+
 export default function findSortedMenuItems({
   proteinCalorieRatioOrder,
   fatCalorieRatioOrder,
@@ -16,6 +21,9 @@ export default function findSortedMenuItems({
   const proteinCalorieRatioSorted: MenuItem[] = [];
   const fatCalorieRatioSorted: MenuItem[] = [];
   const carbsCalorieRatioSorted: MenuItem[] = [];
+  const caloriesSorted = [...menuItems].sort(
+    (a, b) => caloriesFor(b) - caloriesFor(a)
+  );
 
   for (const itemName of proteinCalorieRatioOrder) {
     const menuItem = menuItems.find((item) => item.dish === itemName);
@@ -42,5 +50,6 @@ export default function findSortedMenuItems({
     proteinCalorieRatioSorted,
     fatCalorieRatioSorted,
     carbsCalorieRatioSorted,
+    caloriesSorted,
   };
 }

@@ -157,11 +157,12 @@ export default function useFindSortedMenuItems({
   }, [restaurantName]);
 
   const sortedItems = useMemo(() => {
-    if (!menuItems.length || !proteinCalorieRatioOrder.length) {
+    if (!menuItems.length) {
       return {
         proteinCalorieRatioSorted: [],
         fatCalorieRatioSorted: [],
         carbsCalorieRatioSorted: [],
+        caloriesSorted: [],
       };
     }
 

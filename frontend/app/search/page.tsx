@@ -1,20 +1,60 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useEffect, useState, Suspense } from "react";
+import { useEffect, useMemo, useState, Suspense } from "react";
 import RestaurantInput from "../components/RestaurantInput";
-import MacronutrientTable from "../components/MacronutrientTable";
+import MacronutrientTable, { type MenuItem } from "../components/MacronutrientTable";
 import MenuChat from "../components/MenuChat";
 import MenuItemSearch from "../components/MenuItemSearch";
 import useFindRestaurantName from "../hooks/useFindRestaurantName";
 import useFindSortedMenuItems from "../hooks/useFindSortedMenuItems";
 
+interface EstimatedMenuResponse {
+  restaurant_name: string;
+  url: string;
+  date: string;
+  menu_items: MenuItem[];
+  uses_ai_estimates: true;
+  estimated_item_count: number;
+}
+
+function ratioFor(item: MenuItem, macro: "protein" | "fat" | "carbs") {
+  const calories = Number(item.calories);
+  if (!Number.isFinite(calories) || calories <= 0) {
+    return 0;
+  }
+
+  const macroValue = Number(item[macro]);
+  if (!Number.isFinite(macroValue)) {
+    return 0;
+  }
+
+  return macroValue / calories;
+}
+
+function sortByMacroRatio(menuItems: MenuItem[], macro: "protein" | "fat" | "carbs") {
+  return [...menuItems].sort((a, b) => ratioFor(b, macro) - ratioFor(a, macro));
+}
+
+function caloriesFor(item: MenuItem) {
+  const calories = Number(item.calories);
+  return Number.isFinite(calories) ? calories : 0;
+}
+
+function sortByCalories(menuItems: MenuItem[]) {
+  return [...menuItems].sort((a, b) => caloriesFor(b) - caloriesFor(a));
+}
+
 function SearchContent() {
   const searchParams = useSearchParams();
   const [query, setQuery] = useState<string>("");
   const [internalRestaurantName, setInternalRestaurantName] = useState("");
+  const [estimatedMenu, setEstimatedMenu] =
+    useState<EstimatedMenuResponse | null>(null);
+  const [estimatedMenuLoading, setEstimatedMenuLoading] = useState(false);
+  const [estimatedMenuError, setEstimatedMenuError] = useState("");
   const [selectedMobileTable, setSelectedMobileTable] = useState<
-    "protein" | "fat" | "carbs"
+    "protein" | "fat" | "carbs" | "calories"
   >("protein");
 
   const { searchRestaurantName, loading: restaurantNamesLoading } =
@@ -38,6 +78,92 @@ function SearchContent() {
       setInternalRestaurantName("");
     }
   }, [currentQuery, searchRestaurantName, restaurantNamesLoading, query]);
+
+  useEffect(() => {
+    if (!query || restaurantNamesLoading || internalRestaurantName) {
+      setEstimatedMenu(null);
+      setEstimatedMenuError("");
+      setEstimatedMenuLoading(false);
+      return;
+    }
+
+    const abortController = new AbortController();
+
+    async function loadEstimatedMenu() {
+      try {
+        setEstimatedMenu(null);
+        setEstimatedMenuError("");
+        setEstimatedMenuLoading(true);
+
+        const response = await fetch("/api/estimated-menu", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ restaurantName: query }),
+          signal: abortController.signal,
+        });
+
+        const data = (await response.json()) as
+          | EstimatedMenuResponse
+          | { error?: string };
+
+        if (!response.ok) {
+          throw new Error(
+            "error" in data && data.error
+              ? data.error
+              : "AI menu estimates are unavailable."
+          );
+        }
+
+        setEstimatedMenu(data as EstimatedMenuResponse);
+      } catch (error) {
+        if (error instanceof DOMException && error.name === "AbortError") {
+          return;
+        }
+
+        setEstimatedMenuError(
+          error instanceof Error
+            ? error.message
+            : "AI menu estimates are unavailable."
+        );
+      } finally {
+        if (!abortController.signal.aborted) {
+          setEstimatedMenuLoading(false);
+        }
+      }
+    }
+
+    loadEstimatedMenu();
+
+    return () => {
+      abortController.abort();
+    };
+  }, [query, restaurantNamesLoading, internalRestaurantName]);
+
+  const estimatedSortedItems = useMemo(() => {
+    const generatedMenuItems = estimatedMenu?.menu_items ?? [];
+
+    return {
+      proteinCalorieRatioSorted: sortByMacroRatio(generatedMenuItems, "protein"),
+      fatCalorieRatioSorted: sortByMacroRatio(generatedMenuItems, "fat"),
+      carbsCalorieRatioSorted: sortByMacroRatio(generatedMenuItems, "carbs"),
+      caloriesSorted: sortByCalories(generatedMenuItems),
+    };
+  }, [estimatedMenu]);
+
+  const showingEstimatedFallback = !hasData && Boolean(estimatedMenu);
+  const activeMenuItems = showingEstimatedFallback
+    ? estimatedMenu?.menu_items ?? []
+    : menuItems;
+  const activeSortedItems = showingEstimatedFallback
+    ? estimatedSortedItems
+    : sortedItems;
+  const activeRestaurantMetadata = showingEstimatedFallback
+    ? estimatedMenu
+    : restaurantMetadata;
+  const activeHasData = hasData || activeMenuItems.length > 0;
+
   if (!query) {
     return (
       <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
@@ -51,7 +177,7 @@ function SearchContent() {
     );
   }
 
-  if (loading) {
+  if (restaurantNamesLoading || loading || estimatedMenuLoading) {
     return (
       <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
@@ -71,10 +197,10 @@ function SearchContent() {
         </h1>
 
         {/* PDF Source Link */}
-        {restaurantMetadata?.url && (
+        {activeRestaurantMetadata?.url && (
           <div className="mb-6 text-center">
             <a
-              href={restaurantMetadata.url}
+              href={activeRestaurantMetadata.url}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm text-foreground/70 hover:text-foreground transition-colors duration-200 underline decoration-dotted underline-offset-4"
@@ -96,27 +222,36 @@ function SearchContent() {
             </a>
             <p className="text-xs text-foreground/50 mt-1">
               Data extracted on{" "}
-              {new Date(restaurantMetadata.date).toLocaleDateString()}
+              {new Date(activeRestaurantMetadata.date).toLocaleDateString()}
             </p>
           </div>
         )}
-        {restaurantMetadata?.uses_ai_estimates && (
+        {showingEstimatedFallback ? (
+          <div className="mx-auto mb-6 max-w-3xl rounded border border-amber-500/40 bg-amber-100 px-4 py-3 text-sm text-amber-900 dark:bg-amber-900/30 dark:text-amber-100">
+            We couldn&apos;t find official cached nutrition data for
+            &quot;{query}&quot;, so these menu items and nutrition numbers were
+            generated by AI. Treat them as rough estimates, not official
+            restaurant data.
+          </div>
+        ) : activeRestaurantMetadata?.uses_ai_estimates ? (
           <div className="mx-auto mb-6 max-w-3xl rounded border border-amber-500/40 bg-amber-100 px-4 py-3 text-sm text-amber-900 dark:bg-amber-900/30 dark:text-amber-100">
             Some nutrition values are AI estimates because the PDF did not
             provide parseable values. Treat those rows as approximate.
           </div>
-        )}
+        ) : null}
         <RestaurantInput title="Search another restaurant?" />
 
-        {hasData ? (
+        {activeHasData ? (
           <div className="mt-8">
-            <MenuItemSearch menuItems={menuItems} />
+            <MenuItemSearch menuItems={activeMenuItems} />
             <MenuChat
               restaurantName={
-                restaurantMetadata?.restaurant_name || internalRestaurantName || query
+                activeRestaurantMetadata?.restaurant_name ||
+                internalRestaurantName ||
+                query
               }
-              menuItems={menuItems}
-              usesAiEstimates={restaurantMetadata?.uses_ai_estimates}
+              menuItems={activeMenuItems}
+              usesAiEstimates={activeRestaurantMetadata?.uses_ai_estimates}
             />
 
             {/* Mobile Table Selector */}
@@ -124,7 +259,7 @@ function SearchContent() {
               <div className="flex rounded-lg border border-foreground/20 overflow-hidden">
                 <button
                   onClick={() => setSelectedMobileTable("protein")}
-                  className={`flex-1 py-3 px-4 text-sm font-medium transition-colors ${
+                  className={`flex-1 py-3 px-2 text-sm font-medium transition-colors ${
                     selectedMobileTable === "protein"
                       ? "bg-foreground text-background"
                       : "bg-background text-foreground hover:bg-foreground/10"
@@ -134,7 +269,7 @@ function SearchContent() {
                 </button>
                 <button
                   onClick={() => setSelectedMobileTable("fat")}
-                  className={`flex-1 py-3 px-4 text-sm font-medium transition-colors border-l border-r border-foreground/20 ${
+                  className={`flex-1 py-3 px-2 text-sm font-medium transition-colors border-l border-foreground/20 ${
                     selectedMobileTable === "fat"
                       ? "bg-foreground text-background"
                       : "bg-background text-foreground hover:bg-foreground/10"
@@ -144,13 +279,23 @@ function SearchContent() {
                 </button>
                 <button
                   onClick={() => setSelectedMobileTable("carbs")}
-                  className={`flex-1 py-3 px-4 text-sm font-medium transition-colors ${
+                  className={`flex-1 py-3 px-2 text-sm font-medium transition-colors border-l border-foreground/20 ${
                     selectedMobileTable === "carbs"
                       ? "bg-foreground text-background"
                       : "bg-background text-foreground hover:bg-foreground/10"
                   }`}
                 >
                   Carbs
+                </button>
+                <button
+                  onClick={() => setSelectedMobileTable("calories")}
+                  className={`flex-1 py-3 px-2 text-sm font-medium transition-colors border-l border-foreground/20 ${
+                    selectedMobileTable === "calories"
+                      ? "bg-foreground text-background"
+                      : "bg-background text-foreground hover:bg-foreground/10"
+                  }`}
+                >
+                  Calories
                 </button>
               </div>
             </div>
@@ -159,43 +304,55 @@ function SearchContent() {
             <div className="lg:hidden">
               {selectedMobileTable === "protein" && (
                 <MacronutrientTable
-                  data={sortedItems.proteinCalorieRatioSorted}
+                  data={activeSortedItems.proteinCalorieRatioSorted}
                   macronutrient="protein"
                   title="Protein-Calorie Ratio"
                 />
               )}
               {selectedMobileTable === "fat" && (
                 <MacronutrientTable
-                  data={sortedItems.fatCalorieRatioSorted}
+                  data={activeSortedItems.fatCalorieRatioSorted}
                   macronutrient="fat"
                   title="Fat-Calorie Ratio"
                 />
               )}
               {selectedMobileTable === "carbs" && (
                 <MacronutrientTable
-                  data={sortedItems.carbsCalorieRatioSorted}
+                  data={activeSortedItems.carbsCalorieRatioSorted}
                   macronutrient="carbs"
                   title="Carbs-Calorie Ratio"
                 />
               )}
+              {selectedMobileTable === "calories" && (
+                <MacronutrientTable
+                  data={activeSortedItems.caloriesSorted}
+                  macronutrient="calories"
+                  title="Calories"
+                />
+              )}
             </div>
 
-            {/* Desktop Three Column View */}
-            <div className="hidden lg:grid lg:grid-cols-3 gap-6">
+            {/* Desktop Table View */}
+            <div className="hidden lg:grid lg:grid-cols-4 gap-6">
               <MacronutrientTable
-                data={sortedItems.proteinCalorieRatioSorted}
+                data={activeSortedItems.proteinCalorieRatioSorted}
                 macronutrient="protein"
                 title="Protein-Calorie Ratio"
               />
               <MacronutrientTable
-                data={sortedItems.fatCalorieRatioSorted}
+                data={activeSortedItems.fatCalorieRatioSorted}
                 macronutrient="fat"
                 title="Fat-Calorie Ratio"
               />
               <MacronutrientTable
-                data={sortedItems.carbsCalorieRatioSorted}
+                data={activeSortedItems.carbsCalorieRatioSorted}
                 macronutrient="carbs"
                 title="Carbs-Calorie Ratio"
+              />
+              <MacronutrientTable
+                data={activeSortedItems.caloriesSorted}
+                macronutrient="calories"
+                title="Calories"
               />
             </div>
           </div>
@@ -205,8 +362,9 @@ function SearchContent() {
               Restaurant Not Found
             </h3>
             <p className="text-yellow-700 dark:text-yellow-300">
-              We couldn&apos;t find nutrition data for &quot;{query}&quot;.
-              Please try searching for a different restaurant.
+              We couldn&apos;t find cached nutrition data for &quot;{query}&quot;
+              and couldn&apos;t generate AI estimates
+              {estimatedMenuError ? `: ${estimatedMenuError}` : "."}
             </p>
           </div>
         )}

@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { type FormEvent, type ReactNode, useState } from "react";
 import { MenuItem } from "./MacronutrientTable";
 
 interface ChatMessage {
@@ -12,6 +12,118 @@ interface MenuChatProps {
   restaurantName: string;
   menuItems: MenuItem[];
   usesAiEstimates?: boolean;
+}
+
+type FormattedTextBlock =
+  | {
+      type: "text";
+      text: string;
+    }
+  | {
+      type: "ordered-list" | "unordered-list";
+      items: string[];
+    };
+
+function renderInlineMarkdown(text: string, keyPrefix: string): ReactNode[] {
+  return text.split(/(\*\*[^*]+?\*\*)/g).map((part, index) => {
+    const key = `${keyPrefix}-${index}`;
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={key}>{part.slice(2, -2)}</strong>;
+    }
+
+    return <span key={key}>{part}</span>;
+  });
+}
+
+function getFormattedTextBlocks(content: string): FormattedTextBlock[] {
+  const normalizedContent = content
+    .replace(/\r\n/g, "\n")
+    .replace(/[ \t]+(?=\d{1,2}\.\s+\*\*)/g, "\n")
+    .replace(/[ \t]+(?=[-*]\s+\*\*)/g, "\n")
+    .trim();
+  const lines = normalizedContent
+    .split(/\n+/)
+    .map((line) => line.trim())
+    .filter(Boolean);
+  const blocks: FormattedTextBlock[] = [];
+
+  for (const line of lines) {
+    const orderedMatch = line.match(/^\d+\.\s+(.*)$/);
+    if (orderedMatch) {
+      const lastBlock = blocks.at(-1);
+      if (lastBlock?.type === "ordered-list") {
+        lastBlock.items.push(orderedMatch[1]);
+      } else {
+        blocks.push({ type: "ordered-list", items: [orderedMatch[1]] });
+      }
+      continue;
+    }
+
+    const unorderedMatch = line.match(/^[-*]\s+(.*)$/);
+    if (unorderedMatch) {
+      const lastBlock = blocks.at(-1);
+      if (lastBlock?.type === "unordered-list") {
+        lastBlock.items.push(unorderedMatch[1]);
+      } else {
+        blocks.push({ type: "unordered-list", items: [unorderedMatch[1]] });
+      }
+      continue;
+    }
+
+    blocks.push({ type: "text", text: line });
+  }
+
+  return blocks;
+}
+
+function FormattedChatMessage({ content }: { content: string }) {
+  const blocks = getFormattedTextBlocks(content);
+
+  return (
+    <div className="flex flex-col gap-2 break-words">
+      {blocks.map((block, blockIndex) => {
+        if (block.type === "ordered-list") {
+          return (
+            <ol
+              key={`ordered-${blockIndex}`}
+              className="list-decimal space-y-2 pl-5 marker:font-semibold"
+            >
+              {block.items.map((item, itemIndex) => (
+                <li key={`${blockIndex}-${itemIndex}`} className="pl-1">
+                  {renderInlineMarkdown(item, `${blockIndex}-${itemIndex}`)}
+                </li>
+              ))}
+            </ol>
+          );
+        }
+
+        if (block.type === "unordered-list") {
+          return (
+            <ul
+              key={`unordered-${blockIndex}`}
+              className="list-disc space-y-2 pl-5"
+            >
+              {block.items.map((item, itemIndex) => (
+                <li key={`${blockIndex}-${itemIndex}`} className="pl-1">
+                  {renderInlineMarkdown(item, `${blockIndex}-${itemIndex}`)}
+                </li>
+              ))}
+            </ul>
+          );
+        }
+
+        if (block.type === "text") {
+          return (
+            <div key={`text-${blockIndex}`}>
+              {renderInlineMarkdown(block.text, `${blockIndex}`)}
+            </div>
+          );
+        }
+
+        return null;
+      })}
+    </div>
+  );
 }
 
 export default function MenuChat({
@@ -111,7 +223,11 @@ export default function MenuChat({
                         : "mr-auto border border-foreground/15 bg-background text-foreground"
                     }`}
                   >
-                    {message.content}
+                    {message.role === "assistant" ? (
+                      <FormattedChatMessage content={message.content} />
+                    ) : (
+                      <span className="whitespace-pre-wrap">{message.content}</span>
+                    )}
                   </div>
                 ))}
                 {loading && (
