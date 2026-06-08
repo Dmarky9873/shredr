@@ -1,6 +1,8 @@
 "use client";
 
-import { type FormEvent, type ReactNode, useState } from "react";
+import { type FormEvent, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { MenuItem } from "./MacronutrientTable";
 
 interface ChatMessage {
@@ -14,115 +16,94 @@ interface MenuChatProps {
   usesAiEstimates?: boolean;
 }
 
-type FormattedTextBlock =
-  | {
-      type: "text";
-      text: string;
-    }
-  | {
-      type: "ordered-list" | "unordered-list";
-      items: string[];
-    };
-
-function renderInlineMarkdown(text: string, keyPrefix: string): ReactNode[] {
-  return text.split(/(\*\*[^*]+?\*\*)/g).map((part, index) => {
-    const key = `${keyPrefix}-${index}`;
-    if (part.startsWith("**") && part.endsWith("**")) {
-      return <strong key={key}>{part.slice(2, -2)}</strong>;
-    }
-
-    return <span key={key}>{part}</span>;
-  });
-}
-
-function getFormattedTextBlocks(content: string): FormattedTextBlock[] {
-  const normalizedContent = content
-    .replace(/\r\n/g, "\n")
-    .replace(/[ \t]+(?=\d{1,2}\.\s+\*\*)/g, "\n")
-    .replace(/[ \t]+(?=[-*]\s+\*\*)/g, "\n")
-    .trim();
-  const lines = normalizedContent
-    .split(/\n+/)
-    .map((line) => line.trim())
-    .filter(Boolean);
-  const blocks: FormattedTextBlock[] = [];
-
-  for (const line of lines) {
-    const orderedMatch = line.match(/^\d+\.\s+(.*)$/);
-    if (orderedMatch) {
-      const lastBlock = blocks.at(-1);
-      if (lastBlock?.type === "ordered-list") {
-        lastBlock.items.push(orderedMatch[1]);
-      } else {
-        blocks.push({ type: "ordered-list", items: [orderedMatch[1]] });
-      }
-      continue;
-    }
-
-    const unorderedMatch = line.match(/^[-*]\s+(.*)$/);
-    if (unorderedMatch) {
-      const lastBlock = blocks.at(-1);
-      if (lastBlock?.type === "unordered-list") {
-        lastBlock.items.push(unorderedMatch[1]);
-      } else {
-        blocks.push({ type: "unordered-list", items: [unorderedMatch[1]] });
-      }
-      continue;
-    }
-
-    blocks.push({ type: "text", text: line });
-  }
-
-  return blocks;
-}
-
 function FormattedChatMessage({ content }: { content: string }) {
-  const blocks = getFormattedTextBlocks(content);
-
   return (
-    <div className="flex flex-col gap-2 break-words">
-      {blocks.map((block, blockIndex) => {
-        if (block.type === "ordered-list") {
-          return (
-            <ol
-              key={`ordered-${blockIndex}`}
-              className="list-decimal space-y-2 pl-5 marker:font-semibold"
-            >
-              {block.items.map((item, itemIndex) => (
-                <li key={`${blockIndex}-${itemIndex}`} className="pl-1">
-                  {renderInlineMarkdown(item, `${blockIndex}-${itemIndex}`)}
-                </li>
-              ))}
-            </ol>
-          );
-        }
-
-        if (block.type === "unordered-list") {
-          return (
-            <ul
-              key={`unordered-${blockIndex}`}
-              className="list-disc space-y-2 pl-5"
-            >
-              {block.items.map((item, itemIndex) => (
-                <li key={`${blockIndex}-${itemIndex}`} className="pl-1">
-                  {renderInlineMarkdown(item, `${blockIndex}-${itemIndex}`)}
-                </li>
-              ))}
-            </ul>
-          );
-        }
-
-        if (block.type === "text") {
-          return (
-            <div key={`text-${blockIndex}`}>
-              {renderInlineMarkdown(block.text, `${blockIndex}`)}
-            </div>
-          );
-        }
-
-        return null;
-      })}
-    </div>
+    <ReactMarkdown
+      remarkPlugins={[remarkGfm]}
+      components={{
+        h1: ({ children }) => (
+          <h1 className="mt-3 first:mt-0 text-lg font-semibold leading-7">
+            {children}
+          </h1>
+        ),
+        h2: ({ children }) => (
+          <h2 className="mt-3 first:mt-0 text-base font-semibold leading-7">
+            {children}
+          </h2>
+        ),
+        h3: ({ children }) => (
+          <h3 className="mt-3 first:mt-0 text-sm font-semibold uppercase text-foreground/80">
+            {children}
+          </h3>
+        ),
+        h4: ({ children }) => (
+          <h4 className="mt-3 first:mt-0 text-sm font-semibold">{children}</h4>
+        ),
+        h5: ({ children }) => (
+          <h5 className="mt-3 first:mt-0 text-sm font-semibold">{children}</h5>
+        ),
+        h6: ({ children }) => (
+          <h6 className="mt-3 first:mt-0 text-xs font-semibold uppercase text-foreground/70">
+            {children}
+          </h6>
+        ),
+        p: ({ children }) => <p className="my-2 first:mt-0 last:mb-0">{children}</p>,
+        ul: ({ children }) => (
+          <ul className="my-2 list-disc space-y-1 pl-5">{children}</ul>
+        ),
+        ol: ({ children }) => (
+          <ol className="my-2 list-decimal space-y-1 pl-5 marker:font-semibold">
+            {children}
+          </ol>
+        ),
+        li: ({ children }) => <li className="pl-1">{children}</li>,
+        strong: ({ children }) => (
+          <strong className="font-semibold">{children}</strong>
+        ),
+        em: ({ children }) => <em className="italic">{children}</em>,
+        blockquote: ({ children }) => (
+          <blockquote className="my-2 border-l-2 border-foreground/25 pl-3 text-foreground/75">
+            {children}
+          </blockquote>
+        ),
+        a: ({ children, href }) => (
+          <a
+            href={href}
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium underline underline-offset-2"
+          >
+            {children}
+          </a>
+        ),
+        code: ({ children }) => (
+          <code className="rounded bg-foreground/10 px-1 py-0.5 font-mono text-[0.85em]">
+            {children}
+          </code>
+        ),
+        pre: ({ children }) => (
+          <pre className="my-2 overflow-x-auto rounded bg-foreground/10 p-3 text-xs leading-5">
+            {children}
+          </pre>
+        ),
+        table: ({ children }) => (
+          <div className="my-2 overflow-x-auto">
+            <table className="w-full border-collapse text-left text-xs">{children}</table>
+          </div>
+        ),
+        th: ({ children }) => (
+          <th className="border border-foreground/15 bg-foreground/5 px-2 py-1 font-semibold">
+            {children}
+          </th>
+        ),
+        td: ({ children }) => (
+          <td className="border border-foreground/15 px-2 py-1">{children}</td>
+        ),
+        hr: () => <hr className="my-3 border-foreground/15" />,
+      }}
+    >
+      {content}
+    </ReactMarkdown>
   );
 }
 

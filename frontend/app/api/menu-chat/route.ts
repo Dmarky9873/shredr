@@ -155,7 +155,8 @@ export async function POST(request: Request) {
   const systemPrompt = [
     "You answer questions about one restaurant menu using only the provided menu data.",
     "Be concise and practical. If the answer requires data not included here, say so.",
-    "Format answers as readable Markdown with short paragraphs and newline-separated lists.",
+    "Format answers as valid Markdown with headings, short paragraphs, and newline-separated lists.",
+    "Use Markdown section headings such as ### Best Options when grouping results.",
     "When listing dishes, put each dish on its own Markdown list item.",
     "Use calories as kcal and macros as grams.",
     "When comparing items, cite the dish names and relevant nutrition numbers.",
