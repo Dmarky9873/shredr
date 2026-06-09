@@ -1,0 +1,30 @@
+{
+    "name": "pizza nova",
+    "menu": [
+        "Caesar Salad",
+        "Greek Salad",
+        "Chicken Wings 1 lb",
+        "Garlic Bread with Cheese",
+        "Chicken Bites",
+        "Cauliflower Crust Cheese Pizza slice",
+        "Meat Supreme Pizza medium slice",
+        "Garlic Bread",
+        "Panzerotti Pepperoni",
+        "Pepperoni Pizza medium slice",
+        "Lasagna",
+        "Super Gourmet Pizza slice",
+        "Pollo Pesto Pizza medium slice",
+        "Mediterranean Pizza medium slice",
+        "Deluxe Pizza medium slice",
+        "Panzerotti Cheese",
+        "Four Cheese Pizza medium slice",
+        "Plant-Based Pepperoni Pizza medium slice",
+        "Potato Wedges",
+        "Veggie Pizza medium slice",
+        "Hawaiian Pizza medium slice",
+        "Bruschetta Pizza medium slice",
+        "Chicken Florentine Pizza medium slice",
+        "Cheese Pizza medium slice",
+        "Gluten-Free Cheese Pizza slice"
+    ]
+}

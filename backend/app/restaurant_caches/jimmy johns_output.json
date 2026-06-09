@@ -1,0 +1,1194 @@
+{
+  "restaurant_name": "jimmy johns",
+  "url": "https://jimmyjohns.ca/assets/pdf/1/JJ-CANADA-NUTRITION.pdf",
+  "date": "2026-06-09 10:05:56",
+  "menu_items": [
+    {
+      "dish": "6 inch Chicken Bacon Ranch",
+      "calories": 720,
+      "protein": 40,
+      "carbs": 63,
+      "fat": 34,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "6 inch Beach Club",
+      "calories": 660,
+      "protein": 27,
+      "carbs": 64,
+      "fat": 33,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "6 inch Spicy Buffalo Chicken Melt",
+      "calories": 650,
+      "protein": 32,
+      "carbs": 64,
+      "fat": 29,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "6 inch Meatball Parmesan",
+      "calories": 920,
+      "protein": 37,
+      "carbs": 68,
+      "fat": 55,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "6 inch Italian Club",
+      "calories": 790,
+      "protein": 37,
+      "carbs": 64,
+      "fat": 43,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "6 inch Country Club",
+      "calories": 680,
+      "protein": 35,
+      "carbs": 63,
+      "fat": 32,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "6 inch Sweet Chili Chicken",
+      "calories": 710,
+      "protein": 37,
+      "carbs": 71,
+      "fat": 31,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "6 inch Bootlegger Club",
+      "calories": 700,
+      "protein": 37,
+      "carbs": 64,
+      "fat": 33,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "6 inch Hunter's Club",
+      "calories": 710,
+      "protein": 38,
+      "carbs": 64,
+      "fat": 34,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "6 inch Jimmy Cubano",
+      "calories": 690,
+      "protein": 31,
+      "carbs": 63,
+      "fat": 35,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "6 inch The Pepe",
+      "calories": 590,
+      "protein": 24,
+      "carbs": 54,
+      "fat": 31,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "6 inch Totally Tuna",
+      "calories": 700,
+      "protein": 24,
+      "carbs": 56,
+      "fat": 42,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "6 inch The Veggie",
+      "calories": 670,
+      "protein": 23,
+      "carbs": 57,
+      "fat": 38,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "6 inch Turkey Tom",
+      "calories": 600,
+      "protein": 26,
+      "carbs": 55,
+      "fat": 31,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "6 inch J.J.B.L.T",
+      "calories": 710,
+      "protein": 28,
+      "carbs": 63,
+      "fat": 38,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "12 inch Chicken Bacon Ranch",
+      "calories": 1440,
+      "protein": 80,
+      "carbs": 126,
+      "fat": 68,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "12 inch Beach Club",
+      "calories": 1330,
+      "protein": 54,
+      "carbs": 128,
+      "fat": 66,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "12 inch Spicy Buffalo Chicken Melt",
+      "calories": 1290,
+      "protein": 63,
+      "carbs": 129,
+      "fat": 57,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "12 inch Meatball Parmesan",
+      "calories": 1840,
+      "protein": 75,
+      "carbs": 137,
+      "fat": 111,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "12 inch Italian Club",
+      "calories": 1570,
+      "protein": 73,
+      "carbs": 127,
+      "fat": 85,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "12 inch Country Club",
+      "calories": 1350,
+      "protein": 69,
+      "carbs": 125,
+      "fat": 64,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "12 inch Sweet Chili Chicken",
+      "calories": 1430,
+      "protein": 73,
+      "carbs": 143,
+      "fat": 63,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "12 inch Bootlegger Club",
+      "calories": 1390,
+      "protein": 73,
+      "carbs": 127,
+      "fat": 65,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "12 inch Hunter's Club",
+      "calories": 1420,
+      "protein": 75,
+      "carbs": 128,
+      "fat": 68,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "12 inch Jimmy Cubano",
+      "calories": 1390,
+      "protein": 62,
+      "carbs": 125,
+      "fat": 71,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "12 inch The Pepe",
+      "calories": 1190,
+      "protein": 49,
+      "carbs": 108,
+      "fat": 62,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "12 inch Totally Tuna",
+      "calories": 1400,
+      "protein": 49,
+      "carbs": 113,
+      "fat": 84,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "12 inch The Veggie",
+      "calories": 1340,
+      "protein": 47,
+      "carbs": 114,
+      "fat": 77,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "12 inch Turkey Tom",
+      "calories": 1200,
+      "protein": 51,
+      "carbs": 109,
+      "fat": 62,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "12 inch J.J.B.L.T",
+      "calories": 1430,
+      "protein": 57,
+      "carbs": 126,
+      "fat": 77,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Unwich Chicken Bacon Ranch",
+      "calories": 420,
+      "protein": 29,
+      "carbs": 5,
+      "fat": 31,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Unwich Beach Club",
+      "calories": 360,
+      "protein": 16,
+      "carbs": 6,
+      "fat": 30,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Unwich Spicy Buffalo Chicken Melt",
+      "calories": 340,
+      "protein": 21,
+      "carbs": 6,
+      "fat": 26,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Unwich Meatball Parmesan",
+      "calories": 620,
+      "protein": 26,
+      "carbs": 10,
+      "fat": 53,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Unwich Italian Club",
+      "calories": 480,
+      "protein": 26,
+      "carbs": 5,
+      "fat": 40,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Unwich Country Club",
+      "calories": 370,
+      "protein": 24,
+      "carbs": 4,
+      "fat": 29,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Unwich Sweet Chili Chicken",
+      "calories": 410,
+      "protein": 25,
+      "carbs": 13,
+      "fat": 29,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Unwich Bootlegger Club",
+      "calories": 390,
+      "protein": 26,
+      "carbs": 5,
+      "fat": 30,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Unwich Hunter's Club",
+      "calories": 410,
+      "protein": 27,
+      "carbs": 6,
+      "fat": 31,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Unwich Jimmy Cubano",
+      "calories": 390,
+      "protein": 20,
+      "carbs": 4,
+      "fat": 33,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Unwich The Pepe",
+      "calories": 330,
+      "protein": 15,
+      "carbs": 3,
+      "fat": 29,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Unwich Totally Tuna",
+      "calories": 440,
+      "protein": 15,
+      "carbs": 6,
+      "fat": 40,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Unwich The Veggie",
+      "calories": 400,
+      "protein": 14,
+      "carbs": 6,
+      "fat": 36,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Unwich Turkey Tom",
+      "calories": 330,
+      "protein": 16,
+      "carbs": 4,
+      "fat": 28,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Unwich J.J.B.L.T",
+      "calories": 410,
+      "protein": 17,
+      "carbs": 4,
+      "fat": 36,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Bacon Chips (14g)",
+      "calories": 60,
+      "protein": 5,
+      "carbs": 1,
+      "fat": 4,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Shredded Chicken (2.5oz)",
+      "calories": 80,
+      "protein": 17,
+      "carbs": 1,
+      "fat": 1,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Cheddar Cheese Slice",
+      "calories": 90,
+      "protein": 5,
+      "carbs": 0,
+      "fat": 8,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Arugula",
+      "calories": 3,
+      "protein": 0.3,
+      "carbs": 0,
+      "fat": 0,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Kickin Ranch Aioli",
+      "calories": 70,
+      "protein": 0.4,
+      "carbs": 1,
+      "fat": 8,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Mayo",
+      "calories": 190,
+      "protein": 0.3,
+      "carbs": 0,
+      "fat": 21,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Turkey",
+      "calories": 40,
+      "protein": 9,
+      "carbs": 1,
+      "fat": 0.5,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Provolone Cheese",
+      "calories": 80,
+      "protein": 6,
+      "carbs": 1,
+      "fat": 6,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Avocado Spread",
+      "calories": 40,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 3.5,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Shredded Lettuce",
+      "calories": 3,
+      "protein": 0.2,
+      "carbs": 1,
+      "fat": 0,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Tomato Slices",
+      "calories": 2,
+      "protein": 0.1,
+      "carbs": 0,
+      "fat": 0,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Ranch Spread/Dressing",
+      "calories": 120,
+      "protein": 0.1,
+      "carbs": 1,
+      "fat": 12,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Buffalo Shredded Chicken",
+      "calories": 70,
+      "protein": 14,
+      "carbs": 1,
+      "fat": 1,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Jimmy Peppers",
+      "calories": 2,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Garlic Butter Spread",
+      "calories": 200,
+      "protein": 0.1,
+      "carbs": 0,
+      "fat": 23,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Meatballs",
+      "calories": 180,
+      "protein": 12,
+      "carbs": 3,
+      "fat": 13,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Marinara Sauce",
+      "calories": 20,
+      "protein": 0.4,
+      "carbs": 3,
+      "fat": 0.5,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Shredded Parmesan",
+      "calories": 120,
+      "protein": 7,
+      "carbs": 1,
+      "fat": 10,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Basil Oregano Mix",
+      "calories": 4,
+      "protein": 0.2,
+      "carbs": 1,
+      "fat": 0.1,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Ham",
+      "calories": 40,
+      "protein": 8,
+      "carbs": 0,
+      "fat": 1,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Roast Beef",
+      "calories": 60,
+      "protein": 10,
+      "carbs": 1,
+      "fat": 1.5,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Prepared Tuna",
+      "calories": 140,
+      "protein": 7,
+      "carbs": 2,
+      "fat": 12,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Capocollo",
+      "calories": 70,
+      "protein": 6,
+      "carbs": 0,
+      "fat": 4,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Salami",
+      "calories": 70,
+      "protein": 4,
+      "carbs": 0,
+      "fat": 6,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Oil Vinegar Mix",
+      "calories": 15,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 1.5,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Thai Sweet Chili Chicken",
+      "calories": 90,
+      "protein": 13,
+      "carbs": 7,
+      "fat": 0.5,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Pickles",
+      "calories": 4,
+      "protein": 0.4,
+      "carbs": 1,
+      "fat": 0,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Red Onions",
+      "calories": 3,
+      "protein": 0.1,
+      "carbs": 1,
+      "fat": 0,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Pickled Onions",
+      "calories": 10,
+      "protein": 0.1,
+      "carbs": 2,
+      "fat": 0,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Sriracha Aioli",
+      "calories": 130,
+      "protein": 0.2,
+      "carbs": 2,
+      "fat": 14,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Kickin Ranch Aioli Side",
+      "calories": 200,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 21,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Sriracha Aioli Side",
+      "calories": 270,
+      "protein": 0.3,
+      "carbs": 5,
+      "fat": 28,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Marinara Sauce Side",
+      "calories": 35,
+      "protein": 1,
+      "carbs": 5,
+      "fat": 1.5,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Jumbo Pickle",
+      "calories": 15,
+      "protein": 2,
+      "carbs": 3,
+      "fat": 0,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    }
+  ],
+  "uses_ai_estimates": false,
+  "estimated_item_count": 0
+}

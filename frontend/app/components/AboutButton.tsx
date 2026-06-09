@@ -11,6 +11,14 @@ export default function AboutButton() {
 
   return (
     <nav className="fixed top-6 right-6 z-50 flex items-center gap-5 text-lg">
+      <a
+        href="https://www.instagram.com/shredr.ca/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="opacity-50 transition-opacity duration-200 hover:cursor-pointer hover:opacity-100"
+      >
+        Instagram
+      </a>
       <button
         type="button"
         onClick={() => handleNavClick("/donate")}

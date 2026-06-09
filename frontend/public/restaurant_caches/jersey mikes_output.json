@@ -1,0 +1,2688 @@
+{
+  "restaurant_name": "jersey mikes",
+  "url": "https://www.jerseymikes.ca/nutrition?type=nutrition",
+  "date": "2026-06-08 19:26:10",
+  "menu_items": [
+    {
+      "dish": "#1 - BLT Mini Mike's - Rosemary Parmesan Bread",
+      "calories": "470",
+      "protein": "18",
+      "carbs": "41",
+      "fat": "27"
+    },
+    {
+      "dish": "#1 - BLT Mini Mike's - Wheat Sub",
+      "calories": "460",
+      "protein": "17",
+      "carbs": "41",
+      "fat": "26"
+    },
+    {
+      "dish": "#1 - BLT Mini Mike's - White Sub",
+      "calories": "460",
+      "protein": "16",
+      "carbs": "41",
+      "fat": "26"
+    },
+    {
+      "dish": "#10 - Tuna Fish Mini Mike's Way - Rosemary Parmesan",
+      "calories": "590",
+      "protein": "20",
+      "carbs": "42",
+      "fat": "39"
+    },
+    {
+      "dish": "#10 - Tuna Fish Mini Mike's Way - Wheat Sub",
+      "calories": "580",
+      "protein": "20",
+      "carbs": "41",
+      "fat": "38"
+    },
+    {
+      "dish": "#10 - Tuna Fish Mini Mike's Way - White Sub",
+      "calories": "570",
+      "protein": "18",
+      "carbs": "41",
+      "fat": "38"
+    },
+    {
+      "dish": "#11 - Stickball Special Mini Mike's Way - Rosemary Parmesan",
+      "calories": "500",
+      "protein": "22",
+      "carbs": "42",
+      "fat": "27"
+    },
+    {
+      "dish": "#11 - Stickball Special Mini Mike's Way - Wheat Sub",
+      "calories": "490",
+      "protein": "22",
+      "carbs": "42",
+      "fat": "26"
+    },
+    {
+      "dish": "#11 - Stickball Special Mini Mike's Way - White Sub",
+      "calories": "480",
+      "protein": "20",
+      "carbs": "42",
+      "fat": "26"
+    },
+    {
+      "dish": "#12 - Cancro Special Mini Mike's Way - Rosemary Parmesan",
+      "calories": "530",
+      "protein": "30",
+      "carbs": "42",
+      "fat": "27"
+    },
+    {
+      "dish": "#12 - Cancro Special Mini Mike's Way - Wheat Sub",
+      "calories": "510",
+      "protein": "30",
+      "carbs": "42",
+      "fat": "26"
+    },
+    {
+      "dish": "#12 - Cancro Special Mini Mike's Way - White Sub",
+      "calories": "510",
+      "protein": "28",
+      "carbs": "42",
+      "fat": "26"
+    },
+    {
+      "dish": "#13 - The Original Italian Mini Mike's Way - Rosemary Parmesan",
+      "calories": "560",
+      "protein": "30",
+      "carbs": "44",
+      "fat": "30"
+    },
+    {
+      "dish": "#13 - The Original Italian Mini Mike's Way - Wheat Sub",
+      "calories": "540",
+      "protein": "29",
+      "carbs": "43",
+      "fat": "29"
+    },
+    {
+      "dish": "#13 - The Original Italian Mini Mike's Way - White Sub",
+      "calories": "540",
+      "protein": "28",
+      "carbs": "43",
+      "fat": "29"
+    },
+    {
+      "dish": "#14 - The Veggie Mini Mike's Way - Rosemary Parmesan",
+      "calories": "570",
+      "protein": "24",
+      "carbs": "43",
+      "fat": "33"
+    },
+    {
+      "dish": "#14 - The Veggie Mini Mike's Way - Wheat Sub",
+      "calories": "550",
+      "protein": "24",
+      "carbs": "43",
+      "fat": "31"
+    },
+    {
+      "dish": "#14 - The Veggie Mini Mike's Way - White Sub",
+      "calories": "550",
+      "protein": "22",
+      "carbs": "43",
+      "fat": "32"
+    },
+    {
+      "dish": "#2 - Jersey Shore's Favorite Mini Mike's Way - Rosemary Parmesan",
+      "calories": "470",
+      "protein": "22",
+      "carbs": "43",
+      "fat": "24"
+    },
+    {
+      "dish": "#2 - Jersey Shore's Favorite Mini Mike's Way - Wheat Sub",
+      "calories": "460",
+      "protein": "22",
+      "carbs": "43",
+      "fat": "23"
+    },
+    {
+      "dish": "#2 - Jersey Shore's Favorite Mini Mike's Way - White Sub",
+      "calories": "450",
+      "protein": "21",
+      "carbs": "42",
+      "fat": "23"
+    },
+    {
+      "dish": "#3 - Ham and Provolone Mini Mike's Way - Rosemary Parmesan",
+      "calories": "470",
+      "protein": "23",
+      "carbs": "42",
+      "fat": "24"
+    },
+    {
+      "dish": "#3 - Ham and Provolone Mini Mike's Way - Wheat Sub",
+      "calories": "460",
+      "protein": "22",
+      "carbs": "42",
+      "fat": "23"
+    },
+    {
+      "dish": "#3 - Ham and Provolone Mini Mike's Way - White Sub",
+      "calories": "450",
+      "protein": "21",
+      "carbs": "42",
+      "fat": "23"
+    },
+    {
+      "dish": "#4 - The Number Four Mini Mike's Way - Rosemary Parmesan",
+      "calories": "470",
+      "protein": "23",
+      "carbs": "43",
+      "fat": "24"
+    },
+    {
+      "dish": "#4 - The Number Four Mini Mike's Way - Wheat Sub",
+      "calories": "460",
+      "protein": "23",
+      "carbs": "43",
+      "fat": "23"
+    },
+    {
+      "dish": "#4 - The Number Four Mini Mike's Way - White Sub",
+      "calories": "450",
+      "protein": "21",
+      "carbs": "42",
+      "fat": "23"
+    },
+    {
+      "dish": "#5 - The Super Sub Mini Mike's Way - Rosemary Parmesan",
+      "calories": "500",
+      "protein": "26",
+      "carbs": "43",
+      "fat": "25"
+    },
+    {
+      "dish": "#5 - The Super Sub Mini Mike's Way - Wheat Sub",
+      "calories": "480",
+      "protein": "26",
+      "carbs": "43",
+      "fat": "23"
+    },
+    {
+      "dish": "#5 - The Super Sub Mini Mike's Way - White Sub",
+      "calories": "470",
+      "protein": "25",
+      "carbs": "43",
+      "fat": "23"
+    },
+    {
+      "dish": "#6 - Roast Beef and Provolone Mini Mike's Way - Rosemary Parmesan",
+      "calories": "530",
+      "protein": "33",
+      "carbs": "42",
+      "fat": "26"
+    },
+    {
+      "dish": "#6 - Roast Beef and Provolone Mini Mike's Way - Wheat Sub",
+      "calories": "520",
+      "protein": "33",
+      "carbs": "42",
+      "fat": "25"
+    },
+    {
+      "dish": "#6 - Roast Beef and Provolone Mini Mike's Way - White Sub",
+      "calories": "510",
+      "protein": "32",
+      "carbs": "41",
+      "fat": "25"
+    },
+    {
+      "dish": "#7 - Turkey and Provolone Mini Mike's Way - Rosemary Parmesan",
+      "calories": "480",
+      "protein": "23",
+      "carbs": "43",
+      "fat": "25"
+    },
+    {
+      "dish": "#7 - Turkey and Provolone Mini Mike's Way - Wheat Sub",
+      "calories": "460",
+      "protein": "23",
+      "carbs": "43",
+      "fat": "23"
+    },
+    {
+      "dish": "#7 - Turkey and Provolone Mini Mike's Way - White Sub",
+      "calories": "460",
+      "protein": "21",
+      "carbs": "43",
+      "fat": "23"
+    },
+    {
+      "dish": "#8 - Club Sub Mini Mike's Way - Rosemary Parmesan",
+      "calories": "530",
+      "protein": "28",
+      "carbs": "43",
+      "fat": "28"
+    },
+    {
+      "dish": "#8 - Club Sub Mini Mike's Way - Wheat Sub",
+      "calories": "510",
+      "protein": "28",
+      "carbs": "43",
+      "fat": "26"
+    },
+    {
+      "dish": "#8 - Club Sub Mini Mike's Way - White Sub",
+      "calories": "500",
+      "protein": "26",
+      "carbs": "43",
+      "fat": "26"
+    },
+    {
+      "dish": "#9 - Club Supreme Mini Mike's Way - Rosemary Parmesan",
+      "calories": "530",
+      "protein": "31",
+      "carbs": "43",
+      "fat": "27"
+    },
+    {
+      "dish": "#9 - Club Supreme Mini Mike's Way - Wheat Sub",
+      "calories": "510",
+      "protein": "30",
+      "carbs": "42",
+      "fat": "26"
+    },
+    {
+      "dish": "#9 - Club Supreme Mini Mike's Way - White Sub",
+      "calories": "510",
+      "protein": "29",
+      "carbs": "42",
+      "fat": "26"
+    },
+    {
+      "dish": "#1 - BLT Regular Mike's Cold - Rosemary Parmesan Bread",
+      "calories": "770",
+      "protein": "27",
+      "carbs": "61",
+      "fat": "47"
+    },
+    {
+      "dish": "#1 - BLT Regular Mike's Cold - Sub in a Tub",
+      "calories": "460",
+      "protein": "15",
+      "carbs": "5",
+      "fat": "43"
+    },
+    {
+      "dish": "#1 - BLT Regular Mike's Cold - Wheat Sub",
+      "calories": "750",
+      "protein": "26",
+      "carbs": "60",
+      "fat": "46"
+    },
+    {
+      "dish": "#1 - BLT Regular Mike's Cold - White Sub",
+      "calories": "750",
+      "protein": "25",
+      "carbs": "60",
+      "fat": "46"
+    },
+    {
+      "dish": "#1 - BLT Regular Mike's Cold - Wheat Wrap",
+      "calories": "750",
+      "protein": "23",
+      "carbs": "51",
+      "fat": "52"
+    },
+    {
+      "dish": "#1 - BLT Regular Mike's Cold - White Wrap",
+      "calories": "770",
+      "protein": "23",
+      "carbs": "53",
+      "fat": "53"
+    },
+    {
+      "dish": "#10 - Tuna Fish Regular Mike's Way Cold - Rosemary Parmesan",
+      "calories": "1000",
+      "protein": "32",
+      "carbs": "62",
+      "fat": "70"
+    },
+    {
+      "dish": "#10 - Tuna Fish Regular Mike's Way Cold - Sub in a Tub",
+      "calories": "700",
+      "protein": "21",
+      "carbs": "6",
+      "fat": "66"
+    },
+    {
+      "dish": "#10 - Tuna Fish Regular Mike's Way Cold - Wheat Sub",
+      "calories": "970",
+      "protein": "31",
+      "carbs": "62",
+      "fat": "68"
+    },
+    {
+      "dish": "#10 - Tuna Fish Regular Mike's Way Cold - White Sub",
+      "calories": "970",
+      "protein": "30",
+      "carbs": "61",
+      "fat": "68"
+    },
+    {
+      "dish": "#10 - Tuna Fish Regular Mike's Way Cold - Wheat Wrap",
+      "calories": "980",
+      "protein": "29",
+      "carbs": "52",
+      "fat": "75"
+    },
+    {
+      "dish": "#10 - Tuna Fish Regular Mike's Way Cold - White Wrap",
+      "calories": "1010",
+      "protein": "29",
+      "carbs": "54",
+      "fat": "76"
+    },
+    {
+      "dish": "#11 - Stickball Special Regular Mike's Way Cold - Rosemary Parmesan",
+      "calories": "860",
+      "protein": "39",
+      "carbs": "63",
+      "fat": "50"
+    },
+    {
+      "dish": "#11 - Stickball Special Regular Mike's Way Cold - Sub in a Tub",
+      "calories": "550",
+      "protein": "28",
+      "carbs": "7",
+      "fat": "46"
+    },
+    {
+      "dish": "#11 - Stickball Special Regular Mike's Way Cold - Wheat Sub",
+      "calories": "850",
+      "protein": "39",
+      "carbs": "62",
+      "fat": "49"
+    },
+    {
+      "dish": "#11 - Stickball Special Regular Mike's Way Cold - White Sub",
+      "calories": "830",
+      "protein": "37",
+      "carbs": "62",
+      "fat": "48"
+    },
+    {
+      "dish": "#11 - Stickball Special Regular Mike's Way Cold - Wheat Wrap",
+      "calories": "840",
+      "protein": "36",
+      "carbs": "53",
+      "fat": "55"
+    },
+    {
+      "dish": "#11 - Stickball Special Regular Mike's Way Cold - White Wrap",
+      "calories": "870",
+      "protein": "36",
+      "carbs": "55",
+      "fat": "56"
+    },
+    {
+      "dish": "#12 - Cancro Special Regular Mike's Way Cold - Rosemary Parmesan",
+      "calories": "910",
+      "protein": "53",
+      "carbs": "63",
+      "fat": "50"
+    },
+    {
+      "dish": "#12 - Cancro Special Regular Mike's Way Cold - Sub in a Tub",
+      "calories": "600",
+      "protein": "41",
+      "carbs": "6",
+      "fat": "46"
+    },
+    {
+      "dish": "#12 - Cancro Special Regular Mike's Way Cold - Wheat Sub",
+      "calories": "890",
+      "protein": "52",
+      "carbs": "62",
+      "fat": "49"
+    },
+    {
+      "dish": "#12 - Cancro Special Regular Mike's Way Cold - White Sub",
+      "calories": "880",
+      "protein": "51",
+      "carbs": "62",
+      "fat": "48"
+    },
+    {
+      "dish": "#12 - Cancro Special Regular Mike's Way Cold - Wheat Wrap",
+      "calories": "880",
+      "protein": "49",
+      "carbs": "52",
+      "fat": "55"
+    },
+    {
+      "dish": "#12 - Cancro Special Regular Mike's Way Cold - White Wrap",
+      "calories": "910",
+      "protein": "49",
+      "carbs": "54",
+      "fat": "56"
+    },
+    {
+      "dish": "#13 - The Original Italian Regular Mike's Way Cold - Rosemary Parmesan",
+      "calories": "920",
+      "protein": "47",
+      "carbs": "65",
+      "fat": "53"
+    },
+    {
+      "dish": "#13 - The Original Italian Regular Mike's Way Cold - Sub in a Tub",
+      "calories": "620",
+      "protein": "36",
+      "carbs": "9",
+      "fat": "49"
+    },
+    {
+      "dish": "#13 - The Original Italian Regular Mike's Way Cold - Wheat Sub",
+      "calories": "900",
+      "protein": "47",
+      "carbs": "64",
+      "fat": "52"
+    },
+    {
+      "dish": "#13 - The Original Italian Regular Mike's Way Cold - White Sub",
+      "calories": "900",
+      "protein": "45",
+      "carbs": "64",
+      "fat": "52"
+    },
+    {
+      "dish": "#13 -The Original Italian Regular Mike's Way Cold - Wheat Wrap",
+      "calories": "900",
+      "protein": "44",
+      "carbs": "55",
+      "fat": "58"
+    },
+    {
+      "dish": "#13 - The Original Italian Regular Mike's Way Cold - White Wrap",
+      "calories": "930",
+      "protein": "44",
+      "carbs": "57",
+      "fat": "59"
+    },
+    {
+      "dish": "#14 - The Veggie Regular Mike's Way Cold - Rosemary Parmesan",
+      "calories": "940",
+      "protein": "39",
+      "carbs": "65",
+      "fat": "58"
+    },
+    {
+      "dish": "#14 - The Veggie Regular Mike's Way Cold - Sub in a Tub",
+      "calories": "630",
+      "protein": "27",
+      "carbs": "9",
+      "fat": "54"
+    },
+    {
+      "dish": "#14 - The Veggie Regular Mike's Way Cold - Wheat Sub",
+      "calories": "910",
+      "protein": "38",
+      "carbs": "64",
+      "fat": "56"
+    },
+    {
+      "dish": "#14 - The Veggie Regular Mike's Way Cold - White Sub",
+      "calories": "900",
+      "protein": "36",
+      "carbs": "64",
+      "fat": "56"
+    },
+    {
+      "dish": "#14 - The Veggie Regular Mike's Way Cold- Wheat Wrap",
+      "calories": "910",
+      "protein": "35",
+      "carbs": "55",
+      "fat": "63"
+    },
+    {
+      "dish": "#14 - The Veggie Regular Mike's Way Cold - White Wrap",
+      "calories": "940",
+      "protein": "35",
+      "carbs": "57",
+      "fat": "64"
+    },
+    {
+      "dish": "#2 - Regular Mike's Way Cold - Wheat Wrap",
+      "calories": "780",
+      "protein": "36",
+      "carbs": "54",
+      "fat": "48"
+    },
+    {
+      "dish": "#2 - Regular Mike's Way Cold - White Wrap",
+      "calories": "800",
+      "protein": "36",
+      "carbs": "56",
+      "fat": "49"
+    },
+    {
+      "dish": "#2 - Jersey Shore's Favorite Regular Mike's Way Cold - Rosemary Parmesan",
+      "calories": "790",
+      "protein": "39",
+      "carbs": "64",
+      "fat": "43"
+    },
+    {
+      "dish": "#2 - Jersey Shore's Favorite Regular Mike's Way Cold - Sub in a Tub",
+      "calories": "490",
+      "protein": "28",
+      "carbs": "8",
+      "fat": "39"
+    },
+    {
+      "dish": "#2 - Jersey Shore's Favorite Regular Mike's Way Cold - Wheat Sub",
+      "calories": "780",
+      "protein": "39",
+      "carbs": "63",
+      "fat": "42"
+    },
+    {
+      "dish": "#2 - Jersey Shore's Favorite Regular Mike's Way Cold - White Sub",
+      "calories": "770",
+      "protein": "37",
+      "carbs": "63",
+      "fat": "42"
+    },
+    {
+      "dish": "#3 - Ham and Provolone Regular Mike's Way Cold - Rosemary Parmesan",
+      "calories": "780",
+      "protein": "38",
+      "carbs": "63",
+      "fat": "43"
+    },
+    {
+      "dish": "#3 - Ham and Provolone Regular Mike's Way Cold - Sub in a Tub",
+      "calories": "480",
+      "protein": "27",
+      "carbs": "7",
+      "fat": "39"
+    },
+    {
+      "dish": "#3 - Ham and Provolone Regular Mike's Way Cold - Wheat Sub",
+      "calories": "760",
+      "protein": "38",
+      "carbs": "62",
+      "fat": "41"
+    },
+    {
+      "dish": "#3 - Ham and Provolone Regular Mike's Way Cold - White Sub",
+      "calories": "750",
+      "protein": "36",
+      "carbs": "62",
+      "fat": "41"
+    },
+    {
+      "dish": "#3 - Ham and Provolone Regular Mike's Way Cold - Wheat Wrap",
+      "calories": "770",
+      "protein": "35",
+      "carbs": "53",
+      "fat": "48"
+    },
+    {
+      "dish": "#3 - Ham and Provolone Regular Mike's Way Cold - White Wrap",
+      "calories": "790",
+      "protein": "35",
+      "carbs": "55",
+      "fat": "49"
+    },
+    {
+      "dish": "#4 - Regular Mike's Way Cold - Rosemary Parmesan",
+      "calories": "790",
+      "protein": "38",
+      "carbs": "64",
+      "fat": "43"
+    },
+    {
+      "dish": "#4 - Regular Mike's Way Cold - Sub in a Tub",
+      "calories": "480",
+      "protein": "26",
+      "carbs": "8",
+      "fat": "39"
+    },
+    {
+      "dish": "#4 - Regular Mike's Way Cold - Wheat Sub",
+      "calories": "760",
+      "protein": "37",
+      "carbs": "63",
+      "fat": "41"
+    },
+    {
+      "dish": "#4 - Regular Mike's Way Cold - White Sub",
+      "calories": "750",
+      "protein": "35",
+      "carbs": "63",
+      "fat": "41"
+    },
+    {
+      "dish": "#4 - Regular Mike's Way Cold - Wheat Wrap",
+      "calories": "770",
+      "protein": "34",
+      "carbs": "54",
+      "fat": "48"
+    },
+    {
+      "dish": "#4 - Regular Mike's Way Cold - White Wrap",
+      "calories": "790",
+      "protein": "34",
+      "carbs": "56",
+      "fat": "49"
+    },
+    {
+      "dish": "#5 - The Super Sub Regular Mike's Way Cold - Rosemary Parmesan",
+      "calories": "810",
+      "protein": "42",
+      "carbs": "64",
+      "fat": "44"
+    },
+    {
+      "dish": "#5 - The Super Sub Regular Mike's Way Cold - Sub in a Tub",
+      "calories": "500",
+      "protein": "31",
+      "carbs": "8",
+      "fat": "39"
+    },
+    {
+      "dish": "#5 -The Super Sub Regular Mike's Way Cold - Wheat Sub",
+      "calories": "790",
+      "protein": "41",
+      "carbs": "64",
+      "fat": "42"
+    },
+    {
+      "dish": "#5 - The Super Sub Regular Mike's Way Cold - White Sub",
+      "calories": "780",
+      "protein": "40",
+      "carbs": "63",
+      "fat": "42"
+    },
+    {
+      "dish": "#5 - The Super Sub Regular Mike's Way Cold - Wheat Wrap",
+      "calories": "790",
+      "protein": "39",
+      "carbs": "54",
+      "fat": "48"
+    },
+    {
+      "dish": "#5 - The Super Sub Regular Mike's Way Cold - White Wrap",
+      "calories": "810",
+      "protein": "39",
+      "carbs": "56",
+      "fat": "49"
+    },
+    {
+      "dish": "#6 - Roast Beef and Provolone Regular Mike's Way Cold - Rosemary Parmesan",
+      "calories": "850",
+      "protein": "50",
+      "carbs": "62",
+      "fat": "46"
+    },
+    {
+      "dish": "#6 - Roast Beef and Provolone Regular Mike's Way Cold - Sub in a Tub",
+      "calories": "550",
+      "protein": "39",
+      "carbs": "6",
+      "fat": "42"
+    },
+    {
+      "dish": "#6 - Roast Beef and Provolone Regular Mike's Way Cold - Wheat Sub",
+      "calories": "830",
+      "protein": "50",
+      "carbs": "61",
+      "fat": "44"
+    },
+    {
+      "dish": "#6 - Roast Beef and Provolone Regular Mike's Way Cold - White Sub",
+      "calories": "820",
+      "protein": "48",
+      "carbs": "61",
+      "fat": "44"
+    },
+    {
+      "dish": "#6 - Roast Beef and Provolone Regular Mike's Way Cold - Wheat Wrap",
+      "calories": "840",
+      "protein": "47",
+      "carbs": "52",
+      "fat": "51"
+    },
+    {
+      "dish": "#6 - Roast Beef and Provolone Regular Mike's Way Cold - White Wrap",
+      "calories": "860",
+      "protein": "47",
+      "carbs": "54",
+      "fat": "52"
+    },
+    {
+      "dish": "#7 - Turkey and Provolone Regular Mike's Way Cold - Rosemary Parmesan",
+      "calories": "800",
+      "protein": "39",
+      "carbs": "65",
+      "fat": "44"
+    },
+    {
+      "dish": "#7 - Turkey and Provolone Regular Mike's Way Cold - Sub in a Tub",
+      "calories": "500",
+      "protein": "27",
+      "carbs": "8",
+      "fat": "40"
+    },
+    {
+      "dish": "#7 - Turkey and Provolone Regular Mike's Way Cold - Wheat Sub",
+      "calories": "790",
+      "protein": "38",
+      "carbs": "64",
+      "fat": "43"
+    },
+    {
+      "dish": "#7 - Turkey and Provolone Regular Mike's Way Cold - White Sub",
+      "calories": "780",
+      "protein": "36",
+      "carbs": "64",
+      "fat": "43"
+    },
+    {
+      "dish": "#7 - Turkey and Provolone Regular Mike's Way Cold - Wheat Wrap",
+      "calories": "780",
+      "protein": "35",
+      "carbs": "54",
+      "fat": "49"
+    },
+    {
+      "dish": "#7 - Turkey and Provolone Regular Mike's Way Cold - White Wrap",
+      "calories": "810",
+      "protein": "35",
+      "carbs": "56",
+      "fat": "50"
+    },
+    {
+      "dish": "#8 - Club Sub Regular Mike's Way Cold - Rosemary Parmesan",
+      "calories": "880",
+      "protein": "46",
+      "carbs": "64",
+      "fat": "50"
+    },
+    {
+      "dish": "#8 - Club Sub Regular Mike's Way Cold - Sub in a Tub",
+      "calories": "570",
+      "protein": "35",
+      "carbs": "8",
+      "fat": "45"
+    },
+    {
+      "dish": "#8 - Club Sub Regular Mike's Way Cold - Wheat Sub",
+      "calories": "860",
+      "protein": "45",
+      "carbs": "64",
+      "fat": "48"
+    },
+    {
+      "dish": "#8 - Club Sub Regular Mike's Way Cold - White Sub",
+      "calories": "850",
+      "protein": "44",
+      "carbs": "63",
+      "fat": "48"
+    },
+    {
+      "dish": "#8 - Club Sub Regular Mike's Way Cold - Wheat Wrap",
+      "calories": "860",
+      "protein": "43",
+      "carbs": "54",
+      "fat": "54"
+    },
+    {
+      "dish": "#8 - Club Sub Regular Mike's Way Cold - White Wrap",
+      "calories": "880",
+      "protein": "43",
+      "carbs": "56",
+      "fat": "55"
+    },
+    {
+      "dish": "#9 - Club Supreme Regular Mike's Way Cold - Rosemary Parmesan",
+      "calories": "900",
+      "protein": "50",
+      "carbs": "64",
+      "fat": "50"
+    },
+    {
+      "dish": "#9 - Club Supreme Regular Mike's Way Cold - Sub in a Tub",
+      "calories": "590",
+      "protein": "38",
+      "carbs": "8",
+      "fat": "46"
+    },
+    {
+      "dish": "#9 - Club Supreme Regular Mike's Way Cold- Wheat Sub",
+      "calories": "870",
+      "protein": "49",
+      "carbs": "63",
+      "fat": "48"
+    },
+    {
+      "dish": "#9 - Club Supreme Regular Mike's Way Cold - White Sub",
+      "calories": "870",
+      "protein": "48",
+      "carbs": "63",
+      "fat": "48"
+    },
+    {
+      "dish": "#9 - Club Supreme Regular Mike's Way Cold - Wheat Wrap",
+      "calories": "880",
+      "protein": "46",
+      "carbs": "54",
+      "fat": "55"
+    },
+    {
+      "dish": "#9 - Club Supreme Regular Mike's Way Cold - White Wrap",
+      "calories": "900",
+      "protein": "46",
+      "carbs": "56",
+      "fat": "56"
+    },
+    {
+      "dish": "#16 - Hot Regular - Chicken Philly - Rosemary Parmesan",
+      "calories": "630",
+      "protein": "53",
+      "carbs": "69",
+      "fat": "16"
+    },
+    {
+      "dish": "#16 - Hot Regular - Chicken Philly - Sub in a Tub",
+      "calories": "320",
+      "protein": "42",
+      "carbs": "12",
+      "fat": "12"
+    },
+    {
+      "dish": "#16 - Hot Regular - Chicken Philly - Wheat Sub",
+      "calories": "600",
+      "protein": "52",
+      "carbs": "68",
+      "fat": "14"
+    },
+    {
+      "dish": "#16 - Hot Regular - Chicken Philly - White Sub",
+      "calories": "600",
+      "protein": "51",
+      "carbs": "68",
+      "fat": "14"
+    },
+    {
+      "dish": "#16 - Hot Regular - Chicken Philly - Wheat Wrap",
+      "calories": "610",
+      "protein": "50",
+      "carbs": "58",
+      "fat": "21"
+    },
+    {
+      "dish": "#16 - Hot Regular - Chicken Philly - White Wrap",
+      "calories": "630",
+      "protein": "50",
+      "carbs": "60",
+      "fat": "22"
+    },
+    {
+      "dish": "#17 - Hot Regular - Steak Philly - Rosemary Parmesan",
+      "calories": "680",
+      "protein": "46",
+      "carbs": "67",
+      "fat": "26"
+    },
+    {
+      "dish": "#17 - Hot Regular - Steak Philly - Sub in a Tub",
+      "calories": "380",
+      "protein": "35",
+      "carbs": "11",
+      "fat": "22"
+    },
+    {
+      "dish": "#17 - Hot Regular - Steak Philly - Wheat Sub",
+      "calories": "670",
+      "protein": "46",
+      "carbs": "67",
+      "fat": "25"
+    },
+    {
+      "dish": "#17 - Hot Regular - Steak Philly - White Sub",
+      "calories": "660",
+      "protein": "44",
+      "carbs": "67",
+      "fat": "25"
+    },
+    {
+      "dish": "#17 - Hot Regular - Steak Philly - Wheat Wrap",
+      "calories": "670",
+      "protein": "43",
+      "carbs": "57",
+      "fat": "31"
+    },
+    {
+      "dish": "#17 - Hot Regular - Steak Philly - White Wrap",
+      "calories": "690",
+      "protein": "43",
+      "carbs": "59",
+      "fat": "32"
+    },
+    {
+      "dish": "#26 - Hot Regular - Chicken Bacon Ranch Cheesesteak - Rosemary Parmesan",
+      "calories": "870",
+      "protein": "58",
+      "carbs": "68",
+      "fat": "41"
+    },
+    {
+      "dish": "#26 - Hot Regular - Chicken Bacon Ranch Cheesesteak - Sub in a Tub",
+      "calories": "560",
+      "protein": "47",
+      "carbs": "11",
+      "fat": "37"
+    },
+    {
+      "dish": "#26 - Hot Regular - Chicken Bacon Ranch Cheesesteak - Wheat Sub",
+      "calories": "850",
+      "protein": "57",
+      "carbs": "67",
+      "fat": "40"
+    },
+    {
+      "dish": "#26 - Hot Regular - Chicken Bacon Ranch Cheesesteak - White Sub",
+      "calories": "850",
+      "protein": "56",
+      "carbs": "67",
+      "fat": "40"
+    },
+    {
+      "dish": "#26 - Hot Regular - Chicken Bacon Ranch Cheesesteak - Wheat Wrap",
+      "calories": "850",
+      "protein": "55",
+      "carbs": "57",
+      "fat": "46"
+    },
+    {
+      "dish": "#26 - Hot Regular - Chicken Bacon Ranch Cheesesteak - White Wrap",
+      "calories": "870",
+      "protein": "55",
+      "carbs": "59",
+      "fat": "47"
+    },
+    {
+      "dish": "#31 - Hot Regular - California Chicken Cheesesteak - Rosemary Parmesan",
+      "calories": "830",
+      "protein": "53",
+      "carbs": "65",
+      "fat": "41"
+    },
+    {
+      "dish": "#31 - Hot Regular - California Chicken Cheesesteak - Sub in a Tub",
+      "calories": "530",
+      "protein": "42",
+      "carbs": "8",
+      "fat": "37"
+    },
+    {
+      "dish": "#31 - Hot Regular - California Chicken Cheesesteak - Wheat Sub",
+      "calories": "820",
+      "protein": "53",
+      "carbs": "64",
+      "fat": "40"
+    },
+    {
+      "dish": "#31 - Hot Regular - California Chicken Cheesesteak - White Sub",
+      "calories": "810",
+      "protein": "51",
+      "carbs": "64",
+      "fat": "40"
+    },
+    {
+      "dish": "#31 - Hot Regular - California Chicken Cheesesteak - Wheat Wrap",
+      "calories": "820",
+      "protein": "50",
+      "carbs": "54",
+      "fat": "46"
+    },
+    {
+      "dish": "#31 - Hot Regular - California Chicken Cheesesteak - White Wrap",
+      "calories": "840",
+      "protein": "50",
+      "carbs": "56",
+      "fat": "47"
+    },
+    {
+      "dish": "#42 - Hot Regular - Chipotle Chicken Philly - Rosemary Parmesan",
+      "calories": "910",
+      "protein": "53",
+      "carbs": "70",
+      "fat": "47"
+    },
+    {
+      "dish": "#42 - Hot Regular - Chipotle Chicken Philly - Sub in a Tub",
+      "calories": "610",
+      "protein": "42",
+      "carbs": "14",
+      "fat": "43"
+    },
+    {
+      "dish": "#42 - Hot Regular - Chipotle Chicken Philly - Wheat Sub",
+      "calories": "880",
+      "protein": "52",
+      "carbs": "70",
+      "fat": "45"
+    },
+    {
+      "dish": "#42 - Hot Regular - Chipotle Chicken Philly - White Sub",
+      "calories": "880",
+      "protein": "51",
+      "carbs": "70",
+      "fat": "45"
+    },
+    {
+      "dish": "#42 - Hot Regular - Chipotle Chicken Philly - Wheat Wrap",
+      "calories": "890",
+      "protein": "50",
+      "carbs": "60",
+      "fat": "52"
+    },
+    {
+      "dish": "#42 - Hot Regular - Chipotle Chicken Philly - White Wrap",
+      "calories": "920",
+      "protein": "50",
+      "carbs": "62",
+      "fat": "53"
+    },
+    {
+      "dish": "#43 - Hot Regular - Chipotle Steak Philly - Rosemary Parmesan",
+      "calories": "980",
+      "protein": "47",
+      "carbs": "69",
+      "fat": "58"
+    },
+    {
+      "dish": "#43 - Hot Regular - Chipotle Steak Philly - Sub in a Tub",
+      "calories": "680",
+      "protein": "36",
+      "carbs": "13",
+      "fat": "54"
+    },
+    {
+      "dish": "#43 - Hot Regular - Chipotle Steak Philly - Wheat Sub",
+      "calories": "950",
+      "protein": "46",
+      "carbs": "69",
+      "fat": "56"
+    },
+    {
+      "dish": "#43 - Hot Regular - Chipotle Steak Philly - White Sub",
+      "calories": "950",
+      "protein": "45",
+      "carbs": "68",
+      "fat": "56"
+    },
+    {
+      "dish": "#43 - Hot Regular - Chipotle Steak Philly - Wheat Wrap",
+      "calories": "970",
+      "protein": "44",
+      "carbs": "59",
+      "fat": "63"
+    },
+    {
+      "dish": "#43 - Hot Regular - Chipotle Steak Philly - White Wrap",
+      "calories": "990",
+      "protein": "44",
+      "carbs": "61",
+      "fat": "64"
+    },
+    {
+      "dish": "#44 - Hot Regular - Buffalo Chicken Cheesesteak - Rosemary Parmesan",
+      "calories": "820",
+      "protein": "54",
+      "carbs": "69",
+      "fat": "37"
+    },
+    {
+      "dish": "#44 - Hot Regular - Buffalo Chicken Cheesesteak - Sub in a Tub",
+      "calories": "510",
+      "protein": "42",
+      "carbs": "13",
+      "fat": "32"
+    },
+    {
+      "dish": "#44 - Hot Regular - Buffalo Chicken Cheesesteak - Wheat Sub",
+      "calories": "790",
+      "protein": "53",
+      "carbs": "69",
+      "fat": "35"
+    },
+    {
+      "dish": "#44 - Hot Regular - Buffalo Chicken Cheesesteak - White Sub",
+      "calories": "790",
+      "protein": "52",
+      "carbs": "69",
+      "fat": "35"
+    },
+    {
+      "dish": "#44 - Hot Regular - Buffalo Chicken Cheesesteak - Wheat Wrap",
+      "calories": "790",
+      "protein": "50",
+      "carbs": "59",
+      "fat": "41"
+    },
+    {
+      "dish": "#44 - Hot Regular - Buffalo Chicken Cheesesteak - White Wrap",
+      "calories": "820",
+      "protein": "50",
+      "carbs": "61",
+      "fat": "42"
+    },
+    {
+      "dish": "#54 - Hot Regular - Hot Veggie - Rosemary Parmesan",
+      "calories": "570",
+      "protein": "28",
+      "carbs": "74",
+      "fat": "19"
+    },
+    {
+      "dish": "#54 - Hot Regular - Hot Veggie - Sub in a Tub",
+      "calories": "260",
+      "protein": "16",
+      "carbs": "18",
+      "fat": "15"
+    },
+    {
+      "dish": "#54 - Hot Regular - Hot Veggie - Wheat Sub",
+      "calories": "540",
+      "protein": "27",
+      "carbs": "73",
+      "fat": "17"
+    },
+    {
+      "dish": "#54 - Hot Regular - Hot Veggie - White Sub",
+      "calories": "540",
+      "protein": "26",
+      "carbs": "73",
+      "fat": "17"
+    },
+    {
+      "dish": "#54 - Hot Regular - Hot Veggie - Wheat Wrap",
+      "calories": "550",
+      "protein": "24",
+      "carbs": "64",
+      "fat": "24"
+    },
+    {
+      "dish": "#54 - Hot Regular - Hot Veggie - White Wrap",
+      "calories": "570",
+      "protein": "24",
+      "carbs": "66",
+      "fat": "25"
+    },
+    {
+      "dish": "#55 - Hot Regular - Chicken Big Kahuna - Rosemary Parmesan",
+      "calories": "660",
+      "protein": "56",
+      "carbs": "71",
+      "fat": "18"
+    },
+    {
+      "dish": "#55 - Hot Regular - Chicken Big Kahuna - Sub in a Tub",
+      "calories": "360",
+      "protein": "44",
+      "carbs": "15",
+      "fat": "14"
+    },
+    {
+      "dish": "#55 - Hot Regular - Chicken Big Kahuna - Wheat Sub",
+      "calories": "640",
+      "protein": "55",
+      "carbs": "70",
+      "fat": "17"
+    },
+    {
+      "dish": "#55 - Hot Regular - Chicken Big Kahuna - White Sub",
+      "calories": "640",
+      "protein": "54",
+      "carbs": "70",
+      "fat": "17"
+    },
+    {
+      "dish": "#55 - Hot Regular - Chicken Big Kahuna - Wheat Wrap",
+      "calories": "650",
+      "protein": "52",
+      "carbs": "61",
+      "fat": "23"
+    },
+    {
+      "dish": "#55 - Hot Regular - Chicken Big Kahuna - White Wrap",
+      "calories": "670",
+      "protein": "52",
+      "carbs": "63",
+      "fat": "24"
+    },
+    {
+      "dish": "#56 - Hot Regular - Big Kahuna - Rosemary Parmesan",
+      "calories": "730",
+      "protein": "50",
+      "carbs": "70",
+      "fat": "29"
+    },
+    {
+      "dish": "#56 - Hot Regular - Big Kahuna - Sub in a Tub",
+      "calories": "430",
+      "protein": "38",
+      "carbs": "14",
+      "fat": "25"
+    },
+    {
+      "dish": "#56 - Hot Regular - Big Kahuna - Wheat Sub",
+      "calories": "710",
+      "protein": "49",
+      "carbs": "69",
+      "fat": "28"
+    },
+    {
+      "dish": "#56 - Hot Regular - Big Kahuna - White Sub",
+      "calories": "710",
+      "protein": "48",
+      "carbs": "69",
+      "fat": "28"
+    },
+    {
+      "dish": "#56 - Hot Regular - Big Kahuna - Wheat Wrap",
+      "calories": "720",
+      "protein": "46",
+      "carbs": "60",
+      "fat": "34"
+    },
+    {
+      "dish": "#56 - Hot Regular - Big Kahuna - White Wrap",
+      "calories": "740",
+      "protein": "46",
+      "carbs": "62",
+      "fat": "35"
+    },
+    {
+      "dish": "#64 - Hot Regular - Portabella Mushroom & Swiss - Rosemary Parmesan",
+      "calories": "650",
+      "protein": "26",
+      "carbs": "69",
+      "fat": "31"
+    },
+    {
+      "dish": "#64 - Hot Regular - Portabella Mushroom & Swiss - Sub in a Tub",
+      "calories": "340",
+      "protein": "14",
+      "carbs": "13",
+      "fat": "26"
+    },
+    {
+      "dish": "#64 - Hot Regular - Portabella Mushroom & Swiss - Wheat Sub",
+      "calories": "620",
+      "protein": "25",
+      "carbs": "68",
+      "fat": "29"
+    },
+    {
+      "dish": "#64 - Hot Regular - Portabella Mushroom & Swiss - White Sub",
+      "calories": "620",
+      "protein": "24",
+      "carbs": "68",
+      "fat": "29"
+    },
+    {
+      "dish": "#64 - Hot Regular - Portabella Mushroom & Swiss - Wheat Wrap",
+      "calories": "620",
+      "protein": "22",
+      "carbs": "59",
+      "fat": "35"
+    },
+    {
+      "dish": "#64 - Hot Regular - Portabella Mushroom & Swiss - White Wrap",
+      "calories": "650",
+      "protein": "22",
+      "carbs": "61",
+      "fat": "36"
+    },
+    {
+      "dish": "#65 - Hot Regular - Portabella Chicken Philly - Rosemary Parmesan",
+      "calories": "620",
+      "protein": "53",
+      "carbs": "70",
+      "fat": "15"
+    },
+    {
+      "dish": "#65 - Hot Regular - Portabella Chicken Philly - Sub in a Tub",
+      "calories": "320",
+      "protein": "42",
+      "carbs": "14",
+      "fat": "11"
+    },
+    {
+      "dish": "#65 - Hot Regular - Portabella Chicken Philly - Wheat Sub",
+      "calories": "600",
+      "protein": "52",
+      "carbs": "69",
+      "fat": "14"
+    },
+    {
+      "dish": "#65 - Hot Regular - Portabella Chicken Philly - White Sub",
+      "calories": "600",
+      "protein": "51",
+      "carbs": "69",
+      "fat": "14"
+    },
+    {
+      "dish": "#65 - Hot Regular - Portabella Chicken Philly - Wheat Wrap",
+      "calories": "610",
+      "protein": "50",
+      "carbs": "60",
+      "fat": "20"
+    },
+    {
+      "dish": "#65 - Hot Regular - Portabella Chicken Philly - White Wrap",
+      "calories": "630",
+      "protein": "50",
+      "carbs": "62",
+      "fat": "21"
+    },
+    {
+      "dish": "#66 - Hot Regular - Portabella Steak Philly - Rosemary Parmesan",
+      "calories": "690",
+      "protein": "47",
+      "carbs": "69",
+      "fat": "26"
+    },
+    {
+      "dish": "#66 - Hot Regular - Portabella Steak Philly - Sub in a Tub",
+      "calories": "390",
+      "protein": "36",
+      "carbs": "13",
+      "fat": "22"
+    },
+    {
+      "dish": "#66 - Hot Regular - Portabella Steak Philly - Wheat Sub",
+      "calories": "670",
+      "protein": "46",
+      "carbs": "68",
+      "fat": "25"
+    },
+    {
+      "dish": "#66 - Hot Regular - Portabella Steak Philly - White Sub",
+      "calories": "670",
+      "protein": "45",
+      "carbs": "68",
+      "fat": "25"
+    },
+    {
+      "dish": "#66 - Hot Regular - Portabella Steak Philly - Wheat Wrap",
+      "calories": "680",
+      "protein": "44",
+      "carbs": "59",
+      "fat": "31"
+    },
+    {
+      "dish": "#66 - Hot Regular - Portabella Steak Philly - White Wrap",
+      "calories": "700",
+      "protein": "44",
+      "carbs": "61",
+      "fat": "32"
+    },
+    {
+      "dish": "#1 - Giant Mike's Cold - Rosemary Parmesan Bread",
+      "calories": "1540",
+      "protein": "53",
+      "carbs": "121",
+      "fat": "95"
+    },
+    {
+      "dish": "#1 - Giant Mike's Cold - Wheat Sub",
+      "calories": "1480",
+      "protein": "52",
+      "carbs": "119",
+      "fat": "91"
+    },
+    {
+      "dish": "#1 - Giant Mike's Cold - White Sub",
+      "calories": "1480",
+      "protein": "49",
+      "carbs": "119",
+      "fat": "91"
+    },
+    {
+      "dish": "#2 - Giant Mike's Way Cold - Rosemary Parmesan",
+      "calories": "1360",
+      "protein": "52",
+      "carbs": "124",
+      "fat": "75"
+    },
+    {
+      "dish": "#2 - Giant Mike's Way Cold - Wheat Sub",
+      "calories": "1320",
+      "protein": "50",
+      "carbs": "122",
+      "fat": "72"
+    },
+    {
+      "dish": "#2 - Giant Mike's Way Cold - White Sub",
+      "calories": "1310",
+      "protein": "47",
+      "carbs": "122",
+      "fat": "72"
+    },
+    {
+      "dish": "#3 - Giant Mike's Way Cold - Rosemary Parmesan",
+      "calories": "1490",
+      "protein": "68",
+      "carbs": "124",
+      "fat": "82"
+    },
+    {
+      "dish": "#3 - Giant Mike's Way Cold - Wheat Sub",
+      "calories": "1450",
+      "protein": "66",
+      "carbs": "123",
+      "fat": "79"
+    },
+    {
+      "dish": "#3 - Giant Mike's Way Cold - White Sub",
+      "calories": "1440",
+      "protein": "63",
+      "carbs": "122",
+      "fat": "79"
+    },
+    {
+      "dish": "#4 - Giant Mike's Way Cold - Rosemary Parmesan",
+      "calories": "1490",
+      "protein": "66",
+      "carbs": "125",
+      "fat": "82"
+    },
+    {
+      "dish": "#4 - Giant Mike's Way Cold - Wheat Sub",
+      "calories": "1450",
+      "protein": "65",
+      "carbs": "124",
+      "fat": "79"
+    },
+    {
+      "dish": "#4 - Giant Mike's Way Cold - White Sub",
+      "calories": "1440",
+      "protein": "62",
+      "carbs": "124",
+      "fat": "79"
+    },
+    {
+      "dish": "#5 - Giant Mike's Way Cold - Rosemary Parmesan",
+      "calories": "1530",
+      "protein": "74",
+      "carbs": "126",
+      "fat": "83"
+    },
+    {
+      "dish": "#5 - Giant Mike's Way Cold - Wheat Sub",
+      "calories": "1490",
+      "protein": "73",
+      "carbs": "125",
+      "fat": "80"
+    },
+    {
+      "dish": "#5 - Giant Mike's Way Cold - White Sub",
+      "calories": "1480",
+      "protein": "70",
+      "carbs": "124",
+      "fat": "80"
+    },
+    {
+      "dish": "#6 - Giant Mike's Way Cold - Rosemary Parmesan",
+      "calories": "1660",
+      "protein": "97",
+      "carbs": "122",
+      "fat": "89"
+    },
+    {
+      "dish": "#6 - Giant Mike's Way Cold - Wheat Sub",
+      "calories": "1620",
+      "protein": "96",
+      "carbs": "121",
+      "fat": "86"
+    },
+    {
+      "dish": "#6 - Giant Mike's Way Cold - White Sub",
+      "calories": "1610",
+      "protein": "93",
+      "carbs": "121",
+      "fat": "85"
+    },
+    {
+      "dish": "#7 - Giant Mike's Way Cold - Rosemary Parmesan",
+      "calories": "1530",
+      "protein": "68",
+      "carbs": "126",
+      "fat": "85"
+    },
+    {
+      "dish": "#7 - Giant Mike's Way Cold - Wheat Sub",
+      "calories": "1480",
+      "protein": "67",
+      "carbs": "125",
+      "fat": "81"
+    },
+    {
+      "dish": "#7 - Giant Mike's Way Cold - White Sub",
+      "calories": "1470",
+      "protein": "64",
+      "carbs": "125",
+      "fat": "81"
+    },
+    {
+      "dish": "#8 - Giant Mike's Way Cold - Wheat Sub",
+      "calories": "1620",
+      "protein": "79",
+      "carbs": "124",
+      "fat": "92"
+    },
+    {
+      "dish": "#8 - Giant Mike's Way Cold - White Sub",
+      "calories": "1610",
+      "protein": "75",
+      "carbs": "124",
+      "fat": "92"
+    },
+    {
+      "dish": "#8 - Giant Mike's Way Cold- Rosemary Parmesan",
+      "calories": "1660",
+      "protein": "80",
+      "carbs": "126",
+      "fat": "95"
+    },
+    {
+      "dish": "#9 - Club Supreme Giant Mike's Way Cold - Rosemary Parmesan",
+      "calories": "1680",
+      "protein": "86",
+      "carbs": "125",
+      "fat": "95"
+    },
+    {
+      "dish": "#9 - Club Supreme Giant Mike's Way Cold - Wheat Sub",
+      "calories": "1640",
+      "protein": "85",
+      "carbs": "124",
+      "fat": "92"
+    },
+    {
+      "dish": "#9 - Club Supreme Giant Mike's Way Cold - White Sub",
+      "calories": "1640",
+      "protein": "82",
+      "carbs": "124",
+      "fat": "92"
+    },
+    {
+      "dish": "#10 - Tuna Fish Giant Mike's Way Cold - Rosemary Parmesan",
+      "calories": "1910",
+      "protein": "60",
+      "carbs": "123",
+      "fat": "133"
+    },
+    {
+      "dish": "#10 - Tuna Fish Giant Mike's Way Cold - Wheat Sub",
+      "calories": "1870",
+      "protein": "59",
+      "carbs": "121",
+      "fat": "130"
+    },
+    {
+      "dish": "#10 - Tuna Fish Giant Mike's Way Cold - White Sub",
+      "calories": "1860",
+      "protein": "56",
+      "carbs": "121",
+      "fat": "130"
+    },
+    {
+      "dish": "#11 - Stickball Special Giant Mike's Way Cold - Rosemary Parmesan",
+      "calories": "1630",
+      "protein": "69",
+      "carbs": "124",
+      "fat": "95"
+    },
+    {
+      "dish": "#11 - Stickball Special Giant Mike's Way Cold - Wheat Sub",
+      "calories": "1580",
+      "protein": "68",
+      "carbs": "123",
+      "fat": "91"
+    },
+    {
+      "dish": "#11 - Stickball Special Giant Mike's Way Cold - White Sub",
+      "calories": "1570",
+      "protein": "65",
+      "carbs": "122",
+      "fat": "91"
+    },
+    {
+      "dish": "#12 - Cancro Special Giant Mike's Way Cold - Rosemary Parmesan",
+      "calories": "1700",
+      "protein": "92",
+      "carbs": "123",
+      "fat": "95"
+    },
+    {
+      "dish": "#12 - Cancro Special Giant Mike's Way Cold - Wheat Sub",
+      "calories": "1660",
+      "protein": "91",
+      "carbs": "122",
+      "fat": "92"
+    },
+    {
+      "dish": "#12 - Cancro Special Giant Mike's Way Cold - White Sub",
+      "calories": "1650",
+      "protein": "88",
+      "carbs": "122",
+      "fat": "92"
+    },
+    {
+      "dish": "#13 - The Original Italian Giant Mike's Way Cold - Rosemary Parmesan",
+      "calories": "1750",
+      "protein": "85",
+      "carbs": "127",
+      "fat": "102"
+    },
+    {
+      "dish": "#13 - The Original Italian Giant Mike's Way Cold - Wheat Sub",
+      "calories": "1710",
+      "protein": "83",
+      "carbs": "126",
+      "fat": "99"
+    },
+    {
+      "dish": "#13 - The Original Italian Giant Mike's Way Cold - White Sub",
+      "calories": "1700",
+      "protein": "80",
+      "carbs": "125",
+      "fat": "99"
+    },
+    {
+      "dish": "#14 - The Veggie Giant Mike's Way Cold - Rosemary Parmesan",
+      "calories": "1860",
+      "protein": "77",
+      "carbs": "128",
+      "fat": "116"
+    },
+    {
+      "dish": "#14 - The Veggie Giant Mike's Way Cold - Wheat Sub",
+      "calories": "1830",
+      "protein": "75",
+      "carbs": "127",
+      "fat": "113"
+    },
+    {
+      "dish": "#14 - The Veggie Giant Mike's Way Cold - White Sub",
+      "calories": "1810",
+      "protein": "72",
+      "carbs": "126",
+      "fat": "113"
+    },
+    {
+      "dish": "#16 - Hot Giant - Chicken Philly - Rosemary Parmesan",
+      "calories": "1240",
+      "protein": "105",
+      "carbs": "137",
+      "fat": "31"
+    },
+    {
+      "dish": "#16 - Hot Giant - Chicken Philly - Wheat Sub",
+      "calories": "1190",
+      "protein": "104",
+      "carbs": "136",
+      "fat": "27"
+    },
+    {
+      "dish": "#16 - Hot Giant - Chicken Philly - White Sub",
+      "calories": "1180",
+      "protein": "101",
+      "carbs": "136",
+      "fat": "27"
+    },
+    {
+      "dish": "#17 - Hot Giant - Steak Philly - Rosemary Parmesan",
+      "calories": "1380",
+      "protein": "93",
+      "carbs": "135",
+      "fat": "53"
+    },
+    {
+      "dish": "#17 - Hot Giant - Steak Philly - Wheat Sub",
+      "calories": "1330",
+      "protein": "92",
+      "carbs": "134",
+      "fat": "49"
+    },
+    {
+      "dish": "#17 - Hot Giant - Steak Philly - White Sub",
+      "calories": "1320",
+      "protein": "89",
+      "carbs": "134",
+      "fat": "49"
+    },
+    {
+      "dish": "#26 - Hot Giant - Chicken Bacon Ranch Cheesesteak - Rosemary Parmesan",
+      "calories": "1740",
+      "protein": "116",
+      "carbs": "135",
+      "fat": "83"
+    },
+    {
+      "dish": "#26 - Hot Giant - Chicken Bacon Ranch Cheesesteak - Wheat Sub",
+      "calories": "1680",
+      "protein": "114",
+      "carbs": "133",
+      "fat": "79"
+    },
+    {
+      "dish": "#26 - Hot Giant - Chicken Bacon Ranch Cheesesteak - White Sub",
+      "calories": "1680",
+      "protein": "111",
+      "carbs": "133",
+      "fat": "79"
+    },
+    {
+      "dish": "#31 - Hot Giant - California Chicken Cheesesteak - Rosemary Parmesan",
+      "calories": "1670",
+      "protein": "107",
+      "carbs": "128",
+      "fat": "83"
+    },
+    {
+      "dish": "#31 - Hot Giant - California Chicken Cheesesteak - Wheat Sub",
+      "calories": "1630",
+      "protein": "105",
+      "carbs": "127",
+      "fat": "80"
+    },
+    {
+      "dish": "#31 - Hot Giant - California Chicken Cheesesteak - White Sub",
+      "calories": "1620",
+      "protein": "102",
+      "carbs": "127",
+      "fat": "79"
+    },
+    {
+      "dish": "#42 - Hot Giant - Chipotle Chicken Philly - Rosemary Parmesan",
+      "calories": "1820",
+      "protein": "106",
+      "carbs": "141",
+      "fat": "94"
+    },
+    {
+      "dish": "#42 - Hot Giant - Chipotle Chicken Philly - Wheat Sub",
+      "calories": "1780",
+      "protein": "105",
+      "carbs": "140",
+      "fat": "91"
+    },
+    {
+      "dish": "#42 - Hot Giant - Chipotle Chicken Philly - White Sub",
+      "calories": "1770",
+      "protein": "102",
+      "carbs": "139",
+      "fat": "91"
+    },
+    {
+      "dish": "#43 - Hot Giant - Chipotle Steak Philly - Rosemary Parmesan",
+      "calories": "1960",
+      "protein": "94",
+      "carbs": "139",
+      "fat": "116"
+    },
+    {
+      "dish": "#43 - Hot Giant - Chipotle Steak Philly - Wheat Sub",
+      "calories": "1920",
+      "protein": "93",
+      "carbs": "138",
+      "fat": "113"
+    },
+    {
+      "dish": "#43 - Hot Giant - Chipotle Steak Philly - White Sub",
+      "calories": "1910",
+      "protein": "90",
+      "carbs": "137",
+      "fat": "113"
+    },
+    {
+      "dish": "#44 - Hot Giant - Buffalo Chicken Cheesesteak - Rosemary Parmesan",
+      "calories": "1620",
+      "protein": "107",
+      "carbs": "138",
+      "fat": "73"
+    },
+    {
+      "dish": "#44 - Hot Giant - Buffalo Chicken Cheesesteak - Wheat Sub",
+      "calories": "1580",
+      "protein": "106",
+      "carbs": "137",
+      "fat": "70"
+    },
+    {
+      "dish": "#44 - Hot Giant - Buffalo Chicken Cheesesteak - White Sub",
+      "calories": "1570",
+      "protein": "103",
+      "carbs": "136",
+      "fat": "70"
+    },
+    {
+      "dish": "#54 - Hot Giant - Hot Veggie - Rosemary Parmesan",
+      "calories": "1130",
+      "protein": "55",
+      "carbs": "147",
+      "fat": "38"
+    },
+    {
+      "dish": "#54 - Hot Giant - Hot Veggie - Wheat Sub",
+      "calories": "1090",
+      "protein": "54",
+      "carbs": "146",
+      "fat": "35"
+    },
+    {
+      "dish": "#54 - Hot Giant - Hot Veggie - White Sub",
+      "calories": "1080",
+      "protein": "51",
+      "carbs": "146",
+      "fat": "35"
+    },
+    {
+      "dish": "#55 - Hot Giant - Chicken Big Kahuna - Rosemary Parmesan",
+      "calories": "1330",
+      "protein": "111",
+      "carbs": "141",
+      "fat": "37"
+    },
+    {
+      "dish": "#55 - Hot Giant - Chicken Big Kahuna - Wheat Sub",
+      "calories": "1280",
+      "protein": "110",
+      "carbs": "140",
+      "fat": "33"
+    },
+    {
+      "dish": "#55 - Hot Giant - Chicken Big Kahuna - White Sub",
+      "calories": "1270",
+      "protein": "107",
+      "carbs": "140",
+      "fat": "33"
+    },
+    {
+      "dish": "#56 - Hot Giant - Big Kahuna - Rosemary Parmesan",
+      "calories": "1470",
+      "protein": "99",
+      "carbs": "140",
+      "fat": "59"
+    },
+    {
+      "dish": "#56 - Hot Giant - Big Kahuna - Wheat Sub",
+      "calories": "1420",
+      "protein": "98",
+      "carbs": "138",
+      "fat": "55"
+    },
+    {
+      "dish": "#56 - Hot Giant - Big Kahuna - White Sub",
+      "calories": "1410",
+      "protein": "95",
+      "carbs": "138",
+      "fat": "55"
+    },
+    {
+      "dish": "#64 - Hot Giant - Portabella Mushroom & Swiss - Rosemary Parmesan",
+      "calories": "1290",
+      "protein": "52",
+      "carbs": "138",
+      "fat": "61"
+    },
+    {
+      "dish": "#64 - Hot Giant - Portabella Mushroom & Swiss - Wheat Sub",
+      "calories": "1240",
+      "protein": "50",
+      "carbs": "136",
+      "fat": "58"
+    },
+    {
+      "dish": "#64 - Hot Giant - Portabella Mushroom & Swiss - White Sub",
+      "calories": "1230",
+      "protein": "47",
+      "carbs": "136",
+      "fat": "58"
+    },
+    {
+      "dish": "#65 - Hot Giant - Portabella Chicken Philly - Rosemary Parmesan",
+      "calories": "1250",
+      "protein": "106",
+      "carbs": "140",
+      "fat": "31"
+    },
+    {
+      "dish": "#65 - Hot Giant - Portabella Chicken Philly - Wheat Sub",
+      "calories": "1200",
+      "protein": "105",
+      "carbs": "138",
+      "fat": "28"
+    },
+    {
+      "dish": "#65 - Hot Giant - Portabella Chicken Philly - White Sub",
+      "calories": "1190",
+      "protein": "102",
+      "carbs": "138",
+      "fat": "27"
+    },
+    {
+      "dish": "#66 - Hot Giant - Portabella Steak Philly - Rosemary Parmesan",
+      "calories": "1390",
+      "protein": "94",
+      "carbs": "138",
+      "fat": "53"
+    },
+    {
+      "dish": "#66 - Hot Giant - Portabella Steak Philly - Wheat Sub",
+      "calories": "1350",
+      "protein": "93",
+      "carbs": "136",
+      "fat": "50"
+    },
+    {
+      "dish": "#66 - Hot Giant - Portabella Steak Philly - White Sub",
+      "calories": "1330",
+      "protein": "90",
+      "carbs": "136",
+      "fat": "49"
+    },
+    {
+      "dish": "#3 - Ham and Provolone Kid's Menu - Wheat Sub",
+      "calories": "220",
+      "protein": "14",
+      "carbs": "31",
+      "fat": "5"
+    },
+    {
+      "dish": "#3 - Ham and Provolone Kid's Menu - White Sub",
+      "calories": "220",
+      "protein": "13",
+      "carbs": "31",
+      "fat": "5"
+    },
+    {
+      "dish": "#7 - Turkey and Provolone Kid's Menu - Wheat Sub",
+      "calories": "220",
+      "protein": "14",
+      "carbs": "32",
+      "fat": "5"
+    },
+    {
+      "dish": "#7 - Turkey and Provolone Kid's Menu - White Sub",
+      "calories": "230",
+      "protein": "14",
+      "carbs": "32",
+      "fat": "5"
+    },
+    {
+      "dish": "Salami & Cheese - Kid's Menu - Wheat Sub",
+      "calories": "250",
+      "protein": "12",
+      "carbs": "31",
+      "fat": "9"
+    },
+    {
+      "dish": "Salami & Cheese - Kid's Menu - White Sub",
+      "calories": "250",
+      "protein": "11",
+      "carbs": "31",
+      "fat": "9"
+    },
+    {
+      "dish": "Chocolate Chunk Cookie",
+      "calories": "280",
+      "protein": "3",
+      "carbs": "37",
+      "fat": "14"
+    },
+    {
+      "dish": "Mini Chocolate Chunk Cookie",
+      "calories": "150",
+      "protein": "2",
+      "carbs": "19",
+      "fat": "7"
+    },
+    {
+      "dish": "Chocolate Chip Brownie",
+      "calories": "170",
+      "protein": "2",
+      "carbs": "21",
+      "fat": "9"
+    },
+    {
+      "dish": "Add Pepperoni",
+      "calories": "60",
+      "protein": "3",
+      "carbs": "1",
+      "fat": "5"
+    },
+    {
+      "dish": "Add Bacon",
+      "calories": "30",
+      "protein": "2",
+      "carbs": "0",
+      "fat": "3"
+    },
+    {
+      "dish": "#1 - Mini Extra Bacon",
+      "calories": "70",
+      "protein": "5",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "#2 - Mini Extra Meat",
+      "calories": "25",
+      "protein": "4",
+      "carbs": "1",
+      "fat": "0.5"
+    },
+    {
+      "dish": "#3 - Mini Extra Meat",
+      "calories": "30",
+      "protein": "6",
+      "carbs": "0",
+      "fat": "1"
+    },
+    {
+      "dish": "#4 - Mini Extra Meat",
+      "calories": "20",
+      "protein": "3",
+      "carbs": "1",
+      "fat": "0.5"
+    },
+    {
+      "dish": "#5 - Mini Extra Meat",
+      "calories": "35",
+      "protein": "6",
+      "carbs": "1",
+      "fat": "1"
+    },
+    {
+      "dish": "#6 - Mini Extra Meat",
+      "calories": "50",
+      "protein": "10",
+      "carbs": "0",
+      "fat": "1.5"
+    },
+    {
+      "dish": "#7 - Mini Extra Meat",
+      "calories": "35",
+      "protein": "6",
+      "carbs": "1",
+      "fat": "1"
+    },
+    {
+      "dish": "#8 - Mini Extra Meat",
+      "calories": "70",
+      "protein": "8",
+      "carbs": "1",
+      "fat": "4"
+    },
+    {
+      "dish": "#9 - Mini Extra Meat",
+      "calories": "80",
+      "protein": "10",
+      "carbs": "0",
+      "fat": "4.5"
+    },
+    {
+      "dish": "#10 - Mini Extra Meat",
+      "calories": "110",
+      "protein": "5",
+      "carbs": "0",
+      "fat": "10"
+    },
+    {
+      "dish": "#11 - Mini Extra Meat",
+      "calories": "40",
+      "protein": "4",
+      "carbs": "0",
+      "fat": "2.5"
+    },
+    {
+      "dish": "#12 - Mini Extra Meat",
+      "calories": "40",
+      "protein": "6",
+      "carbs": "0",
+      "fat": "2"
+    },
+    {
+      "dish": "#13 - Mini Extra Meat",
+      "calories": "70",
+      "protein": "8",
+      "carbs": "1",
+      "fat": "4"
+    },
+    {
+      "dish": "#2 - Mini Extra Cheese",
+      "calories": "80",
+      "protein": "6",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "#3 - Mini Extra Cheese",
+      "calories": "80",
+      "protein": "6",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "#4 - Mini Extra Cheese",
+      "calories": "80",
+      "protein": "6",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "#5 - Mini Extra Cheese",
+      "calories": "80",
+      "protein": "6",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "#6 - Mini Extra Cheese",
+      "calories": "80",
+      "protein": "6",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "#7 - Mini Extra Cheese",
+      "calories": "80",
+      "protein": "6",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "#8 - Mini Extra Cheese",
+      "calories": "80",
+      "protein": "6",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "#9 - Mini Extra Cheese",
+      "calories": "60",
+      "protein": "4",
+      "carbs": "1",
+      "fat": "4.5"
+    },
+    {
+      "dish": "#11 - Mini Extra Cheese",
+      "calories": "80",
+      "protein": "6",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "#12 - Mini Extra Cheese",
+      "calories": "80",
+      "protein": "6",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "#13 - Mini Extra Cheese",
+      "calories": "80",
+      "protein": "6",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "#14 - Mini Extra Cheese",
+      "calories": "210",
+      "protein": "15",
+      "carbs": "2",
+      "fat": "16"
+    },
+    {
+      "dish": "Add Pepperoni",
+      "calories": "90",
+      "protein": "4",
+      "carbs": "1",
+      "fat": "8"
+    },
+    {
+      "dish": "Add Bacon",
+      "calories": "70",
+      "protein": "5",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "Add/Extra Portabello",
+      "calories": "10",
+      "protein": "1",
+      "carbs": "1",
+      "fat": "0"
+    },
+    {
+      "dish": "#1 - Regular Extra Bacon",
+      "calories": "100",
+      "protein": "7",
+      "carbs": "0",
+      "fat": "8"
+    },
+    {
+      "dish": "#2 - Regular Extra Meat",
+      "calories": "45",
+      "protein": "8",
+      "carbs": "1",
+      "fat": "1"
+    },
+    {
+      "dish": "#3 - Regular Extra Meat",
+      "calories": "40",
+      "protein": "8",
+      "carbs": "0",
+      "fat": "1"
+    },
+    {
+      "dish": "#4 - Regular Extra Meat",
+      "calories": "40",
+      "protein": "7",
+      "carbs": "1",
+      "fat": "1"
+    },
+    {
+      "dish": "#5 - Regular Extra Meat",
+      "calories": "70",
+      "protein": "12",
+      "carbs": "1",
+      "fat": "2"
+    },
+    {
+      "dish": "#6 - Regular Extra Meat",
+      "calories": "80",
+      "protein": "14",
+      "carbs": "0",
+      "fat": "2.5"
+    },
+    {
+      "dish": "#7 - Regular Extra Meat",
+      "calories": "60",
+      "protein": "9",
+      "carbs": "1",
+      "fat": "2"
+    },
+    {
+      "dish": "#8 - Regular Extra Meat",
+      "calories": "140",
+      "protein": "16",
+      "carbs": "1",
+      "fat": "8"
+    },
+    {
+      "dish": "#9 - Regular Extra Meat",
+      "calories": "170",
+      "protein": "21",
+      "carbs": "1",
+      "fat": "9"
+    },
+    {
+      "dish": "#10 - Regular Extra Meat",
+      "calories": "210",
+      "protein": "10",
+      "carbs": "0",
+      "fat": "19"
+    },
+    {
+      "dish": "#11 - Regular Extra Meat",
+      "calories": "70",
+      "protein": "8",
+      "carbs": "0",
+      "fat": "4.5"
+    },
+    {
+      "dish": "#12 - Regular Extra Meat",
+      "calories": "80",
+      "protein": "11",
+      "carbs": "0",
+      "fat": "4"
+    },
+    {
+      "dish": "#13 - Regular Extra Meat",
+      "calories": "130",
+      "protein": "15",
+      "carbs": "2",
+      "fat": "7"
+    },
+    {
+      "dish": "#14 - Regular Extra Cheese",
+      "calories": "350",
+      "protein": "26",
+      "carbs": "3",
+      "fat": "26"
+    },
+    {
+      "dish": "#2 - Regular Extra Cheese",
+      "calories": "120",
+      "protein": "9",
+      "carbs": "1",
+      "fat": "9"
+    },
+    {
+      "dish": "#3 - Regular Extra Cheese",
+      "calories": "120",
+      "protein": "9",
+      "carbs": "1",
+      "fat": "9"
+    },
+    {
+      "dish": "#4 - Regular Extra Cheese",
+      "calories": "120",
+      "protein": "9",
+      "carbs": "1",
+      "fat": "9"
+    },
+    {
+      "dish": "#5 - Regular Extra Cheese",
+      "calories": "120",
+      "protein": "9",
+      "carbs": "1",
+      "fat": "9"
+    },
+    {
+      "dish": "#6 - Regular Extra Cheese",
+      "calories": "120",
+      "protein": "9",
+      "carbs": "1",
+      "fat": "9"
+    },
+    {
+      "dish": "#7 - Regular Extra Cheese",
+      "calories": "120",
+      "protein": "9",
+      "carbs": "1",
+      "fat": "9"
+    },
+    {
+      "dish": "#8 - Regular Extra Cheese",
+      "calories": "120",
+      "protein": "9",
+      "carbs": "1",
+      "fat": "9"
+    },
+    {
+      "dish": "#9 - Regular Extra Cheese",
+      "calories": "100",
+      "protein": "7",
+      "carbs": "1",
+      "fat": "7"
+    },
+    {
+      "dish": "#11 - Regular Extra Cheese",
+      "calories": "120",
+      "protein": "9",
+      "carbs": "1",
+      "fat": "9"
+    },
+    {
+      "dish": "#12 - Regular Extra Cheese",
+      "calories": "120",
+      "protein": "9",
+      "carbs": "1",
+      "fat": "9"
+    },
+    {
+      "dish": "#13 - Regular Extra Cheese",
+      "calories": "120",
+      "protein": "9",
+      "carbs": "1",
+      "fat": "9"
+    },
+    {
+      "dish": "Extra Beef Philly",
+      "calories": "120",
+      "protein": "13",
+      "carbs": "1",
+      "fat": "7"
+    },
+    {
+      "dish": "Extra Chicken Philly",
+      "calories": "80",
+      "protein": "16",
+      "carbs": "1",
+      "fat": "1"
+    },
+    {
+      "dish": "Extra White American Cheese",
+      "calories": "90",
+      "protein": "6",
+      "carbs": "2",
+      "fat": "6"
+    },
+    {
+      "dish": "Add Pepperoni",
+      "calories": "190",
+      "protein": "9",
+      "carbs": "2",
+      "fat": "16"
+    },
+    {
+      "dish": "Add Bacon",
+      "calories": "130",
+      "protein": "9",
+      "carbs": "0",
+      "fat": "11"
+    },
+    {
+      "dish": "Add/Extra Portabello",
+      "calories": "10",
+      "protein": "1",
+      "carbs": "2",
+      "fat": "0"
+    },
+    {
+      "dish": "#1 - Giant Extra Bacon",
+      "calories": "210",
+      "protein": "14",
+      "carbs": "1",
+      "fat": "17"
+    },
+    {
+      "dish": "#2 - Giant Extra Meat",
+      "calories": "70",
+      "protein": "12",
+      "carbs": "2",
+      "fat": "2"
+    },
+    {
+      "dish": "#3 - Giant Extra Meat",
+      "calories": "80",
+      "protein": "14",
+      "carbs": "1",
+      "fat": "2"
+    },
+    {
+      "dish": "#4 - Giant Extra Meat",
+      "calories": "60",
+      "protein": "10",
+      "carbs": "2",
+      "fat": "1.5"
+    },
+    {
+      "dish": "#5 - Giant Extra Meat",
+      "calories": "100",
+      "protein": "18",
+      "carbs": "2",
+      "fat": "2.5"
+    },
+    {
+      "dish": "#6 - Giant Extra Meat",
+      "calories": "140",
+      "protein": "24",
+      "carbs": "0",
+      "fat": "4.5"
+    },
+    {
+      "dish": "#7 - Giant Extra Meat",
+      "calories": "90",
+      "protein": "14",
+      "carbs": "2",
+      "fat": "3"
+    },
+    {
+      "dish": "#8 - Giant Extra Meat",
+      "calories": "240",
+      "protein": "26",
+      "carbs": "2",
+      "fat": "14"
+    },
+    {
+      "dish": "#9 - Giant Extra Meat",
+      "calories": "280",
+      "protein": "32",
+      "carbs": "2",
+      "fat": "16"
+    },
+    {
+      "dish": "#10 - Giant Extra Meat",
+      "calories": "390",
+      "protein": "18",
+      "carbs": "1",
+      "fat": "35"
+    },
+    {
+      "dish": "#11 - Giant Extra Meat",
+      "calories": "110",
+      "protein": "11",
+      "carbs": "1",
+      "fat": "7"
+    },
+    {
+      "dish": "#12 - Giant Extra Meat",
+      "calories": "120",
+      "protein": "16",
+      "carbs": "0",
+      "fat": "6"
+    },
+    {
+      "dish": "#13 - Giant Extra Meat",
+      "calories": "200",
+      "protein": "23",
+      "carbs": "3",
+      "fat": "11"
+    },
+    {
+      "dish": "#2 - Giant Extra Cheese",
+      "calories": "190",
+      "protein": "15",
+      "carbs": "1",
+      "fat": "14"
+    },
+    {
+      "dish": "#3 - Giant Extra Cheese",
+      "calories": "190",
+      "protein": "15",
+      "carbs": "1",
+      "fat": "14"
+    },
+    {
+      "dish": "#4 - Giant Extra Cheese",
+      "calories": "190",
+      "protein": "15",
+      "carbs": "1",
+      "fat": "14"
+    },
+    {
+      "dish": "#5 - Giant Extra Cheese",
+      "calories": "190",
+      "protein": "15",
+      "carbs": "1",
+      "fat": "14"
+    },
+    {
+      "dish": "#6 - Giant Extra Cheese",
+      "calories": "190",
+      "protein": "15",
+      "carbs": "1",
+      "fat": "14"
+    },
+    {
+      "dish": "#7 - Giant Extra Cheese",
+      "calories": "190",
+      "protein": "15",
+      "carbs": "1",
+      "fat": "14"
+    },
+    {
+      "dish": "#8 - Giant Extra Cheese",
+      "calories": "190",
+      "protein": "15",
+      "carbs": "1",
+      "fat": "14"
+    },
+    {
+      "dish": "#9 - Giant Extra Cheese",
+      "calories": "160",
+      "protein": "11",
+      "carbs": "1",
+      "fat": "12"
+    },
+    {
+      "dish": "#11 - Giant Extra Cheese",
+      "calories": "190",
+      "protein": "15",
+      "carbs": "1",
+      "fat": "14"
+    },
+    {
+      "dish": "#12 - Giant Extra Cheese",
+      "calories": "190",
+      "protein": "15",
+      "carbs": "1",
+      "fat": "14"
+    },
+    {
+      "dish": "#13 - Giant Extra Cheese",
+      "calories": "190",
+      "protein": "15",
+      "carbs": "1",
+      "fat": "14"
+    },
+    {
+      "dish": "#14 - Giant Extra Cheese",
+      "calories": "690",
+      "protein": "51",
+      "carbs": "5",
+      "fat": "52"
+    },
+    {
+      "dish": "Extra Beef Philly",
+      "calories": "230",
+      "protein": "26",
+      "carbs": "1",
+      "fat": "13"
+    },
+    {
+      "dish": "Extra Chicken Philly",
+      "calories": "150",
+      "protein": "32",
+      "carbs": "2",
+      "fat": "2"
+    },
+    {
+      "dish": "Extra White American Cheese",
+      "calories": "170",
+      "protein": "12",
+      "carbs": "4",
+      "fat": "12"
+    }
+  ]
+}

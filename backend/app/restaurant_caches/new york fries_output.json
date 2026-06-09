@@ -1,0 +1,969 @@
+{
+  "restaurant_name": "new york fries",
+  "url": "https://www.newyorkfries.com/_files/ugd/bdf8b6_3863f3a07ab34a90a3939adafbe869a0.pdf",
+  "date": "2026-06-09 10:05:56",
+  "menu_items": [
+    {
+      "dish": "Fries Snack",
+      "calories": 490,
+      "protein": 6,
+      "carbs": 61,
+      "fat": 25,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Fries Regular",
+      "calories": 900,
+      "protein": 11,
+      "carbs": 111,
+      "fat": 46,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Fries Large",
+      "calories": 1150,
+      "protein": 15,
+      "carbs": 142,
+      "fat": 58,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Classic Poutine Snack",
+      "calories": 890,
+      "protein": 27,
+      "carbs": 77,
+      "fat": 52,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Classic Poutine Regular",
+      "calories": 1420,
+      "protein": 39,
+      "carbs": 132,
+      "fat": 81,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Classic Poutine Large",
+      "calories": 1920,
+      "protein": 56,
+      "carbs": 171,
+      "fat": 111,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Nacho Fries Snack",
+      "calories": 600,
+      "protein": 9,
+      "carbs": 76,
+      "fat": 29,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Nacho Fries Regular",
+      "calories": 1040,
+      "protein": 15,
+      "carbs": 133,
+      "fat": 50,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Nacho Fries Large",
+      "calories": 1340,
+      "protein": 20,
+      "carbs": 171,
+      "fat": 65,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Butter Chicken Poutine Snack",
+      "calories": 900,
+      "protein": 35,
+      "carbs": 75,
+      "fat": 50,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Butter Chicken Poutine Regular",
+      "calories": 1470,
+      "protein": 51,
+      "carbs": 130,
+      "fat": 81,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Butter Chicken Poutine Large",
+      "calories": 1990,
+      "protein": 71,
+      "carbs": 167,
+      "fat": 112,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Bacon Double Cheese Poutine Snack",
+      "calories": 790,
+      "protein": 22,
+      "carbs": 73,
+      "fat": 44,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Bacon Double Cheese Poutine Regular",
+      "calories": 1340,
+      "protein": 36,
+      "carbs": 130,
+      "fat": 75,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Bacon Double Cheese Poutine Large",
+      "calories": 1870,
+      "protein": 54,
+      "carbs": 173,
+      "fat": 105,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Chili Cheese Fries Snack",
+      "calories": 620,
+      "protein": 11,
+      "carbs": 72,
+      "fat": 32,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Chili Cheese Fries Regular",
+      "calories": 1080,
+      "protein": 19,
+      "carbs": 129,
+      "fat": 55,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Chili Cheese Fries Large",
+      "calories": 1420,
+      "protein": 27,
+      "carbs": 169,
+      "fat": 72,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Chili Fries Snack",
+      "calories": 640,
+      "protein": 14,
+      "carbs": 71,
+      "fat": 34,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Chili Fries Regular",
+      "calories": 1080,
+      "protein": 25,
+      "carbs": 124,
+      "fat": 56,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Chili Fries Large",
+      "calories": 1390,
+      "protein": 28,
+      "carbs": 159,
+      "fat": 73,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Chili Poutine Snack",
+      "calories": 900,
+      "protein": 31,
+      "carbs": 72,
+      "fat": 54,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Chili Poutine Regular",
+      "calories": 1460,
+      "protein": 45,
+      "carbs": 128,
+      "fat": 85,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Chili Poutine Large",
+      "calories": 1890,
+      "protein": 59,
+      "carbs": 166,
+      "fat": 109,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "The Works Snack",
+      "calories": 620,
+      "protein": 12,
+      "carbs": 70,
+      "fat": 33,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "The Works Regular",
+      "calories": 1090,
+      "protein": 21,
+      "carbs": 128,
+      "fat": 56,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "The Works Large",
+      "calories": 1430,
+      "protein": 28,
+      "carbs": 166,
+      "fat": 74,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Veggie Fries Snack",
+      "calories": 580,
+      "protein": 8,
+      "carbs": 71,
+      "fat": 30,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Veggie Fries Regular",
+      "calories": 1010,
+      "protein": 13,
+      "carbs": 126,
+      "fat": 51,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Veggie Fries Large",
+      "calories": 1300,
+      "protein": 17,
+      "carbs": 162,
+      "fat": 65,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Flamin Bacon Fries Snack",
+      "calories": 720,
+      "protein": 9,
+      "carbs": 65,
+      "fat": 48,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Flamin Bacon Fries Regular",
+      "calories": 1350,
+      "protein": 16,
+      "carbs": 119,
+      "fat": 91,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Flamin Bacon Fries Large",
+      "calories": 1820,
+      "protein": 20,
+      "carbs": 153,
+      "fat": 126,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Truffle Fries Snack",
+      "calories": 670,
+      "protein": 9,
+      "carbs": 62,
+      "fat": 43,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Truffle Fries Regular",
+      "calories": 1250,
+      "protein": 16,
+      "carbs": 114,
+      "fat": 82,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Truffle Fries Large",
+      "calories": 1750,
+      "protein": 23,
+      "carbs": 155,
+      "fat": 116,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Triple Cheese Poutine Snack",
+      "calories": 740,
+      "protein": 21,
+      "carbs": 71,
+      "fat": 43,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Triple Cheese Poutine Regular",
+      "calories": 1280,
+      "protein": 34,
+      "carbs": 127,
+      "fat": 73,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Triple Cheese Poutine Large",
+      "calories": 1760,
+      "protein": 51,
+      "carbs": 164,
+      "fat": 103,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Triple Cheese Poutine with Queso Snack",
+      "calories": 740,
+      "protein": 21,
+      "carbs": 71,
+      "fat": 43,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Triple Cheese Poutine with Queso Regular",
+      "calories": 1290,
+      "protein": 34,
+      "carbs": 128,
+      "fat": 73,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Triple Cheese Poutine with Queso Large",
+      "calories": 1770,
+      "protein": 52,
+      "carbs": 164,
+      "fat": 103,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Gravy",
+      "calories": 45,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 1,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Cheese Sauce",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 13,
+      "fat": 1,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Chipotle Aioli",
+      "calories": 270,
+      "protein": 0.5,
+      "carbs": 2,
+      "fat": 29,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Sour Cream",
+      "calories": 140,
+      "protein": 2,
+      "carbs": 5,
+      "fat": 12,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Queso",
+      "calories": 60,
+      "protein": 1,
+      "carbs": 13,
+      "fat": 0.5,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Truffle Aioli",
+      "calories": 220,
+      "protein": 0.4,
+      "carbs": 1,
+      "fat": 24,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Hot Dog with Bun",
+      "calories": 420,
+      "protein": 22,
+      "carbs": 39,
+      "fat": 20,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Hot Dog without Bun",
+      "calories": 230,
+      "protein": 16,
+      "carbs": 6,
+      "fat": 16,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Poutine Dog",
+      "calories": 550,
+      "protein": 29,
+      "carbs": 43,
+      "fat": 28,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Bacon Double Cheese Dog",
+      "calories": 560,
+      "protein": 30,
+      "carbs": 44,
+      "fat": 29,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Chili Cheese Dog",
+      "calories": 460,
+      "protein": 24,
+      "carbs": 43,
+      "fat": 21,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Nacho Dog",
+      "calories": 460,
+      "protein": 23,
+      "carbs": 44,
+      "fat": 22,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Flamin Bacon Dog",
+      "calories": 580,
+      "protein": 23,
+      "carbs": 41,
+      "fat": 36,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Butter Chicken Dog",
+      "calories": 570,
+      "protein": 31,
+      "carbs": 43,
+      "fat": 29,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Triple Cheese Dog",
+      "calories": 550,
+      "protein": 29,
+      "carbs": 43,
+      "fat": 29,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Triple Cheese Dog with Queso",
+      "calories": 550,
+      "protein": 29,
+      "carbs": 43,
+      "fat": 29,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Pepsi 20 oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 49,
+      "fat": 0,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "7-Up 20 oz",
+      "calories": 170,
+      "protein": 0,
+      "carbs": 43,
+      "fat": 0,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Mug Root Beer 20 oz",
+      "calories": 180,
+      "protein": 0,
+      "carbs": 46,
+      "fat": 0,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Mountain Dew 20 oz",
+      "calories": 210,
+      "protein": 0,
+      "carbs": 62,
+      "fat": 0,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Dr. Pepper 20 oz",
+      "calories": 160,
+      "protein": 0,
+      "carbs": 44,
+      "fat": 0,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    },
+    {
+      "dish": "Brisk Iced Tea 20 oz",
+      "calories": 90,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "field_sources": {
+        "calories": "pdf",
+        "protein": "pdf",
+        "carbs": "pdf",
+        "fat": "pdf"
+      },
+      "estimated_fields": [],
+      "nutrition_source": "pdf"
+    }
+  ],
+  "uses_ai_estimates": false,
+  "estimated_item_count": 0
+}

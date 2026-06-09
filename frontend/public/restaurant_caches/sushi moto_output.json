@@ -1,114 +1,14 @@
 {
-  "restaurant_name": "booster juice",
-  "url": "https://boosterjuice.com/collections/smoothies?srsltid=AfmBOor1qI1Iogb1ik3PJz5Ogj39m3gcKzcl6ED50UDS2XyIW-RYVzQt",
+  "restaurant_name": "sushi moto",
+  "url": "https://sushimoto.ca/mt-content/uploads/2026/06/sushi-moto-overview-menu-downloadable.jpg",
   "date": "2026-06-09 10:05:56",
   "menu_items": [
     {
-      "dish": "Açai Avalanche Smoothie",
-      "calories": 400,
-      "protein": 18,
-      "carbs": 80,
-      "fat": 4,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Bananas-A-Whey Smoothie",
-      "calories": 430,
-      "protein": 21,
-      "carbs": 76,
-      "fat": 3,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Brazilian Thunder Smoothie",
-      "calories": 370,
-      "protein": 5,
-      "carbs": 82,
-      "fat": 2,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Canadian Colada Smoothie",
-      "calories": 390,
-      "protein": 4,
-      "carbs": 88,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Chocolate NOT-ty Butter Smoothie",
-      "calories": 520,
-      "protein": 21,
-      "carbs": 76,
-      "fat": 16,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Funky Monkey Smoothie",
-      "calories": 473,
+      "dish": "Edamame",
+      "calories": 190,
       "protein": 17,
-      "carbs": 96,
-      "fat": 6,
+      "carbs": 15,
+      "fat": 8,
       "field_sources": {
         "calories": "ai_estimated",
         "protein": "ai_estimated",
@@ -124,490 +24,90 @@
       "nutrition_source": "ai_estimated"
     },
     {
-      "dish": "Hawaiian Sunset Smoothie",
-      "calories": 360,
-      "protein": 4,
-      "carbs": 84,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "High Impact Açai Smoothie",
-      "calories": 420,
-      "protein": 20,
-      "carbs": 82,
-      "fat": 4,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Mango Hurricane Smoothie",
-      "calories": 390,
-      "protein": 4,
-      "carbs": 92,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Mangosicle Smoothie",
-      "calories": 360,
-      "protein": 5,
-      "carbs": 85,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Matcha Monsoon Smoothie",
-      "calories": 390,
-      "protein": 8,
-      "carbs": 81,
-      "fat": 2,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Mind Over Matcha Smoothie",
-      "calories": 430,
-      "protein": 17,
-      "carbs": 78,
-      "fat": 4,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Nuttin' Better Smoothie",
-      "calories": 490,
-      "protein": 41,
-      "carbs": 73,
-      "fat": 5,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Ocean Mist Smoothie",
-      "calories": 330,
-      "protein": 4,
-      "carbs": 77,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Orange Sunset Smoothie",
-      "calories": 330,
-      "protein": 5,
-      "carbs": 76,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Pirates Nectar Smoothie",
-      "calories": 360,
-      "protein": 4,
-      "carbs": 84,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Pomegranate Passion Smoothie",
-      "calories": 350,
-      "protein": 4,
-      "carbs": 82,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Pomegranate Punch Smoothie",
-      "calories": 340,
-      "protein": 4,
-      "carbs": 78,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Ripped Berry Smoothie",
-      "calories": 352,
-      "protein": 5,
-      "carbs": 84,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Spinach Is In It Smoothie",
-      "calories": 360,
-      "protein": 10,
-      "carbs": 76,
-      "fat": 2,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Strawberry Sunshine Smoothie",
-      "calories": 399,
-      "protein": 4.2,
-      "carbs": 97.5,
-      "fat": 0.5,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "The Original Smoothie",
-      "calories": 330,
-      "protein": 5,
-      "carbs": 76,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Very Berry Smoothie",
+      "dish": "Gyoza",
       "calories": 280,
-      "protein": 3,
-      "carbs": 66,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Tropical Tornado Smoothie",
-      "calories": 370,
-      "protein": 4,
-      "carbs": 86,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Hail to the Kale Smoothie",
-      "calories": 290,
-      "protein": 7,
-      "carbs": 60,
-      "fat": 2,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Glow Better",
-      "calories": 260,
-      "protein": 15,
-      "carbs": 50,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Ginger Hammer Juice",
-      "calories": 167,
-      "protein": 2.5,
-      "carbs": 38.2,
-      "fat": 0.5,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Carrot Juice",
-      "calories": 180,
-      "protein": 4,
-      "carbs": 42,
-      "fat": 0,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Orange Juice",
-      "calories": 220,
-      "protein": 3,
-      "carbs": 52,
-      "fat": 0,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Maui Juice",
-      "calories": 240,
-      "protein": 3,
-      "carbs": 58,
-      "fat": 0.5,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Chicken Quesadilla",
-      "calories": 430,
-      "protein": 26,
+      "protein": 8,
       "carbs": 38,
+      "fat": 9,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Harumaki",
+      "calories": 320,
+      "protein": 6,
+      "carbs": 44,
+      "fat": 14,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Agedashi Tofu",
+      "calories": 260,
+      "protein": 11,
+      "carbs": 25,
+      "fat": 13,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Shitake Sushi Pizza",
+      "calories": 420,
+      "protein": 8,
+      "carbs": 62,
+      "fat": 14,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Salmon Sushi Pizza",
+      "calories": 470,
+      "protein": 18,
+      "carbs": 58,
       "fat": 18,
       "field_sources": {
         "calories": "ai_estimated",
@@ -624,11 +124,811 @@
       "nutrition_source": "ai_estimated"
     },
     {
-      "dish": "Egg and Chipotle Black Bean Wrap",
-      "calories": 360,
+      "dish": "Spicy Salmon Sushi Pizza",
+      "calories": 520,
       "protein": 20,
-      "carbs": 38,
-      "fat": 14,
+      "carbs": 60,
+      "fat": 22,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Spicy Tuna Sushi Pizza",
+      "calories": 540,
+      "protein": 24,
+      "carbs": 58,
+      "fat": 22,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Spicy Crab Pizza",
+      "calories": 500,
+      "protein": 16,
+      "carbs": 62,
+      "fat": 20,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Miso Soup",
+      "calories": 40,
+      "protein": 3,
+      "carbs": 5,
+      "fat": 1,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Wonton Soup",
+      "calories": 150,
+      "protein": 6,
+      "carbs": 24,
+      "fat": 4,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Ebi Shumai Soup",
+      "calories": 180,
+      "protein": 9,
+      "carbs": 26,
+      "fat": 5,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Moto Garden Salad",
+      "calories": 80,
+      "protein": 2,
+      "carbs": 10,
+      "fat": 4,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Avocado Salad",
+      "calories": 220,
+      "protein": 4,
+      "carbs": 16,
+      "fat": 17,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Seaweed Salad",
+      "calories": 120,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 4,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Sunomono Salad",
+      "calories": 190,
+      "protein": 14,
+      "carbs": 20,
+      "fat": 5,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "California Salad",
+      "calories": 360,
+      "protein": 14,
+      "carbs": 30,
+      "fat": 20,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Spicy Salmon Salad",
+      "calories": 420,
+      "protein": 25,
+      "carbs": 20,
+      "fat": 26,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Spicy Tuna Salad",
+      "calories": 430,
+      "protein": 28,
+      "carbs": 18,
+      "fat": 25,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Spicy Sashimi Salad",
+      "calories": 360,
+      "protein": 32,
+      "carbs": 14,
+      "fat": 20,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Chef Special Salad Small",
+      "calories": 520,
+      "protein": 40,
+      "carbs": 24,
+      "fat": 28,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Tofu Teriyaki Dinner Bento",
+      "calories": 760,
+      "protein": 28,
+      "carbs": 105,
+      "fat": 24,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Chicken Teriyaki Dinner Bento",
+      "calories": 980,
+      "protein": 52,
+      "carbs": 115,
+      "fat": 34,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Beef Teriyaki Dinner Bento",
+      "calories": 1050,
+      "protein": 55,
+      "carbs": 112,
+      "fat": 42,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Salmon Teriyaki Dinner Bento",
+      "calories": 980,
+      "protein": 48,
+      "carbs": 105,
+      "fat": 40,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Bulgogi Beef Teriyaki Dinner Bento",
+      "calories": 1040,
+      "protein": 54,
+      "carbs": 112,
+      "fat": 42,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Kalbi Dinner Bento",
+      "calories": 1150,
+      "protein": 55,
+      "carbs": 110,
+      "fat": 55,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Sushi Sashimi Dinner Bento",
+      "calories": 760,
+      "protein": 45,
+      "carbs": 80,
+      "fat": 25,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Dinner Combo 1",
+      "calories": 890,
+      "protein": 40,
+      "carbs": 125,
+      "fat": 28,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Dinner Combo 2",
+      "calories": 780,
+      "protein": 47,
+      "carbs": 68,
+      "fat": 30,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Dinner Combo 3",
+      "calories": 740,
+      "protein": 44,
+      "carbs": 92,
+      "fat": 20,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Udon Noodle Soup Lunch",
+      "calories": 560,
+      "protein": 16,
+      "carbs": 100,
+      "fat": 10,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Tofu Teriyaki Lunch",
+      "calories": 620,
+      "protein": 24,
+      "carbs": 90,
+      "fat": 18,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Chicken Teriyaki Lunch",
+      "calories": 700,
+      "protein": 42,
+      "carbs": 82,
+      "fat": 18,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Beef Teriyaki Lunch",
+      "calories": 780,
+      "protein": 44,
+      "carbs": 85,
+      "fat": 26,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Salmon Teriyaki Lunch",
+      "calories": 760,
+      "protein": 42,
+      "carbs": 78,
+      "fat": 30,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Kalbi Lunch",
+      "calories": 840,
+      "protein": 42,
+      "carbs": 82,
+      "fat": 38,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Tofu Teriyaki Lunch Bento",
+      "calories": 720,
+      "protein": 26,
+      "carbs": 98,
+      "fat": 22,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Chicken Teriyaki Lunch Bento",
+      "calories": 820,
+      "protein": 46,
+      "carbs": 94,
+      "fat": 26,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Beef Teriyaki Lunch Bento",
+      "calories": 890,
+      "protein": 48,
+      "carbs": 96,
+      "fat": 32,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Salmon Teriyaki Lunch Bento",
+      "calories": 860,
+      "protein": 44,
+      "carbs": 90,
+      "fat": 34,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Sushi Sashimi Lunch Bento",
+      "calories": 650,
+      "protein": 38,
+      "carbs": 65,
+      "fat": 22,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Lunch Combo 1",
+      "calories": 520,
+      "protein": 28,
+      "carbs": 75,
+      "fat": 12,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Lunch Combo 2",
+      "calories": 560,
+      "protein": 33,
+      "carbs": 62,
+      "fat": 16,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Lunch Combo 3",
+      "calories": 650,
+      "protein": 20,
+      "carbs": 110,
+      "fat": 18,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Lunch Combo 4",
+      "calories": 760,
+      "protein": 34,
+      "carbs": 115,
+      "fat": 20,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Lunch Combo 5",
+      "calories": 520,
+      "protein": 14,
+      "carbs": 105,
+      "fat": 8,
       "field_sources": {
         "calories": "ai_estimated",
         "protein": "ai_estimated",
@@ -645,6 +945,6 @@
     }
   ],
   "uses_ai_estimates": true,
-  "estimated_item_count": 32,
+  "estimated_item_count": 47,
   "source": "ai_estimated"
 }

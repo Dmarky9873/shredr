@@ -1,113 +1,13 @@
 {
-  "restaurant_name": "booster juice",
-  "url": "https://boosterjuice.com/collections/smoothies?srsltid=AfmBOor1qI1Iogb1ik3PJz5Ogj39m3gcKzcl6ED50UDS2XyIW-RYVzQt",
+  "restaurant_name": "pizza nova",
+  "url": "https://www.pizzanova.com/nutrition",
   "date": "2026-06-09 10:05:56",
   "menu_items": [
     {
-      "dish": "Açai Avalanche Smoothie",
-      "calories": 400,
-      "protein": 18,
-      "carbs": 80,
-      "fat": 4,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Bananas-A-Whey Smoothie",
-      "calories": 430,
-      "protein": 21,
-      "carbs": 76,
-      "fat": 3,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Brazilian Thunder Smoothie",
-      "calories": 370,
-      "protein": 5,
-      "carbs": 82,
-      "fat": 2,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Canadian Colada Smoothie",
-      "calories": 390,
-      "protein": 4,
-      "carbs": 88,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Chocolate NOT-ty Butter Smoothie",
-      "calories": 520,
-      "protein": 21,
-      "carbs": 76,
-      "fat": 16,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Funky Monkey Smoothie",
-      "calories": 473,
-      "protein": 17,
-      "carbs": 96,
+      "dish": "Cheese Pizza medium slice",
+      "calories": 180,
+      "protein": 9,
+      "carbs": 23,
       "fat": 6,
       "field_sources": {
         "calories": "ai_estimated",
@@ -124,271 +24,11 @@
       "nutrition_source": "ai_estimated"
     },
     {
-      "dish": "Hawaiian Sunset Smoothie",
-      "calories": 360,
-      "protein": 4,
-      "carbs": 84,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "High Impact Açai Smoothie",
-      "calories": 420,
-      "protein": 20,
-      "carbs": 82,
-      "fat": 4,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Mango Hurricane Smoothie",
-      "calories": 390,
-      "protein": 4,
-      "carbs": 92,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Mangosicle Smoothie",
-      "calories": 360,
-      "protein": 5,
-      "carbs": 85,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Matcha Monsoon Smoothie",
-      "calories": 390,
-      "protein": 8,
-      "carbs": 81,
-      "fat": 2,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Mind Over Matcha Smoothie",
-      "calories": 430,
-      "protein": 17,
-      "carbs": 78,
-      "fat": 4,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Nuttin' Better Smoothie",
-      "calories": 490,
-      "protein": 41,
-      "carbs": 73,
-      "fat": 5,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Ocean Mist Smoothie",
-      "calories": 330,
-      "protein": 4,
-      "carbs": 77,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Orange Sunset Smoothie",
-      "calories": 330,
-      "protein": 5,
-      "carbs": 76,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Pirates Nectar Smoothie",
-      "calories": 360,
-      "protein": 4,
-      "carbs": 84,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Pomegranate Passion Smoothie",
-      "calories": 350,
-      "protein": 4,
-      "carbs": 82,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Pomegranate Punch Smoothie",
-      "calories": 340,
-      "protein": 4,
-      "carbs": 78,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Ripped Berry Smoothie",
-      "calories": 352,
-      "protein": 5,
-      "carbs": 84,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Spinach Is In It Smoothie",
-      "calories": 360,
+      "dish": "Pepperoni Pizza medium slice",
+      "calories": 210,
       "protein": 10,
-      "carbs": 76,
-      "fat": 2,
+      "carbs": 22,
+      "fat": 9,
       "field_sources": {
         "calories": "ai_estimated",
         "protein": "ai_estimated",
@@ -404,11 +44,11 @@
       "nutrition_source": "ai_estimated"
     },
     {
-      "dish": "Strawberry Sunshine Smoothie",
-      "calories": 399,
-      "protein": 4.2,
-      "carbs": 97.5,
-      "fat": 0.5,
+      "dish": "Veggie Pizza medium slice",
+      "calories": 190,
+      "protein": 9,
+      "carbs": 23,
+      "fat": 7,
       "field_sources": {
         "calories": "ai_estimated",
         "protein": "ai_estimated",
@@ -424,11 +64,11 @@
       "nutrition_source": "ai_estimated"
     },
     {
-      "dish": "The Original Smoothie",
-      "calories": 330,
-      "protein": 5,
-      "carbs": 76,
-      "fat": 1,
+      "dish": "Hawaiian Pizza medium slice",
+      "calories": 190,
+      "protein": 11,
+      "carbs": 22,
+      "fat": 7,
       "field_sources": {
         "calories": "ai_estimated",
         "protein": "ai_estimated",
@@ -444,151 +84,11 @@
       "nutrition_source": "ai_estimated"
     },
     {
-      "dish": "Very Berry Smoothie",
-      "calories": 280,
-      "protein": 3,
-      "carbs": 66,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Tropical Tornado Smoothie",
-      "calories": 370,
-      "protein": 4,
-      "carbs": 86,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Hail to the Kale Smoothie",
-      "calories": 290,
-      "protein": 7,
-      "carbs": 60,
-      "fat": 2,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Glow Better",
-      "calories": 260,
-      "protein": 15,
-      "carbs": 50,
-      "fat": 1,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Ginger Hammer Juice",
-      "calories": 167,
-      "protein": 2.5,
-      "carbs": 38.2,
-      "fat": 0.5,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Carrot Juice",
-      "calories": 180,
-      "protein": 4,
-      "carbs": 42,
-      "fat": 0,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Orange Juice",
-      "calories": 220,
-      "protein": 3,
-      "carbs": 52,
-      "fat": 0,
-      "field_sources": {
-        "calories": "ai_estimated",
-        "protein": "ai_estimated",
-        "carbs": "ai_estimated",
-        "fat": "ai_estimated"
-      },
-      "estimated_fields": [
-        "calories",
-        "protein",
-        "carbs",
-        "fat"
-      ],
-      "nutrition_source": "ai_estimated"
-    },
-    {
-      "dish": "Maui Juice",
+      "dish": "Super Gourmet Pizza slice",
       "calories": 240,
-      "protein": 3,
-      "carbs": 58,
-      "fat": 0.5,
+      "protein": 13,
+      "carbs": 23,
+      "fat": 10,
       "field_sources": {
         "calories": "ai_estimated",
         "protein": "ai_estimated",
@@ -604,11 +104,11 @@
       "nutrition_source": "ai_estimated"
     },
     {
-      "dish": "Chicken Quesadilla",
-      "calories": 430,
-      "protein": 26,
-      "carbs": 38,
-      "fat": 18,
+      "dish": "Deluxe Pizza medium slice",
+      "calories": 230,
+      "protein": 12,
+      "carbs": 24,
+      "fat": 9,
       "field_sources": {
         "calories": "ai_estimated",
         "protein": "ai_estimated",
@@ -624,11 +124,371 @@
       "nutrition_source": "ai_estimated"
     },
     {
-      "dish": "Egg and Chipotle Black Bean Wrap",
-      "calories": 360,
-      "protein": 20,
-      "carbs": 38,
-      "fat": 14,
+      "dish": "Meat Supreme Pizza medium slice",
+      "calories": 250,
+      "protein": 13,
+      "carbs": 23,
+      "fat": 12,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Four Cheese Pizza medium slice",
+      "calories": 210,
+      "protein": 11,
+      "carbs": 23,
+      "fat": 8,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Pollo Pesto Pizza medium slice",
+      "calories": 220,
+      "protein": 12,
+      "carbs": 22,
+      "fat": 9,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Chicken Florentine Pizza medium slice",
+      "calories": 220,
+      "protein": 12,
+      "carbs": 24,
+      "fat": 8,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Mediterranean Pizza medium slice",
+      "calories": 200,
+      "protein": 9,
+      "carbs": 23,
+      "fat": 8,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Bruschetta Pizza medium slice",
+      "calories": 190,
+      "protein": 8,
+      "carbs": 24,
+      "fat": 7,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Plant-Based Pepperoni Pizza medium slice",
+      "calories": 210,
+      "protein": 9,
+      "carbs": 24,
+      "fat": 8,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Gluten-Free Cheese Pizza slice",
+      "calories": 210,
+      "protein": 8,
+      "carbs": 28,
+      "fat": 7,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Cauliflower Crust Cheese Pizza slice",
+      "calories": 180,
+      "protein": 8,
+      "carbs": 18,
+      "fat": 9,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Panzerotti Cheese",
+      "calories": 720,
+      "protein": 28,
+      "carbs": 88,
+      "fat": 28,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Panzerotti Pepperoni",
+      "calories": 780,
+      "protein": 32,
+      "carbs": 90,
+      "fat": 34,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Lasagna",
+      "calories": 610,
+      "protein": 30,
+      "carbs": 62,
+      "fat": 26,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Chicken Wings 1 lb",
+      "calories": 920,
+      "protein": 72,
+      "carbs": 8,
+      "fat": 64,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Chicken Bites",
+      "calories": 580,
+      "protein": 32,
+      "carbs": 44,
+      "fat": 30,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Garlic Bread",
+      "calories": 330,
+      "protein": 8,
+      "carbs": 42,
+      "fat": 15,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Garlic Bread with Cheese",
+      "calories": 470,
+      "protein": 18,
+      "carbs": 45,
+      "fat": 25,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Caesar Salad",
+      "calories": 260,
+      "protein": 8,
+      "carbs": 14,
+      "fat": 20,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Greek Salad",
+      "calories": 220,
+      "protein": 8,
+      "carbs": 16,
+      "fat": 16,
+      "field_sources": {
+        "calories": "ai_estimated",
+        "protein": "ai_estimated",
+        "carbs": "ai_estimated",
+        "fat": "ai_estimated"
+      },
+      "estimated_fields": [
+        "calories",
+        "protein",
+        "carbs",
+        "fat"
+      ],
+      "nutrition_source": "ai_estimated"
+    },
+    {
+      "dish": "Potato Wedges",
+      "calories": 420,
+      "protein": 7,
+      "carbs": 62,
+      "fat": 16,
       "field_sources": {
         "calories": "ai_estimated",
         "protein": "ai_estimated",
@@ -645,6 +505,6 @@
     }
   ],
   "uses_ai_estimates": true,
-  "estimated_item_count": 32,
+  "estimated_item_count": 25,
   "source": "ai_estimated"
 }
