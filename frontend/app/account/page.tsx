@@ -26,7 +26,15 @@ interface AccountResponse {
 type AuthMode = "sign-in" | "sign-up";
 
 export default function AccountPage() {
-  const [mode, setMode] = useState<AuthMode>("sign-in");
+  const [mode, setMode] = useState<AuthMode>(() => {
+    if (typeof window === "undefined") {
+      return "sign-in";
+    }
+
+    return new URLSearchParams(window.location.search).get("mode") === "sign-up"
+      ? "sign-up"
+      : "sign-in";
+  });
   const [user, setUser] = useState<AccountUser | null>(null);
   const [favorites, setFavorites] = useState<FavoriteRestaurant[]>([]);
   const [email, setEmail] = useState("");

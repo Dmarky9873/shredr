@@ -44,6 +44,7 @@ export default function FavoriteRestaurantButton({
   const [favorites, setFavorites] = useState<FavoriteRestaurant[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
+  const [showAuthPrompt, setShowAuthPrompt] = useState(false);
   const [error, setError] = useState("");
 
   const normalizedRestaurantName = useMemo(
@@ -144,12 +145,34 @@ export default function FavoriteRestaurantButton({
   if (!user) {
     return (
       <div className="text-center">
-        <Link
-          href="/account"
+        <button
+          type="button"
+          onClick={() => setShowAuthPrompt(true)}
           className="inline-flex min-h-10 items-center justify-center rounded-lg border-2 border-foreground/30 px-4 py-2 text-sm text-foreground transition-colors hover:bg-foreground/5"
         >
-          Sign in to save this restaurant
-        </Link>
+          Save favorite
+        </button>
+        {showAuthPrompt && (
+          <div className="mx-auto mt-3 max-w-sm rounded-lg border-2 border-foreground/20 bg-background px-4 py-4 shadow-sm">
+            <p className="mb-3 text-sm text-foreground">
+              Sign in or create an account to save favorite restaurants.
+            </p>
+            <div className="flex flex-col gap-2 sm:flex-row sm:justify-center">
+              <Link
+                href="/account?mode=sign-in"
+                className="inline-flex min-h-10 items-center justify-center rounded-lg border-2 border-foreground bg-foreground px-4 py-2 text-sm text-background transition-opacity hover:opacity-90"
+              >
+                Sign in
+              </Link>
+              <Link
+                href="/account?mode=sign-up"
+                className="inline-flex min-h-10 items-center justify-center rounded-lg border-2 border-foreground/30 px-4 py-2 text-sm text-foreground transition-colors hover:bg-foreground/5"
+              >
+                Create account
+              </Link>
+            </div>
+          </div>
+        )}
         {error && (
           <p className="mt-2 text-xs text-red-700 dark:text-red-200">{error}</p>
         )}
