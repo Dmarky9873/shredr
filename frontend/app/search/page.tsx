@@ -6,6 +6,7 @@ import RestaurantInput from "../components/RestaurantInput";
 import MacronutrientTable, { type MenuItem } from "../components/MacronutrientTable";
 import MenuChat from "../components/MenuChat";
 import MenuItemSearch from "../components/MenuItemSearch";
+import FavoriteRestaurantButton from "../components/FavoriteRestaurantButton";
 import useFindRestaurantName from "../hooks/useFindRestaurantName";
 import useFindSortedMenuItems from "../hooks/useFindSortedMenuItems";
 
@@ -166,6 +167,8 @@ function SearchContent() {
   const activeHasData = hasData || activeMenuItems.length > 0;
   const showingAiEstimatedMenu =
     showingEstimatedFallback || activeRestaurantMetadata?.source === "ai_estimated";
+  const activeRestaurantName =
+    activeRestaurantMetadata?.restaurant_name || internalRestaurantName || query;
 
   if (!query) {
     return (
@@ -198,6 +201,9 @@ function SearchContent() {
         <h1 className="text-3xl font-bold text-foreground font-coustard mb-8 text-center">
           {query}
         </h1>
+        <div className="mb-6">
+          <FavoriteRestaurantButton restaurantName={activeRestaurantName} />
+        </div>
 
         {/* PDF Source Link */}
         {activeRestaurantMetadata?.url && (
@@ -248,11 +254,7 @@ function SearchContent() {
           <div className="mt-8">
             <MenuItemSearch menuItems={activeMenuItems} />
             <MenuChat
-              restaurantName={
-                activeRestaurantMetadata?.restaurant_name ||
-                internalRestaurantName ||
-                query
-              }
+              restaurantName={activeRestaurantName}
               menuItems={activeMenuItems}
               usesAiEstimates={activeRestaurantMetadata?.uses_ai_estimates}
             />

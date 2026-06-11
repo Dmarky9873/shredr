@@ -28,6 +28,13 @@ export default function AboutButton() {
       </button>
       <button
         type="button"
+        onClick={() => handleNavClick("/account")}
+        className="opacity-50 transition-opacity duration-200 hover:cursor-pointer hover:opacity-100"
+      >
+        Account
+      </button>
+      <button
+        type="button"
         onClick={() => handleNavClick("/about")}
         className="opacity-50 transition-opacity duration-200 hover:cursor-pointer hover:opacity-100"
       >
