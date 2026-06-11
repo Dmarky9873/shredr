@@ -1,1 +1,744 @@
-{"restaurant_name": "jack astors", "url": "https://jackastors.com/wp-content/uploads/2021/11/JA_DessertMenu_10-21_web.pdf", "date": "2025-08-24 20:24:21", "menu_items": []}
+{
+    "restaurant_name": "jack astors",
+    "url": "https://jackastors.com/menu/",
+    "date": "2026-06-11 16:26:34",
+    "menu_items": [
+        {
+            "dish": "Beef Barbacoa Queso",
+            "calories": "1137",
+            "protein": "46",
+            "carbs": "88",
+            "fat": "71"
+        },
+        {
+            "dish": "Chipotle Bean Queso",
+            "calories": "1126",
+            "protein": "44",
+            "carbs": "100",
+            "fat": "66"
+        },
+        {
+            "dish": "Smoky Chorizo Queso",
+            "calories": "2570",
+            "protein": "45",
+            "carbs": "85",
+            "fat": "79"
+        },
+        {
+            "dish": "Birria Barbacoa Tacos",
+            "calories": "549",
+            "protein": "36",
+            "carbs": "33",
+            "fat": "32"
+        },
+        {
+            "dish": "Rib Bones",
+            "calories": "111",
+            "protein": "1.38",
+            "carbs": "26",
+            "fat": "0.55"
+        },
+        {
+            "dish": "Watermelon Greek Chicken Salad",
+            "calories": "679",
+            "protein": "35",
+            "carbs": "15.7",
+            "fat": "53"
+        },
+        {
+            "dish": "Full Rack of Back Ribs",
+            "calories": "247",
+            "protein": "3.9",
+            "carbs": "57",
+            "fat": "1.31"
+        },
+        {
+            "dish": "Peri Peri Chicken",
+            "calories": "1393",
+            "protein": "66",
+            "carbs": "110",
+            "fat": "78"
+        },
+        {
+            "dish": "18oz Bone-In AAA Ribeye Steak",
+            "calories": "1349",
+            "protein": "101",
+            "carbs": "8.4",
+            "fat": "100"
+        },
+        {
+            "dish": "Peach Cobbler",
+            "calories": "1357",
+            "protein": "9.7",
+            "carbs": "247",
+            "fat": "38"
+        },
+        {
+            "dish": "Jack's Garlic Pan Bread",
+            "calories": "616",
+            "protein": "14.7",
+            "carbs": "80",
+            "fat": "27"
+        },
+        {
+            "dish": "Jack's Cheese Garlic Pan Bread",
+            "calories": "702",
+            "protein": "19.7",
+            "carbs": "80",
+            "fat": "34"
+        },
+        {
+            "dish": "Fresh Guacamole",
+            "calories": "377",
+            "protein": "5.5",
+            "carbs": "36",
+            "fat": "26"
+        },
+        {
+            "dish": "Thick-Cut Bruschetta",
+            "calories": "395",
+            "protein": "9.3",
+            "carbs": "42",
+            "fat": "22"
+        },
+        {
+            "dish": "Lobster & Crab Dip",
+            "calories": "449",
+            "protein": "14.5",
+            "carbs": "38",
+            "fat": "30"
+        },
+        {
+            "dish": "Spinach & Artichoke Dip",
+            "calories": "544",
+            "protein": "17.5",
+            "carbs": "52",
+            "fat": "31"
+        },
+        {
+            "dish": "Calamari",
+            "calories": "513",
+            "protein": "24",
+            "carbs": "39",
+            "fat": "40"
+        },
+        {
+            "dish": "Classic Poutine (Jack's One Pound Poutines)",
+            "calories": "824",
+            "protein": "16.3",
+            "carbs": "68",
+            "fat": "59"
+        },
+        {
+            "dish": "Fully Loaded Poutine",
+            "calories": "915",
+            "protein": "17.2",
+            "carbs": "69",
+            "fat": "69"
+        },
+        {
+            "dish": "Loaded Veggie Nachos",
+            "calories": "1120",
+            "protein": "41",
+            "carbs": "115",
+            "fat": "61"
+        },
+        {
+            "dish": "Loaded Beef Nachos",
+            "calories": "1331",
+            "protein": "53",
+            "carbs": "113",
+            "fat": "79"
+        },
+        {
+            "dish": "Loaded Chicken Tinga Nachos",
+            "calories": "1151",
+            "protein": "51",
+            "carbs": "113",
+            "fat": "60"
+        },
+        {
+            "dish": "Add Guacamole",
+            "calories": "227",
+            "protein": "1.68",
+            "carbs": "9.1",
+            "fat": "22"
+        },
+        {
+            "dish": "Double the beef",
+            "calories": "492",
+            "protein": "26",
+            "carbs": "3.1",
+            "fat": "41"
+        },
+        {
+            "dish": "Double the chicken",
+            "calories": "131",
+            "protein": "23",
+            "carbs": "1.37",
+            "fat": "3.2"
+        },
+        {
+            "dish": "Street Chicken Taco (2)",
+            "calories": "365",
+            "protein": "31",
+            "carbs": "9.7",
+            "fat": "22"
+        },
+        {
+            "dish": "Fish Taco (2)",
+            "calories": "538",
+            "protein": "12.7",
+            "carbs": "21",
+            "fat": "45"
+        },
+        {
+            "dish": "Naked & Afraid",
+            "calories": "770",
+            "protein": "47",
+            "carbs": "57",
+            "fat": "41"
+        },
+        {
+            "dish": "Sauced & Tossed",
+            "calories": "2",
+            "protein": "0.1",
+            "carbs": "0.06",
+            "fat": "0.15"
+        },
+        {
+            "dish": "Buffalo: Hot (Choice of Sauces)",
+            "calories": "3.2",
+            "protein": "0.006",
+            "carbs": "0.03",
+            "fat": "0.34"
+        },
+        {
+            "dish": "Buffalo: Medium (Choice of Sauces)",
+            "calories": "3.8",
+            "protein": "0.005",
+            "carbs": "0.03",
+            "fat": "0.41"
+        },
+        {
+            "dish": "Buffalo: Mild (Choice of Sauces)",
+            "calories": "4.4",
+            "protein": "0.004",
+            "carbs": "0.018",
+            "fat": "0.48"
+        },
+        {
+            "dish": "Honey Garlic (Choice of Sauces)",
+            "calories": "2.3",
+            "protein": "0.011",
+            "carbs": "0.56",
+            "fat": "0"
+        },
+        {
+            "dish": "1lb of wings",
+            "calories": "1254",
+            "protein": "80",
+            "carbs": "46",
+            "fat": "88"
+        },
+        {
+            "dish": "2lbs of wings",
+            "calories": "2039",
+            "protein": "149",
+            "carbs": "27",
+            "fat": "155"
+        },
+        {
+            "dish": "Buffalo: Hot (Wing Sauces)",
+            "calories": "3.2",
+            "protein": "0.006",
+            "carbs": "0.03",
+            "fat": "0.34"
+        },
+        {
+            "dish": "Buffalo: Medium (Wing Sauces)",
+            "calories": "3.8",
+            "protein": "0.005",
+            "carbs": "0.03",
+            "fat": "0.41"
+        },
+        {
+            "dish": "Buffalo: Mild (Wing Sauces)",
+            "calories": "2.9",
+            "protein": "0.003",
+            "carbs": "0.012",
+            "fat": "0.32"
+        },
+        {
+            "dish": "Honey Garlic (Wing Sauces)",
+            "calories": "2.3",
+            "protein": "0.011",
+            "carbs": "0.56",
+            "fat": "0"
+        },
+        {
+            "dish": "The OB (Original Boring) Burger",
+            "calories": "882",
+            "protein": "102",
+            "carbs": "45",
+            "fat": "62"
+        },
+        {
+            "dish": "Cheeseburger",
+            "calories": "1011",
+            "protein": "111",
+            "carbs": "48",
+            "fat": "71"
+        },
+        {
+            "dish": "Bacon Cheeseburger",
+            "calories": "1086",
+            "protein": "114",
+            "carbs": "48",
+            "fat": "78"
+        },
+        {
+            "dish": "Holy Smoke BBQ Burger",
+            "calories": "1316",
+            "protein": "117",
+            "carbs": "69",
+            "fat": "93"
+        },
+        {
+            "dish": "Hold The Beef",
+            "calories": "770",
+            "protein": "34",
+            "carbs": "63",
+            "fat": "48"
+        },
+        {
+            "dish": "Mushroom Truffle Cheeseburger",
+            "calories": "1009",
+            "protein": "104",
+            "carbs": "47",
+            "fat": "74"
+        },
+        {
+            "dish": "Chicken & Goat Cheese Wrap",
+            "calories": "542",
+            "protein": "34",
+            "carbs": "23",
+            "fat": "35"
+        },
+        {
+            "dish": "Chicken Club",
+            "calories": "975",
+            "protein": "52",
+            "carbs": "63",
+            "fat": "58"
+        },
+        {
+            "dish": "Crispy Chicken Sandwich",
+            "calories": "818",
+            "protein": "45",
+            "carbs": "85",
+            "fat": "37"
+        },
+        {
+            "dish": "Buffalo Blue Crispy Chicken Sandwich",
+            "calories": "853",
+            "protein": "46",
+            "carbs": "87",
+            "fat": "39"
+        },
+        {
+            "dish": "Street Chicken Taco (3)",
+            "calories": "547",
+            "protein": "46",
+            "carbs": "14.3",
+            "fat": "34"
+        },
+        {
+            "dish": "Fish Taco (3)",
+            "calories": "808",
+            "protein": "19.2",
+            "carbs": "32",
+            "fat": "67"
+        },
+        {
+            "dish": "Buddha Salad (Salads & Bowls)",
+            "calories": "502",
+            "protein": "10.5",
+            "carbs": "45",
+            "fat": "33"
+        },
+        {
+            "dish": "Epic Asiago Chicken Caesar",
+            "calories": "1219",
+            "protein": "51",
+            "carbs": "67",
+            "fat": "85"
+        },
+        {
+            "dish": "Fiesta Salad (Salads & Bowls)",
+            "calories": "685",
+            "protein": "23",
+            "carbs": "78",
+            "fat": "34"
+        },
+        {
+            "dish": "Tuna Poké Salad",
+            "calories": "683",
+            "protein": "27",
+            "carbs": "69",
+            "fat": "35"
+        },
+        {
+            "dish": "Apple & Kale Chicken Salad",
+            "calories": "708",
+            "protein": "41",
+            "carbs": "55",
+            "fat": "39"
+        },
+        {
+            "dish": "Steak and Blue Cheese Salad",
+            "calories": "960",
+            "protein": "45",
+            "carbs": "49",
+            "fat": "65"
+        },
+        {
+            "dish": "Chicken Pad Thai Bowl",
+            "calories": "1243",
+            "protein": "56",
+            "carbs": "163",
+            "fat": "41"
+        },
+        {
+            "dish": "Mexican Chicken Bowl",
+            "calories": "1105",
+            "protein": "52",
+            "carbs": "129",
+            "fat": "45"
+        },
+        {
+            "dish": "Miso Glazed Salmon Bowl",
+            "calories": "1056",
+            "protein": "49",
+            "carbs": "135",
+            "fat": "36"
+        },
+        {
+            "dish": "Thai Coconut Curry Chicken Bowl",
+            "calories": "1384",
+            "protein": "49",
+            "carbs": "137",
+            "fat": "73"
+        },
+        {
+            "dish": "Asiago Chicken Bow-ties",
+            "calories": "890",
+            "protein": "49",
+            "carbs": "80",
+            "fat": "42"
+        },
+        {
+            "dish": "Chicken Parmigiana",
+            "calories": "1387",
+            "protein": "62",
+            "carbs": "116",
+            "fat": "76"
+        },
+        {
+            "dish": "Cacio e Pepe Cheese Tortellini",
+            "calories": "1349",
+            "protein": "31",
+            "carbs": "76",
+            "fat": "102"
+        },
+        {
+            "dish": "Crispy Buffalo Chicken Mac & Cheese",
+            "calories": "2048",
+            "protein": "72",
+            "carbs": "138",
+            "fat": "133"
+        },
+        {
+            "dish": "Hunter's Chicken",
+            "calories": "1126",
+            "protein": "65",
+            "carbs": "56",
+            "fat": "72"
+        },
+        {
+            "dish": "Steak Frites",
+            "calories": "731",
+            "protein": "85",
+            "carbs": "6.4",
+            "fat": "36"
+        },
+        {
+            "dish": "Classic New York",
+            "calories": "874",
+            "protein": "87",
+            "carbs": "15.4",
+            "fat": "48"
+        },
+        {
+            "dish": "The Memphis",
+            "calories": "1221",
+            "protein": "93",
+            "carbs": "37",
+            "fat": "75"
+        },
+        {
+            "dish": "New York Truffle Striploin",
+            "calories": "1985",
+            "protein": "98",
+            "carbs": "80",
+            "fat": "145"
+        },
+        {
+            "dish": "Russet Fries",
+            "calories": "603",
+            "protein": "5.4",
+            "carbs": "60",
+            "fat": "44"
+        },
+        {
+            "dish": "House Salad",
+            "calories": "108",
+            "protein": "3",
+            "carbs": "13.6",
+            "fat": "5.2"
+        },
+        {
+            "dish": "Caesar Salad",
+            "calories": "445",
+            "protein": "8.4",
+            "carbs": "15.5",
+            "fat": "40"
+        },
+        {
+            "dish": "Seasonal Vegetables",
+            "calories": "143",
+            "protein": "2.1",
+            "carbs": "9.1",
+            "fat": "11.7"
+        },
+        {
+            "dish": "Smashed Potatoes",
+            "calories": "292",
+            "protein": "4.8",
+            "carbs": "39",
+            "fat": "13.6"
+        },
+        {
+            "dish": "Sweet Potato Fries",
+            "calories": "694",
+            "protein": "3.8",
+            "carbs": "87",
+            "fat": "37"
+        },
+        {
+            "dish": "Truffle Fries",
+            "calories": "820",
+            "protein": "6.7",
+            "carbs": "64",
+            "fat": "66"
+        },
+        {
+            "dish": "Buddha Salad (Premium Sides)",
+            "calories": "304",
+            "protein": "5.4",
+            "carbs": "25",
+            "fat": "21"
+        },
+        {
+            "dish": "Fiesta Salad (Premium Sides)",
+            "calories": "354",
+            "protein": "11.2",
+            "carbs": "38",
+            "fat": "18.6"
+        },
+        {
+            "dish": "Apple Kale Salad",
+            "calories": "255",
+            "protein": "7",
+            "carbs": "26",
+            "fat": "15.4"
+        },
+        {
+            "dish": "Mac & Cheese",
+            "calories": "617",
+            "protein": "24",
+            "carbs": "52",
+            "fat": "35"
+        },
+        {
+            "dish": "Classic Poutine (Premium Sides)",
+            "calories": "881",
+            "protein": "19.7",
+            "carbs": "69",
+            "fat": "64"
+        },
+        {
+            "dish": "Loaded Poutine",
+            "calories": "945",
+            "protein": "18.9",
+            "carbs": "69",
+            "fat": "71"
+        },
+        {
+            "dish": "Chocolate Malted Brownie",
+            "calories": "664",
+            "protein": "5.3",
+            "carbs": "105",
+            "fat": "28"
+        },
+        {
+            "dish": "Lemon Blueberry Tart",
+            "calories": "358",
+            "protein": "2.5",
+            "carbs": "70",
+            "fat": "12.5"
+        },
+        {
+            "dish": "Chocolate Peanut Butter Cheesecake",
+            "calories": "381",
+            "protein": "7.6",
+            "carbs": "38",
+            "fat": "27"
+        },
+        {
+            "dish": "My Cookie Ate Your Brownie (Desserts)",
+            "calories": "460",
+            "protein": "3.8",
+            "carbs": "70",
+            "fat": "18.6"
+        },
+        {
+            "dish": "Vanilla Ice Cream Brownie Sliders",
+            "calories": "429",
+            "protein": "2.7",
+            "carbs": "72",
+            "fat": "14.5"
+        },
+        {
+            "dish": "DIRTY SODA - Shark Attack*",
+            "calories": "0",
+            "protein": "0",
+            "carbs": "0",
+            "fat": "0"
+        },
+        {
+            "dish": "Chicken Fingers",
+            "calories": "585",
+            "protein": "30",
+            "carbs": "53",
+            "fat": "29"
+        },
+        {
+            "dish": "Burger",
+            "calories": "555",
+            "protein": "85",
+            "carbs": "39",
+            "fat": "35"
+        },
+        {
+            "dish": "Chicken Wings",
+            "calories": "783",
+            "protein": "39",
+            "carbs": "20",
+            "fat": "63"
+        },
+        {
+            "dish": "Cheese Pita Pit-za",
+            "calories": "332",
+            "protein": "16.7",
+            "carbs": "36",
+            "fat": "14.7"
+        },
+        {
+            "dish": "Kids Pasta with Butter and Parmesan",
+            "calories": "566",
+            "protein": "12.6",
+            "carbs": "67",
+            "fat": "28"
+        },
+        {
+            "dish": "Kids Pasta with Cheese Sauce",
+            "calories": "663",
+            "protein": "23",
+            "carbs": "74",
+            "fat": "31"
+        },
+        {
+            "dish": "Kids Pasta with Tomato Pasta",
+            "calories": "381",
+            "protein": "12.1",
+            "carbs": "77",
+            "fat": "3.2"
+        },
+        {
+            "dish": "Take Home Cookie",
+            "calories": "314",
+            "protein": "3",
+            "carbs": "43",
+            "fat": "14.9"
+        },
+        {
+            "dish": "Brownie",
+            "calories": "316",
+            "protein": "2.2",
+            "carbs": "62",
+            "fat": "10.6"
+        },
+        {
+            "dish": "Orange Sorbet",
+            "calories": "70",
+            "protein": "0",
+            "carbs": "18",
+            "fat": "0"
+        },
+        {
+            "dish": "Apples with Caramel Dip",
+            "calories": "257",
+            "protein": "0.93",
+            "carbs": "57",
+            "fat": "3"
+        },
+        {
+            "dish": "My Cookie Ate Your Brownie (Kids Dessert)",
+            "calories": "460",
+            "protein": "3.8",
+            "carbs": "70",
+            "fat": "18.6"
+        },
+        {
+            "dish": "THE OG",
+            "calories": "0",
+            "protein": "0",
+            "carbs": "0",
+            "fat": "0"
+        },
+        {
+            "dish": "SHARK ATTACK",
+            "calories": "0",
+            "protein": "0",
+            "carbs": "0",
+            "fat": "0"
+        },
+        {
+            "dish": "PIÑA COLADA",
+            "calories": "172",
+            "protein": "1.13",
+            "carbs": "35",
+            "fat": "3"
+        },
+        {
+            "dish": "Dad's Root Beer & Cream Soda",
+            "calories": "170",
+            "protein": "0",
+            "carbs": "44",
+            "fat": "0"
+        }
+    ],
+    "uses_ai_estimates": false,
+    "estimated_item_count": 0
+}
