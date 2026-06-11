@@ -12,6 +12,40 @@ export interface Restaurant {
   longitude: number;
 }
 
+type SearchableRestaurant = Restaurant & {
+  searchName: string;
+  searchCategory: string;
+  searchAddress: string;
+};
+
+export function normalizeRestaurantSearchText(value: string) {
+  const normalized = value
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+
+  return normalized
+    .split(/\s+/)
+    .filter((token) => token && token !== "and")
+    .join(" ");
+}
+
+export function compactRestaurantSearchText(value: string) {
+  return normalizeRestaurantSearchText(value).replace(/\s+/g, "");
+}
+
+export function restaurantSearchText(value: string) {
+  const normalized = normalizeRestaurantSearchText(value);
+  const compact = normalized.replace(/\s+/g, "");
+
+  return compact && compact !== normalized
+    ? `${normalized} ${compact}`
+    : normalized;
+}
+
 export function parseRestaurantCSV(csvData: string): Restaurant[] {
   const rows = parseCSV(csvData);
   const headers = rows[0];
@@ -131,22 +165,31 @@ export function searchRestaurants(
     minMatchCharLength: 2,
     keys: [
       {
-        name: "name",
+        name: "searchName",
         weight: 0.8, // Restaurant name is most important
       },
       {
-        name: "category",
+        name: "searchCategory",
         weight: 0.1,
       },
       {
-        name: "address",
+        name: "searchAddress",
         weight: 0.1,
       },
     ],
   };
 
-  const fuse = new Fuse(restaurants, fuseOptions);
-  const results = fuse.search(query, { limit: limit * 2 });
+  const searchableRestaurants: SearchableRestaurant[] = restaurants.map(
+    (restaurant) => ({
+      ...restaurant,
+      searchName: restaurantSearchText(restaurant.name),
+      searchCategory: restaurantSearchText(restaurant.category),
+      searchAddress: restaurantSearchText(restaurant.address),
+    })
+  );
+
+  const fuse = new Fuse(searchableRestaurants, fuseOptions);
+  const results = fuse.search(restaurantSearchText(query), { limit: limit * 2 });
 
   const seen = new Set<string>();
   const uniqueResults: Restaurant[] = [];
