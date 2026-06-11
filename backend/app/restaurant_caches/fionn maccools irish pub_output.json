@@ -1,0 +1,1419 @@
+{
+    "restaurant_name": "fionn maccools irish pub",
+    "url": "https://fionnmaccools.com/wp-content/uploads/2025/06/Prime-Pubs-Fionns-MacCools-Nutritional-Guide-June-2025.pdf",
+    "date": "2026-06-11 16:30:23",
+    "menu_items": [
+        {
+            "dish": "WARM SPINACH AND ARTICHOKE DIP",
+            "calories": 978,
+            "protein": 21,
+            "carbs": 75,
+            "fat": 65,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "Wagyu Gyoza Appetizer",
+            "calories": 1280,
+            "protein": 20,
+            "carbs": 141,
+            "fat": 70,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CRISPY CALAMARI",
+            "calories": 690,
+            "protein": 44,
+            "carbs": 98,
+            "fat": 13,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "NACHOS",
+            "calories": 1530,
+            "protein": 26,
+            "carbs": 55,
+            "fat": 41,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "ADD TACO BEEF",
+            "calories": 239,
+            "protein": 22,
+            "carbs": 10,
+            "fat": 28,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "ADD CAJUN CHICKEN",
+            "calories": 210,
+            "protein": 27,
+            "carbs": 0,
+            "fat": 15,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "ADD GUACAMOLE",
+            "calories": 200,
+            "protein": 2,
+            "carbs": 5,
+            "fat": 6,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "ADD EXTRA CHEESE",
+            "calories": 240,
+            "protein": 15,
+            "carbs": 0,
+            "fat": 17,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "MINI YORKIES",
+            "calories": 365,
+            "protein": 14,
+            "carbs": 39,
+            "fat": 14,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CAULIFLOWER WINGS",
+            "calories": 780,
+            "protein": 8,
+            "carbs": 99,
+            "fat": 49,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "JAMESON HONEY GARLIC BITES",
+            "calories": 880,
+            "protein": 46,
+            "carbs": 90,
+            "fat": 3,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "FRENCH ONION SOUP BOWL",
+            "calories": 870,
+            "protein": 26,
+            "carbs": 55,
+            "fat": 29,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "FRENCH ONION SOUP CUP",
+            "calories": 330,
+            "protein": 14,
+            "carbs": 34,
+            "fat": 14,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CHICKEN WINGS- BUFF 1",
+            "calories": 1160,
+            "protein": 130,
+            "carbs": 11,
+            "fat": 67,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CHICKEN WINGS- BUFF 1.5",
+            "calories": 2310,
+            "protein": 260,
+            "carbs": 22,
+            "fat": 134,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CHICKEN WINGS- DUSTED 1",
+            "calories": 1300,
+            "protein": 90,
+            "carbs": 55,
+            "fat": 80,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CHICKEN WINGS- DUSTED 1.5",
+            "calories": 2590,
+            "protein": 181,
+            "carbs": 111,
+            "fat": 161,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CHOICE OF: RANCH DRESSING",
+            "calories": 180,
+            "protein": 1,
+            "carbs": 3,
+            "fat": 19,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CHOICE OF: BLUE CHEESE DRESSING",
+            "calories": 150,
+            "protein": 1,
+            "carbs": 3,
+            "fat": 15,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "MILD",
+            "calories": 120,
+            "protein": 1,
+            "carbs": 25,
+            "fat": 2.5,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "BUFFALO MEDIUM",
+            "calories": 170,
+            "protein": 1,
+            "carbs": 1,
+            "fat": 18,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "HOT",
+            "calories": 15,
+            "protein": 1,
+            "carbs": 2,
+            "fat": 0.3,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "SALT & PEPPER",
+            "calories": 3,
+            "protein": 0,
+            "carbs": 0,
+            "fat": 0,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CAJUN SEASONING",
+            "calories": 20,
+            "protein": 0.3,
+            "carbs": 3,
+            "fat": 0.5,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "FISH TACOS",
+            "calories": 645,
+            "protein": 27,
+            "carbs": 78,
+            "fat": 29,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "VEGGIE FISH TACOS",
+            "calories": 760,
+            "protein": 34,
+            "carbs": 78,
+            "fat": 31,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "Street Corn Tacos",
+            "calories": 720,
+            "protein": 34,
+            "carbs": 78,
+            "fat": 31,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "Tuna Poke Tacos",
+            "calories": 760,
+            "protein": 34,
+            "carbs": 78,
+            "fat": 31,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CHICKEN BACON SANDWICH",
+            "calories": 1020,
+            "protein": 49,
+            "carbs": 65,
+            "fat": 40,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "Butter Chicken Yorkshire Wrao",
+            "calories": 1060,
+            "protein": 28,
+            "carbs": 60,
+            "fat": 40,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "Steak Yorkshire Pudding Wrap",
+            "calories": 1180,
+            "protein": 35,
+            "carbs": 60,
+            "fat": 40,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "SOUTHERN FRIED CHICKEN SANDWICH",
+            "calories": 1100,
+            "protein": 52,
+            "carbs": 110,
+            "fat": 60,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "JALAPENO POPPER GRILLED CHEESE",
+            "calories": 1200,
+            "protein": 18,
+            "carbs": 120,
+            "fat": 60,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "MONTREAL SMOKED MEAT GRILLED CHEESE",
+            "calories": 1366,
+            "protein": 48,
+            "carbs": 130,
+            "fat": 56,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "PROVOLONE CHEESE",
+            "calories": 100,
+            "protein": 7,
+            "carbs": 1,
+            "fat": 8,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "MUSHROOMS",
+            "calories": 90,
+            "protein": 2,
+            "carbs": 2,
+            "fat": 9,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "Caramelized Onions",
+            "calories": 25,
+            "protein": 0.4,
+            "carbs": 2,
+            "fat": 1.5,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "THE CLASSIC POUTINE",
+            "calories": 1080,
+            "protein": 30,
+            "carbs": 99,
+            "fat": 60,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "COBB SALAD",
+            "calories": 720,
+            "protein": 58,
+            "carbs": 14,
+            "fat": 46,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CHICKEN CAESAR SALAD WITH CHICKEN",
+            "calories": 875,
+            "protein": 49,
+            "carbs": 12,
+            "fat": 37,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CELTIC SALAD",
+            "calories": 560,
+            "protein": 10,
+            "carbs": 40,
+            "fat": 30,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "Ahi Tuna Bowl",
+            "calories": 680,
+            "protein": 34,
+            "carbs": 76,
+            "fat": 40,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CAJUN SALMON BOWL",
+            "calories": 923,
+            "protein": 43,
+            "carbs": 75,
+            "fat": 40,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "Wagyu Citrus Noodle Salad",
+            "calories": 1100,
+            "protein": 20,
+            "carbs": 40,
+            "fat": 50,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "GRILLED CHICKEN BREAST",
+            "calories": 200,
+            "protein": 29,
+            "carbs": 0,
+            "fat": 9,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "ATLANTIC SALMON",
+            "calories": 370,
+            "protein": 36,
+            "carbs": 0,
+            "fat": 24,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "GRILLED VEGAN CUTLET",
+            "calories": 150,
+            "protein": 22,
+            "carbs": 5,
+            "fat": 5,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "5 OZ GRILLED STEAK",
+            "calories": 210,
+            "protein": 40,
+            "carbs": 0,
+            "fat": 5,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "STEAK AND MUSHROOM PIE",
+            "calories": 1250,
+            "protein": 25,
+            "carbs": 42,
+            "fat": 18,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "SHEPHERD'S PIE",
+            "calories": 540,
+            "protein": 24,
+            "carbs": 48,
+            "fat": 27,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "GUINNESS STEAK AND MUSHROOM BOWL",
+            "calories": 730,
+            "protein": 25,
+            "carbs": 42,
+            "fat": 18,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "FISH & CHIPS (ONE PIECE)",
+            "calories": 1100,
+            "protein": 33,
+            "carbs": 89,
+            "fat": 49,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "FISH & CHIPS (TWO PIECE)",
+            "calories": 1320,
+            "protein": 57,
+            "carbs": 108,
+            "fat": 52,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "SOY CUTLET & CHIPS (ONE PIECE)",
+            "calories": 1400,
+            "protein": 33,
+            "carbs": 94,
+            "fat": 53,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "SOY CUTLET & CHIPS (TWO PIECE)",
+            "calories": 1700,
+            "protein": 55,
+            "carbs": 99,
+            "fat": 61,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "Butter Chicken Bowl",
+            "calories": 1300,
+            "protein": 36,
+            "carbs": 70,
+            "fat": 80,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CHICKEN SCHNITZEL",
+            "calories": 1145,
+            "protein": 40,
+            "carbs": 92,
+            "fat": 40,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "Tuscan Chicken Pasta",
+            "calories": 1230,
+            "protein": 36,
+            "carbs": 97,
+            "fat": 45,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "Lemon Dill Salmon",
+            "calories": 1300,
+            "protein": 54,
+            "carbs": 60,
+            "fat": 38,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "Sirloin Entree",
+            "calories": 1510,
+            "protein": 54,
+            "carbs": 76,
+            "fat": 90,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "RIBS FULL RACK",
+            "calories": 1980,
+            "protein": 56,
+            "carbs": 140,
+            "fat": 80,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "RIBS 1/2 RACK",
+            "calories": 900,
+            "protein": 24,
+            "carbs": 70,
+            "fat": 40,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "VEGGIE TENDERS",
+            "calories": 1340,
+            "protein": 33,
+            "carbs": 94,
+            "fat": 53,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CHICKEN TENDERS",
+            "calories": 1340,
+            "protein": 53,
+            "carbs": 149,
+            "fat": 70,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "BUFFALO CHICKEN TENDERS",
+            "calories": 1580,
+            "protein": 55,
+            "carbs": 99,
+            "fat": 19,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "GUINNESS STEAK AND MUSHROOM PIE",
+            "calories": 1250,
+            "protein": 25,
+            "carbs": 42,
+            "fat": 18,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "GRILLED CHICKEN",
+            "calories": 180,
+            "protein": 27,
+            "carbs": 0,
+            "fat": 8,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "SOY CUTLET",
+            "calories": 150,
+            "protein": 22,
+            "carbs": 5,
+            "fat": 5,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "PUBS BACON CHEESEBURGER",
+            "calories": 1310,
+            "protein": 62,
+            "carbs": 44,
+            "fat": 79,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "California Burger",
+            "calories": 1050,
+            "protein": 40,
+            "carbs": 45,
+            "fat": 60,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "STRAIGHT UP BURGER",
+            "calories": 900,
+            "protein": 65,
+            "carbs": 52,
+            "fat": 49,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "GARDEN BURGER",
+            "calories": 610,
+            "protein": 28,
+            "carbs": 62,
+            "fat": 29,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CHEDDAR CHEESE",
+            "calories": 100,
+            "protein": 8,
+            "carbs": 0,
+            "fat": 8,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "DOUBLE SMOKED BACON",
+            "calories": 240,
+            "protein": 12,
+            "carbs": 2,
+            "fat": 21,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "HALF AVOCADO",
+            "calories": 160,
+            "protein": 2,
+            "carbs": 9,
+            "fat": 15,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "GUACAMOLE",
+            "calories": 90,
+            "protein": 2,
+            "carbs": 5,
+            "fat": 6,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "FRIES",
+            "calories": 460,
+            "protein": 6,
+            "carbs": 53,
+            "fat": 26,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "TORTILLA CHIPS WITH GUACAMOLE",
+            "calories": 370,
+            "protein": 5,
+            "carbs": 44,
+            "fat": 18,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "HOUSE SALAD",
+            "calories": 150,
+            "protein": 2,
+            "carbs": 7,
+            "fat": 13,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CAESAR SALAD",
+            "calories": 370,
+            "protein": 15,
+            "carbs": 6,
+            "fat": 16,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "MASHED POTATOES WITH GRAVY",
+            "calories": 270,
+            "protein": 4,
+            "carbs": 37,
+            "fat": 13,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "SEASONAL VEG",
+            "calories": 25,
+            "protein": 3,
+            "carbs": 2,
+            "fat": 0.4,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "POUTINE",
+            "calories": 710,
+            "protein": 21,
+            "carbs": 61,
+            "fat": 44,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "SWEET POTATO FRIES",
+            "calories": 480,
+            "protein": 3,
+            "carbs": 63,
+            "fat": 24,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "KIDS PASTA",
+            "calories": 890,
+            "protein": 15,
+            "carbs": 89,
+            "fat": 32,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "PINT SIZED BURGER",
+            "calories": 750,
+            "protein": 35,
+            "carbs": 69,
+            "fat": 39,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "CHICKEN FINGERS",
+            "calories": 650,
+            "protein": 36,
+            "carbs": 89,
+            "fat": 17,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "PINT SIZED FISH & CHIPS",
+            "calories": 1100,
+            "protein": 33,
+            "carbs": 89,
+            "fat": 49,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "SHEPHERD'S PIE- ALBERTA",
+            "calories": 310,
+            "protein": 9,
+            "carbs": 33,
+            "fat": 15,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "STICKY TOFFEE PUDDING",
+            "calories": 836,
+            "protein": 8,
+            "carbs": 123,
+            "fat": 33,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "DONUTS RASPBERRY & BAILEYS",
+            "calories": 980,
+            "protein": 11,
+            "carbs": 166,
+            "fat": 37,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "DONUTS CHOCOLATE & CARAMEL",
+            "calories": 980,
+            "protein": 11,
+            "carbs": 166,
+            "fat": 37,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "FRENCH VANILLA ICE CREAM",
+            "calories": 170,
+            "protein": 1,
+            "carbs": 18,
+            "fat": 11,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        },
+        {
+            "dish": "WHITE CHOCOLATE CHEESECAKE",
+            "calories": 850,
+            "protein": 11,
+            "carbs": 100,
+            "fat": 59,
+            "field_sources": {
+                "calories": "pdf",
+                "protein": "pdf",
+                "carbs": "pdf",
+                "fat": "pdf"
+            },
+            "estimated_fields": [],
+            "nutrition_source": "pdf"
+        }
+    ],
+    "uses_ai_estimates": false,
+    "estimated_item_count": 0
+}
