@@ -1,0 +1,574 @@
+{
+  "restaurant_name": "taco bell",
+  "url": "https://www.tacobell.ca/en/menu",
+  "date": "2026-06-12 14:31:19",
+  "menu_items": [
+    {
+      "dish": "Triple Double Crunchwrap",
+      "calories": "716",
+      "protein": "24.4",
+      "carbs": "85.7",
+      "fat": "30.7"
+    },
+    {
+      "dish": "Steak & Guac Nacho Fries",
+      "calories": "577",
+      "protein": "13.8",
+      "carbs": "51.2",
+      "fat": "35.2"
+    },
+    {
+      "dish": "Strawberry Cinnabon Delights® 4pk",
+      "calories": "336",
+      "protein": "3.6",
+      "carbs": "29.3",
+      "fat": "22.7"
+    },
+    {
+      "dish": "Strawberry Cinnabon Delights® 12pk",
+      "calories": "1007",
+      "protein": "10.8",
+      "carbs": "87.9",
+      "fat": "68"
+    },
+    {
+      "dish": "Cheesy Roll Up",
+      "calories": "182",
+      "protein": "10",
+      "carbs": "14.4",
+      "fat": "8.9"
+    },
+    {
+      "dish": "Cheesy Bean & Rice Burrito",
+      "calories": "428",
+      "protein": "9.9",
+      "carbs": "54.9",
+      "fat": "17.2"
+    },
+    {
+      "dish": "Double Stacked Taco",
+      "calories": "359",
+      "protein": "12.3",
+      "carbs": "37.6",
+      "fat": "17.7"
+    },
+    {
+      "dish": "Spicy Potato Soft Taco",
+      "calories": "262",
+      "protein": "5.9",
+      "carbs": "30.1",
+      "fat": "13.2"
+    },
+    {
+      "dish": "3 Cheese Chicken Flatbread",
+      "calories": "339",
+      "protein": "20.6",
+      "carbs": "26.3",
+      "fat": "16.4"
+    },
+    {
+      "dish": "Beefy Potato Loaded Griller",
+      "calories": "517",
+      "protein": "14.2",
+      "carbs": "55.9",
+      "fat": "26.3"
+    },
+    {
+      "dish": "Chips & Nachos Supreme Dip",
+      "calories": "359",
+      "protein": "10.7",
+      "carbs": "35.9",
+      "fat": "19"
+    },
+    {
+      "dish": "Avocado Ranch Chicken Stacker",
+      "calories": "372",
+      "protein": "15.5",
+      "carbs": "38",
+      "fat": "17.7"
+    },
+    {
+      "dish": "Beefy Stacker",
+      "calories": "402",
+      "protein": "19.5",
+      "carbs": "39.3",
+      "fat": "18"
+    },
+    {
+      "dish": "Cinnabon Delights 4pk",
+      "calories": "336",
+      "protein": "3.6",
+      "carbs": "29.3",
+      "fat": "22.7"
+    },
+    {
+      "dish": "Slow-Roasted Cantina® Chicken Bowl",
+      "calories": "493",
+      "protein": "24.6",
+      "carbs": "42.6",
+      "fat": "25"
+    },
+    {
+      "dish": "Veggie Bowl",
+      "calories": "423",
+      "protein": "12.4",
+      "carbs": "47.4",
+      "fat": "20.6"
+    },
+    {
+      "dish": "Crunchwrap Supreme® Beef",
+      "calories": "554",
+      "protein": "17.5",
+      "carbs": "72.5",
+      "fat": "21.7"
+    },
+    {
+      "dish": "Cheesy Gordita Crunch® Beef",
+      "calories": "495",
+      "protein": "22.2",
+      "carbs": "38.2",
+      "fat": "27.7"
+    },
+    {
+      "dish": "Quesadilla Chicken",
+      "calories": "533",
+      "protein": "28.9",
+      "carbs": "36.8",
+      "fat": "27.5"
+    },
+    {
+      "dish": "Quesadilla Steak",
+      "calories": "532",
+      "protein": "28.9",
+      "carbs": "36.8",
+      "fat": "27.3"
+    },
+    {
+      "dish": "Slow-Roasted Cantina® Chicken Quesadilla",
+      "calories": "582",
+      "protein": "32.2",
+      "carbs": "36.3",
+      "fat": "32.9"
+    },
+    {
+      "dish": "Soft Taco Beef",
+      "calories": "186",
+      "protein": "10.2",
+      "carbs": "17.4",
+      "fat": "8.5"
+    },
+    {
+      "dish": "Soft Taco Supreme® Beef",
+      "calories": "214",
+      "protein": "11",
+      "carbs": "19.7",
+      "fat": "10.2"
+    },
+    {
+      "dish": "Crunchy Taco Beef",
+      "calories": "167",
+      "protein": "8.6",
+      "carbs": "12.3",
+      "fat": "9.3"
+    },
+    {
+      "dish": "Crunchy Taco Supreme® Beef",
+      "calories": "194",
+      "protein": "9.4",
+      "carbs": "14.5",
+      "fat": "11"
+    },
+    {
+      "dish": "Slow-Roasted Cantina® Chicken Soft Taco",
+      "calories": "216",
+      "protein": "11.9",
+      "carbs": "17.9",
+      "fat": "10.7"
+    },
+    {
+      "dish": "Slow-Roasted Cantina® Chicken Crispy Taco",
+      "calories": "285",
+      "protein": "16.3",
+      "carbs": "14.6",
+      "fat": "16.8"
+    },
+    {
+      "dish": "Doritos® Locos Tacos® Beef",
+      "calories": "169",
+      "protein": "8.6",
+      "carbs": "11.7",
+      "fat": "9.8"
+    },
+    {
+      "dish": "Doritos® Locos Tacos Supreme® Beef",
+      "calories": "196",
+      "protein": "9.4",
+      "carbs": "13.9",
+      "fat": "11.5"
+    },
+    {
+      "dish": "Chalupa Supreme® Beef",
+      "calories": "374",
+      "protein": "13.7",
+      "carbs": "29.1",
+      "fat": "22.5"
+    },
+    {
+      "dish": "Cheesy Gordita Crnch Beef",
+      "calories": "495",
+      "protein": "22.2",
+      "carbs": "38.2",
+      "fat": "27.7"
+    },
+    {
+      "dish": "Cheesy Gordita Crunch® Bean",
+      "calories": "485",
+      "protein": "19",
+      "carbs": "44",
+      "fat": "25.4"
+    },
+    {
+      "dish": "Doritos® Cheesy Gordita Crunch® Beef",
+      "calories": "497",
+      "protein": "22.3",
+      "carbs": "37.6",
+      "fat": "28.1"
+    },
+    {
+      "dish": "Beef Burrito",
+      "calories": "438",
+      "protein": "13.1",
+      "carbs": "49.1",
+      "fat": "19.4"
+    },
+    {
+      "dish": "Burrito Supreme® Beef",
+      "calories": "298",
+      "protein": "8.7",
+      "carbs": "45.1",
+      "fat": "9.2"
+    },
+    {
+      "dish": "Beefy 5-Layer Burrito",
+      "calories": "507",
+      "protein": "19.4",
+      "carbs": "63.8",
+      "fat": "19.3"
+    },
+    {
+      "dish": "Steak Grilled Cheesy Burrito",
+      "calories": "708",
+      "protein": "31.4",
+      "carbs": "57.3",
+      "fat": "38.2"
+    },
+    {
+      "dish": "Slow-Roasted Cantina® Chicken Burrito",
+      "calories": "552",
+      "protein": "24.8",
+      "carbs": "41.3",
+      "fat": "32.1"
+    },
+    {
+      "dish": "Chili Cheese Burrito",
+      "calories": "386",
+      "protein": "16.1",
+      "carbs": "40.2",
+      "fat": "17.8"
+    },
+    {
+      "dish": "Bean Burrito",
+      "calories": "367",
+      "protein": "13.4",
+      "carbs": "53.6",
+      "fat": "11.1"
+    },
+    {
+      "dish": "Black Bean 7-layer Burrito",
+      "calories": "430",
+      "protein": "14.1",
+      "carbs": "54.9",
+      "fat": "16.9"
+    },
+    {
+      "dish": "Black Bean Grilled Cheesy Burrito",
+      "calories": "704",
+      "protein": "26.2",
+      "carbs": "63.5",
+      "fat": "37.3"
+    },
+    {
+      "dish": "Crunchy Taco Bean",
+      "calories": "157",
+      "protein": "5.4",
+      "carbs": "18.1",
+      "fat": "7.1"
+    },
+    {
+      "dish": "Crunchy Taco Supreme® Bean",
+      "calories": "184",
+      "protein": "6.2",
+      "carbs": "20.3",
+      "fat": "8.8"
+    },
+    {
+      "dish": "Soft Taco Bean",
+      "calories": "177",
+      "protein": "6.9",
+      "carbs": "23.2",
+      "fat": "6.3"
+    },
+    {
+      "dish": "Soft Taco Supreme® Bean",
+      "calories": "204",
+      "protein": "7.8",
+      "carbs": "25.5",
+      "fat": "8"
+    },
+    {
+      "dish": "Black Bean Crunchwrap Supreme®",
+      "calories": "532",
+      "protein": "14",
+      "carbs": "77.1",
+      "fat": "18.8"
+    },
+    {
+      "dish": "Quesadilla Cheese",
+      "calories": "477",
+      "protein": "21.2",
+      "carbs": "35.7",
+      "fat": "25"
+    },
+    {
+      "dish": "Black Bean Chalupa Supreme®",
+      "calories": "353",
+      "protein": "10.3",
+      "carbs": "33.7",
+      "fat": "19.6"
+    },
+    {
+      "dish": "Nacho Fries & Nacho Cheese sauce",
+      "calories": "323",
+      "protein": "4.2",
+      "carbs": "39",
+      "fat": "16.7"
+    },
+    {
+      "dish": "Nacho Fries Supreme® Bean",
+      "calories": "437",
+      "protein": "7",
+      "carbs": "53",
+      "fat": "21.9"
+    },
+    {
+      "dish": "Nacho Fries Supreme®",
+      "calories": "442",
+      "protein": "8.6",
+      "carbs": "50.1",
+      "fat": "23"
+    },
+    {
+      "dish": "Chili Cheese Nacho Fries",
+      "calories": "417",
+      "protein": "8.2",
+      "carbs": "49",
+      "fat": "20.9"
+    },
+    {
+      "dish": "Chips & Nacho Cheese sauce",
+      "calories": "217",
+      "protein": "2.6",
+      "carbs": "24.3",
+      "fat": "12.2"
+    },
+    {
+      "dish": "Chips & Guacamole",
+      "calories": "244",
+      "protein": "2.7",
+      "carbs": "23.1",
+      "fat": "15.6"
+    },
+    {
+      "dish": "Nachos Supreme® Beef",
+      "calories": "1457",
+      "protein": "40.1",
+      "carbs": "147.1",
+      "fat": "78.5"
+    },
+    {
+      "dish": "20 oz 7up®",
+      "calories": "237",
+      "protein": "0",
+      "carbs": "61.5",
+      "fat": "0"
+    },
+    {
+      "dish": "20 oz Pepsi®",
+      "calories": "252",
+      "protein": "0",
+      "carbs": "69.4",
+      "fat": "0"
+    },
+    {
+      "dish": "20 oz Dr Pepper®",
+      "calories": "250",
+      "protein": "0",
+      "carbs": "66.7",
+      "fat": "0"
+    },
+    {
+      "dish": "20 oz Mountain Dew®",
+      "calories": "300",
+      "protein": "0",
+      "carbs": "77.3",
+      "fat": "0"
+    },
+    {
+      "dish": "20 oz Diet Pepsi®",
+      "calories": "0",
+      "protein": "0.2",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "20 oz Brisk® Iced Tea",
+      "calories": "126",
+      "protein": "0",
+      "carbs": "30",
+      "fat": "0"
+    },
+    {
+      "dish": "20 oz Mountain Dew® Baja Blast®",
+      "calories": "284",
+      "protein": "0",
+      "carbs": "74.1",
+      "fat": "0"
+    },
+    {
+      "dish": "32 oz 7up®",
+      "calories": "379",
+      "protein": "0",
+      "carbs": "98.4",
+      "fat": "0"
+    },
+    {
+      "dish": "32 oz Brisk® Iced Tea",
+      "calories": "202",
+      "protein": "0",
+      "carbs": "47.9",
+      "fat": "0"
+    },
+    {
+      "dish": "32 oz Pepsi®",
+      "calories": "404",
+      "protein": "0",
+      "carbs": "111",
+      "fat": "0"
+    },
+    {
+      "dish": "32 oz Dr Pepper®",
+      "calories": "400",
+      "protein": "0",
+      "carbs": "106.7",
+      "fat": "0"
+    },
+    {
+      "dish": "32 oz Mountain Dew®",
+      "calories": "479",
+      "protein": "0",
+      "carbs": "123.7",
+      "fat": "0"
+    },
+    {
+      "dish": "32 oz Diet Pepsi®",
+      "calories": "0",
+      "protein": "0.3",
+      "carbs": "0",
+      "fat": "0"
+    },
+    {
+      "dish": "32 oz Mountain Dew® Baja Blast®",
+      "calories": "454",
+      "protein": "0",
+      "carbs": "118.6",
+      "fat": "0"
+    },
+    {
+      "dish": "Cinnabon Delights® 12pk",
+      "calories": "1007",
+      "protein": "10.8",
+      "carbs": "87.9",
+      "fat": "68"
+    },
+    {
+      "dish": "Cinnamon Twists",
+      "calories": "167",
+      "protein": "1.3",
+      "carbs": "26.7",
+      "fat": "6.1"
+    },
+    {
+      "dish": "Pintos & Cheese",
+      "calories": "172",
+      "protein": "9.6",
+      "carbs": "17.8",
+      "fat": "6.7"
+    },
+    {
+      "dish": "Black Beans and Rice",
+      "calories": "158",
+      "protein": "4.2",
+      "carbs": "25",
+      "fat": "4.6"
+    },
+    {
+      "dish": "Side of Guacamole",
+      "calories": "83",
+      "protein": "0.8",
+      "carbs": "3.1",
+      "fat": "7.5"
+    },
+    {
+      "dish": "Side of Jalapeno",
+      "calories": "2",
+      "protein": "0.1",
+      "carbs": "0.5",
+      "fat": "0"
+    },
+    {
+      "dish": "Side of Pico De Gallo",
+      "calories": "9",
+      "protein": "0.3",
+      "carbs": "1.9",
+      "fat": "0"
+    },
+    {
+      "dish": "Side of Purple Cabbage",
+      "calories": "2",
+      "protein": "0.1",
+      "carbs": "0.5",
+      "fat": "0"
+    },
+    {
+      "dish": "Side of Sour Cream",
+      "calories": "57",
+      "protein": "0.6",
+      "carbs": "4.3",
+      "fat": "4.1"
+    },
+    {
+      "dish": "Side of Nacho Cheese",
+      "calories": "50",
+      "protein": "1.4",
+      "carbs": "3.4",
+      "fat": "3.4"
+    },
+    {
+      "dish": "Side of Spicy Ranch Sauce",
+      "calories": "430",
+      "protein": "1.7",
+      "carbs": "4.1",
+      "fat": "45.2"
+    }
+  ]
+}
