@@ -1,10 +1,8 @@
-import HomeButton from "../components/HomeButton";
 import FadeInStagger from "../components/FadeInStagger";
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-      <HomeButton />
       <div className="lg:hidden flex flex-col items-center justify-center min-h-[calc(100vh-6rem)] text-center space-y-8">
         <div className="text-center">
           <h1 className="text-display font-bold mb-4">Shredr</h1>

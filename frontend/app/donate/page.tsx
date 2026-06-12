@@ -1,5 +1,3 @@
-import HomeButton from "../components/HomeButton";
-
 type DonatePageProps = {
   searchParams?: Promise<{
     success?: string;
@@ -57,7 +55,6 @@ export default async function DonatePage({ searchParams }: DonatePageProps) {
 
   return (
     <div className="min-h-screen px-4 py-12 sm:px-6 lg:px-8">
-      <HomeButton />
       <main className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-5xl items-center justify-center">
         <section className="grid w-full gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div className="text-center lg:text-left">
